@@ -1,10 +1,11 @@
 name: ランキング自動更新
 
-# JSTの火曜日午前2時 (UTCの月曜日17時) に実行
+# JST の毎日 10:00 と 20:00 に実行
+# JST 10:00 = UTC 01:00, JST 20:00 = UTC 11:00
 on:
   schedule:
-    - cron: '0 17 * * 1'
-  
+    - cron: '0 1 * * *'
+    - cron: '0 11 * * *'
   # 手動で実行できるトリガー
   workflow_dispatch:
 
