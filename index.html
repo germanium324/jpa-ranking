@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPA 028ディビジョン ランキング</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f4f4f9; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #004d99; border-bottom: 3px solid #004d99; padding-bottom: 10px; text-align: center; }
+        .update-info { text-align: right; font-size: 0.9em; color: #555; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #004d99; color: white; font-weight: bold; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #f0f0f0; }
+        .rank { text-align: center; font-weight: bold; }
+        .points { text-align: right; font-weight: bold; color: #cc0000; }
+        .gold { background-color: #ffd700; }
+        .silver { background-color: #c0c0c0; }
+        .bronze { background-color: #cd7f32; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎱 JPA 028ディビジョン ランキング</h1>
+        <div class="update-info">
+            <span id="update-date">データを読み込み中です...</span>
+            <span id="source-link"></span>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>順位</th>
+                    <th>チーム名 (Team No.)</th>
+                    <th class="points">ポイント合計</th>
+                </tr>
+            </thead>
+            <tbody id="ranking-body">
+                <tr><td colspan="3" style="text-align: center;">ランキングデータを取得中...</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const rankingBody = document.getElementById('ranking-body');
+            const updateDateSpan = document.getElementById('update-date');
+            const sourceLinkSpan = document.getElementById('source-link');
+            
+            // Pythonスクリプトで生成されたJSONファイルを読み込む
+            fetch('ranking_data.json?v=' + new Date().getTime()) // キャッシュ対策
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('ranking_data.json の読み込みに失敗しました。');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    rankingBody.innerHTML = ''; // ローディング表示をクリア
+                    
+                    // 1. 更新日とソースリンクの表示
+                    updateDateSpan.textContent = `最終更新日時: ${data.last_updated} `;
+                    sourceLinkSpan.innerHTML = `(<a href="${data.source_pdf}" target="_blank">PDFソース</a>)`;
+
+                    // 2. ランキング表を生成
+                    data.ranking.forEach((team, index) => {
+                        const rank = index + 1;
+                        const row = rankingBody.insertRow();
+                        
+                        let rankClass = '';
+                        if (rank === 1) rankClass = 'gold';
+                        else if (rank === 2) rankClass = 'silver';
+                        else if (rank === 3) rankClass = 'bronze';
+
+                        row.innerHTML = `
+                            <td class="rank ${rankClass}">${rank}</td>
+                            <td>${team.team_name} (No.${team.team_id})</td>
+                            <td class="points">${team.points}</td>
+                        `;
+                    });
+                })
+                .catch(error => {
+                    console.error('データの取得エラー:', error);
+                    rankingBody.innerHTML = '<tr><td colspan="3" style="color: red; text-align: center;">ランキングデータの取得に失敗しました。</td></tr>';
+                    updateDateSpan.textContent = '最終更新日時: データ取得エラー';
+                });
+        });
+    </script>
+</body>
+</html>

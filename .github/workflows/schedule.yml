@@ -1,0 +1,36 @@
+name: ランキング自動更新
+
+# JSTの火曜日午前2時 (UTCの月曜日17時) に実行
+on:
+  schedule:
+    - cron: '0 17 * * 1'
+  
+  # 手動で実行できるトリガー
+  workflow_dispatch:
+
+jobs:
+  update-ranking:
+    runs-on: ubuntu-latest # 実行環境の指定
+
+    steps:
+      # 1. リポジトリのコードをチェックアウト
+      - name: リポジトリチェックアウト
+        uses: actions/checkout@v4
+
+      # 2. Python環境とライブラリのセットアップ
+      - name: Python環境設定とライブラリインストール
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install requests beautifulsoup4 pdfplumber pandas
+
+      # 3. ランキング更新スクリプトの実行
+      - name: ランキング更新処理実行
+        run: python ranking_updater.py
+
+      # 4. 更新されたファイルをコミットし、リポジトリにプッシュ
+      # index.htmlが読み込む ranking_data.json をGitHubに反映させる
+      - name: 更新されたJSONファイルのコミット
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Feat: 自動更新機能による最新ランキングデータの反映'
+          files: ranking_data.json # コミット対象のファイルを指定
