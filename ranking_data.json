@@ -1,0 +1,66 @@
+{
+    "last_updated": "2025年12月01日 00:17 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028112625.pdf",
+    "ranking": [
+        {
+            "team_name": "Tamanchu",
+            "team_id": "10",
+            "points": 601
+        },
+        {
+            "team_name": "Crab Sand",
+            "team_id": "9",
+            "points": 596
+        },
+        {
+            "team_name": "Rui Q sei",
+            "team_id": "1",
+            "points": 577
+        },
+        {
+            "team_name": "Wagamama Factory",
+            "team_id": "6",
+            "points": 568
+        },
+        {
+            "team_name": "Gold D Ricky",
+            "team_id": "7",
+            "points": 557
+        },
+        {
+            "team_name": "Sour Grapes",
+            "team_id": "3",
+            "points": 534
+        },
+        {
+            "team_name": "Hori Masaki",
+            "team_id": "5",
+            "points": 522
+        },
+        {
+            "team_name": "Domannaka shot dan",
+            "team_id": "4",
+            "points": 519
+        },
+        {
+            "team_name": "Bayashis",
+            "team_id": "8",
+            "points": 491
+        },
+        {
+            "team_name": "Candy Qune",
+            "team_id": "11",
+            "points": 486
+        },
+        {
+            "team_name": "Hiyokogumi",
+            "team_id": "12",
+            "points": 480
+        },
+        {
+            "team_name": "Tsukuyomi",
+            "team_id": "2",
+            "points": 454
+        }
+    ]
+}

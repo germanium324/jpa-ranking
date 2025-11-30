@@ -41,18 +41,26 @@ def find_latest_pdf_url(standings_url):
 
         all_links_in_row = target_row.find_all('a')
 
-        # 2番目のリンク（インデックス1）がスコアシートPDFのURLであると仮定
+        # Division コードを取り出す（例: '028'）
+        division_code = TARGET_DIVISION_NAME.split()[0]
+
+        # 優先: Standings の PDF（ファイル名に 'S' + division_code を含む）
+        for a in all_links_in_row:
+            href = a.get('href')
+            if not href:
+                continue
+            if f'/S{division_code}' in href or f'S{division_code}' in href:
+                full_url = href if href.startswith('http') else BASE_URL + href
+                if full_url.lower().endswith('.pdf'):
+                    print(f"最新の（Standings）PDF URLを特定しました: {full_url}")
+                    return full_url
+
+        # フォールバック: 以前のように2番目のリンクを使う（存在する場合）
         if len(all_links_in_row) >= 2:
             scoresheet_link = all_links_in_row[1].get('href')
-
             if not scoresheet_link:
                 return None
-
-            if scoresheet_link.startswith('/'):
-                full_url = BASE_URL + scoresheet_link
-            else:
-                full_url = scoresheet_link
-
+            full_url = scoresheet_link if scoresheet_link.startswith('http') else BASE_URL + scoresheet_link
             if full_url.lower().endswith('.pdf'):
                 print(f"最新のPDF URLを特定しました: {full_url}")
                 return full_url
