@@ -25,7 +25,8 @@
     <div class="container">
         <h1>🎱 JPA 028ディビジョン ランキング</h1>
         <div class="update-info">
-            <span id="update-date">データを読み込み中です...</span>
+            <span id="checked-date">データをチェック中です...</span>
+            <span id="update-date" style="display:none"></span>
             <span id="source-link"></span>
         </div>
         <table>
@@ -59,9 +60,20 @@
                 .then(data => {
                     rankingBody.innerHTML = ''; // ローディング表示をクリア
                     
-                    // 1. 更新日とソースリンクの表示
-                    updateDateSpan.textContent = `最終更新日時: ${data.last_updated} `;
-                    sourceLinkSpan.innerHTML = `(<a href="${data.source_pdf}" target="_blank">PDFソース</a>)`;
+                    // 1. チェック日時と（オプションで）データ最終更新日時を表示
+                    const checked = data.last_checked || data.last_checked || null;
+                    const lastUpdated = data.last_updated || null;
+                    if (checked) {
+                        document.getElementById('checked-date').textContent = `最終チェック日時: ${checked} `;
+                    } else {
+                        document.getElementById('checked-date').textContent = '最終チェック日時: 不明';
+                    }
+                    if (lastUpdated) {
+                        const upd = document.getElementById('update-date');
+                        upd.style.display = 'inline';
+                        upd.textContent = `（データ最終更新: ${lastUpdated}）`;
+                    }
+                    sourceLinkSpan.innerHTML = data.source_pdf ? `(<a href="${data.source_pdf}" target="_blank">PDFソース</a>)` : '';
 
                     // 2. ランキング表を生成
                     data.ranking.forEach((team, index) => {

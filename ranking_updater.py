@@ -139,42 +139,62 @@ def extract_and_process_ranking(pdf_file):
 
 # --- 4. メイン処理とJSON保存 ---
 def main():
+    # 既存の JSON を読み込み（存在すればランキングを保持）
+    existing = {}
+    if os.path.exists(JSON_FILENAME):
+        try:
+            with open(JSON_FILENAME, 'r', encoding='utf-8') as f:
+                existing = json.load(f)
+        except Exception:
+            existing = {}
+
     latest_pdf_url = find_latest_pdf_url(STANDINGS_URL)
+
+    # 現在のチェック時刻（JST）
+    now_jst = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime('%Y年%m月%d日 %H:%M JST')
+
+    # ベースとなる構造を作成（既存データを引き継ぐ）
+    data_to_save = {
+        'last_checked': now_jst,
+        'last_checked_source': latest_pdf_url or existing.get('source_pdf'),
+        'last_updated': existing.get('last_updated'),
+        'source_pdf': existing.get('source_pdf'),
+        'ranking': existing.get('ranking', [])
+    }
 
     if latest_pdf_url:
         pdf_content = download_pdf(latest_pdf_url)
         ranking_df = extract_and_process_ranking(pdf_content)
 
         if ranking_df is not None and not ranking_df.empty:
-
             # チーム名を補完
             ranking_df['team_id'] = ranking_df['team_id'].astype(str)
             ranking_df['team_name'] = ranking_df['team_id'].map(TEAM_NAME_MAP)
-            # マッピングがない場合はフォールバックのチーム名を入れる
             ranking_df['team_name'] = ranking_df.apply(
                 lambda row: TEAM_NAME_MAP.get(str(row['team_id']), f"チームNo.{row['team_id']}"), axis=1
             )
 
-            # 最終的なランキング表
             final_ranking = ranking_df[['team_name', 'team_id', 'points']].reset_index(drop=True)
 
-            # JSONとして保存するデータ構造を作成
-            data_to_save = {
-                'last_updated': datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime('%Y年%m月%d日 %H:%M JST'),
-                'source_pdf': latest_pdf_url,
-                'ranking': final_ranking.to_dict('records')
-            }
-
-            # JSONファイルとして保存
-            with open(JSON_FILENAME, 'w', encoding='utf-8') as f:
-                json.dump(data_to_save, f, ensure_ascii=False, indent=4)
+            # 更新情報をセット
+            data_to_save['last_updated'] = now_jst
+            data_to_save['source_pdf'] = latest_pdf_url
+            data_to_save['ranking'] = final_ranking.to_dict('records')
 
             print(f"\n✅ データは '{JSON_FILENAME}' として保存されました。")
             print(final_ranking)
         else:
-            print("❌ エラー: ランキングデータを抽出できませんでした。")
+            # PDFは取れたが解析できなかった
+            print("❌ エラー: ランキングデータを抽出できませんでした。既存データを保持します。")
     else:
-        print("\n❌ 最新のPDF URLを特定できなかったため、処理を中断しました。")
+        print("\n❌ 最新のPDF URLを特定できなかったため、既存データの更新はチェック時刻のみ行います。")
+
+    # 最後に常に JSON を保存（チェック時刻を反映）
+    try:
+        with open(JSON_FILENAME, 'w', encoding='utf-8') as f:
+            json.dump(data_to_save, f, ensure_ascii=False, indent=4)
+    except Exception as e:
+        print(f"JSON の保存に失敗しました: {e}")
 
 
 if __name__ == '__main__':
