@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JPA 028ディビジョン ランキング</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f4f4f9; }
-        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { color: #004d99; border-bottom: 3px solid #004d99; padding-bottom: 10px; text-align: center; }
-        .update-info { text-align: right; font-size: 0.9em; color: #555; margin-bottom: 20px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 10px; background-color: #f4f4f9; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #004d99; border-bottom: 3px solid #004d99; padding-bottom: 10px; text-align: center; font-size: 1.5em; }
+        h2 { font-size: 1.2em; margin-top: 25px; margin-bottom: 15px; }
+        .update-info { text-align: right; font-size: 0.85em; color: #555; margin-bottom: 15px; }
+        .table-wrapper { width: 100%; overflow-x: auto; margin-top: 15px; }
+        table { width: 100%; min-width: 400px; border-collapse: collapse; }
+        th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #ddd; font-size: 0.9em; white-space: nowrap; }
         th { background-color: #004d99; color: white; font-weight: bold; }
         tr:nth-child(even) { background-color: #f9f9f9; }
         tr:hover { background-color: #f0f0f0; }
@@ -19,6 +22,18 @@
         .gold { background-color: #ffd700; }
         .silver { background-color: #c0c0c0; }
         .bronze { background-color: #cd7f32; }
+        #individual-controls { flex-wrap: wrap !important; }
+        input, select { font-size: 0.95em; }
+        @media (max-width: 600px) {
+            .container { padding: 10px; }
+            h1 { font-size: 1.3em; padding-bottom: 8px; }
+            h2 { font-size: 1.1em; margin-top: 15px; margin-bottom: 10px; }
+            .update-info { font-size: 0.8em; }
+            th, td { padding: 6px 8px; font-size: 0.8em; }
+            #individual-controls { gap: 4px !important; margin-bottom: 8px !important; }
+            input, select { padding: 6px !important; font-size: 0.85em; }
+            button { padding: 6px 8px !important; font-size: 0.8em; }
+        }
     </style>
 </head>
 <body>
@@ -28,6 +43,7 @@
             <span id="checked-date">データを読み込み中です...</span>
             <span id="source-link"></span>
         </div>
+        <div class="table-wrapper">
         <table>
             <thead>
                 <tr>
@@ -40,6 +56,7 @@
                 <tr><td colspan="3" style="text-align: center;">ランキングデータを取得中...</td></tr>
             </tbody>
         </table>
+        </div>
         <h2 style="margin-top:30px;">個人成績</h2>
 
         <div id="individual-controls" style="margin-bottom:10px; display:flex; gap:8px; align-items:center;">
@@ -53,6 +70,7 @@
             <button id="clear-filters" style="padding:8px 12px; border-radius:6px; background:#eee; border:1px solid #ccc; cursor:pointer;">クリア</button>
         </div>
 
+        <div class="table-wrapper">
         <table id="individuals-table">
             <thead>
                 <tr>
@@ -69,6 +87,7 @@
                 <tr><td colspan="7" style="text-align:center;">個人成績データを取得中...</td></tr>
             </tbody>
         </table>
+        </div>
     </div>
 
     <script>
