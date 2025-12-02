@@ -12,6 +12,8 @@ on:
 jobs:
   update-ranking:
     runs-on: ubuntu-latest # 実行環境の指定
+    permissions:
+      contents: write  # リポジトリへの書き込み権限を付与
 
     steps:
       # 1. リポジトリのコードをチェックアウト
