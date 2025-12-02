@@ -71,6 +71,44 @@ def find_latest_pdf_url(standings_url):
         print(f"スタンディングページの取得に失敗しました: {e}")
         return None
 
+
+def find_pdf_url_by_type(standings_url, type_char='P'):
+    """指定タイプ（'P','S'など）のPDF URLを同じ行から探し、最新（ファイル名の数字が最大）を返す。"""
+    try:
+        response = requests.get(standings_url)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        target_cell = soup.find(text=TARGET_DIVISION_NAME)
+        if not target_cell:
+            return None
+        target_row = target_cell.find_parent('tr')
+        if not target_row:
+            return None
+
+        all_links = target_row.find_all('a')
+        division_code = TARGET_DIVISION_NAME.split()[0]
+        # P型PDFの候補を抽出
+        candidates = []
+        import re
+        for a in all_links:
+            href = a.get('href')
+            if not href:
+                continue
+            # 例: /standings/028/P028111925.pdf
+            m = re.search(rf'{type_char}{division_code}(\d+).pdf', href)
+            if m:
+                num = int(m.group(1))
+                url = href if href.startswith('http') else BASE_URL + href
+                candidates.append((num, url))
+        if not candidates:
+            return None
+        # 数字が最大のもの（最新）を選ぶ
+        candidates.sort(reverse=True)
+        return candidates[0][1]
+    except requests.exceptions.RequestException:
+        return None
+
 # --- 2. PDFファイルのダウンロード ---
 def download_pdf(url):
     """指定されたURLからPDFファイルをダウンロードする"""
@@ -137,6 +175,48 @@ def extract_and_process_ranking(pdf_file):
 
     return df
 
+
+def extract_individual_stats(pdf_file):
+    """個人成績PDFから個人ごとの成績を抽出する。返り値は辞書のリスト。
+    各辞書: {team_name, player_name, sl, wins, avg_points, points_rate}
+    """
+    if pdf_file is None:
+        return []
+
+    individuals = []
+    import re
+
+    with pdfplumber.open(pdf_file) as pdf:
+        for page in pdf.pages:
+            text = page.extract_text() or ''
+            lines = [ln.strip() for ln in text.split('\n') if ln.strip()]
+            for ln in lines:
+                # 一行形式: Name Member# SL Gender Team TMP TMW Points MatchPoints Points% Place
+                # 例: Hayato Takenaka 16997 2 M 02810 6 5 84 14.00 70.0 % 1
+                m = re.match(r"^(?P<name>.+?)\s+(?P<member>\d+)\s+(?P<sl>\d+)\s+\w+\s+(?P<team>028\d+)\s+(?P<tmp>\d+)\s+(?P<tmore>\d+)\s+(?P<points>\d+)\s+(?P<avg>[0-9.]+)\s+(?P<rate>[0-9.]+)\s*%?", ln)
+                if m:
+                    team_code = m.group('team')
+                    # team_code は '02810' のようになっている -> team_id は '10'
+                    team_id = team_code.replace('028','').lstrip('0') or team_code[-2:]
+                    team_name = TEAM_NAME_MAP.get(team_id, f'チームNo.{team_id}')
+                    player_name = m.group('name')
+                    sl = m.group('sl')
+                    tmp = m.group('tmp')
+                    tmore = m.group('tmore')
+                    avg = m.group('avg')
+                    rate = m.group('rate')
+
+                    individuals.append({
+                        'team_name': team_name,
+                        'player_name': player_name,
+                        'sl': int(sl),
+                        'wins': f"{tmore}/{tmp}",
+                        'avg_points': float(avg),
+                        'points_rate': f"{rate}%"
+                    })
+
+    return individuals
+
 # --- 4. メイン処理とJSON保存 ---
 def main():
     # 既存の JSON を読み込み（存在すればランキングを保持）
@@ -165,6 +245,12 @@ def main():
     if latest_pdf_url:
         pdf_content = download_pdf(latest_pdf_url)
         ranking_df = extract_and_process_ranking(pdf_content)
+
+        # 個人成績PDF (P型) を同じ行から探して解析
+        p_pdf_url = find_pdf_url_by_type(STANDINGS_URL, type_char='P')
+        p_pdf_content = download_pdf(p_pdf_url) if p_pdf_url else None
+        individuals = extract_individual_stats(p_pdf_content) if p_pdf_content else []
+        data_to_save['individuals'] = individuals
 
         if ranking_df is not None and not ranking_df.empty:
             # チーム名を補完

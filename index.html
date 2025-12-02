@@ -164,8 +164,8 @@
                         if (q) filtered = filtered.filter(p => (p.player_name || '').toLowerCase().includes(q));
                         if (teamVal) filtered = filtered.filter(p => p.team_name === teamVal);
                         if (slVal) filtered = filtered.filter(p => String(p.sl) === String(slVal));
-                        // sort by team then name
-                        filtered.sort((a,b) => (a.team_name + a.player_name).localeCompare(b.team_name + b.player_name, 'ja'));
+                        // sort by average points (降順)
+                        filtered.sort((a, b) => parseFloat(b.avg_points) - parseFloat(a.avg_points));
                         renderIndividuals(filtered);
                     }
 
@@ -174,8 +174,8 @@
                     slSelect.addEventListener('change', applyFilters);
                     clearBtn.addEventListener('click', ()=>{ searchInput.value=''; teamSelect.value=''; slSelect.value=''; applyFilters(); });
 
-                    // initial render
-                    renderIndividuals(originalIndividuals.sort((a,b) => (a.team_name + a.player_name).localeCompare(b.team_name + b.player_name, 'ja')));
+                    // initial render: 平均獲得ポイント順（降順）で表示
+                    renderIndividuals(originalIndividuals.sort((a, b) => b.avg_points - a.avg_points));
                 })
                 .catch(error => {
                     console.error('データの取得エラー:', error);

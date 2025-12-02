@@ -31,19 +31,31 @@ jobs:
         run: |
           echo "=== Workflow Execution Time (UTC) ===" 
           date -u
-          echo "=== Running ranking_updater.py ===" 
-          python ranking_updater.py
-          echo "=== Generated ranking_data.json ===" 
+import json
+try:
+    data=json.load(open('ranking_data.json','r',encoding='utf-8'))
+    print(len(data.get('individuals',[])))
+except Exception as e:
+    print('error',e)
+PY
+          echo "=== Running ranking_updater.py ==="
+          python ranking_updater.py || { echo "ranking_updater.py failed"; exit 1; }
+          echo "=== Generated ranking_data.json ==="
+          if [ -f ranking_data.json ]; then
             cat ranking_data.json
             echo "=== individuals count ==="
             python3 - <<'PY'
-      import json
-      try:
-        data=json.load(open('ranking_data.json','r',encoding='utf-8'))
-        print(len(data.get('individuals',[])))
-      except Exception as e:
-        print('error',e)
-      PY
+import json
+try:
+    data=json.load(open('ranking_data.json','r',encoding='utf-8'))
+    print(len(data.get('individuals',[])))
+except Exception as e:
+    print('error',e)
+PY
+          else
+            echo "ranking_data.json not found!"
+            exit 1
+          fi
 
       # 4. 更新されたファイルをコミットし、リポジトリにプッシュ
       # index.htmlが読み込む ranking_data.json をGitHubに反映させる
