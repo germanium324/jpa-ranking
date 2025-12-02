@@ -1,7 +1,7 @@
 {
-    "last_checked": "2025年12月02日 23:52 JST",
+    "last_checked": "2025年12月03日 01:18 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028120125.pdf",
-    "last_updated": "2025年12月02日 23:52 JST",
+    "last_updated": "2025年12月03日 01:18 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028120125.pdf",
     "ranking": [
         {
@@ -63,6 +63,776 @@
             "team_name": "Candy Qune",
             "team_id": "11",
             "points": 486
+        }
+    ],
+    "individuals": [
+        {
+            "team_name": "Tamanchu",
+            "player_name": "Hayato Takenaka",
+            "sl": 2,
+            "wins": "5/6",
+            "avg_points": 14.0,
+            "points_rate": "70.0%"
+        },
+        {
+            "team_name": "Crab Sand",
+            "player_name": "Takumi Saito",
+            "sl": 8,
+            "wins": "7/7",
+            "avg_points": 13.86,
+            "points_rate": "69.3%"
+        },
+        {
+            "team_name": "Hiyokogumi",
+            "player_name": "Atsushi Iwano",
+            "sl": 5,
+            "wins": "10/11",
+            "avg_points": 13.82,
+            "points_rate": "69.1%"
+        },
+        {
+            "team_name": "Crab Sand",
+            "player_name": "Masanori Kamiya",
+            "sl": 9,
+            "wins": "4/4",
+            "avg_points": 13.75,
+            "points_rate": "68.8%"
+        },
+        {
+            "team_name": "Wagamama Factory",
+            "player_name": "Shiori Kuboya",
+            "sl": 2,
+            "wins": "3/3",
+            "avg_points": 13.33,
+            "points_rate": "66.7%"
+        },
+        {
+            "team_name": "Domannaka shot dan",
+            "player_name": "Mizuki Watanabe",
+            "sl": 6,
+            "wins": "7/9",
+            "avg_points": 13.0,
+            "points_rate": "65.0%"
+        },
+        {
+            "team_name": "Crab Sand",
+            "player_name": "Erika Fujioka",
+            "sl": 5,
+            "wins": "5/5",
+            "avg_points": 12.8,
+            "points_rate": "64.0%"
+        },
+        {
+            "team_name": "Gold D Ricky",
+            "player_name": "Shiyu Mori",
+            "sl": 5,
+            "wins": "6/9",
+            "avg_points": 12.78,
+            "points_rate": "63.9%"
+        },
+        {
+            "team_name": "Rui Q sei",
+            "player_name": "Hanana Sato",
+            "sl": 2,
+            "wins": "8/10",
+            "avg_points": 12.7,
+            "points_rate": "63.5%"
+        },
+        {
+            "team_name": "Bayashis",
+            "player_name": "Yasuyuki Hayashi",
+            "sl": 5,
+            "wins": "5/8",
+            "avg_points": 12.63,
+            "points_rate": "63.1%"
+        },
+        {
+            "team_name": "Bayashis",
+            "player_name": "Tomoki Ito",
+            "sl": 2,
+            "wins": "4/5",
+            "avg_points": 12.6,
+            "points_rate": "63.0%"
+        },
+        {
+            "team_name": "Tsukuyomi",
+            "player_name": "Seiya Yumoto",
+            "sl": 3,
+            "wins": "5/8",
+            "avg_points": 12.5,
+            "points_rate": "62.5%"
+        },
+        {
+            "team_name": "Wagamama Factory",
+            "player_name": "Yuta Togashi",
+            "sl": 9,
+            "wins": "5/9",
+            "avg_points": 12.33,
+            "points_rate": "61.7%"
+        },
+        {
+            "team_name": "Rui Q sei",
+            "player_name": "Yuto Sato",
+            "sl": 7,
+            "wins": "7/9",
+            "avg_points": 12.33,
+            "points_rate": "61.7%"
+        },
+        {
+            "team_name": "Hori Masaki",
+            "player_name": "Ryo Kitawaki",
+            "sl": 3,
+            "wins": "4/5",
+            "avg_points": 12.2,
+            "points_rate": "61.0%"
+        },
+        {
+            "team_name": "Wagamama Factory",
+            "player_name": "Yoshine Saka",
+            "sl": 3,
+            "wins": "6/10",
+            "avg_points": 12.2,
+            "points_rate": "61.0%"
+        },
+        {
+            "team_name": "Tamanchu",
+            "player_name": "Yuto Nishiura",
+            "sl": 3,
+            "wins": "3/5",
+            "avg_points": 12.0,
+            "points_rate": "60.0%"
+        },
+        {
+            "team_name": "Domannaka shot dan",
+            "player_name": "Rintaro Sasada",
+            "sl": 6,
+            "wins": "7/10",
+            "avg_points": 11.9,
+            "points_rate": "59.5%"
+        },
+        {
+            "team_name": "Sour Grapes",
+            "player_name": "Naoya Abe",
+            "sl": 6,
+            "wins": "5/7",
+            "avg_points": 11.86,
+            "points_rate": "59.3%"
+        },
+        {
+            "team_name": "Gold D Ricky",
+            "player_name": "Haruka Kawahara",
+            "sl": 1,
+            "wins": "3/5",
+            "avg_points": 11.8,
+            "points_rate": "59.0%"
+        },
+        {
+            "team_name": "Tamanchu",
+            "player_name": "Keisho Yamaguchi",
+            "sl": 6,
+            "wins": "5/7",
+            "avg_points": 11.71,
+            "points_rate": "58.6%"
+        },
+        {
+            "team_name": "Rui Q sei",
+            "player_name": "Yusuke Hayashi",
+            "sl": 4,
+            "wins": "5/8",
+            "avg_points": 11.63,
+            "points_rate": "58.1%"
+        },
+        {
+            "team_name": "Rui Q sei",
+            "player_name": "Rui Nishihara",
+            "sl": 6,
+            "wins": "5/8",
+            "avg_points": 11.63,
+            "points_rate": "58.1%"
+        },
+        {
+            "team_name": "Sour Grapes",
+            "player_name": "Hato Kuruma",
+            "sl": 4,
+            "wins": "5/8",
+            "avg_points": 11.5,
+            "points_rate": "57.5%"
+        },
+        {
+            "team_name": "Tamanchu",
+            "player_name": "Shoto Takeishi",
+            "sl": 4,
+            "wins": "5/8",
+            "avg_points": 11.5,
+            "points_rate": "57.5%"
+        },
+        {
+            "team_name": "Hori Masaki",
+            "player_name": "Yuki Komoto",
+            "sl": 7,
+            "wins": "5/8",
+            "avg_points": 11.5,
+            "points_rate": "57.5%"
+        },
+        {
+            "team_name": "Hiyokogumi",
+            "player_name": "Daisuke Yoshikawa",
+            "sl": 2,
+            "wins": "4/5",
+            "avg_points": 11.2,
+            "points_rate": "56.0%"
+        },
+        {
+            "team_name": "Gold D Ricky",
+            "player_name": "Ako Sasaki",
+            "sl": 5,
+            "wins": "4/6",
+            "avg_points": 11.0,
+            "points_rate": "55.0%"
+        },
+        {
+            "team_name": "Candy Qune",
+            "player_name": "Kono Ichihara",
+            "sl": 4,
+            "wins": "4/8",
+            "avg_points": 11.0,
+            "points_rate": "55.0%"
+        },
+        {
+            "team_name": "Bayashis",
+            "player_name": "Masaki Ishida",
+            "sl": 2,
+            "wins": "5/8",
+            "avg_points": 11.0,
+            "points_rate": "55.0%"
+        },
+        {
+            "team_name": "Crab Sand",
+            "player_name": "Chiharu Ou",
+            "sl": 2,
+            "wins": "5/8",
+            "avg_points": 11.0,
+            "points_rate": "55.0%"
+        },
+        {
+            "team_name": "Tsukuyomi",
+            "player_name": "Shotaro Murayama",
+            "sl": 6,
+            "wins": "6/10",
+            "avg_points": 10.9,
+            "points_rate": "54.5%"
+        },
+        {
+            "team_name": "Bayashis",
+            "player_name": "Yohei Hanari",
+            "sl": 4,
+            "wins": "5/8",
+            "avg_points": 10.88,
+            "points_rate": "54.4%"
+        },
+        {
+            "team_name": "Domannaka shot dan",
+            "player_name": "Masatoshi Takahashi",
+            "sl": 2,
+            "wins": "4/8",
+            "avg_points": 10.88,
+            "points_rate": "54.4%"
+        },
+        {
+            "team_name": "Crab Sand",
+            "player_name": "Ryusei Karashima",
+            "sl": 5,
+            "wins": "5/10",
+            "avg_points": 10.8,
+            "points_rate": "54.0%"
+        },
+        {
+            "team_name": "Hiyokogumi",
+            "player_name": "Garcia Raven",
+            "sl": 6,
+            "wins": "4/7",
+            "avg_points": 10.71,
+            "points_rate": "53.6%"
+        },
+        {
+            "team_name": "Tamanchu",
+            "player_name": "Tatsuki Emoto",
+            "sl": 7,
+            "wins": "6/10",
+            "avg_points": 10.7,
+            "points_rate": "53.5%"
+        },
+        {
+            "team_name": "Domannaka shot dan",
+            "player_name": "Kengo Araki",
+            "sl": 3,
+            "wins": "3/6",
+            "avg_points": 10.67,
+            "points_rate": "53.3%"
+        },
+        {
+            "team_name": "Candy Qune",
+            "player_name": "Nao Kobayashi",
+            "sl": 2,
+            "wins": "3/6",
+            "avg_points": 10.67,
+            "points_rate": "53.3%"
+        },
+        {
+            "team_name": "Hori Masaki",
+            "player_name": "Yuki Oku",
+            "sl": 2,
+            "wins": "4/7",
+            "avg_points": 10.43,
+            "points_rate": "52.1%"
+        },
+        {
+            "team_name": "Tsukuyomi",
+            "player_name": "Kohei Harada",
+            "sl": 8,
+            "wins": "3/6",
+            "avg_points": 10.33,
+            "points_rate": "51.7%"
+        },
+        {
+            "team_name": "Gold D Ricky",
+            "player_name": "Shuiri Ko",
+            "sl": 3,
+            "wins": "3/6",
+            "avg_points": 10.33,
+            "points_rate": "51.7%"
+        },
+        {
+            "team_name": "Hori Masaki",
+            "player_name": "Kai Sugimoto",
+            "sl": 8,
+            "wins": "3/7",
+            "avg_points": 10.29,
+            "points_rate": "51.4%"
+        },
+        {
+            "team_name": "Sour Grapes",
+            "player_name": "Haruki Yamauchi",
+            "sl": 3,
+            "wins": "4/7",
+            "avg_points": 10.29,
+            "points_rate": "51.4%"
+        },
+        {
+            "team_name": "Gold D Ricky",
+            "player_name": "Rio Sakamoto",
+            "sl": 2,
+            "wins": "4/7",
+            "avg_points": 10.14,
+            "points_rate": "50.7%"
+        },
+        {
+            "team_name": "Domannaka shot dan",
+            "player_name": "Yumi Kobayashi",
+            "sl": 4,
+            "wins": "2/3",
+            "avg_points": 10.0,
+            "points_rate": "50.0%"
+        },
+        {
+            "team_name": "Wagamama Factory",
+            "player_name": "Ako Otsu",
+            "sl": 2,
+            "wins": "3/6",
+            "avg_points": 10.0,
+            "points_rate": "50.0%"
+        },
+        {
+            "team_name": "Hiyokogumi",
+            "player_name": "Azumi Sakazaki",
+            "sl": 2,
+            "wins": "3/5",
+            "avg_points": 10.0,
+            "points_rate": "50.0%"
+        },
+        {
+            "team_name": "Sour Grapes",
+            "player_name": "Ryuta Okonogi",
+            "sl": 7,
+            "wins": "3/7",
+            "avg_points": 9.86,
+            "points_rate": "49.3%"
+        },
+        {
+            "team_name": "Tsukuyomi",
+            "player_name": "Ryoga Miyake",
+            "sl": 3,
+            "wins": "2/6",
+            "avg_points": 9.83,
+            "points_rate": "49.2%"
+        },
+        {
+            "team_name": "Candy Qune",
+            "player_name": "Koki Toribuchi",
+            "sl": 2,
+            "wins": "3/5",
+            "avg_points": 9.8,
+            "points_rate": "49.0%"
+        },
+        {
+            "team_name": "Candy Qune",
+            "player_name": "Nagoma Tanaka",
+            "sl": 4,
+            "wins": "4/8",
+            "avg_points": 9.75,
+            "points_rate": "48.8%"
+        },
+        {
+            "team_name": "Rui Q sei",
+            "player_name": "Eri Hirobayashi",
+            "sl": 3,
+            "wins": "3/7",
+            "avg_points": 9.71,
+            "points_rate": "48.6%"
+        },
+        {
+            "team_name": "Bayashis",
+            "player_name": "Yuki Yasuda",
+            "sl": 6,
+            "wins": "4/9",
+            "avg_points": 9.56,
+            "points_rate": "47.8%"
+        },
+        {
+            "team_name": "Gold D Ricky",
+            "player_name": "Moeka Kishi",
+            "sl": 5,
+            "wins": "3/8",
+            "avg_points": 9.5,
+            "points_rate": "47.5%"
+        },
+        {
+            "team_name": "Wagamama Factory",
+            "player_name": "Yuna Ohe",
+            "sl": 5,
+            "wins": "3/8",
+            "avg_points": 9.38,
+            "points_rate": "46.9%"
+        },
+        {
+            "team_name": "Candy Qune",
+            "player_name": "Koyu Kurokawa",
+            "sl": 4,
+            "wins": "3/8",
+            "avg_points": 9.38,
+            "points_rate": "46.9%"
+        },
+        {
+            "team_name": "Hiyokogumi",
+            "player_name": "Iori Suzuki",
+            "sl": 2,
+            "wins": "2/6",
+            "avg_points": 9.33,
+            "points_rate": "46.7%"
+        },
+        {
+            "team_name": "Tamanchu",
+            "player_name": "Sou Takekawa",
+            "sl": 3,
+            "wins": "3/6",
+            "avg_points": 9.33,
+            "points_rate": "46.7%"
+        },
+        {
+            "team_name": "Crab Sand",
+            "player_name": "Hikaru Nomura",
+            "sl": 3,
+            "wins": "2/6",
+            "avg_points": 9.33,
+            "points_rate": "46.7%"
+        },
+        {
+            "team_name": "Tamanchu",
+            "player_name": "Yusei Orita",
+            "sl": 5,
+            "wins": "3/7",
+            "avg_points": 9.29,
+            "points_rate": "46.4%"
+        },
+        {
+            "team_name": "Hori Masaki",
+            "player_name": "Masaki Hori",
+            "sl": 6,
+            "wins": "2/6",
+            "avg_points": 9.17,
+            "points_rate": "45.8%"
+        },
+        {
+            "team_name": "Tamanchu",
+            "player_name": "Riki Asakura",
+            "sl": 3,
+            "wins": "3/6",
+            "avg_points": 9.17,
+            "points_rate": "45.8%"
+        },
+        {
+            "team_name": "Crab Sand",
+            "player_name": "Takato Nakamura",
+            "sl": 3,
+            "wins": "3/7",
+            "avg_points": 9.14,
+            "points_rate": "45.7%"
+        },
+        {
+            "team_name": "Hori Masaki",
+            "player_name": "Rikuto Nishizuka",
+            "sl": 2,
+            "wins": "4/7",
+            "avg_points": 9.14,
+            "points_rate": "45.7%"
+        },
+        {
+            "team_name": "Tsukuyomi",
+            "player_name": "Sou Hirata",
+            "sl": 7,
+            "wins": "2/5",
+            "avg_points": 9.0,
+            "points_rate": "45.0%"
+        },
+        {
+            "team_name": "Domannaka shot dan",
+            "player_name": "Yutaro Sakuta",
+            "sl": 3,
+            "wins": "3/7",
+            "avg_points": 9.0,
+            "points_rate": "45.0%"
+        },
+        {
+            "team_name": "Sour Grapes",
+            "player_name": "Azusa Ito",
+            "sl": 2,
+            "wins": "3/7",
+            "avg_points": 9.0,
+            "points_rate": "45.0%"
+        },
+        {
+            "team_name": "Sour Grapes",
+            "player_name": "Ayumi Nishimura",
+            "sl": 1,
+            "wins": "1/5",
+            "avg_points": 9.0,
+            "points_rate": "45.0%"
+        },
+        {
+            "team_name": "Wagamama Factory",
+            "player_name": "Yuki Hibi",
+            "sl": 4,
+            "wins": "5/9",
+            "avg_points": 9.0,
+            "points_rate": "45.0%"
+        },
+        {
+            "team_name": "Rui Q sei",
+            "player_name": "Renchi Wang",
+            "sl": 7,
+            "wins": "3/6",
+            "avg_points": 8.5,
+            "points_rate": "42.5%"
+        },
+        {
+            "team_name": "Wagamama Factory",
+            "player_name": "Ameri Tsujimoto",
+            "sl": 1,
+            "wins": "2/4",
+            "avg_points": 8.5,
+            "points_rate": "42.5%"
+        },
+        {
+            "team_name": "Gold D Ricky",
+            "player_name": "Shion Morikawa",
+            "sl": 4,
+            "wins": "1/4",
+            "avg_points": 8.25,
+            "points_rate": "41.3%"
+        },
+        {
+            "team_name": "Hori Masaki",
+            "player_name": "Rimo Tomiki",
+            "sl": 1,
+            "wins": "1/8",
+            "avg_points": 8.25,
+            "points_rate": "41.3%"
+        },
+        {
+            "team_name": "Sour Grapes",
+            "player_name": "Kodai Furukawa",
+            "sl": 2,
+            "wins": "4/9",
+            "avg_points": 8.22,
+            "points_rate": "41.1%"
+        },
+        {
+            "team_name": "Tsukuyomi",
+            "player_name": "Umeka Yamauchi",
+            "sl": 4,
+            "wins": "3/9",
+            "avg_points": 8.0,
+            "points_rate": "40.0%"
+        },
+        {
+            "team_name": "Crab Sand",
+            "player_name": "Aoi Inoue",
+            "sl": 3,
+            "wins": "3/8",
+            "avg_points": 8.0,
+            "points_rate": "40.0%"
+        },
+        {
+            "team_name": "Hiyokogumi",
+            "player_name": "Satsuki Watanabe",
+            "sl": 2,
+            "wins": "3/8",
+            "avg_points": 8.0,
+            "points_rate": "40.0%"
+        },
+        {
+            "team_name": "Hiyokogumi",
+            "player_name": "Takara Amemiya",
+            "sl": 4,
+            "wins": "2/7",
+            "avg_points": 8.0,
+            "points_rate": "40.0%"
+        },
+        {
+            "team_name": "Domannaka shot dan",
+            "player_name": "So Fukushima",
+            "sl": 2,
+            "wins": "2/7",
+            "avg_points": 7.71,
+            "points_rate": "38.6%"
+        },
+        {
+            "team_name": "Candy Qune",
+            "player_name": "Mei Yamamoto",
+            "sl": 1,
+            "wins": "1/4",
+            "avg_points": 7.5,
+            "points_rate": "37.5%"
+        },
+        {
+            "team_name": "Bayashis",
+            "player_name": "Maruko Toda",
+            "sl": 3,
+            "wins": "1/5",
+            "avg_points": 7.4,
+            "points_rate": "37.0%"
+        },
+        {
+            "team_name": "Sour Grapes",
+            "player_name": "Hidehiro Oba",
+            "sl": 6,
+            "wins": "1/5",
+            "avg_points": 7.2,
+            "points_rate": "36.0%"
+        },
+        {
+            "team_name": "Bayashis",
+            "player_name": "Yusuke Nakajima",
+            "sl": 3,
+            "wins": "1/5",
+            "avg_points": 7.0,
+            "points_rate": "35.0%"
+        },
+        {
+            "team_name": "Gold D Ricky",
+            "player_name": "Riku Aizawa",
+            "sl": 8,
+            "wins": "1/9",
+            "avg_points": 6.67,
+            "points_rate": "33.3%"
+        },
+        {
+            "team_name": "Hiyokogumi",
+            "player_name": "Yuya Saito",
+            "sl": 2,
+            "wins": "1/5",
+            "avg_points": 6.6,
+            "points_rate": "33.0%"
+        },
+        {
+            "team_name": "Candy Qune",
+            "player_name": "Koharu Iyono",
+            "sl": 4,
+            "wins": "1/8",
+            "avg_points": 6.5,
+            "points_rate": "32.5%"
+        },
+        {
+            "team_name": "Tsukuyomi",
+            "player_name": "Kanako Sato",
+            "sl": 1,
+            "wins": "1/6",
+            "avg_points": 6.17,
+            "points_rate": "30.8%"
+        },
+        {
+            "team_name": "Wagamama Factory",
+            "player_name": "Tae Sudaka",
+            "sl": 5,
+            "wins": "1/5",
+            "avg_points": 6.0,
+            "points_rate": "30.0%"
+        },
+        {
+            "team_name": "Domannaka shot dan",
+            "player_name": "Kosei Yagi",
+            "sl": 2,
+            "wins": "1/4",
+            "avg_points": 6.0,
+            "points_rate": "30.0%"
+        },
+        {
+            "team_name": "Bayashis",
+            "player_name": "Sora Katsuse",
+            "sl": 1,
+            "wins": "1/6",
+            "avg_points": 5.83,
+            "points_rate": "29.2%"
+        },
+        {
+            "team_name": "Hori Masaki",
+            "player_name": "Leo Murata",
+            "sl": 4,
+            "wins": "1/7",
+            "avg_points": 5.57,
+            "points_rate": "27.9%"
+        },
+        {
+            "team_name": "Candy Qune",
+            "player_name": "Hajime Kato",
+            "sl": 6,
+            "wins": "0/7",
+            "avg_points": 5.0,
+            "points_rate": "25.0%"
+        },
+        {
+            "team_name": "Rui Q sei",
+            "player_name": "Marina Baba",
+            "sl": 3,
+            "wins": "0/4",
+            "avg_points": 5.0,
+            "points_rate": "25.0%"
+        },
+        {
+            "team_name": "Rui Q sei",
+            "player_name": "Sota Miyake",
+            "sl": 2,
+            "wins": "0/3",
+            "avg_points": 4.67,
+            "points_rate": "23.3%"
+        },
+        {
+            "team_name": "Tsukuyomi",
+            "player_name": "Rikako Imai",
+            "sl": 1,
+            "wins": "0/3",
+            "avg_points": 2.67,
+            "points_rate": "13.3%"
         }
     ]
 }
