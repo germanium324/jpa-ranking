@@ -40,6 +40,22 @@
                 <tr><td colspan="3" style="text-align: center;">ランキングデータを取得中...</td></tr>
             </tbody>
         </table>
+        <h2 style="margin-top:30px;">個人成績</h2>
+        <table id="individuals-table">
+            <thead>
+                <tr>
+                    <th>チーム名</th>
+                    <th>名前</th>
+                    <th>SL</th>
+                    <th>勝利数 (TMW/TMP)</th>
+                    <th class="points">平均獲得ポイント</th>
+                    <th class="points">ポイント率</th>
+                </tr>
+            </thead>
+            <tbody id="individuals-body">
+                <tr><td colspan="6" style="text-align:center;">個人成績データを取得中...</td></tr>
+            </tbody>
+        </table>
     </div>
 
     <script>
@@ -84,6 +100,27 @@
                             <td class="points">${team.points}</td>
                         `;
                     });
+
+                    // 3. 個人成績表を生成
+                    const indBody = document.getElementById('individuals-body');
+                    indBody.innerHTML = '';
+                    if (Array.isArray(data.individuals) && data.individuals.length > 0) {
+                        // ソート: チーム名 -> 名前
+                        data.individuals.sort((a,b) => (a.team_name + a.player_name).localeCompare(b.team_name + b.player_name, 'ja'));
+                        data.individuals.forEach(person => {
+                            const row = indBody.insertRow();
+                            row.innerHTML = `
+                                <td>${person.team_name}</td>
+                                <td>${person.player_name}</td>
+                                <td>${person.sl}</td>
+                                <td>${person.wins}</td>
+                                <td class="points">${person.avg_points}</td>
+                                <td class="points">${person.points_rate}</td>
+                            `;
+                        });
+                    } else {
+                        indBody.innerHTML = '<tr><td colspan="6" style="text-align:center;">個人成績データが存在しません。</td></tr>';
+                    }
                 })
                 .catch(error => {
                     console.error('データの取得エラー:', error);
