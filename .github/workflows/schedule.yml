@@ -40,4 +40,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'Feat: 自動更新機能による最新ランキングデータの反映'
-          files: ranking_data.json # コミット対象のファイルを指定
+          file_pattern: ranking_data.json
