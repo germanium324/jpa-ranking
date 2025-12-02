@@ -6,33 +6,51 @@
     <title>JPA 028ディビジョン ランキング</title>
     <style>
         * { box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 10px; background-color: #f4f4f9; }
-        .container { max-width: 600px; margin: auto; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { color: #004d99; border-bottom: 3px solid #004d99; padding-bottom: 10px; text-align: center; font-size: 1.5em; }
-        h2 { font-size: 1.2em; margin-top: 25px; margin-bottom: 15px; }
-        .update-info { text-align: right; font-size: 0.85em; color: #555; margin-bottom: 15px; }
-        .table-wrapper { width: 100%; overflow-x: auto; margin-top: 15px; }
-        table { width: 100%; min-width: 400px; border-collapse: collapse; }
-        th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #ddd; font-size: 0.9em; white-space: nowrap; }
-        th { background-color: #004d99; color: white; font-weight: bold; }
-        tr:nth-child(even) { background-color: #f9f9f9; }
-        tr:hover { background-color: #f0f0f0; }
-        .rank { text-align: center; font-weight: bold; }
-        .points { text-align: right; font-weight: bold; color: #cc0000; }
-        .gold { background-color: #ffd700; }
-        .silver { background-color: #c0c0c0; }
-        .bronze { background-color: #cd7f32; }
-        #individual-controls { flex-wrap: wrap !important; }
-        input, select { font-size: 0.95em; }
-        @media (max-width: 600px) {
-            .container { padding: 10px; }
-            h1 { font-size: 1.3em; padding-bottom: 8px; }
-            h2 { font-size: 1.1em; margin-top: 15px; margin-bottom: 10px; }
-            .update-info { font-size: 0.8em; }
-            th, td { padding: 6px 8px; font-size: 0.8em; }
-            #individual-controls { gap: 4px !important; margin-bottom: 8px !important; }
-            input, select { padding: 6px !important; font-size: 0.85em; }
-            button { padding: 6px 8px !important; font-size: 0.8em; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 8px; background-color: #f4f4f9; }
+        .container { max-width: 100%; margin: auto; background: white; padding: 12px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h1 { color: #004d99; border-bottom: 3px solid #004d99; padding-bottom: 8px; text-align: center; font-size: 1.4em; margin: 10px 0; }
+        h2 { font-size: 1.1em; margin: 15px 0 10px 0; color: #004d99; border-bottom: 2px solid #004d99; padding-bottom: 5px; }
+        .update-info { text-align: right; font-size: 0.75em; color: #666; margin-bottom: 10px; }
+        
+        /* ランキング表（シンプルリスト） */
+        .ranking-list { list-style: none; padding: 0; margin: 0; }
+        .ranking-list li { 
+            display: flex; justify-content: space-between; align-items: center; 
+            padding: 10px; border-bottom: 1px solid #ddd; font-size: 0.95em;
+        }
+        .ranking-list li:hover { background-color: #f9f9f9; }
+        .ranking-rank { font-weight: bold; font-size: 1.2em; width: 30px; text-align: center; }
+        .ranking-rank.gold { color: #ffd700; }
+        .ranking-rank.silver { color: #c0c0c0; }
+        .ranking-rank.bronze { color: #cd7f32; }
+        .ranking-team { flex: 1; margin: 0 10px; }
+        .ranking-points { font-weight: bold; color: #cc0000; font-size: 1.05em; }
+        
+        /* 個人成績カード形式 */
+        #individual-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+        input, select, button { padding: 7px; border-radius: 5px; border: 1px solid #ccc; font-size: 0.9em; }
+        input { flex: 1; min-width: 100px; }
+        button { background: #eee; cursor: pointer; }
+        
+        .individuals-container { display: grid; grid-template-columns: 1fr; gap: 10px; }
+        .individual-card { 
+            border: 1px solid #ddd; border-radius: 8px; padding: 12px; 
+            background: #fafafa; display: flex; flex-wrap: wrap; 
+            justify-content: space-between; align-items: baseline; gap: 8px; font-size: 0.9em;
+        }
+        .individual-card:hover { background-color: #f0f8ff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+        
+        .card-row { display: flex; gap: 15px; flex-wrap: wrap; width: 100%; }
+        .card-field { display: flex; flex-direction: column; min-width: 80px; }
+        .card-field label { font-weight: bold; color: #004d99; font-size: 0.85em; }
+        .card-field span { color: #333; margin-top: 2px; }
+        
+        .card-name { flex: 1; min-width: 120px; }
+        .card-name span { font-weight: bold; font-size: 1em; }
+        .card-rank { text-align: center; font-weight: bold; font-size: 1.3em; color: #004d99; }
+        
+        @media (min-width: 600px) {
+            .individuals-container { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
@@ -43,50 +61,26 @@
             <span id="checked-date">データを読み込み中です...</span>
             <span id="source-link"></span>
         </div>
-        <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th>順位</th>
-                    <th>チーム名 (Team No.)</th>
-                    <th class="points">ポイント合計</th>
-                </tr>
-            </thead>
-            <tbody id="ranking-body">
-                <tr><td colspan="3" style="text-align: center;">ランキングデータを取得中...</td></tr>
-            </tbody>
-        </table>
-        </div>
-        <h2 style="margin-top:30px;">個人成績</h2>
+        
+        <ul class="ranking-list" id="ranking-body">
+            <li style="text-align: center; padding: 15px;">ランキングデータを取得中...</li>
+        </ul>
+        
+        <h2>個人成績</h2>
 
-        <div id="individual-controls" style="margin-bottom:10px; display:flex; gap:8px; align-items:center;">
-            <input id="search-name" type="search" placeholder="名前で検索" style="flex:1; padding:8px; border-radius:6px; border:1px solid #ccc;">
-            <select id="filter-team" style="padding:8px; border-radius:6px; border:1px solid #ccc;">
+        <div id="individual-controls">
+            <input id="search-name" type="search" placeholder="名前で検索">
+            <select id="filter-team">
                 <option value="">全チーム</option>
             </select>
-            <select id="filter-sl" style="padding:8px; border-radius:6px; border:1px solid #ccc;">
+            <select id="filter-sl">
                 <option value="">全SL</option>
             </select>
-            <button id="clear-filters" style="padding:8px 12px; border-radius:6px; background:#eee; border:1px solid #ccc; cursor:pointer;">クリア</button>
+            <button id="clear-filters">クリア</button>
         </div>
 
-        <div class="table-wrapper">
-        <table id="individuals-table">
-            <thead>
-                <tr>
-                    <th>チーム名</th>
-                    <th>名前</th>
-                    <th>SL</th>
-                    <th>勝利数 (TMW/TMP)</th>
-                    <th class="points">平均獲得ポイント</th>
-                    <th class="points">ポイント率</th>
-                    <th>順位</th>
-                </tr>
-            </thead>
-            <tbody id="individuals-body">
-                <tr><td colspan="7" style="text-align:center;">個人成績データを取得中...</td></tr>
-            </tbody>
-        </table>
+        <div id="individuals-container" class="individuals-container">
+            <div style="text-align: center; padding: 20px;">個人成績データを取得中...</div>
         </div>
     </div>
 
@@ -116,26 +110,27 @@
                     }
                     document.getElementById('source-link').innerHTML = data.source_pdf ? `(<a href="${data.source_pdf}" target="_blank">PDFソース</a>)` : '';
 
-                    // 2. ランキング表を生成
+                    // 2. ランキング表を生成（リスト形式）
+                    rankingBody.innerHTML = '';
                     data.ranking.forEach((team, index) => {
                         const rank = index + 1;
-                        const row = rankingBody.insertRow();
-                        
                         let rankClass = '';
                         if (rank === 1) rankClass = 'gold';
                         else if (rank === 2) rankClass = 'silver';
                         else if (rank === 3) rankClass = 'bronze';
 
-                        row.innerHTML = `
-                            <td class="rank ${rankClass}">${rank}</td>
-                            <td>${team.team_name} (No.${team.team_id})</td>
-                            <td class="points">${team.points}</td>
+                        const li = document.createElement('li');
+                        li.innerHTML = `
+                            <span class="ranking-rank ${rankClass}">${rank}</span>
+                            <span class="ranking-team">${team.team_name} (No.${team.team_id})</span>
+                            <span class="ranking-points">${team.points}pt</span>
                         `;
+                        rankingBody.appendChild(li);
                     });
 
-                    // 3. 個人成績表を生成（検索・フィルタ対応）
-                    const indBody = document.getElementById('individuals-body');
-                    indBody.innerHTML = '';
+                    // 3. 個人成績カード を生成（検索・フィルタ対応）
+                    const indContainer = document.getElementById('individuals-container');
+                    indContainer.innerHTML = '';
                     const originalIndividuals = Array.isArray(data.individuals) ? data.individuals.slice() : [];
 
                     // 全体順位マップを作成（avg_points 降順）。フィルタ後もこの順位を表示する。
@@ -167,11 +162,9 @@
                     // ビルド: チームとSLのオプション
                     const teamSelect = document.getElementById('filter-team');
                     const slSelect = document.getElementById('filter-sl');
-                    const names = new Set();
                     const teams = new Set();
                     const sls = new Set();
-                    originalIndividuals.forEach(p => { teams.add(p.team_name); sls.add(p.sl); names.add(p.player_name); });
-                    // populate team options
+                    originalIndividuals.forEach(p => { teams.add(p.team_name); sls.add(p.sl); });
                     const sortedTeams = Array.from(teams).sort((a,b)=>a.localeCompare(b,'ja'));
                     sortedTeams.forEach(t => {
                         const o = document.createElement('option'); o.value = t; o.textContent = t; teamSelect.appendChild(o);
@@ -179,27 +172,43 @@
                     const sortedSls = Array.from(sls).sort((a,b)=>a-b);
                     sortedSls.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; slSelect.appendChild(o); });
 
-                    // render function
+                    // render function（カード形式）
                     function renderIndividuals(list) {
-                        indBody.innerHTML = '';
+                        indContainer.innerHTML = '';
                         if (!list || list.length === 0) {
-                            indBody.innerHTML = '<tr><td colspan="6" style="text-align:center;">個人成績データが存在しません。</td></tr>';
+                            indContainer.innerHTML = '<div style="text-align:center; padding:20px;">検索結果がありません。</div>';
                             return;
                         }
                         list.forEach((person) => {
-                            const row = indBody.insertRow();
                             const avg = (typeof person.avg_points === 'number') ? person.avg_points.toFixed(2) : parseFloat(person.avg_points || 0).toFixed(2);
                             const key = `${person.team_name}||${person.player_name}`;
                             const rank = ranksMap[key] || '';
-                            row.innerHTML = `
-                                <td>${person.team_name}</td>
-                                <td>${person.player_name}</td>
-                                <td>${person.sl}</td>
-                                <td>${person.wins}</td>
-                                <td class="points">${avg}</td>
-                                <td class="points">${person.points_rate}</td>
-                                <td class="rank">${rank}</td>
+                            const card = document.createElement('div');
+                            card.className = 'individual-card';
+                            card.innerHTML = `
+                                <div class="card-name">
+                                    <label>${person.team_name}</label>
+                                    <span>${person.player_name}</span>
+                                </div>
+                                <div class="card-field">
+                                    <label>SL</label>
+                                    <span>${person.sl}</span>
+                                </div>
+                                <div class="card-field">
+                                    <label>勝利</label>
+                                    <span>${person.wins}</span>
+                                </div>
+                                <div class="card-field">
+                                    <label>平均ポイント</label>
+                                    <span>${avg}</span>
+                                </div>
+                                <div class="card-field">
+                                    <label>ポイント率</label>
+                                    <span>${person.points_rate}</span>
+                                </div>
+                                <div class="card-rank">${rank}</div>
                             `;
+                            indContainer.appendChild(card);
                         });
                     }
 
