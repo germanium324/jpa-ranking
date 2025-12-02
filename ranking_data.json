@@ -1,8 +1,8 @@
 {
-    "last_checked": "2025年12月01日 12:56 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028112625.pdf",
-    "last_updated": "2025年12月01日 12:56 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028112625.pdf",
+    "last_checked": "2025年12月02日 23:52 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028120125.pdf",
+    "last_updated": "2025年12月02日 23:52 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028120125.pdf",
     "ranking": [
         {
             "team_name": "Tamanchu",
@@ -25,9 +25,24 @@
             "points": 568
         },
         {
+            "team_name": "Domannaka shot dan",
+            "team_id": "4",
+            "points": 558
+        },
+        {
             "team_name": "Gold D Ricky",
             "team_id": "7",
             "points": 557
+        },
+        {
+            "team_name": "Bayashis",
+            "team_id": "8",
+            "points": 547
+        },
+        {
+            "team_name": "Hiyokogumi",
+            "team_id": "12",
+            "points": 542
         },
         {
             "team_name": "Sour Grapes",
@@ -40,29 +55,14 @@
             "points": 522
         },
         {
-            "team_name": "Domannaka shot dan",
-            "team_id": "4",
-            "points": 519
-        },
-        {
-            "team_name": "Bayashis",
-            "team_id": "8",
-            "points": 491
+            "team_name": "Tsukuyomi",
+            "team_id": "2",
+            "points": 492
         },
         {
             "team_name": "Candy Qune",
             "team_id": "11",
             "points": 486
-        },
-        {
-            "team_name": "Hiyokogumi",
-            "team_id": "12",
-            "points": 480
-        },
-        {
-            "team_name": "Tsukuyomi",
-            "team_id": "2",
-            "points": 454
         }
     ]
 }
