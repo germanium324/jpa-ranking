@@ -119,6 +119,32 @@
                     indBody.innerHTML = '';
                     const originalIndividuals = Array.isArray(data.individuals) ? data.individuals.slice() : [];
 
+                    // 全体順位マップを作成（avg_points 降順）。フィルタ後もこの順位を表示する。
+                    const sortedForRank = originalIndividuals.slice().sort((a, b) => parseFloat(b.avg_points) - parseFloat(a.avg_points));
+                    const ranksMap = {};
+                    // 同点は同順位にする（標準競技順位: 1,2,2,4 のようにスキップあり）
+                    let lastAvg = null;
+                    let lastRank = 0;
+                    sortedForRank.forEach((p, i) => {
+                        const key = `${p.team_name}||${p.player_name}`;
+                        const avg = parseFloat(p.avg_points) || 0;
+                        let rank;
+                        if (i === 0) {
+                            rank = 1;
+                            lastAvg = avg;
+                            lastRank = 1;
+                        } else {
+                            if (Math.abs(avg - lastAvg) < 1e-9) {
+                                rank = lastRank;
+                            } else {
+                                rank = i + 1;
+                                lastAvg = avg;
+                                lastRank = rank;
+                            }
+                        }
+                        ranksMap[key] = rank;
+                    });
+
                     // ビルド: チームとSLのオプション
                     const teamSelect = document.getElementById('filter-team');
                     const slSelect = document.getElementById('filter-sl');
@@ -141,10 +167,11 @@
                             indBody.innerHTML = '<tr><td colspan="6" style="text-align:center;">個人成績データが存在しません。</td></tr>';
                             return;
                         }
-                        list.forEach((person, idx) => {
+                        list.forEach((person) => {
                             const row = indBody.insertRow();
                             const avg = (typeof person.avg_points === 'number') ? person.avg_points.toFixed(2) : parseFloat(person.avg_points || 0).toFixed(2);
-                            const rank = idx + 1;
+                            const key = `${person.team_name}||${person.player_name}`;
+                            const rank = ranksMap[key] || '';
                             row.innerHTML = `
                                 <td>${person.team_name}</td>
                                 <td>${person.player_name}</td>
