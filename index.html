@@ -41,6 +41,18 @@
             </tbody>
         </table>
         <h2 style="margin-top:30px;">個人成績</h2>
+
+        <div id="individual-controls" style="margin-bottom:10px; display:flex; gap:8px; align-items:center;">
+            <input id="search-name" type="search" placeholder="名前で検索" style="flex:1; padding:8px; border-radius:6px; border:1px solid #ccc;">
+            <select id="filter-team" style="padding:8px; border-radius:6px; border:1px solid #ccc;">
+                <option value="">全チーム</option>
+            </select>
+            <select id="filter-sl" style="padding:8px; border-radius:6px; border:1px solid #ccc;">
+                <option value="">全SL</option>
+            </select>
+            <button id="clear-filters" style="padding:8px 12px; border-radius:6px; background:#eee; border:1px solid #ccc; cursor:pointer;">クリア</button>
+        </div>
+
         <table id="individuals-table">
             <thead>
                 <tr>
@@ -101,13 +113,34 @@
                         `;
                     });
 
-                    // 3. 個人成績表を生成
+                    // 3. 個人成績表を生成（検索・フィルタ対応）
                     const indBody = document.getElementById('individuals-body');
                     indBody.innerHTML = '';
-                    if (Array.isArray(data.individuals) && data.individuals.length > 0) {
-                        // ソート: チーム名 -> 名前
-                        data.individuals.sort((a,b) => (a.team_name + a.player_name).localeCompare(b.team_name + b.player_name, 'ja'));
-                        data.individuals.forEach(person => {
+                    const originalIndividuals = Array.isArray(data.individuals) ? data.individuals.slice() : [];
+
+                    // ビルド: チームとSLのオプション
+                    const teamSelect = document.getElementById('filter-team');
+                    const slSelect = document.getElementById('filter-sl');
+                    const names = new Set();
+                    const teams = new Set();
+                    const sls = new Set();
+                    originalIndividuals.forEach(p => { teams.add(p.team_name); sls.add(p.sl); names.add(p.player_name); });
+                    // populate team options
+                    const sortedTeams = Array.from(teams).sort((a,b)=>a.localeCompare(b,'ja'));
+                    sortedTeams.forEach(t => {
+                        const o = document.createElement('option'); o.value = t; o.textContent = t; teamSelect.appendChild(o);
+                    });
+                    const sortedSls = Array.from(sls).sort((a,b)=>a-b);
+                    sortedSls.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; slSelect.appendChild(o); });
+
+                    // render function
+                    function renderIndividuals(list) {
+                        indBody.innerHTML = '';
+                        if (!list || list.length === 0) {
+                            indBody.innerHTML = '<tr><td colspan="6" style="text-align:center;">個人成績データが存在しません。</td></tr>';
+                            return;
+                        }
+                        list.forEach(person => {
                             const row = indBody.insertRow();
                             row.innerHTML = `
                                 <td>${person.team_name}</td>
@@ -118,9 +151,31 @@
                                 <td class="points">${person.points_rate}</td>
                             `;
                         });
-                    } else {
-                        indBody.innerHTML = '<tr><td colspan="6" style="text-align:center;">個人成績データが存在しません。</td></tr>';
                     }
+
+                    // filtering
+                    const searchInput = document.getElementById('search-name');
+                    const clearBtn = document.getElementById('clear-filters');
+                    function applyFilters() {
+                        const q = searchInput.value.trim().toLowerCase();
+                        const teamVal = teamSelect.value;
+                        const slVal = slSelect.value;
+                        let filtered = originalIndividuals.filter(p => true);
+                        if (q) filtered = filtered.filter(p => (p.player_name || '').toLowerCase().includes(q));
+                        if (teamVal) filtered = filtered.filter(p => p.team_name === teamVal);
+                        if (slVal) filtered = filtered.filter(p => String(p.sl) === String(slVal));
+                        // sort by team then name
+                        filtered.sort((a,b) => (a.team_name + a.player_name).localeCompare(b.team_name + b.player_name, 'ja'));
+                        renderIndividuals(filtered);
+                    }
+
+                    searchInput.addEventListener('input', applyFilters);
+                    teamSelect.addEventListener('change', applyFilters);
+                    slSelect.addEventListener('change', applyFilters);
+                    clearBtn.addEventListener('click', ()=>{ searchInput.value=''; teamSelect.value=''; slSelect.value=''; applyFilters(); });
+
+                    // initial render
+                    renderIndividuals(originalIndividuals.sort((a,b) => (a.team_name + a.player_name).localeCompare(b.team_name + b.player_name, 'ja')));
                 })
                 .catch(error => {
                     console.error('データの取得エラー:', error);
