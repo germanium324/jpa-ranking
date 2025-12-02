@@ -34,7 +34,16 @@ jobs:
           echo "=== Running ranking_updater.py ===" 
           python ranking_updater.py
           echo "=== Generated ranking_data.json ===" 
-          cat ranking_data.json
+            cat ranking_data.json
+            echo "=== individuals count ==="
+            python3 - <<'PY'
+      import json
+      try:
+        data=json.load(open('ranking_data.json','r',encoding='utf-8'))
+        print(len(data.get('individuals',[])))
+      except Exception as e:
+        print('error',e)
+      PY
 
       # 4. 更新されたファイルをコミットし、リポジトリにプッシュ
       # index.htmlが読み込む ranking_data.json をGitHubに反映させる
