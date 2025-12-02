@@ -62,10 +62,11 @@
                     <th>勝利数 (TMW/TMP)</th>
                     <th class="points">平均獲得ポイント</th>
                     <th class="points">ポイント率</th>
+                    <th>順位</th>
                 </tr>
             </thead>
             <tbody id="individuals-body">
-                <tr><td colspan="6" style="text-align:center;">個人成績データを取得中...</td></tr>
+                <tr><td colspan="7" style="text-align:center;">個人成績データを取得中...</td></tr>
             </tbody>
         </table>
     </div>
@@ -140,15 +141,18 @@
                             indBody.innerHTML = '<tr><td colspan="6" style="text-align:center;">個人成績データが存在しません。</td></tr>';
                             return;
                         }
-                        list.forEach(person => {
+                        list.forEach((person, idx) => {
                             const row = indBody.insertRow();
+                            const avg = (typeof person.avg_points === 'number') ? person.avg_points.toFixed(2) : parseFloat(person.avg_points || 0).toFixed(2);
+                            const rank = idx + 1;
                             row.innerHTML = `
                                 <td>${person.team_name}</td>
                                 <td>${person.player_name}</td>
                                 <td>${person.sl}</td>
                                 <td>${person.wins}</td>
-                                <td class="points">${person.avg_points}</td>
+                                <td class="points">${avg}</td>
                                 <td class="points">${person.points_rate}</td>
+                                <td class="rank">${rank}</td>
                             `;
                         });
                     }
