@@ -27,10 +27,29 @@
         .ranking-points { font-weight: bold; color: #cc0000; font-size: 1.05em; }
         
         /* 個人成績カード形式 */
-        #individual-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
-        input, select, button { padding: 7px; border-radius: 5px; border: 1px solid #ccc; font-size: 0.9em; }
-        input { flex: 1; min-width: 100px; }
-        button { background: #eee; cursor: pointer; }
+        #individual-controls { 
+            display: flex; 
+            gap: 8px; 
+            align-items: center; 
+            margin-bottom: 10px;
+            flex-wrap: nowrap;
+        }
+        input, select, button { padding: 8px; border-radius: 5px; border: 1px solid #ccc; font-size: 0.9em; }
+        #search-name { 
+            flex: 1; 
+            min-width: 0;
+        }
+        #filter-team, #filter-sl { 
+            flex: 0 1 auto; 
+            min-width: 80px;
+        }
+        #clear-filters { 
+            flex: 0 0 auto;
+            background: #eee; 
+            cursor: pointer; 
+            padding: 8px 12px;
+        }
+        button:hover { background: #ddd; }
         
         .individuals-container { display: grid; grid-template-columns: 1fr; gap: 10px; }
         .individual-card { 
@@ -48,6 +67,12 @@
         .card-name { flex: 1; min-width: 120px; }
         .card-name span { font-weight: bold; font-size: 1em; }
         .card-rank { text-align: center; font-weight: bold; font-size: 1.3em; color: #004d99; }
+        
+        @media (max-width: 480px) {
+            #search-name { min-width: 0; }
+            #filter-team, #filter-sl { min-width: 70px; font-size: 0.85em; }
+            #clear-filters { padding: 8px 10px; font-size: 0.8em; }
+        }
         
         @media (min-width: 600px) {
             .individuals-container { grid-template-columns: repeat(2, 1fr); }
