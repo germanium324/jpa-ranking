@@ -57,20 +57,27 @@
         
         .individuals-container { display: grid; grid-template-columns: 1fr; gap: 10px; }
         .individual-card { 
-            border: 1px solid #ddd; border-radius: 8px; padding: 12px; 
-            background: #fafafa; display: flex; flex-wrap: wrap; 
-            justify-content: space-between; align-items: baseline; gap: 8px; font-size: 0.9em;
+            border: 1px solid #ddd; border-radius: 8px; overflow: hidden;
+            background: #fafafa; display: flex; flex-direction: column; font-size: 0.9em;
         }
         .individual-card:hover { background-color: #f0f8ff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
         
-        .card-row { display: flex; gap: 15px; flex-wrap: wrap; width: 100%; }
+        .card-header {
+            background-color: #004d99; color: white; padding: 10px 12px; font-weight: bold; font-size: 1em;
+        }
+        
+        .card-content {
+            padding: 12px; display: flex; flex-wrap: wrap; gap: 15px; align-items: flex-start;
+        }
+        
+        .card-name { flex: 1; min-width: 120px; }
+        .card-name span { font-weight: bold; font-size: 1em; display: block; margin-top: 5px; }
+        
         .card-field { display: flex; flex-direction: column; min-width: 80px; }
         .card-field label { font-weight: bold; color: #004d99; font-size: 0.85em; }
         .card-field span { color: #333; margin-top: 2px; }
         
-        .card-name { flex: 1; min-width: 120px; }
-        .card-name span { font-weight: bold; font-size: 1em; }
-        .card-rank { text-align: center; font-weight: bold; font-size: 1.3em; color: #004d99; }
+        .card-rank { text-align: center; font-weight: bold; font-size: 1.4em; color: #004d99; padding-top: 5px; }
         
         @media (max-width: 480px) {
             #search-name { min-width: 0; }
@@ -216,27 +223,30 @@
                             const card = document.createElement('div');
                             card.className = 'individual-card';
                             card.innerHTML = `
-                                <div class="card-name">
-                                    <label>${person.team_name}</label>
-                                    <span>${person.player_name}</span>
+                                <div class="card-header">${person.team_name}</div>
+                                <div class="card-content">
+                                    <div class="card-name">
+                                        <label>名前</label>
+                                        <span>${person.player_name}</span>
+                                    </div>
+                                    <div class="card-field">
+                                        <label>SL</label>
+                                        <span>${person.sl}</span>
+                                    </div>
+                                    <div class="card-field">
+                                        <label>勝利</label>
+                                        <span>${person.wins}</span>
+                                    </div>
+                                    <div class="card-field">
+                                        <label>平均ポイント</label>
+                                        <span>${avg}</span>
+                                    </div>
+                                    <div class="card-field">
+                                        <label>ポイント率</label>
+                                        <span>${person.points_rate}</span>
+                                    </div>
+                                    <div class="card-rank">${rank}</div>
                                 </div>
-                                <div class="card-field">
-                                    <label>SL</label>
-                                    <span>${person.sl}</span>
-                                </div>
-                                <div class="card-field">
-                                    <label>勝利</label>
-                                    <span>${person.wins}</span>
-                                </div>
-                                <div class="card-field">
-                                    <label>平均ポイント</label>
-                                    <span>${avg}</span>
-                                </div>
-                                <div class="card-field">
-                                    <label>ポイント率</label>
-                                    <span>${person.points_rate}</span>
-                                </div>
-                                <div class="card-rank">${rank}</div>
                             `;
                             indContainer.appendChild(card);
                         });
