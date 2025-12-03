@@ -55,29 +55,31 @@
         }
         button:hover { background: #ddd; }
         
-        .individuals-container { display: grid; grid-template-columns: 1fr; gap: 10px; }
+        .individuals-container { display: grid; grid-template-columns: 1fr; gap: 8px; }
         .individual-card { 
             border: 1px solid #ddd; border-radius: 8px; overflow: hidden;
             background: #fafafa; display: flex; flex-direction: column; font-size: 0.9em;
+            position: relative; /* for absolute rank */
         }
-        .individual-card:hover { background-color: #f0f8ff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+        .individual-card:hover { background-color: #f8fbff; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
         
         .card-header {
-            background-color: #004d99; color: white; padding: 10px 12px; font-weight: bold; font-size: 1em;
+            background-color: #004d99; color: white; padding: 8px 10px; font-weight: bold; font-size: 0.95em;
         }
         
         .card-content {
-            padding: 12px; display: flex; flex-wrap: wrap; gap: 15px; align-items: flex-start;
+            padding: 6px 10px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+            padding-right: 56px; /* leave space for rank */
+            min-height: 34px; /* reduce height */
         }
         
-        .card-name { flex: 1; min-width: 120px; }
-        .card-name span { font-weight: bold; font-size: 1em; display: block; margin-top: 5px; }
+        .card-name span { font-weight: bold; font-size: 0.98em; }
         
         .card-field { display: flex; flex-direction: column; min-width: 80px; }
-        .card-field label { font-weight: bold; color: #004d99; font-size: 0.85em; }
+        .card-field label { font-weight: bold; color: #004d99; font-size: 0.82em; }
         .card-field span { color: #333; margin-top: 2px; }
         
-        .card-rank { text-align: center; font-weight: bold; font-size: 1.4em; color: #004d99; padding-top: 5px; }
+        .card-rank { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-weight: bold; font-size: 1.2em; color: #004d99; width: 40px; text-align: center; }
         
         @media (max-width: 480px) {
             #search-name { min-width: 0; }
@@ -226,7 +228,6 @@
                                 <div class="card-header">${person.team_name}</div>
                                 <div class="card-content">
                                     <div class="card-name">
-                                        <label>名前</label>
                                         <span>${person.player_name}</span>
                                     </div>
                                     <div class="card-field">
@@ -245,8 +246,8 @@
                                         <label>ポイント率</label>
                                         <span>${person.points_rate}</span>
                                     </div>
-                                    <div class="card-rank">${rank}</div>
                                 </div>
+                                <div class="card-rank">${rank}</div>
                             `;
                             indContainer.appendChild(card);
                         });
