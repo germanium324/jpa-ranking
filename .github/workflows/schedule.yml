@@ -6,6 +6,7 @@ on:
   schedule:
     - cron: '0 1 * * *'
     - cron: '0 11 * * *'
+    - cron: '0 7 * * 3'
   # 手動で実行できるトリガー
   workflow_dispatch:
 
