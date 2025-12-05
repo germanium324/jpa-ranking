@@ -32,6 +32,8 @@
         .ranking-rank.silver { color: #c0c0c0; }
         .ranking-rank.bronze { color: #cd7f32; }
         .ranking-team { flex: 1; margin: 0 10px; }
+        .ranking-team-link { cursor: pointer; color: #004d99; text-decoration: underline; }
+        .ranking-team-link:hover { color: #003366; font-weight: bold; }
         .ranking-points { font-weight: bold; color: #cc0000; font-size: 1.05em; }
         
         /* 個人成績カード形式 */
@@ -178,9 +180,20 @@
                         const li = document.createElement('li');
                         li.innerHTML = `
                             <span class="ranking-rank ${rankClass}">${rank}</span>
-                            <span class="ranking-team">${team.team_name} (No.${team.team_id})</span>
+                            <span class="ranking-team"><span class="ranking-team-link">${team.team_name}</span> (No.${team.team_id})</span>
                             <span class="ranking-points">${team.points}pt</span>
                         `;
+                        const teamLink = li.querySelector('.ranking-team-link');
+                        teamLink.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            // チーム名でフィルタを設定
+                            document.getElementById('filter-team').value = team.team_name;
+                            // 個人成績セクションにスクロール
+                            const individualsSection = document.querySelector('h2');
+                            individualsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            // フィルタを適用
+                            applyFilters();
+                        });
                         rankingBody.appendChild(li);
                     });
 
@@ -279,7 +292,7 @@
                     // filtering
                     const searchInput = document.getElementById('search-name');
                     const clearBtn = document.getElementById('clear-filters');
-                    function applyFilters() {
+                    window.applyFilters = function() {
                         const q = searchInput.value.trim().toLowerCase();
                         const teamVal = teamSelect.value;
                         const slVal = slSelect.value;
