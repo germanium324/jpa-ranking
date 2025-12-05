@@ -1,67 +1,39 @@
-name: ランキング自動更新
+name: Update JPA Ranking
 
-# JST の毎日 10:00 と 20:00 に実行
-# JST 10:00 = UTC 01:00, JST 20:00 = UTC 11:00
 on:
   schedule:
     - cron: '0 1 * * *'
     - cron: '0 11 * * *'
     - cron: '0 7 * * 3'
-  # 手動で実行できるトリガー
   workflow_dispatch:
 
 jobs:
   update-ranking:
-    runs-on: ubuntu-latest # 実行環境の指定
+    runs-on: ubuntu-latest
     permissions:
-      contents: write  # リポジトリへの書き込み権限を付与
+      contents: write
 
     steps:
-      # 1. リポジトリのコードをチェックアウト
-      - name: リポジトリチェックアウト
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Python環境とライブラリのセットアップ
-      - name: Python環境設定とライブラリインストール
+      - name: Setup Python
         run: |
           python3 -m pip install --upgrade pip
           pip install requests beautifulsoup4 pdfplumber pandas
 
-      # 3. ランキング更新スクリプトの実行
-      - name: ランキング更新処理実行
+      - name: Run ranking updater
         run: |
-          echo "=== Workflow Execution Time (UTC) ===" 
-          date -u
-import json
-try:
-    data=json.load(open('ranking_data.json','r',encoding='utf-8'))
-    print(len(data.get('individuals',[])))
-except Exception as e:
-    print('error',e)
-PY
-          echo "=== Running ranking_updater.py ==="
           python ranking_updater.py || { echo "ranking_updater.py failed"; exit 1; }
-          echo "=== Generated ranking_data.json ==="
           if [ -f ranking_data.json ]; then
-            cat ranking_data.json
-            echo "=== individuals count ==="
-            python3 - <<'PY'
-import json
-try:
-    data=json.load(open('ranking_data.json','r',encoding='utf-8'))
-    print(len(data.get('individuals',[])))
-except Exception as e:
-    print('error',e)
-PY
+            echo "Generated ranking_data.json successfully"
           else
-            echo "ranking_data.json not found!"
+            echo "Error: ranking_data.json not generated"
             exit 1
           fi
 
-      # 4. 更新されたファイルをコミットし、リポジトリにプッシュ
-      # index.htmlが読み込む ranking_data.json をGitHubに反映させる
-      - name: 更新されたJSONファイルのコミット
+      - name: Auto commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'Feat: 自動更新機能による最新ランキングデータの反映'
+          commit_message: 'Feat: Update ranking data'
           file_pattern: ranking_data.json
