@@ -72,15 +72,22 @@
         }
         
         .card-content {
-            padding: 6px 10px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+            padding: 6px 10px; display: flex; flex-direction: column; gap: 6px;
             padding-right: 56px; /* leave space for rank */
-            min-height: 34px; /* reduce height */
+        }
+        
+        .card-top-row {
+            display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
         }
         
         .card-name span { font-weight: bold; font-size: 0.98em; }
         
         .card-field-inline { flex-direction: row; align-items: center; min-width: auto; }
         .card-field-inline span { margin-top: 0; }
+        
+        .card-stats-row {
+            display: flex; gap: 12px; flex-wrap: wrap; width: 100%;
+        }
         
         .card-field { display: flex; flex-direction: column; min-width: 80px; }
         .card-field label { font-weight: bold; color: #004d99; font-size: 0.82em; }
@@ -235,23 +242,27 @@
                             card.innerHTML = `
                                 <div class="card-header">${person.team_name}</div>
                                 <div class="card-content">
-                                    <div class="card-name">
-                                        <span>${person.player_name}</span>
+                                    <div class="card-top-row">
+                                        <div class="card-name">
+                                            <span>${person.player_name}</span>
+                                        </div>
+                                        <div class="card-field card-field-inline">
+                                            <span><strong>SL</strong> ${person.sl}</span>
+                                        </div>
                                     </div>
-                                    <div class="card-field card-field-inline">
-                                        <span><strong>SL</strong> ${person.sl}</span>
-                                    </div>
-                                    <div class="card-field">
-                                        <label>勝利</label>
-                                        <span>${person.wins}</span>
-                                    </div>
-                                    <div class="card-field">
-                                        <label>平均ポイント</label>
-                                        <span>${avg}</span>
-                                    </div>
-                                    <div class="card-field">
-                                        <label>ポイント率</label>
-                                        <span>${person.points_rate}</span>
+                                    <div class="card-stats-row">
+                                        <div class="card-field">
+                                            <label>勝利</label>
+                                            <span>${person.wins}</span>
+                                        </div>
+                                        <div class="card-field">
+                                            <label>平均ポイント</label>
+                                            <span>${avg}</span>
+                                        </div>
+                                        <div class="card-field">
+                                            <label>ポイント率</label>
+                                            <span>${person.points_rate}</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card-rank">${rank}</div>
