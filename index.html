@@ -79,6 +79,9 @@
         
         .card-name span { font-weight: bold; font-size: 0.98em; }
         
+        .card-field-inline { flex-direction: row; align-items: center; min-width: auto; }
+        .card-field-inline span { margin-top: 0; }
+        
         .card-field { display: flex; flex-direction: column; min-width: 80px; }
         .card-field label { font-weight: bold; color: #004d99; font-size: 0.82em; }
         .card-field span { color: #333; margin-top: 2px; }
@@ -235,9 +238,8 @@
                                     <div class="card-name">
                                         <span>${person.player_name}</span>
                                     </div>
-                                    <div class="card-field">
-                                        <label>SL</label>
-                                        <span>${person.sl}</span>
+                                    <div class="card-field card-field-inline">
+                                        <span><strong>SL</strong> ${person.sl}</span>
                                     </div>
                                     <div class="card-field">
                                         <label>勝利</label>
