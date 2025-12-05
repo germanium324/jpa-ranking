@@ -64,8 +64,10 @@
             border: 1px solid #ddd; border-radius: 8px; overflow: hidden;
             background: #fafafa; display: flex; flex-direction: column; font-size: 0.9em;
             position: relative; /* for absolute rank */
+            text-decoration: none; color: inherit; cursor: pointer;
+            transition: all 0.2s ease;
         }
-        .individual-card:hover { background-color: #f8fbff; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+        .individual-card:hover { background-color: #f8fbff; box-shadow: 0 2px 6px rgba(0,0,0,0.12); transform: translateY(-2px); }
         
         .card-header {
             background-color: #004d99; color: white; padding: 8px 10px; font-weight: bold; font-size: 0.95em;
@@ -237,8 +239,11 @@
                             const avg = (typeof person.avg_points === 'number') ? person.avg_points.toFixed(2) : parseFloat(person.avg_points || 0).toFixed(2);
                             const key = `${person.team_name}||${person.player_name}`;
                             const rank = ranksMap[key] || '';
-                            const card = document.createElement('div');
+                            const card = document.createElement('a');
                             card.className = 'individual-card';
+                            card.href = person.player_number ? `https://cue-sports.com/jpa/member.php?code=${person.player_number}` : '#';
+                            card.target = '_blank';
+                            card.rel = 'noopener noreferrer';
                             card.innerHTML = `
                                 <div class="card-header">${person.team_name}</div>
                                 <div class="card-content">

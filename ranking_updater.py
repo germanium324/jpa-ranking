@@ -44,25 +44,33 @@ def find_latest_pdf_url(standings_url):
         # Division コードを取り出す（例: '028'）
         division_code = TARGET_DIVISION_NAME.split()[0]
 
-        # 優先: Standings の PDF（ファイル名に 'S' + division_code を含む）
+        # S型PDFの候補を抽出し、ファイル名の数字部分で最新（最大）を選ぶ
+        import re
+        candidates = []
         for a in all_links_in_row:
             href = a.get('href')
             if not href:
                 continue
-            if f'/S{division_code}' in href or f'S{division_code}' in href:
-                full_url = href if href.startswith('http') else BASE_URL + href
-                if full_url.lower().endswith('.pdf'):
-                    print(f"最新の（Standings）PDF URLを特定しました: {full_url}")
-                    return full_url
+            m = re.search(rf'S{division_code}(\d+)\.pdf', href)
+            if m:
+                num = int(m.group(1))
+                url = href if href.startswith('http') else BASE_URL + href
+                candidates.append((num, url))
 
-        # フォールバック: 以前のように2番目のリンクを使う（存在する場合）
-        if len(all_links_in_row) >= 2:
-            scoresheet_link = all_links_in_row[1].get('href')
-            if not scoresheet_link:
-                return None
-            full_url = scoresheet_link if scoresheet_link.startswith('http') else BASE_URL + scoresheet_link
+        if candidates:
+            candidates.sort(reverse=True)
+            latest = candidates[0][1]
+            print(f"最新の（Standings）PDF URLを特定しました: {latest}")
+            return latest
+
+        # フォールバック: 以前のように行内の最初のPDFリンクを返す
+        for a in all_links_in_row:
+            href = a.get('href')
+            if not href:
+                continue
+            full_url = href if href.startswith('http') else BASE_URL + href
             if full_url.lower().endswith('.pdf'):
-                print(f"最新のPDF URLを特定しました: {full_url}")
+                print(f"フォールバックでPDF URLを特定しました: {full_url}")
                 return full_url
 
         return None
@@ -209,6 +217,7 @@ def extract_individual_stats(pdf_file):
                     individuals.append({
                         'team_name': team_name,
                         'player_name': player_name,
+                        'player_number': m.group('member'),
                         'sl': int(sl),
                         'wins': f"{tmore}/{tmp}",
                         'avg_points': float(avg),
