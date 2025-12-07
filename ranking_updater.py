@@ -201,13 +201,16 @@ def extract_individual_stats(pdf_file):
             for ln in lines:
                 # 一行形式: Name Member# SL Gender Team TMP TMW Points MatchPoints Points% Place
                 # 例: Hayato Takenaka 16997 2 M 02810 6 5 84 14.00 70.0 % 1
-                m = re.match(r"^(?P<name>.+?)\s+(?P<member>\d+)\s+(?P<sl>\d+)\s+\w+\s+(?P<team>028\d+)\s+(?P<tmp>\d+)\s+(?P<tmore>\d+)\s+(?P<points>\d+)\s+(?P<avg>[0-9.]+)\s+(?P<rate>[0-9.]+)\s*%?", ln)
+                m = re.match(r"^(?P<name>.+?)\s+(?P<member>\d+)\s+(?P<sl>\d+)\s+(?P<gender>\w+)\s+(?P<team>028\d+)\s+(?P<tmp>\d+)\s+(?P<tmore>\d+)\s+(?P<points>\d+)\s+(?P<avg>[0-9.]+)\s+(?P<rate>[0-9.]+)\s*%?", ln)
                 if m:
                     team_code = m.group('team')
                     # team_code は '02810' のようになっている -> team_id は '10'
                     team_id = team_code.replace('028','').lstrip('0') or team_code[-2:]
                     team_name = TEAM_NAME_MAP.get(team_id, f'チームNo.{team_id}')
                     player_name = m.group('name')
+                    gender = m.group('gender')
+                    # 性別を日本語に変換
+                    gender_jp = '男' if gender.upper() == 'M' else '女' if gender.upper() == 'F' else gender
                     sl = m.group('sl')
                     tmp = m.group('tmp')
                     tmore = m.group('tmore')
@@ -218,6 +221,7 @@ def extract_individual_stats(pdf_file):
                         'team_name': team_name,
                         'player_name': player_name,
                         'player_number': m.group('member'),
+                        'gender': gender_jp,
                         'sl': int(sl),
                         'wins': f"{tmore}/{tmp}",
                         'avg_points': float(avg),
@@ -260,6 +264,7 @@ def main():
         p_pdf_content = download_pdf(p_pdf_url) if p_pdf_url else None
         individuals = extract_individual_stats(p_pdf_content) if p_pdf_content else []
         data_to_save['individuals'] = individuals
+        data_to_save['individuals_pdf'] = p_pdf_url  # 個人成績PDFのURLを保存
 
         if ranking_df is not None and not ranking_df.empty:
             # チーム名を補完

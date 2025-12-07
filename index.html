@@ -126,6 +126,9 @@
         
         <h2>個人成績</h2>
 
+        <div id="individuals-pdf-link" style="text-align: right; font-size: 0.85em; margin-bottom: 10px;">
+        </div>
+
         <div id="individual-controls">
             <input id="search-name" type="search" placeholder="名前で検索">
             <select id="filter-team">
@@ -202,6 +205,14 @@
                     indContainer.innerHTML = '';
                     const originalIndividuals = Array.isArray(data.individuals) ? data.individuals.slice() : [];
 
+                    // 個人成績PDFリンクを表示
+                    const individualsPdfLink = document.getElementById('individuals-pdf-link');
+                    if (data.individuals_pdf) {
+                        individualsPdfLink.innerHTML = `(<a href="${data.individuals_pdf}" target="_blank">PDFソース</a>)`;
+                    } else {
+                        individualsPdfLink.innerHTML = '';
+                    }
+
                     // 全体順位マップを作成（avg_points 降順）。フィルタ後もこの順位を表示する。
                     const sortedForRank = originalIndividuals.slice().sort((a, b) => parseFloat(b.avg_points) - parseFloat(a.avg_points));
                     const ranksMap = {};
@@ -263,6 +274,9 @@
                                     <div class="card-top-row">
                                         <div class="card-name">
                                             <span>${person.player_name}</span>
+                                        </div>
+                                        <div class="card-field card-field-inline">
+                                            <span>${person.gender || '-'}</span>
                                         </div>
                                         <div class="card-field card-field-inline">
                                             <span><strong>SL</strong> ${person.sl}</span>
