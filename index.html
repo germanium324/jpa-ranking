@@ -9,7 +9,10 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 8px; background-color: #f4f4f9; }
         .container { max-width: 100%; margin: auto; background: white; padding: 12px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
         h1 { color: #004d99; border-bottom: 3px solid #004d99; padding-bottom: 8px; text-align: center; font-size: 1.4em; margin: 10px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        h2 { font-size: 1.1em; margin: 15px 0 10px 0; color: #004d99; border-bottom: 2px solid #004d99; padding-bottom: 5px; }
+        h2 { font-size: 1.1em; margin: 15px 0 10px 0; color: #004d99; border-bottom: 2px solid #004d99; padding-bottom: 5px; display: flex; align-items: center; gap: 10px; }
+        h2 .pdf-link { font-size: 0.75em; font-weight: normal; color: #666; }
+        h2 .pdf-link a { color: #004d99; text-decoration: none; }
+        h2 .pdf-link a:hover { text-decoration: underline; }
         .update-info { text-align: right; font-size: 0.75em; color: #666; margin-bottom: 10px; }
         
         @media (min-width: 1024px) {
@@ -117,17 +120,21 @@
         <h1>🎱 JPA 028ディビジョン ランキング</h1>
         <div class="update-info">
             <span id="checked-date">データを読み込み中です...</span>
-            <span id="source-link"></span>
         </div>
+        
+        <h2>
+            <span>チームランキング</span>
+            <span class="pdf-link" id="team-pdf-link"></span>
+        </h2>
         
         <ul class="ranking-list" id="ranking-body">
             <li style="text-align: center; padding: 15px;">ランキングデータを取得中...</li>
         </ul>
         
-        <h2>個人成績</h2>
-
-        <div id="individuals-pdf-link" style="text-align: right; font-size: 0.85em; margin-bottom: 10px;">
-        </div>
+        <h2>
+            <span>個人成績</span>
+            <span class="pdf-link" id="individuals-pdf-link"></span>
+        </h2>
 
         <div id="individual-controls">
             <input id="search-name" type="search" placeholder="名前で検索">
@@ -165,13 +172,16 @@
                     // 1. チェック日時を表示
                     const checked = data.last_checked || null;
                     if (checked) {
-                        document.getElementById('checked-date').textContent = `最終チェック日時: ${checked} `;
+                        document.getElementById('checked-date').textContent = `最終チェック日時: ${checked}`;
                     } else {
                         document.getElementById('checked-date').textContent = '最終チェック日時: 不明';
                     }
-                    document.getElementById('source-link').innerHTML = data.source_pdf ? `(<a href="${data.source_pdf}" target="_blank">PDFソース</a>)` : '';
+                    
+                    // 2. PDF links
+                    document.getElementById('team-pdf-link').innerHTML = data.source_pdf ? `(<a href="${data.source_pdf}" target="_blank">PDFソース</a>)` : '';
+                    document.getElementById('individuals-pdf-link').innerHTML = data.individuals_pdf ? `(<a href="${data.individuals_pdf}" target="_blank">PDFソース</a>)` : '';
 
-                    // 2. ランキング表を生成（リスト形式）
+                    // 3. ランキング表を生成（リスト形式）
                     rankingBody.innerHTML = '';
                     data.ranking.forEach((team, index) => {
                         const rank = index + 1;
@@ -191,27 +201,21 @@
                             e.preventDefault();
                             // チーム名でフィルタを設定
                             document.getElementById('filter-team').value = team.team_name;
-                            // 個人成績セクションにスクロール
-                            const individualsSection = document.querySelector('h2');
-                            individualsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            // 個人成績セクションにスクロール（2番目のh2要素）
+                            const individualsSections = document.querySelectorAll('h2');
+                            if (individualsSections.length > 1) {
+                                individualsSections[1].scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }
                             // フィルタを適用
                             applyFilters();
                         });
                         rankingBody.appendChild(li);
                     });
 
-                    // 3. 個人成績カード を生成（検索・フィルタ対応）
+                    // 4. 個人成績カード を生成（検索・フィルタ対応）
                     const indContainer = document.getElementById('individuals-container');
                     indContainer.innerHTML = '';
                     const originalIndividuals = Array.isArray(data.individuals) ? data.individuals.slice() : [];
-
-                    // 個人成績PDFリンクを表示
-                    const individualsPdfLink = document.getElementById('individuals-pdf-link');
-                    if (data.individuals_pdf) {
-                        individualsPdfLink.innerHTML = `(<a href="${data.individuals_pdf}" target="_blank">PDFソース</a>)`;
-                    } else {
-                        individualsPdfLink.innerHTML = '';
-                    }
 
                     // 全体順位マップを作成（avg_points 降順）。フィルタ後もこの順位を表示する。
                     const sortedForRank = originalIndividuals.slice().sort((a, b) => parseFloat(b.avg_points) - parseFloat(a.avg_points));
