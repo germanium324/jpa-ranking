@@ -89,6 +89,9 @@
         
         .card-name span { font-weight: bold; font-size: 0.98em; white-space: nowrap; }
         
+        .card-gender-sl { display: flex; gap: 0; align-items: center; font-size: 0.85em; }
+        .card-gender-sl span { white-space: nowrap; }
+        
         @media (max-width: 600px) {
             .card-top-row { gap: 3px; flex-wrap: nowrap; }
             .card-gender { margin-right: 1px; }
@@ -286,11 +289,9 @@
                                         <div class="card-name">
                                             <span>${person.player_name}</span>
                                         </div>
-                                        <div class="card-field card-field-inline">
+                                        <div class="card-gender-sl">
                                             <span>${person.gender || '-'}</span>
-                                        </div>
-                                        <div class="card-field card-field-inline">
-                                            <span><strong>SL</strong> ${person.sl}</span>
+                                            <span style="margin-left: 1px;"><strong>SL</strong> ${person.sl}</span>
                                         </div>
                                     </div>
                                     <div class="card-stats-row">
