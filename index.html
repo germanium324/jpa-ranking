@@ -220,17 +220,18 @@
                             item.innerHTML = `
                                 <div>
                                     <span class="sl-change-name">${change.player_name}</span>
-                                    <div style="font-size: 0.75em; color: #666; margin-top: 2px;">
-                                        <span>${change.old_date || ''}</span>
-                                        <span style="margin: 0 4px;">→</span>
-                                        <span>${change.new_date || ''}</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <div style="text-align: center;">
+                                        <div style="font-size: 0.85em; color: #999;">SL ${change.old_sl}</div>
+                                        <div style="font-size: 0.7em; color: #666; margin-top: 2px;">${change.old_date || ''}</div>
+                                    </div>
+                                    <span class="sl-change-arrow">→</span>
+                                    <div style="text-align: center;">
+                                        <div style="font-weight: bold;">SL ${change.new_sl}</div>
+                                        <div style="font-size: 0.7em; color: #666; margin-top: 2px;">${change.new_date || ''}</div>
                                     </div>
                                 </div>
-                                <span>
-                                    <span style="font-size: 0.85em; color: #999;">SL ${change.old_sl}</span>
-                                    <span class="sl-change-arrow">→</span>
-                                    <span style="font-weight: bold;">SL ${change.new_sl}</span>
-                                </span>
                             `;
                             slChangesContainer.appendChild(item);
                         });
