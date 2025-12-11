@@ -230,6 +230,75 @@ def extract_individual_stats(pdf_file):
 
     return individuals
 
+# --- 5. SL変動情報の抽出 ---
+def extract_sl_changes():
+    """SLレポートページから028ディビジョンのSL変動情報を抽出"""
+    try:
+        sl_report_url = "https://cue-sports.com/jpa/sl_report.php"
+        print(f"SLレポートページを解析中: {sl_report_url}")
+        response = requests.get(sl_report_url, timeout=10)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        sl_changes = []
+        
+        # 全ディビジョンのテーブルを探す（複数テーブルがある）
+        tables = soup.find_all('table', class_='cp_table')
+        
+        for table in tables:
+            rows = table.find_all('tr')[2:]  # ヘッダー行をスキップ
+            
+            for row in rows:
+                tds = row.find_all('td')
+                if len(tds) < 5:
+                    continue
+                
+                try:
+                    # テーブル構造: 名前, OLD日付, OLD SL, 矢印, NEW SL, NEW日付
+                    player_link = tds[0].find('a')
+                    if not player_link:
+                        continue
+                    
+                    player_name = player_link.get_text(strip=True)
+                    member_code = player_link.get('href', '').split('code=')[-1]
+                    
+                    old_sl_text = tds[2].get_text(strip=True)
+                    new_sl_text = tds[4].get_text(strip=True)
+                    
+                    # 個人成績から該当プレイヤーを探してディビジョンを確認
+                    # ここでは、全プレイヤーを記録し、HTMLで028のみフィルターする
+                    sl_changes.append({
+                        'player_name': player_name,
+                        'member_number': member_code,
+                        'old_sl': old_sl_text,
+                        'new_sl': new_sl_text
+                    })
+                except (IndexError, AttributeError):
+                    continue
+        
+        # 028ディビジョンのプレイヤーのみをフィルター
+        # 既存の個人成績データから028のメンバーを取得
+        individual_members = set()
+        if os.path.exists(JSON_FILENAME):
+            try:
+                with open(JSON_FILENAME, 'r', encoding='utf-8') as f:
+                    existing = json.load(f)
+                    for person in existing.get('individuals', []):
+                        individual_members.add(person.get('player_number'))
+            except:
+                pass
+        
+        # 028に属するメンバーのみをフィルター
+        filtered_changes = [
+            change for change in sl_changes 
+            if change['member_number'] in individual_members
+        ]
+        
+        return filtered_changes
+    except Exception as e:
+        print(f"SLレポート取得エラー: {e}")
+        return []
+
 # --- 4. メイン処理とJSON保存 ---
 def main():
     # 既存の JSON を読み込み（存在すればランキングを保持）
@@ -265,6 +334,10 @@ def main():
         individuals = extract_individual_stats(p_pdf_content) if p_pdf_content else []
         data_to_save['individuals'] = individuals
         data_to_save['individuals_pdf'] = p_pdf_url  # 個人成績PDFのURLを保存
+        
+        # SL変動情報を取得
+        sl_changes = extract_sl_changes()
+        data_to_save['sl_changes'] = sl_changes
 
         if ranking_df is not None and not ranking_df.empty:
             # チーム名を補完

@@ -1,7 +1,7 @@
 {
-    "last_checked": "2025年12月10日 20:21 JST",
+    "last_checked": "2025年12月11日 09:47 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028121025.pdf",
-    "last_updated": "2025年12月10日 20:21 JST",
+    "last_updated": "2025年12月11日 09:47 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028121025.pdf",
     "ranking": [
         {
@@ -1027,5 +1027,49 @@
             "points_rate": "11.3%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028121025.pdf"
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028121025.pdf",
+    "sl_changes": [
+        {
+            "player_name": "Kawahara Haruka",
+            "member_number": "16761",
+            "old_sl": "1",
+            "new_sl": "2"
+        },
+        {
+            "player_name": "Mori Shiyu",
+            "member_number": "15987",
+            "old_sl": "5",
+            "new_sl": "6"
+        },
+        {
+            "player_name": "Murayama Shotaro",
+            "member_number": "15428",
+            "old_sl": "6",
+            "new_sl": "5"
+        },
+        {
+            "player_name": "Saito Takumi",
+            "member_number": "13681",
+            "old_sl": "8",
+            "new_sl": "9"
+        },
+        {
+            "player_name": "Saka Yoshine",
+            "member_number": "16230",
+            "old_sl": "3",
+            "new_sl": "4"
+        },
+        {
+            "player_name": "Takeishi Shoto",
+            "member_number": "15972",
+            "old_sl": "4",
+            "new_sl": "5"
+        },
+        {
+            "player_name": "Tsujimoto Ameri",
+            "member_number": "16986",
+            "old_sl": "1",
+            "new_sl": "2"
+        }
+    ]
 }

@@ -39,6 +39,16 @@
         .ranking-team-link:hover { color: #003366; }
         .ranking-points { font-weight: bold; color: #cc0000; font-size: 1.05em; }
         
+        /* SL変動表示 */
+        .sl-changes-container { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
+        .sl-change-item { 
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 10px; background: #f0f8ff; border-left: 4px solid #ff6b6b; border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .sl-change-name { font-weight: bold; }
+        .sl-change-arrow { color: #ff6b6b; font-weight: bold; margin: 0 8px; }
+        
         /* 個人成績カード形式 */
         #individual-controls { 
             display: flex; 
@@ -142,6 +152,15 @@
         </ul>
         
         <h2>
+            <span>SL変動（1週間以内）</span>
+            <span class="pdf-link"><a href="https://cue-sports.com/jpa/sl_report.php" target="_blank">詳細</a></span>
+        </h2>
+        
+        <div id="sl-changes-container" class="sl-changes-container">
+            <div style="text-align: center; padding: 15px; color: #999;">変動情報がありません</div>
+        </div>
+        
+        <h2>
             <span>個人成績</span>
             <span class="pdf-link" id="individuals-pdf-link"></span>
         </h2>
@@ -190,6 +209,23 @@
                     // 2. PDF links
                     document.getElementById('team-pdf-link').innerHTML = data.source_pdf ? `(<a href="${data.source_pdf}" target="_blank">PDFソース</a>)` : '';
                     document.getElementById('individuals-pdf-link').innerHTML = data.individuals_pdf ? `(<a href="${data.individuals_pdf}" target="_blank">PDFソース</a>)` : '';
+
+                    // 2.5 SL変動情報を表示
+                    const slChangesContainer = document.getElementById('sl-changes-container');
+                    if (data.sl_changes && data.sl_changes.length > 0) {
+                        slChangesContainer.innerHTML = '';
+                        data.sl_changes.forEach(change => {
+                            const item = document.createElement('div');
+                            item.className = 'sl-change-item';
+                            item.innerHTML = `
+                                <span class="sl-change-name">${change.player_name}</span>
+                                <span><span style="font-size: 0.85em; color: #999;">${change.old_sl}</span> <span class="sl-change-arrow">→</span> <span style="font-weight: bold;">${change.new_sl}</span></span>
+                            `;
+                            slChangesContainer.appendChild(item);
+                        });
+                    } else {
+                        slChangesContainer.innerHTML = '<div style="text-align: center; padding: 15px; color: #999;">変動情報がありません</div>';
+                    }
 
                     // 3. ランキング表を生成（リスト形式）
                     rankingBody.innerHTML = '';
