@@ -137,7 +137,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>🎱 JPA 028ディビジョン ランキング</h1>
+        <h1>🎱 JPA 028ディビジョン</h1>
         <div class="update-info">
             <span id="checked-date">データを読み込み中です...</span>
         </div>
@@ -207,8 +207,8 @@
                     }
                     
                     // 2. PDF links
-                    document.getElementById('team-pdf-link').innerHTML = data.source_pdf ? `(<a href="${data.source_pdf}" target="_blank">PDFソース</a>)` : '';
-                    document.getElementById('individuals-pdf-link').innerHTML = data.individuals_pdf ? `(<a href="${data.individuals_pdf}" target="_blank">PDFソース</a>)` : '';
+                    document.getElementById('team-pdf-link').innerHTML = data.source_pdf ? `(<a href="${data.source_pdf}" target="_blank">詳細</a>)` : '';
+                    document.getElementById('individuals-pdf-link').innerHTML = data.individuals_pdf ? `(<a href="${data.individuals_pdf}" target="_blank">詳細</a>)` : '';
 
                     // 2.5 SL変動情報を表示
                     const slChangesContainer = document.getElementById('sl-changes-container');
