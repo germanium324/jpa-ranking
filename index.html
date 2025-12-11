@@ -218,8 +218,19 @@
                             const item = document.createElement('div');
                             item.className = 'sl-change-item';
                             item.innerHTML = `
-                                <span class="sl-change-name">${change.player_name}</span>
-                                <span><span style="font-size: 0.85em; color: #999;">${change.old_sl}</span> <span class="sl-change-arrow">→</span> <span style="font-weight: bold;">${change.new_sl}</span></span>
+                                <div>
+                                    <span class="sl-change-name">${change.player_name}</span>
+                                    <div style="font-size: 0.75em; color: #666; margin-top: 2px;">
+                                        <span>${change.old_date || ''}</span>
+                                        <span style="margin: 0 4px;">→</span>
+                                        <span>${change.new_date || ''}</span>
+                                    </div>
+                                </div>
+                                <span>
+                                    <span style="font-size: 0.85em; color: #999;">SL ${change.old_sl}</span>
+                                    <span class="sl-change-arrow">→</span>
+                                    <span style="font-weight: bold;">SL ${change.new_sl}</span>
+                                </span>
                             `;
                             slChangesContainer.appendChild(item);
                         });

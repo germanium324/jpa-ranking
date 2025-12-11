@@ -262,8 +262,10 @@ def extract_sl_changes():
                     player_name = player_link.get_text(strip=True)
                     member_code = player_link.get('href', '').split('code=')[-1]
                     
+                    old_date = tds[1].get_text(strip=True) if len(tds) > 1 else ''
                     old_sl_text = tds[2].get_text(strip=True)
                     new_sl_text = tds[4].get_text(strip=True)
+                    new_date = tds[5].get_text(strip=True) if len(tds) > 5 else ''
                     
                     # 個人成績から該当プレイヤーを探してディビジョンを確認
                     # ここでは、全プレイヤーを記録し、HTMLで028のみフィルターする
@@ -271,7 +273,9 @@ def extract_sl_changes():
                         'player_name': player_name,
                         'member_number': member_code,
                         'old_sl': old_sl_text,
-                        'new_sl': new_sl_text
+                        'old_date': old_date,
+                        'new_sl': new_sl_text,
+                        'new_date': new_date
                     })
                 except (IndexError, AttributeError):
                     continue
