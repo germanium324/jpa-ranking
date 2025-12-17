@@ -1,8 +1,8 @@
 {
-    "last_checked": "2025年12月17日 16:13 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028121025.pdf",
-    "last_updated": "2025年12月17日 16:13 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028121025.pdf",
+    "last_checked": "2025年12月17日 20:23 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028121725.pdf",
+    "last_updated": "2025年12月17日 20:23 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028121725.pdf",
     "ranking": [
         {
             "team_name": "Crab Sand",
@@ -1029,6 +1029,14 @@
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028121025.pdf",
     "sl_changes": [
+        {
+            "player_name": "Takenaka Hayato",
+            "member_number": "16997",
+            "old_sl": "2",
+            "old_date": "2025/09/10",
+            "new_sl": "3",
+            "new_date": "2025/12/17"
+        },
         {
             "player_name": "Kawahara Haruka",
             "member_number": "16761",
