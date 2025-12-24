@@ -1,6 +1,6 @@
 {
-    "last_checked": "2025年12月24日 16:14 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028121725.pdf",
+    "last_checked": "2025年12月24日 20:21 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/R028122425.pdf",
     "last_updated": "2025年12月24日 16:14 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028121725.pdf",
     "ranking": [
@@ -1029,6 +1029,14 @@
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028121025.pdf",
     "sl_changes": [
+        {
+            "player_name": "Hayashi Yasuyuki",
+            "member_number": "16771",
+            "old_sl": "5",
+            "old_date": "2025/11/12",
+            "new_sl": "6",
+            "new_date": "2025/12/24"
+        },
         {
             "player_name": "Takenaka Hayato",
             "member_number": "16997",
