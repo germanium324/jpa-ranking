@@ -1,5 +1,5 @@
 {
-    "last_checked": "2025年12月24日 20:21 JST",
+    "last_checked": "2025年12月25日 11:57 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/R028122425.pdf",
     "last_updated": "2025年12月24日 16:14 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028121725.pdf",
@@ -1036,14 +1036,6 @@
             "old_date": "2025/11/12",
             "new_sl": "6",
             "new_date": "2025/12/24"
-        },
-        {
-            "player_name": "Takenaka Hayato",
-            "member_number": "16997",
-            "old_sl": "2",
-            "old_date": "2025/09/10",
-            "new_sl": "3",
-            "new_date": "2025/12/17"
         }
     ]
 }
