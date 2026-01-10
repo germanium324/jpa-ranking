@@ -183,12 +183,17 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // ローカルストレージをクリア（旧データ削除）
+            localStorage.clear();
+            
             const rankingBody = document.getElementById('ranking-body');
             const updateDateSpan = document.getElementById('update-date');
             const sourceLinkSpan = document.getElementById('source-link');
             
             // Pythonスクリプトで生成されたJSONファイルを読み込む
-            fetch('ranking_data.json?v=' + new Date().getTime()) // キャッシュ対策
+            // キャッシュ対策：タイムスタンプとランダム値を使用
+            const cacheBuster = new Date().getTime() + Math.random();
+            fetch('ranking_data.json?v=' + cacheBuster)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('ranking_data.json の読み込みに失敗しました。');
@@ -207,8 +212,12 @@
                     }
                     
                     // 2. PDF links
-                    document.getElementById('team-pdf-link').innerHTML = data.source_pdf ? `(<a href="${data.source_pdf}" target="_blank">詳細</a>)` : '';
-                    document.getElementById('individuals-pdf-link').innerHTML = data.individuals_pdf ? `(<a href="${data.individuals_pdf}" target="_blank">詳細</a>)` : '';
+                    const rosterPdf = data.roster_pdf || '';
+                    const teamPdf = data.source_pdf || rosterPdf;
+                    const individualsPdf = data.individuals_pdf || rosterPdf;
+
+                    document.getElementById('team-pdf-link').innerHTML = teamPdf ? `<a href="${teamPdf}" target="_blank">詳細</a>` : '';
+                    document.getElementById('individuals-pdf-link').innerHTML = individualsPdf ? `<a href="${individualsPdf}" target="_blank">詳細</a>` : '';
 
                     // 2.5 SL変動情報を表示
                     const slChangesContainer = document.getElementById('sl-changes-container');
@@ -240,8 +249,23 @@
                     }
 
                     // 3. ランキング表を生成（リスト形式）
+                    // ランキングデータ（試合結果が無い場合は名簿から0ptで構築）
+                    let rankingData = Array.isArray(data.ranking) ? data.ranking.slice() : [];
+                    if ((!rankingData || rankingData.length === 0) && Array.isArray(data.roster)) {
+                        rankingData = data.roster.map((team) => ({
+                            team_name: team.team_name,
+                            team_id: team.team_id || '',
+                            points: 0
+                        }));
+                        rankingData.sort((a, b) => String(a.team_name || '').localeCompare(String(b.team_name || ''), 'ja'));
+                    }
+
                     rankingBody.innerHTML = '';
-                    data.ranking.forEach((team, index) => {
+                    if (!rankingData || rankingData.length === 0) {
+                        rankingBody.innerHTML = '<li style="text-align: center; padding: 15px; color: #999;">ランキング情報がありません</li>';
+                    }
+
+                    rankingData.forEach((team, index) => {
                         const rank = index + 1;
                         let rankClass = '';
                         if (rank === 1) rankClass = 'gold';
@@ -273,7 +297,24 @@
                     // 4. 個人成績カード を生成（検索・フィルタ対応）
                     const indContainer = document.getElementById('individuals-container');
                     indContainer.innerHTML = '';
-                    const originalIndividuals = Array.isArray(data.individuals) ? data.individuals.slice() : [];
+
+                    const rosterIndividuals = Array.isArray(data.roster) ? data.roster.flatMap(team => {
+                        const players = Array.isArray(team.players) ? team.players : [];
+                        return players.map(p => ({
+                            team_name: team.team_name,
+                            player_name: p.player_name,
+                            player_number: p.player_number,
+                            gender: p.gender,
+                            sl: p.sl,
+                            wins: '0/0',
+                            avg_points: 0.0,
+                            points_rate: '0%'
+                        }));
+                    }) : [];
+
+                    const originalIndividuals = (Array.isArray(data.individuals) && data.individuals.length > 0)
+                        ? data.individuals.slice()
+                        : rosterIndividuals;
 
                     // 全体順位マップを作成（avg_points 降順）。フィルタ後もこの順位を表示する。
                     const sortedForRank = originalIndividuals.slice().sort((a, b) => parseFloat(b.avg_points) - parseFloat(a.avg_points));
