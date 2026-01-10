@@ -14,6 +14,8 @@ on:
     - cron: '20 6 * * 3'     # 水曜 15:20 JST
     - cron: '40 6 * * 3'     # 水曜 15:40 JST
     - cron: '0 7 * * 3'      # 水曜 16:00 JST
+    - cron: '20 7 * * 3'     # 水曜 16:20 JST
+    - cron: '40 7 * * 3'     # 水曜 16:40 JST
   workflow_dispatch:
 
 jobs:

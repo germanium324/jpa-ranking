@@ -7,6 +7,7 @@ from io import BytesIO
 import datetime
 import json
 import os
+import re
 
 # --- 設定値 ---
 BASE_URL = "http://www.poolplayers.jp"
@@ -98,7 +99,6 @@ def find_pdf_url_by_type(standings_url, type_char='P'):
         division_code = TARGET_DIVISION_NAME.split()[0]
         # P型PDFの候補を抽出
         candidates = []
-        import re
         for a in all_links:
             href = a.get('href')
             if not href:
@@ -192,7 +192,6 @@ def extract_individual_stats(pdf_file):
         return []
 
     individuals = []
-    import re
 
     with pdfplumber.open(pdf_file) as pdf:
         for page in pdf.pages:
@@ -229,6 +228,104 @@ def extract_individual_stats(pdf_file):
                     })
 
     return individuals
+
+
+def extract_team_roster(pdf_file):
+    """チーム名簿PDFからチーム/メンバー情報だけを抽出する。
+    戻り値: [{'team_id','team_name','player_name','player_number','gender','sl'}]
+    """
+    if pdf_file is None:
+        return []
+
+    roster = []
+
+    with pdfplumber.open(pdf_file) as pdf:
+        for page in pdf.pages:
+            text = page.extract_text() or ''
+            lines = text.split('\n')
+            
+            current_teams = {}  # {col_index: (team_code, team_name)}
+            
+            for ln in lines:
+                ln = ln.rstrip()
+                if not ln.strip():
+                    continue
+                
+                # 3カラムレイアウトのチーム見出し行を検出
+                # 例: "02801 Kangaroo Kick 02802 Oku niki 02803 Wagamama foundry"
+                team_headers = list(re.finditer(r'(028\d{2})\s+([A-Za-z][^0-9]+?)(?=\s*028\d{2}|$)', ln))
+                if len(team_headers) >= 2:  # 複数チームが並んでいる
+                    current_teams = {}
+                    for idx, match in enumerate(team_headers):
+                        team_code = match.group(1)
+                        team_name = match.group(2).strip()
+                        current_teams[idx] = (team_code, team_name)
+                    continue
+                
+                # 単一チーム見出し行
+                single_team_match = re.match(r'^(028\d{2})\s+(.+?)$', ln)
+                if single_team_match and 'Host' not in ln:
+                    team_code = single_team_match.group(1)
+                    team_name = single_team_match.group(2).strip()
+                    current_teams = {0: (team_code, team_name)}
+                    continue
+                
+                # ホスト行やヘッダーはスキップ
+                if re.match(r'^Host:|^SL\s+Number|^Page \d+|^N\s+SL\s+Number', ln):
+                    continue
+                
+                if not current_teams:
+                    continue
+                
+                # 3カラムのプレイヤー行を抽出
+                # 各カラムは "N SL *member_number Name" の形式
+                # 例: "N 5 * 15428 Murayama, Shotaro N 2 * 16770 Oku, Yuki N 5 * 15343 Iwano, Atsushi"
+                # 名前に 'N' が含まれる可能性があるため、より正確なパターンを使用
+                player_blocks = list(re.finditer(r'N\s+(\d+)\s+\*\s*(\d+)\s+(.+?)(?=\s+N\s+\d+\s+\*|$)', ln))
+                
+                for idx, block in enumerate(player_blocks):
+                    if idx >= len(current_teams):
+                        break
+                    
+                    sl = int(block.group(1))
+                    member = block.group(2)
+                    name = block.group(3).strip()
+                    
+                    team_code, team_name = current_teams[idx]
+                    team_id = team_code.replace('028', '').lstrip('0') or team_code[-2:]
+                    
+                    roster.append({
+                        'team_id': team_id,
+                        'team_code': team_code,
+                        'team_name': team_name,
+                        'player_name': name,
+                        'player_number': member,
+                        'gender': '-',
+                        'sl': sl
+                    })
+
+    return roster
+
+
+def group_roster_by_team(roster_entries):
+    grouped = {}
+    for entry in roster_entries:
+        team_id = entry.get('team_id') or ''
+        team_key = str(team_id)
+        if team_key not in grouped:
+            grouped[team_key] = {
+                'team_id': team_id,
+                'team_name': entry.get('team_name', f'チームNo.{team_id}'),
+                'players': []
+            }
+        grouped[team_key]['players'].append({
+            'player_name': entry['player_name'],
+            'player_number': entry['player_number'],
+            'gender': entry['gender'],
+            'sl': entry['sl']
+        })
+    # チーム名でソート
+    return sorted(grouped.values(), key=lambda t: t['team_name'])
 
 # --- 5. SL変動情報の抽出 ---
 def extract_sl_changes():
@@ -315,6 +412,7 @@ def main():
             existing = {}
 
     latest_pdf_url = find_latest_pdf_url(STANDINGS_URL)
+    roster_pdf_url = find_pdf_url_by_type(STANDINGS_URL, type_char='R')
 
     # 現在のチェック時刻（JST）
     now_jst = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime('%Y年%m月%d日 %H:%M JST')
@@ -325,8 +423,23 @@ def main():
         'last_checked_source': latest_pdf_url or existing.get('source_pdf'),
         'last_updated': existing.get('last_updated'),
         'source_pdf': existing.get('source_pdf'),
-        'ranking': existing.get('ranking', [])
+        'individuals': existing.get('individuals', []),
+        'individuals_pdf': existing.get('individuals_pdf'),
+        'sl_changes': existing.get('sl_changes', []),
+        'ranking': existing.get('ranking', []),
+        'roster': existing.get('roster', []),
+        'roster_pdf': existing.get('roster_pdf'),
     }
+
+    # 名簿PDFからチーム/メンバーを抽出
+    roster_pdf_content = download_pdf(roster_pdf_url) if roster_pdf_url else None
+    roster_entries = extract_team_roster(roster_pdf_content) if roster_pdf_content else []
+    roster_grouped = group_roster_by_team(roster_entries) if roster_entries else []
+    roster_name_map = {str(team['team_id']): team['team_name'] for team in roster_grouped}
+    if roster_grouped:
+        data_to_save['roster'] = roster_grouped
+    if roster_pdf_url:
+        data_to_save['roster_pdf'] = roster_pdf_url
 
     if latest_pdf_url:
         pdf_content = download_pdf(latest_pdf_url)
@@ -335,36 +448,82 @@ def main():
         # 個人成績PDF (P型) を同じ行から探して解析
         p_pdf_url = find_pdf_url_by_type(STANDINGS_URL, type_char='P')
         p_pdf_content = download_pdf(p_pdf_url) if p_pdf_url else None
+        individuals_from_roster = False
         individuals = extract_individual_stats(p_pdf_content) if p_pdf_content else []
+
+        # 個人成績が取れない（新シーズン開始前）場合は名簿で補完する
+        if not individuals and roster_entries:
+            individuals = [{
+                'team_name': e['team_name'],
+                'player_name': e['player_name'],
+                'player_number': e['player_number'],
+                'gender': e['gender'],
+                'sl': e['sl'],
+                'wins': '0/0',
+                'avg_points': 0.0,
+                'points_rate': '0%'
+            } for e in roster_entries]
+            individuals_from_roster = True
+
         data_to_save['individuals'] = individuals
-        data_to_save['individuals_pdf'] = p_pdf_url  # 個人成績PDFのURLを保存
+        data_to_save['individuals_pdf'] = p_pdf_url or roster_pdf_url or data_to_save.get('individuals_pdf')
         
         # SL変動情報を取得
         sl_changes = extract_sl_changes()
         data_to_save['sl_changes'] = sl_changes
 
-        if ranking_df is not None and not ranking_df.empty:
-            # チーム名を補完
+        ranking_built = False
+
+        if ranking_df is not None and not ranking_df.empty and not individuals_from_roster:
+            # チーム名を補完（試合結果が取れている場合のみ）。名簿のチーム名を優先し、なければ既存マップ。
             ranking_df['team_id'] = ranking_df['team_id'].astype(str)
-            ranking_df['team_name'] = ranking_df['team_id'].map(TEAM_NAME_MAP)
-            ranking_df['team_name'] = ranking_df.apply(
-                lambda row: TEAM_NAME_MAP.get(str(row['team_id']), f"チームNo.{row['team_id']}"), axis=1
-            )
+            ranking_df['team_name'] = ranking_df['team_id'].map(lambda tid: roster_name_map.get(str(tid)) or TEAM_NAME_MAP.get(str(tid)) or f"チームNo.{tid}")
 
             final_ranking = ranking_df[['team_name', 'team_id', 'points']].reset_index(drop=True)
 
-            # 更新情報をセット
             data_to_save['last_updated'] = now_jst
             data_to_save['source_pdf'] = latest_pdf_url
             data_to_save['ranking'] = final_ranking.to_dict('records')
+            ranking_built = True
 
             print(f"\n✅ データは '{JSON_FILENAME}' として保存されました。")
             print(final_ranking)
-        else:
+
+        # 個人成績が名簿由来 = シーズン未開始と判断し、ランキングも名簿ベースで0にする
+        if not ranking_built and roster_grouped:
+            fallback_ranking = [
+                {'team_name': team['team_name'], 'team_id': str(team['team_id'] or ''), 'points': 0}
+                for team in roster_grouped
+            ]
+            data_to_save['ranking'] = fallback_ranking
+            data_to_save['last_updated'] = now_jst
+            data_to_save['source_pdf'] = latest_pdf_url or roster_pdf_url or data_to_save.get('source_pdf')
+            ranking_built = True
+            print("ℹ️ ランキングは名簿ベースで0pt表示に切り替えました（シーズン未開始想定）。")
+
+        if not ranking_built:
             # PDFは取れたが解析できなかった
             print("❌ エラー: ランキングデータを抽出できませんでした。既存データを保持します。")
     else:
         print("\n❌ 最新のPDF URLを特定できなかったため、既存データの更新はチェック時刻のみ行います。")
+
+        # PDFが見つからなくても名簿があればランキング・個人成績を0で生成
+        if roster_grouped:
+            data_to_save['ranking'] = [
+                {'team_name': team['team_name'], 'team_id': str(team['team_id'] or ''), 'points': 0}
+                for team in roster_grouped
+            ]
+            data_to_save['individuals'] = [{
+                'team_name': e['team_name'],
+                'player_name': e['player_name'],
+                'player_number': e['player_number'],
+                'gender': e['gender'],
+                'sl': e['sl'],
+                'wins': '0/0',
+                'avg_points': 0.0,
+                'points_rate': '0%'
+            } for e in roster_entries]
+            data_to_save['last_updated'] = data_to_save['last_updated'] or now_jst
 
     # 最後に常に JSON を保存（チェック時刻を反映）
     try:
