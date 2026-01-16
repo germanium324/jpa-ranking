@@ -1,11 +1,61 @@
 {
-    "last_checked": "2026年01月15日 20:23 JST",
+    "last_checked": "2026年01月16日 09:37 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028011426.pdf",
-    "last_updated": "2026年01月15日 20:23 JST",
+    "last_updated": "2026年01月16日 09:37 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028011426.pdf",
     "individuals": [
         {
             "team_name": "Kangaroo Kick",
+            "player_name": "Murayama, Shotaro",
+            "player_number": "15428",
+            "gender": "-",
+            "sl": 6,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Oku niki",
+            "player_name": "Oku, Yuki",
+            "player_number": "16770",
+            "gender": "-",
+            "sl": 2,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Wagamama foundry",
+            "player_name": "Iwano, Atsushi",
+            "player_number": "15343",
+            "gender": "-",
+            "sl": 5,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Kangaroo Kick",
+            "player_name": "Nomura, Hikaru",
+            "player_number": "15983",
+            "gender": "-",
+            "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Oku niki",
+            "player_name": "Komoto, Yuki",
+            "player_number": "15978",
+            "gender": "-",
+            "sl": 7,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Wagamama foundry",
             "player_name": "Ohe, Yuna",
             "player_number": "15430",
             "gender": "-",
@@ -16,8 +66,28 @@
         },
         {
             "team_name": "Kangaroo Kick",
-            "player_name": "Iyono, Koharu 6 * 12802 Hori, Masaki 4 * 16759 Hibi, Yuki",
+            "player_name": "Iyono, Koharu",
             "player_number": "15429",
+            "gender": "-",
+            "sl": 4,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Oku niki",
+            "player_name": "Hori, Masaki",
+            "player_number": "12802",
+            "gender": "-",
+            "sl": 6,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Wagamama foundry",
+            "player_name": "Hibi, Yuki",
+            "player_number": "16759",
             "gender": "-",
             "sl": 4,
             "wins": "0/0",
@@ -56,7 +126,7 @@
         },
         {
             "team_name": "Kangaroo Kick",
-            "player_name": "Ou, Chiharu 3 * 15427 Yokose, Miku",
+            "player_name": "Ou, Chiharu",
             "player_number": "17003",
             "gender": "-",
             "sl": 2,
@@ -66,6 +136,16 @@
         },
         {
             "team_name": "Oku niki",
+            "player_name": "Yokose, Miku",
+            "player_number": "15427",
+            "gender": "-",
+            "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Wagamama foundry",
             "player_name": "Kuboya, Shiori",
             "player_number": "16987",
             "gender": "-",
@@ -76,7 +156,17 @@
         },
         {
             "team_name": "Kangaroo Kick",
-            "player_name": "Tomiki, Rimo 2 * 16986 Tsujimoto, Ameri",
+            "player_name": "Nakamura, Takato",
+            "player_number": "16758",
+            "gender": "-",
+            "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Oku niki",
+            "player_name": "Tomiki, Rimo",
             "player_number": "16769",
             "gender": "-",
             "sl": 1,
@@ -85,7 +175,67 @@
             "points_rate": "0%"
         },
         {
+            "team_name": "Wagamama foundry",
+            "player_name": "Tsujimoto, Ameri",
+            "player_number": "16986",
+            "gender": "-",
+            "sl": 2,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
             "team_name": "Kangaroo Kick",
+            "player_name": "Miyamoto, Kota",
+            "player_number": "16597",
+            "gender": "-",
+            "sl": 5,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Oku niki",
+            "player_name": "Katsuse, Sora",
+            "player_number": "16995",
+            "gender": "-",
+            "sl": 1,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Wagamama foundry",
+            "player_name": "Saito, Yuya",
+            "player_number": "17001",
+            "gender": "-",
+            "sl": 2,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Kangaroo Kick",
+            "player_name": "Morikawa, Kazuaki",
+            "player_number": "17196",
+            "gender": "-",
+            "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Oku niki",
+            "player_name": "Onaka, Hinase",
+            "player_number": "17197",
+            "gender": "-",
+            "sl": 2,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Wagamama foundry",
             "player_name": "Shimizu, Choi-yeong",
             "player_number": "17198",
             "gender": "-",
@@ -96,7 +246,7 @@
         },
         {
             "team_name": "Hinerisugita!",
-            "player_name": "Ishida, Masaki 6 * 16771 Hayashi, Yasuyuki 7 * 13670 Emoto, Tatsuki",
+            "player_name": "Ishida, Masaki",
             "player_number": "16766",
             "gender": "-",
             "sl": 2,
@@ -105,7 +255,77 @@
             "points_rate": "0%"
         },
         {
+            "team_name": "Tokyo Bayashis",
+            "player_name": "Hayashi, Yasuyuki",
+            "player_number": "16771",
+            "gender": "-",
+            "sl": 6,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Lucky Flockers",
+            "player_name": "Emoto, Tatsuki",
+            "player_number": "13670",
+            "gender": "-",
+            "sl": 7,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
             "team_name": "Hinerisugita!",
+            "player_name": "Kamiya, Masanori",
+            "player_number": "15435",
+            "gender": "-",
+            "sl": 9,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Tokyo Bayashis",
+            "player_name": "Watanabe, Mizuki",
+            "player_number": "16231",
+            "gender": "-",
+            "sl": 6,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Lucky Flockers",
+            "player_name": "Sasada, Rintaro",
+            "player_number": "12569",
+            "gender": "-",
+            "sl": 6,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Hinerisugita!",
+            "player_name": "Sugimoto, Kai",
+            "player_number": "13683",
+            "gender": "-",
+            "sl": 8,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Tokyo Bayashis",
+            "player_name": "Hanari, Yohei",
+            "player_number": "13685",
+            "gender": "-",
+            "sl": 4,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Lucky Flockers",
             "player_name": "Kato, Hajime",
             "player_number": "13672",
             "gender": "-",
@@ -116,7 +336,17 @@
         },
         {
             "team_name": "Hinerisugita!",
-            "player_name": "Sakuta, Yutaro 3 * 15959 Yumoto, Seiya",
+            "player_name": "Karashima, Ryusei",
+            "player_number": "15980",
+            "gender": "-",
+            "sl": 5,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Tokyo Bayashis",
+            "player_name": "Sakuta, Yutaro",
             "player_number": "15778",
             "gender": "-",
             "sl": 3,
@@ -125,7 +355,67 @@
             "points_rate": "0%"
         },
         {
+            "team_name": "Lucky Flockers",
+            "player_name": "Yumoto, Seiya",
+            "player_number": "15959",
+            "gender": "-",
+            "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
             "team_name": "Hinerisugita!",
+            "player_name": "Inoue, Aoi",
+            "player_number": "16190",
+            "gender": "-",
+            "sl": 4,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Tokyo Bayashis",
+            "player_name": "Toda, Maruko",
+            "player_number": "16767",
+            "gender": "-",
+            "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Lucky Flockers",
+            "player_name": "Takekawa, Sou",
+            "player_number": "15973",
+            "gender": "-",
+            "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Hinerisugita!",
+            "player_name": "Baba, Marina",
+            "player_number": "16235",
+            "gender": "-",
+            "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Tokyo Bayashis",
+            "player_name": "Ito, Tomoki",
+            "player_number": "16994",
+            "gender": "-",
+            "sl": 2,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Lucky Flockers",
             "player_name": "Miyake, Ryoga",
             "player_number": "16989",
             "gender": "-",
@@ -136,6 +426,16 @@
         },
         {
             "team_name": "Hinerisugita!",
+            "player_name": "Nakajima, Yusuke",
+            "player_number": "16765",
+            "gender": "-",
+            "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Tokyo Bayashis",
             "player_name": "Takahashi, Masatoshi",
             "player_number": "16772",
             "gender": "-",
@@ -145,7 +445,7 @@
             "points_rate": "0%"
         },
         {
-            "team_name": "Tokyo Bayashis",
+            "team_name": "Lucky Flockers",
             "player_name": "Kurokawa, Yuki",
             "player_number": "17202",
             "gender": "-",
@@ -156,10 +456,30 @@
         },
         {
             "team_name": "Hinerisugita!",
-            "player_name": "Ogasawara, Rin 1 * 17203 Abe, Nanako",
+            "player_name": "Watanabe, Satsuki",
+            "player_number": "16762",
+            "gender": "-",
+            "sl": 2,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Tokyo Bayashis",
+            "player_name": "Ogasawara, Rin",
             "player_number": "17199",
             "gender": "-",
             "sl": 2,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Lucky Flockers",
+            "player_name": "Abe, Nanako",
+            "player_number": "17203",
+            "gender": "-",
+            "sl": 1,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -176,10 +496,20 @@
         },
         {
             "team_name": "Happy Lucky Ricky",
-            "player_name": "Aizawa, Riku 6 * 15985 Nishihara, Rui",
+            "player_name": "Aizawa, Riku",
             "player_number": "13679",
             "gender": "-",
             "sl": 8,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Rui X sei",
+            "player_name": "Nishihara, Rui",
+            "player_number": "15985",
+            "gender": "-",
+            "sl": 6,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -196,10 +526,20 @@
         },
         {
             "team_name": "Happy Lucky Ricky",
-            "player_name": "Raven, Garcia 7 * 15775 Okamura, Yudai",
+            "player_name": "Raven, Garcia",
             "player_number": "16999",
             "gender": "-",
             "sl": 6,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Rui X sei",
+            "player_name": "Okamura, Yudai",
+            "player_number": "15775",
+            "gender": "-",
+            "sl": 7,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -276,10 +616,20 @@
         },
         {
             "team_name": "Happy Lucky Ricky",
-            "player_name": "Ko, Shuiri 5 * 15960 Hayashi, Yusuke",
+            "player_name": "Ko, Shuiri",
             "player_number": "16988",
             "gender": "-",
             "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Rui X sei",
+            "player_name": "Hayashi, Yusuke",
+            "player_number": "15960",
+            "gender": "-",
+            "sl": 5,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -376,6 +726,16 @@
         },
         {
             "team_name": "yattenna",
+            "player_name": "Suzuki, Iori",
+            "player_number": "15779",
+            "gender": "-",
+            "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Tamanchu",
             "player_name": "Takeishi, Shoto",
             "player_number": "15972",
             "gender": "-",
@@ -386,6 +746,16 @@
         },
         {
             "team_name": "yattenna",
+            "player_name": "Abe, Naoya",
+            "player_number": "16237",
+            "gender": "-",
+            "sl": 6,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Tamanchu",
             "player_name": "Sato, Yuto",
             "player_number": "13671",
             "gender": "-",
@@ -396,6 +766,16 @@
         },
         {
             "team_name": "yattenna",
+            "player_name": "Yamauchi, Haruki",
+            "player_number": "16756",
+            "gender": "-",
+            "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Tamanchu",
             "player_name": "Yamaguchi, Keisho",
             "player_number": "16754",
             "gender": "-",
@@ -466,6 +846,16 @@
         },
         {
             "team_name": "yattenna",
+            "player_name": "Nishimura, Ayumi",
+            "player_number": "16228",
+            "gender": "-",
+            "sl": 1,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Tamanchu",
             "player_name": "Nishiura, Yuto",
             "player_number": "16996",
             "gender": "-",
@@ -476,6 +866,16 @@
         },
         {
             "team_name": "yattenna",
+            "player_name": "Hirata, Nao",
+            "player_number": "17204",
+            "gender": "-",
+            "sl": 1,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Tamanchu",
             "player_name": "Takenaka, Hayato",
             "player_number": "16997",
             "gender": "-",
@@ -486,56 +886,7 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028011426.pdf",
-    "sl_changes": [
-        {
-            "player_name": "Akachi Kiki",
-            "member_number": "17205",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "1",
-            "new_date": "2026/01/08"
-        },
-        {
-            "player_name": "Kurokawa Yuki",
-            "member_number": "17202",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "1",
-            "new_date": "2026/01/08"
-        },
-        {
-            "player_name": "Masuda Kanato",
-            "member_number": "17200",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "2",
-            "new_date": "2026/01/08"
-        },
-        {
-            "player_name": "Ogasawara Rin",
-            "member_number": "17199",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "2",
-            "new_date": "2026/01/08"
-        },
-        {
-            "player_name": "Shimizu Choi-yeong",
-            "member_number": "17198",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "2",
-            "new_date": "2026/01/08"
-        },
-        {
-            "player_name": "Watanabe Shunya",
-            "member_number": "17201",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "2",
-            "new_date": "2026/01/08"
-        }
-    ],
+    "sl_changes": [],
     "ranking": [
         {
             "team_name": "Happy Lucky Ricky",
@@ -550,6 +901,11 @@
         {
             "team_name": "Kangaroo Kick",
             "team_id": "1",
+            "points": 0
+        },
+        {
+            "team_name": "Lucky Flockers",
+            "team_id": "6",
             "points": 0
         },
         {
@@ -594,13 +950,13 @@
             "team_name": "Happy Lucky Ricky",
             "players": [
                 {
-                    "player_name": "Aizawa, Riku 6 * 15985 Nishihara, Rui",
+                    "player_name": "Aizawa, Riku",
                     "player_number": "13679",
                     "gender": "-",
                     "sl": 8
                 },
                 {
-                    "player_name": "Raven, Garcia 7 * 15775 Okamura, Yudai",
+                    "player_name": "Raven, Garcia",
                     "player_number": "16999",
                     "gender": "-",
                     "sl": 6
@@ -618,7 +974,7 @@
                     "sl": 4
                 },
                 {
-                    "player_name": "Ko, Shuiri 5 * 15960 Hayashi, Yusuke",
+                    "player_name": "Ko, Shuiri",
                     "player_number": "16988",
                     "gender": "-",
                     "sl": 3
@@ -648,38 +1004,50 @@
             "team_name": "Hinerisugita!",
             "players": [
                 {
-                    "player_name": "Ishida, Masaki 6 * 16771 Hayashi, Yasuyuki 7 * 13670 Emoto, Tatsuki",
+                    "player_name": "Ishida, Masaki",
                     "player_number": "16766",
                     "gender": "-",
                     "sl": 2
                 },
                 {
-                    "player_name": "Kato, Hajime",
-                    "player_number": "13672",
+                    "player_name": "Kamiya, Masanori",
+                    "player_number": "15435",
                     "gender": "-",
-                    "sl": 6
+                    "sl": 9
                 },
                 {
-                    "player_name": "Sakuta, Yutaro 3 * 15959 Yumoto, Seiya",
-                    "player_number": "15778",
+                    "player_name": "Sugimoto, Kai",
+                    "player_number": "13683",
+                    "gender": "-",
+                    "sl": 8
+                },
+                {
+                    "player_name": "Karashima, Ryusei",
+                    "player_number": "15980",
+                    "gender": "-",
+                    "sl": 5
+                },
+                {
+                    "player_name": "Inoue, Aoi",
+                    "player_number": "16190",
+                    "gender": "-",
+                    "sl": 4
+                },
+                {
+                    "player_name": "Baba, Marina",
+                    "player_number": "16235",
                     "gender": "-",
                     "sl": 3
                 },
                 {
-                    "player_name": "Miyake, Ryoga",
-                    "player_number": "16989",
+                    "player_name": "Nakajima, Yusuke",
+                    "player_number": "16765",
                     "gender": "-",
                     "sl": 3
                 },
                 {
-                    "player_name": "Takahashi, Masatoshi",
-                    "player_number": "16772",
-                    "gender": "-",
-                    "sl": 2
-                },
-                {
-                    "player_name": "Ogasawara, Rin 1 * 17203 Abe, Nanako",
-                    "player_number": "17199",
+                    "player_name": "Watanabe, Satsuki",
+                    "player_number": "16762",
                     "gender": "-",
                     "sl": 2
                 }
@@ -690,13 +1058,19 @@
             "team_name": "Kangaroo Kick",
             "players": [
                 {
-                    "player_name": "Ohe, Yuna",
-                    "player_number": "15430",
+                    "player_name": "Murayama, Shotaro",
+                    "player_number": "15428",
                     "gender": "-",
-                    "sl": 5
+                    "sl": 6
                 },
                 {
-                    "player_name": "Iyono, Koharu 6 * 12802 Hori, Masaki 4 * 16759 Hibi, Yuki",
+                    "player_name": "Nomura, Hikaru",
+                    "player_number": "15983",
+                    "gender": "-",
+                    "sl": 3
+                },
+                {
+                    "player_name": "Iyono, Koharu",
                     "player_number": "15429",
                     "gender": "-",
                     "sl": 4
@@ -708,22 +1082,82 @@
                     "sl": 4
                 },
                 {
-                    "player_name": "Ou, Chiharu 3 * 15427 Yokose, Miku",
+                    "player_name": "Ou, Chiharu",
                     "player_number": "17003",
                     "gender": "-",
                     "sl": 2
                 },
                 {
-                    "player_name": "Tomiki, Rimo 2 * 16986 Tsujimoto, Ameri",
-                    "player_number": "16769",
+                    "player_name": "Nakamura, Takato",
+                    "player_number": "16758",
+                    "gender": "-",
+                    "sl": 3
+                },
+                {
+                    "player_name": "Miyamoto, Kota",
+                    "player_number": "16597",
+                    "gender": "-",
+                    "sl": 5
+                },
+                {
+                    "player_name": "Morikawa, Kazuaki",
+                    "player_number": "17196",
+                    "gender": "-",
+                    "sl": 3
+                }
+            ]
+        },
+        {
+            "team_id": "6",
+            "team_name": "Lucky Flockers",
+            "players": [
+                {
+                    "player_name": "Emoto, Tatsuki",
+                    "player_number": "13670",
+                    "gender": "-",
+                    "sl": 7
+                },
+                {
+                    "player_name": "Sasada, Rintaro",
+                    "player_number": "12569",
+                    "gender": "-",
+                    "sl": 6
+                },
+                {
+                    "player_name": "Kato, Hajime",
+                    "player_number": "13672",
+                    "gender": "-",
+                    "sl": 6
+                },
+                {
+                    "player_name": "Yumoto, Seiya",
+                    "player_number": "15959",
+                    "gender": "-",
+                    "sl": 3
+                },
+                {
+                    "player_name": "Takekawa, Sou",
+                    "player_number": "15973",
+                    "gender": "-",
+                    "sl": 3
+                },
+                {
+                    "player_name": "Miyake, Ryoga",
+                    "player_number": "16989",
+                    "gender": "-",
+                    "sl": 3
+                },
+                {
+                    "player_name": "Kurokawa, Yuki",
+                    "player_number": "17202",
                     "gender": "-",
                     "sl": 1
                 },
                 {
-                    "player_name": "Shimizu, Choi-yeong",
-                    "player_number": "17198",
+                    "player_name": "Abe, Nanako",
+                    "player_number": "17203",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 1
                 }
             ]
         },
@@ -732,16 +1166,52 @@
             "team_name": "Oku niki",
             "players": [
                 {
+                    "player_name": "Oku, Yuki",
+                    "player_number": "16770",
+                    "gender": "-",
+                    "sl": 2
+                },
+                {
+                    "player_name": "Komoto, Yuki",
+                    "player_number": "15978",
+                    "gender": "-",
+                    "sl": 7
+                },
+                {
+                    "player_name": "Hori, Masaki",
+                    "player_number": "12802",
+                    "gender": "-",
+                    "sl": 6
+                },
+                {
                     "player_name": "Narisawa, Ann",
                     "player_number": "15436",
                     "gender": "-",
                     "sl": 3
                 },
                 {
-                    "player_name": "Kuboya, Shiori",
-                    "player_number": "16987",
+                    "player_name": "Yokose, Miku",
+                    "player_number": "15427",
                     "gender": "-",
                     "sl": 3
+                },
+                {
+                    "player_name": "Tomiki, Rimo",
+                    "player_number": "16769",
+                    "gender": "-",
+                    "sl": 1
+                },
+                {
+                    "player_name": "Katsuse, Sora",
+                    "player_number": "16995",
+                    "gender": "-",
+                    "sl": 1
+                },
+                {
+                    "player_name": "Onaka, Hinase",
+                    "player_number": "17197",
+                    "gender": "-",
+                    "sl": 2
                 }
             ]
         },
@@ -749,6 +1219,18 @@
             "team_id": "9",
             "team_name": "Rui X sei",
             "players": [
+                {
+                    "player_name": "Nishihara, Rui",
+                    "player_number": "15985",
+                    "gender": "-",
+                    "sl": 6
+                },
+                {
+                    "player_name": "Okamura, Yudai",
+                    "player_number": "15775",
+                    "gender": "-",
+                    "sl": 7
+                },
                 {
                     "player_name": "Wang, Renchi",
                     "player_number": "12794",
@@ -760,6 +1242,12 @@
                     "player_number": "16763",
                     "gender": "-",
                     "sl": 3
+                },
+                {
+                    "player_name": "Hayashi, Yusuke",
+                    "player_number": "15960",
+                    "gender": "-",
+                    "sl": 5
                 },
                 {
                     "player_name": "Hirobayashi, Eri",
@@ -840,54 +1328,6 @@
             "team_name": "Tamanchu",
             "players": [
                 {
-                    "player_name": "Orita, Yusei",
-                    "player_number": "16755",
-                    "gender": "-",
-                    "sl": 5
-                },
-                {
-                    "player_name": "Amemiya, Takara",
-                    "player_number": "17000",
-                    "gender": "-",
-                    "sl": 4
-                },
-                {
-                    "player_name": "Asakura, Riki",
-                    "player_number": "16232",
-                    "gender": "-",
-                    "sl": 3
-                }
-            ]
-        },
-        {
-            "team_id": "5",
-            "team_name": "Tokyo Bayashis",
-            "players": [
-                {
-                    "player_name": "Kurokawa, Yuki",
-                    "player_number": "17202",
-                    "gender": "-",
-                    "sl": 1
-                }
-            ]
-        },
-        {
-            "team_id": "3",
-            "team_name": "Wagamama foundry",
-            "players": [
-                {
-                    "player_name": "Saka, Yoshine",
-                    "player_number": "16230",
-                    "gender": "-",
-                    "sl": 4
-                }
-            ]
-        },
-        {
-            "team_id": "10",
-            "team_name": "yattenna",
-            "players": [
-                {
                     "player_name": "Takeishi, Shoto",
                     "player_number": "15972",
                     "gender": "-",
@@ -904,6 +1344,168 @@
                     "player_number": "16754",
                     "gender": "-",
                     "sl": 6
+                },
+                {
+                    "player_name": "Orita, Yusei",
+                    "player_number": "16755",
+                    "gender": "-",
+                    "sl": 5
+                },
+                {
+                    "player_name": "Amemiya, Takara",
+                    "player_number": "17000",
+                    "gender": "-",
+                    "sl": 4
+                },
+                {
+                    "player_name": "Asakura, Riki",
+                    "player_number": "16232",
+                    "gender": "-",
+                    "sl": 3
+                },
+                {
+                    "player_name": "Nishiura, Yuto",
+                    "player_number": "16996",
+                    "gender": "-",
+                    "sl": 3
+                },
+                {
+                    "player_name": "Takenaka, Hayato",
+                    "player_number": "16997",
+                    "gender": "-",
+                    "sl": 3
+                }
+            ]
+        },
+        {
+            "team_id": "5",
+            "team_name": "Tokyo Bayashis",
+            "players": [
+                {
+                    "player_name": "Hayashi, Yasuyuki",
+                    "player_number": "16771",
+                    "gender": "-",
+                    "sl": 6
+                },
+                {
+                    "player_name": "Watanabe, Mizuki",
+                    "player_number": "16231",
+                    "gender": "-",
+                    "sl": 6
+                },
+                {
+                    "player_name": "Hanari, Yohei",
+                    "player_number": "13685",
+                    "gender": "-",
+                    "sl": 4
+                },
+                {
+                    "player_name": "Sakuta, Yutaro",
+                    "player_number": "15778",
+                    "gender": "-",
+                    "sl": 3
+                },
+                {
+                    "player_name": "Toda, Maruko",
+                    "player_number": "16767",
+                    "gender": "-",
+                    "sl": 3
+                },
+                {
+                    "player_name": "Ito, Tomoki",
+                    "player_number": "16994",
+                    "gender": "-",
+                    "sl": 2
+                },
+                {
+                    "player_name": "Takahashi, Masatoshi",
+                    "player_number": "16772",
+                    "gender": "-",
+                    "sl": 2
+                },
+                {
+                    "player_name": "Ogasawara, Rin",
+                    "player_number": "17199",
+                    "gender": "-",
+                    "sl": 2
+                }
+            ]
+        },
+        {
+            "team_id": "3",
+            "team_name": "Wagamama foundry",
+            "players": [
+                {
+                    "player_name": "Iwano, Atsushi",
+                    "player_number": "15343",
+                    "gender": "-",
+                    "sl": 5
+                },
+                {
+                    "player_name": "Ohe, Yuna",
+                    "player_number": "15430",
+                    "gender": "-",
+                    "sl": 5
+                },
+                {
+                    "player_name": "Hibi, Yuki",
+                    "player_number": "16759",
+                    "gender": "-",
+                    "sl": 4
+                },
+                {
+                    "player_name": "Saka, Yoshine",
+                    "player_number": "16230",
+                    "gender": "-",
+                    "sl": 4
+                },
+                {
+                    "player_name": "Kuboya, Shiori",
+                    "player_number": "16987",
+                    "gender": "-",
+                    "sl": 3
+                },
+                {
+                    "player_name": "Tsujimoto, Ameri",
+                    "player_number": "16986",
+                    "gender": "-",
+                    "sl": 2
+                },
+                {
+                    "player_name": "Saito, Yuya",
+                    "player_number": "17001",
+                    "gender": "-",
+                    "sl": 2
+                },
+                {
+                    "player_name": "Shimizu, Choi-yeong",
+                    "player_number": "17198",
+                    "gender": "-",
+                    "sl": 2
+                }
+            ]
+        },
+        {
+            "team_id": "10",
+            "team_name": "yattenna",
+            "players": [
+                {
+                    "player_name": "Suzuki, Iori",
+                    "player_number": "15779",
+                    "gender": "-",
+                    "sl": 3
+                },
+                {
+                    "player_name": "Abe, Naoya",
+                    "player_number": "16237",
+                    "gender": "-",
+                    "sl": 6
+                },
+                {
+                    "player_name": "Yamauchi, Haruki",
+                    "player_number": "16756",
+                    "gender": "-",
+                    "sl": 3
                 },
                 {
                     "player_name": "Furukawa, Kodai",
@@ -924,16 +1526,16 @@
                     "sl": 2
                 },
                 {
-                    "player_name": "Nishiura, Yuto",
-                    "player_number": "16996",
+                    "player_name": "Nishimura, Ayumi",
+                    "player_number": "16228",
                     "gender": "-",
-                    "sl": 3
+                    "sl": 1
                 },
                 {
-                    "player_name": "Takenaka, Hayato",
-                    "player_number": "16997",
+                    "player_name": "Hirata, Nao",
+                    "player_number": "17204",
                     "gender": "-",
-                    "sl": 3
+                    "sl": 1
                 }
             ]
         }

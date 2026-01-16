@@ -278,10 +278,10 @@ def extract_team_roster(pdf_file):
                     continue
                 
                 # 3カラムのプレイヤー行を抽出
-                # 各カラムは "N SL *member_number Name" の形式
+                # 各カラムは "N? SL * member_number Name" の形式 (Nは新規メンバーマーカー)
                 # 例: "N 5 * 15428 Murayama, Shotaro N 2 * 16770 Oku, Yuki N 5 * 15343 Iwano, Atsushi"
-                # 名前に 'N' が含まれる可能性があるため、より正確なパターンを使用
-                player_blocks = list(re.finditer(r'N\s+(\d+)\s+\*\s*(\d+)\s+(.+?)(?=\s+N\s+\d+\s+\*|$)', ln))
+                # 例: "6 * 15428 Murayama, Shotaro 2 * 16770 Oku, Yuki 5 * 15343 Iwano, Atsushi"
+                player_blocks = list(re.finditer(r'N?\s*(\d+)\s+\*\s+(\d+)\s+([A-Za-z][\w\s,\.-]+?)(?=\s+N?\s*\d+\s+\*|$)', ln))
                 
                 for idx, block in enumerate(player_blocks):
                     if idx >= len(current_teams):
