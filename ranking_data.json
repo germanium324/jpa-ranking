@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年01月16日 09:37 JST",
+    "last_checked": "2026年01月16日 09:42 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028011426.pdf",
-    "last_updated": "2026年01月16日 09:37 JST",
+    "last_updated": "2026年01月16日 09:42 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028011426.pdf",
     "individuals": [
         {
@@ -886,37 +886,93 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028011426.pdf",
-    "sl_changes": [],
+    "sl_changes": [
+        {
+            "player_name": "Hayashi Yusuke",
+            "member_number": "15960",
+            "old_sl": "4",
+            "old_date": "2024/11/06",
+            "new_sl": "5",
+            "new_date": "2026/01/14"
+        },
+        {
+            "player_name": "Morikawa Kazuaki",
+            "member_number": "17196",
+            "old_sl": "2",
+            "old_date": "2026/01/08",
+            "new_sl": "3",
+            "new_date": "2026/01/14"
+        },
+        {
+            "player_name": "Murayama Shotaro",
+            "member_number": "15428",
+            "old_sl": "5",
+            "old_date": "2025/12/10",
+            "new_sl": "6",
+            "new_date": "2026/01/14"
+        },
+        {
+            "player_name": "Okamura Yudai",
+            "member_number": "15775",
+            "old_sl": "8",
+            "old_date": "2026/01/08",
+            "new_sl": "7",
+            "new_date": "2026/01/14"
+        },
+        {
+            "player_name": "Suzuki Iori",
+            "member_number": "15779",
+            "old_sl": "2",
+            "old_date": "2025/11/12",
+            "new_sl": "3",
+            "new_date": "2026/01/14"
+        }
+    ],
     "ranking": [
-        {
-            "team_name": "Happy Lucky Ricky",
-            "team_id": "8",
-            "points": 0
-        },
-        {
-            "team_name": "Hinerisugita!",
-            "team_id": "4",
-            "points": 0
-        },
         {
             "team_name": "Kangaroo Kick",
             "team_id": "1",
-            "points": 0
+            "points": 66
+        },
+        {
+            "team_name": "Wagamama foundry",
+            "team_id": "3",
+            "points": 61
         },
         {
             "team_name": "Lucky Flockers",
             "team_id": "6",
-            "points": 0
+            "points": 61
         },
         {
-            "team_name": "Oku niki",
-            "team_id": "2",
-            "points": 0
+            "team_name": "Tamanchu",
+            "team_id": "11",
+            "points": 55
+        },
+        {
+            "team_name": "yattenna",
+            "team_id": "10",
+            "points": 52
         },
         {
             "team_name": "Rui X sei",
             "team_id": "9",
-            "points": 0
+            "points": 48
+        },
+        {
+            "team_name": "Tokyo Bayashis",
+            "team_id": "5",
+            "points": 39
+        },
+        {
+            "team_name": "Hinerisugita!",
+            "team_id": "4",
+            "points": 39
+        },
+        {
+            "team_name": "Oku niki",
+            "team_id": "2",
+            "points": 34
         },
         {
             "team_name": "Taigaku Straight Flush",
@@ -924,23 +980,8 @@
             "points": 0
         },
         {
-            "team_name": "Tamanchu",
-            "team_id": "11",
-            "points": 0
-        },
-        {
-            "team_name": "Tokyo Bayashis",
-            "team_id": "5",
-            "points": 0
-        },
-        {
-            "team_name": "Wagamama foundry",
-            "team_id": "3",
-            "points": 0
-        },
-        {
-            "team_name": "yattenna",
-            "team_id": "10",
+            "team_name": "Happy Lucky Ricky",
+            "team_id": "8",
             "points": 0
         }
     ],

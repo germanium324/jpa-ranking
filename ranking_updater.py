@@ -474,8 +474,11 @@ def main():
 
         ranking_built = False
 
-        if ranking_df is not None and not ranking_df.empty and not individuals_from_roster:
-            # チーム名を補完（試合結果が取れている場合のみ）。名簿のチーム名を優先し、なければ既存マップ。
+        if ranking_df is not None and not ranking_df.empty:
+            # Byeチーム（ID=12）を除外
+            ranking_df = ranking_df[ranking_df['team_id'] != '12']
+            
+            # チーム名を補完。名簿のチーム名を優先し、なければ既存マップ。
             ranking_df['team_id'] = ranking_df['team_id'].astype(str)
             ranking_df['team_name'] = ranking_df['team_id'].map(lambda tid: roster_name_map.get(str(tid)) or TEAM_NAME_MAP.get(str(tid)) or f"チームNo.{tid}")
 
@@ -489,7 +492,7 @@ def main():
             print(f"\n✅ データは '{JSON_FILENAME}' として保存されました。")
             print(final_ranking)
 
-        # 個人成績が名簿由来 = シーズン未開始と判断し、ランキングも名簿ベースで0にする
+        # ランキングが取得できなかった場合は名簿ベースで0にする
         if not ranking_built and roster_grouped:
             fallback_ranking = [
                 {'team_name': team['team_name'], 'team_id': str(team['team_id'] or ''), 'points': 0}
