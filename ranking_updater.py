@@ -17,9 +17,9 @@ JSON_FILENAME = 'ranking_data.json'
 
 # チーム名マッピング辞書（PDFからはチームIDしか取れないため、手動で用意）
 TEAM_NAME_MAP = {
-    '1': 'Rui Q sei', '2': 'Tsukuyomi', '3': 'Sour Grapes', '4': 'Domannaka shot dan',
-    '5': 'Hori Masaki', '6': 'Wagamama Factory', '7': 'Gold D Ricky', '8': 'Bayashis',
-    '9': 'Crab Sand', '10': 'Tamanchu', '11': 'Candy Qune', '12': 'Hiyokogumi'
+    '1': 'Kangaroo Kick', '2': 'Oku niki', '3': 'Wagamama foundry', '4': 'Hinerisugita!',
+    '5': 'Tokyo Bayashis', '6': 'Lucky Flockers', '7': 'Taigaku Straight Flush', '8': 'Happy Lucky Ricky',
+    '9': 'Rui X sei', '10': 'yattenna', '11': 'Tamanchu'
 }
 
 # --- 1. 最新のPDF URLを特定 ---
