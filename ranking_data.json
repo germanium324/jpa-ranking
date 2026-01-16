@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年01月16日 12:01 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028011426.pdf",
-    "last_updated": "2026年01月16日 12:01 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028011426.pdf",
+    "last_checked": "2026年01月16日 20:22 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028011626.pdf",
+    "last_updated": "2026年01月16日 20:22 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028011626.pdf",
     "individuals": [
         {
             "team_name": "Kangaroo Kick",
@@ -885,7 +885,7 @@
             "points_rate": "0%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028011426.pdf",
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028011626.pdf",
     "sl_changes": [
         {
             "player_name": "Hayashi Yusuke",
@@ -1581,5 +1581,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028011426.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028011626.pdf"
 }
