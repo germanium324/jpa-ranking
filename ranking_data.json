@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年01月19日 12:08 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028011626.pdf",
-    "last_updated": "2026年01月19日 12:08 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028011626.pdf",
+    "last_checked": "2026年01月19日 20:24 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028011926.pdf",
+    "last_updated": "2026年01月19日 20:24 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028011926.pdf",
     "individuals": [
         {
             "team_name": "Kangaroo Kick",
@@ -186,7 +186,7 @@
         },
         {
             "team_name": "Kangaroo Kick",
-            "player_name": "Miyamoto, Kota",
+            "player_name": "Tada, Kota",
             "player_number": "16597",
             "gender": "-",
             "sl": 5,
@@ -649,7 +649,7 @@
             "player_name": "Sakamoto, Rio",
             "player_number": "16760",
             "gender": "-",
-            "sl": 2,
+            "sl": 3,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -885,8 +885,16 @@
             "points_rate": "0%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028011626.pdf",
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028011926.pdf",
     "sl_changes": [
+        {
+            "player_name": "Sakamoto Rio",
+            "member_number": "16760",
+            "old_sl": "2",
+            "old_date": "2025/08/20",
+            "new_sl": "3",
+            "new_date": "2026/01/19"
+        },
         {
             "player_name": "Hayashi Yusuke",
             "member_number": "15960",
@@ -926,6 +934,14 @@
             "old_date": "2025/11/12",
             "new_sl": "3",
             "new_date": "2026/01/14"
+        },
+        {
+            "player_name": "Tada Kota",
+            "member_number": "16597",
+            "old_sl": "4",
+            "old_date": "2025/12/08",
+            "new_sl": "5",
+            "new_date": "2026/01/19"
         }
     ],
     "ranking": [
@@ -935,13 +951,18 @@
             "points": 66
         },
         {
-            "team_name": "Wagamama foundry",
-            "team_id": "3",
-            "points": 61
+            "team_name": "Happy Lucky Ricky",
+            "team_id": "8",
+            "points": 65
         },
         {
             "team_name": "Lucky Flockers",
             "team_id": "6",
+            "points": 61
+        },
+        {
+            "team_name": "Wagamama foundry",
+            "team_id": "3",
             "points": 61
         },
         {
@@ -960,29 +981,24 @@
             "points": 48
         },
         {
-            "team_name": "Tokyo Bayashis",
-            "team_id": "5",
-            "points": 39
-        },
-        {
             "team_name": "Hinerisugita!",
             "team_id": "4",
             "points": 39
         },
         {
-            "team_name": "Oku niki",
-            "team_id": "2",
-            "points": 34
+            "team_name": "Tokyo Bayashis",
+            "team_id": "5",
+            "points": 39
         },
         {
             "team_name": "Taigaku Straight Flush",
             "team_id": "7",
-            "points": 0
+            "points": 35
         },
         {
-            "team_name": "Happy Lucky Ricky",
-            "team_id": "8",
-            "points": 0
+            "team_name": "Oku niki",
+            "team_id": "2",
+            "points": 34
         }
     ],
     "roster": [
@@ -1024,7 +1040,7 @@
                     "player_name": "Sakamoto, Rio",
                     "player_number": "16760",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 },
                 {
                     "player_name": "Sakazaki, Azumi",
@@ -1135,7 +1151,7 @@
                     "sl": 3
                 },
                 {
-                    "player_name": "Miyamoto, Kota",
+                    "player_name": "Tada, Kota",
                     "player_number": "16597",
                     "gender": "-",
                     "sl": 5
@@ -1581,5 +1597,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028011626.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028011926.pdf"
 }
