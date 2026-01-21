@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年01月21日 16:53 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028011926.pdf",
-    "last_updated": "2026年01月21日 16:53 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028011926.pdf",
+    "last_checked": "2026年01月21日 20:27 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028012126.pdf",
+    "last_updated": "2026年01月21日 20:27 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028012126.pdf",
     "individuals": [
         {
             "team_name": "Kangaroo Kick",
@@ -69,7 +69,7 @@
             "player_name": "Iyono, Koharu",
             "player_number": "15429",
             "gender": "-",
-            "sl": 4,
+            "sl": 5,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -269,7 +269,7 @@
             "player_name": "Emoto, Tatsuki",
             "player_number": "13670",
             "gender": "-",
-            "sl": 7,
+            "sl": 8,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -359,7 +359,7 @@
             "player_name": "Yumoto, Seiya",
             "player_number": "15959",
             "gender": "-",
-            "sl": 3,
+            "sl": 4,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -885,7 +885,7 @@
             "points_rate": "0%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028011926.pdf",
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028012126.pdf",
     "sl_changes": [
         {
             "player_name": "Sakamoto Rio",
@@ -946,59 +946,59 @@
     ],
     "ranking": [
         {
-            "team_name": "Kangaroo Kick",
-            "team_id": "1",
-            "points": 66
-        },
-        {
             "team_name": "Happy Lucky Ricky",
             "team_id": "8",
-            "points": 65
-        },
-        {
-            "team_name": "Lucky Flockers",
-            "team_id": "6",
-            "points": 61
+            "points": 120
         },
         {
             "team_name": "Wagamama foundry",
             "team_id": "3",
-            "points": 61
+            "points": 116
         },
         {
             "team_name": "Tamanchu",
             "team_id": "11",
-            "points": 55
+            "points": 112
         },
         {
-            "team_name": "yattenna",
-            "team_id": "10",
-            "points": 52
+            "team_name": "Kangaroo Kick",
+            "team_id": "1",
+            "points": 111
+        },
+        {
+            "team_name": "Lucky Flockers",
+            "team_id": "6",
+            "points": 110
         },
         {
             "team_name": "Rui X sei",
             "team_id": "9",
-            "points": 48
+            "points": 99
         },
         {
-            "team_name": "Hinerisugita!",
-            "team_id": "4",
-            "points": 39
+            "team_name": "yattenna",
+            "team_id": "10",
+            "points": 97
         },
         {
             "team_name": "Tokyo Bayashis",
             "team_id": "5",
-            "points": 39
+            "points": 94
+        },
+        {
+            "team_name": "Hinerisugita!",
+            "team_id": "4",
+            "points": 89
         },
         {
             "team_name": "Taigaku Straight Flush",
             "team_id": "7",
-            "points": 35
+            "points": 85
         },
         {
             "team_name": "Oku niki",
             "team_id": "2",
-            "points": 34
+            "points": 77
         }
     ],
     "roster": [
@@ -1130,7 +1130,7 @@
                     "player_name": "Iyono, Koharu",
                     "player_number": "15429",
                     "gender": "-",
-                    "sl": 4
+                    "sl": 5
                 },
                 {
                     "player_name": "Ichihara, Kono",
@@ -1172,7 +1172,7 @@
                     "player_name": "Emoto, Tatsuki",
                     "player_number": "13670",
                     "gender": "-",
-                    "sl": 7
+                    "sl": 8
                 },
                 {
                     "player_name": "Sasada, Rintaro",
@@ -1190,7 +1190,7 @@
                     "player_name": "Yumoto, Seiya",
                     "player_number": "15959",
                     "gender": "-",
-                    "sl": 3
+                    "sl": 4
                 },
                 {
                     "player_name": "Takekawa, Sou",
@@ -1597,5 +1597,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028011926.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028012126.pdf"
 }
