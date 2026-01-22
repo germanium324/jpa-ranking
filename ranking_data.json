@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年01月21日 20:27 JST",
+    "last_checked": "2026年01月22日 12:06 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028012126.pdf",
-    "last_updated": "2026年01月21日 20:27 JST",
+    "last_updated": "2026年01月22日 12:06 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028012126.pdf",
     "individuals": [
         {
@@ -888,52 +888,36 @@
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028012126.pdf",
     "sl_changes": [
         {
+            "player_name": "Emoto Tatsuki",
+            "member_number": "13670",
+            "old_sl": "7",
+            "old_date": "2025/02/12",
+            "new_sl": "8",
+            "new_date": "2026/01/21"
+        },
+        {
+            "player_name": "Iyono Koharu",
+            "member_number": "15429",
+            "old_sl": "4",
+            "old_date": "2025/02/05",
+            "new_sl": "5",
+            "new_date": "2026/01/21"
+        },
+        {
+            "player_name": "Yumoto Seiya",
+            "member_number": "15959",
+            "old_sl": "3",
+            "old_date": "2024/12/25",
+            "new_sl": "4",
+            "new_date": "2026/01/21"
+        },
+        {
             "player_name": "Sakamoto Rio",
             "member_number": "16760",
             "old_sl": "2",
             "old_date": "2025/08/20",
             "new_sl": "3",
             "new_date": "2026/01/19"
-        },
-        {
-            "player_name": "Hayashi Yusuke",
-            "member_number": "15960",
-            "old_sl": "4",
-            "old_date": "2024/11/06",
-            "new_sl": "5",
-            "new_date": "2026/01/14"
-        },
-        {
-            "player_name": "Morikawa Kazuaki",
-            "member_number": "17196",
-            "old_sl": "2",
-            "old_date": "2026/01/08",
-            "new_sl": "3",
-            "new_date": "2026/01/14"
-        },
-        {
-            "player_name": "Murayama Shotaro",
-            "member_number": "15428",
-            "old_sl": "5",
-            "old_date": "2025/12/10",
-            "new_sl": "6",
-            "new_date": "2026/01/14"
-        },
-        {
-            "player_name": "Okamura Yudai",
-            "member_number": "15775",
-            "old_sl": "8",
-            "old_date": "2026/01/08",
-            "new_sl": "7",
-            "new_date": "2026/01/14"
-        },
-        {
-            "player_name": "Suzuki Iori",
-            "member_number": "15779",
-            "old_sl": "2",
-            "old_date": "2025/11/12",
-            "new_sl": "3",
-            "new_date": "2026/01/14"
         },
         {
             "player_name": "Tada Kota",
