@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年01月26日 20:24 JST",
+    "last_checked": "2026年01月27日 12:07 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028012126.pdf",
-    "last_updated": "2026年01月26日 20:24 JST",
+    "last_updated": "2026年01月27日 12:07 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028012126.pdf",
     "individuals": [
         {
@@ -910,22 +910,6 @@
             "old_date": "2024/12/25",
             "new_sl": "4",
             "new_date": "2026/01/21"
-        },
-        {
-            "player_name": "Sakamoto Rio",
-            "member_number": "16760",
-            "old_sl": "2",
-            "old_date": "2025/08/20",
-            "new_sl": "3",
-            "new_date": "2026/01/19"
-        },
-        {
-            "player_name": "Tada Kota",
-            "member_number": "16597",
-            "old_sl": "4",
-            "old_date": "2025/12/08",
-            "new_sl": "5",
-            "new_date": "2026/01/19"
         }
     ],
     "ranking": [
