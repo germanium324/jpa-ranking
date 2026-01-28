@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年01月28日 15:18 JST",
+    "last_checked": "2026年01月28日 15:56 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028012826.pdf",
-    "last_updated": "2026年01月28日 15:18 JST",
+    "last_updated": "2026年01月28日 15:56 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028012826.pdf",
     "individuals": [
         {
@@ -887,6 +887,54 @@
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028012826.pdf",
     "sl_changes": [
+        {
+            "player_name": "Karashima Ryusei",
+            "member_number": "15980",
+            "old_sl": "5",
+            "old_date": "2025/11/26",
+            "new_sl": "6",
+            "new_date": "2026/01/28"
+        },
+        {
+            "player_name": "Nakamura Takato",
+            "member_number": "16758",
+            "old_sl": "3",
+            "old_date": "2025/06/11",
+            "new_sl": "4",
+            "new_date": "2026/01/28"
+        },
+        {
+            "player_name": "Ohe Yuna",
+            "member_number": "15430",
+            "old_sl": "5",
+            "old_date": "2025/07/09",
+            "new_sl": "6",
+            "new_date": "2026/01/28"
+        },
+        {
+            "player_name": "Saito Yuya",
+            "member_number": "17001",
+            "old_sl": "2",
+            "old_date": "2025/09/10",
+            "new_sl": "3",
+            "new_date": "2026/01/28"
+        },
+        {
+            "player_name": "Takeishi Shoto",
+            "member_number": "15972",
+            "old_sl": "5",
+            "old_date": "2025/12/10",
+            "new_sl": "6",
+            "new_date": "2026/01/28"
+        },
+        {
+            "player_name": "Takenaka Hayato",
+            "member_number": "16997",
+            "old_sl": "3",
+            "old_date": "2025/12/17",
+            "new_sl": "4",
+            "new_date": "2026/01/28"
+        },
         {
             "player_name": "Emoto Tatsuki",
             "member_number": "13670",
