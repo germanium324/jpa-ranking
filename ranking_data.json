@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年01月28日 14:45 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028012126.pdf",
-    "last_updated": "2026年01月28日 14:45 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028012126.pdf",
+    "last_checked": "2026年01月28日 14:55 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028012826.pdf",
+    "last_updated": "2026年01月28日 14:55 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028012826.pdf",
     "individuals": [
         {
             "team_name": "Kangaroo Kick",
@@ -59,7 +59,7 @@
             "player_name": "Ohe, Yuna",
             "player_number": "15430",
             "gender": "-",
-            "sl": 5,
+            "sl": 6,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -159,7 +159,7 @@
             "player_name": "Nakamura, Takato",
             "player_number": "16758",
             "gender": "-",
-            "sl": 3,
+            "sl": 4,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -209,7 +209,7 @@
             "player_name": "Saito, Yuya",
             "player_number": "17001",
             "gender": "-",
-            "sl": 2,
+            "sl": 3,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -339,7 +339,7 @@
             "player_name": "Karashima, Ryusei",
             "player_number": "15980",
             "gender": "-",
-            "sl": 5,
+            "sl": 6,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -739,7 +739,7 @@
             "player_name": "Takeishi, Shoto",
             "player_number": "15972",
             "gender": "-",
-            "sl": 5,
+            "sl": 6,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -879,13 +879,13 @@
             "player_name": "Takenaka, Hayato",
             "player_number": "16997",
             "gender": "-",
-            "sl": 3,
+            "sl": 4,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028012126.pdf",
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028012826.pdf",
     "sl_changes": [
         {
             "player_name": "Emoto Tatsuki",
@@ -914,34 +914,39 @@
     ],
     "ranking": [
         {
-            "team_name": "Happy Lucky Ricky",
-            "team_id": "8",
-            "points": 120
+            "team_name": "Tamanchu",
+            "team_id": "11",
+            "points": 168
         },
         {
             "team_name": "Wagamama foundry",
             "team_id": "3",
-            "points": 116
+            "points": 164
         },
         {
-            "team_name": "Tamanchu",
-            "team_id": "11",
-            "points": 112
-        },
-        {
-            "team_name": "Kangaroo Kick",
-            "team_id": "1",
-            "points": 111
+            "team_name": "Happy Lucky Ricky",
+            "team_id": "8",
+            "points": 164
         },
         {
             "team_name": "Lucky Flockers",
             "team_id": "6",
-            "points": 110
+            "points": 162
+        },
+        {
+            "team_name": "Kangaroo Kick",
+            "team_id": "1",
+            "points": 154
         },
         {
             "team_name": "Rui X sei",
             "team_id": "9",
-            "points": 99
+            "points": 154
+        },
+        {
+            "team_name": "Hinerisugita!",
+            "team_id": "4",
+            "points": 146
         },
         {
             "team_name": "yattenna",
@@ -952,11 +957,6 @@
             "team_name": "Tokyo Bayashis",
             "team_id": "5",
             "points": 94
-        },
-        {
-            "team_name": "Hinerisugita!",
-            "team_id": "4",
-            "points": 89
         },
         {
             "team_name": "Taigaku Straight Flush",
@@ -1050,7 +1050,7 @@
                     "player_name": "Karashima, Ryusei",
                     "player_number": "15980",
                     "gender": "-",
-                    "sl": 5
+                    "sl": 6
                 },
                 {
                     "player_name": "Inoue, Aoi",
@@ -1116,7 +1116,7 @@
                     "player_name": "Nakamura, Takato",
                     "player_number": "16758",
                     "gender": "-",
-                    "sl": 3
+                    "sl": 4
                 },
                 {
                     "player_name": "Tada, Kota",
@@ -1356,7 +1356,7 @@
                     "player_name": "Takeishi, Shoto",
                     "player_number": "15972",
                     "gender": "-",
-                    "sl": 5
+                    "sl": 6
                 },
                 {
                     "player_name": "Sato, Yuto",
@@ -1398,7 +1398,7 @@
                     "player_name": "Takenaka, Hayato",
                     "player_number": "16997",
                     "gender": "-",
-                    "sl": 3
+                    "sl": 4
                 }
             ]
         },
@@ -1470,7 +1470,7 @@
                     "player_name": "Ohe, Yuna",
                     "player_number": "15430",
                     "gender": "-",
-                    "sl": 5
+                    "sl": 6
                 },
                 {
                     "player_name": "Hibi, Yuki",
@@ -1500,7 +1500,7 @@
                     "player_name": "Saito, Yuya",
                     "player_number": "17001",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 },
                 {
                     "player_name": "Shimizu, Choi-yeong",
@@ -1565,5 +1565,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028012126.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028012826.pdf"
 }
