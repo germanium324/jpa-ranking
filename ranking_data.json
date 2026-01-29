@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年01月28日 20:26 JST",
+    "last_checked": "2026年01月29日 12:28 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028012826.pdf",
-    "last_updated": "2026年01月28日 20:26 JST",
+    "last_updated": "2026年01月29日 12:28 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028012826.pdf",
     "individuals": [
         {
@@ -934,30 +934,6 @@
             "old_date": "2025/12/17",
             "new_sl": "4",
             "new_date": "2026/01/28"
-        },
-        {
-            "player_name": "Emoto Tatsuki",
-            "member_number": "13670",
-            "old_sl": "7",
-            "old_date": "2025/02/12",
-            "new_sl": "8",
-            "new_date": "2026/01/21"
-        },
-        {
-            "player_name": "Iyono Koharu",
-            "member_number": "15429",
-            "old_sl": "4",
-            "old_date": "2025/02/05",
-            "new_sl": "5",
-            "new_date": "2026/01/21"
-        },
-        {
-            "player_name": "Yumoto Seiya",
-            "member_number": "15959",
-            "old_sl": "3",
-            "old_date": "2024/12/25",
-            "new_sl": "4",
-            "new_date": "2026/01/21"
         }
     ],
     "ranking": [
