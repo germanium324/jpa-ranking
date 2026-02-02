@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年02月02日 12:43 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028012826.pdf",
-    "last_updated": "2026年02月02日 12:43 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028012826.pdf",
+    "last_checked": "2026年02月02日 20:37 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028020226.pdf",
+    "last_updated": "2026年02月02日 20:37 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028020226.pdf",
     "individuals": [
         {
             "team_name": "Kangaroo Kick",
@@ -676,7 +676,7 @@
         },
         {
             "team_name": "Happy Lucky Ricky",
-            "player_name": "Sakazaki, Azumi",
+            "player_name": "Sakazaki, Azumi 2,000yen",
             "player_number": "17002",
             "gender": "-",
             "sl": 2,
@@ -849,7 +849,7 @@
             "player_name": "Nishimura, Ayumi",
             "player_number": "16228",
             "gender": "-",
-            "sl": 1,
+            "sl": 2,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -885,8 +885,16 @@
             "points_rate": "0%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028012826.pdf",
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028020226.pdf",
     "sl_changes": [
+        {
+            "player_name": "Nishimura Ayumi",
+            "member_number": "16228",
+            "old_sl": "1",
+            "old_date": "2025/09/24",
+            "new_sl": "2",
+            "new_date": "2026/02/02"
+        },
         {
             "player_name": "Karashima Ryusei",
             "member_number": "15980",
@@ -934,6 +942,14 @@
             "old_date": "2025/12/17",
             "new_sl": "4",
             "new_date": "2026/01/28"
+        },
+        {
+            "player_name": "Hayashi Yasuyuki",
+            "member_number": "16771",
+            "old_sl": "",
+            "old_date": "",
+            "new_sl": "6",
+            "new_date": "2026/02/02"
         }
     ],
     "ranking": [
@@ -968,29 +984,29 @@
             "points": 154
         },
         {
+            "team_name": "yattenna",
+            "team_id": "10",
+            "points": 147
+        },
+        {
             "team_name": "Hinerisugita!",
             "team_id": "4",
             "points": 146
         },
         {
-            "team_name": "yattenna",
-            "team_id": "10",
-            "points": 97
-        },
-        {
             "team_name": "Tokyo Bayashis",
             "team_id": "5",
-            "points": 94
+            "points": 137
         },
         {
             "team_name": "Taigaku Straight Flush",
             "team_id": "7",
-            "points": 85
+            "points": 135
         },
         {
             "team_name": "Oku niki",
             "team_id": "2",
-            "points": 77
+            "points": 134
         }
     ],
     "roster": [
@@ -1035,7 +1051,7 @@
                     "sl": 3
                 },
                 {
-                    "player_name": "Sakazaki, Azumi",
+                    "player_name": "Sakazaki, Azumi 2,000yen",
                     "player_number": "17002",
                     "gender": "-",
                     "sl": 2
@@ -1578,7 +1594,7 @@
                     "player_name": "Nishimura, Ayumi",
                     "player_number": "16228",
                     "gender": "-",
-                    "sl": 1
+                    "sl": 2
                 },
                 {
                     "player_name": "Hirata, Nao",
@@ -1589,5 +1605,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028012826.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028020226.pdf"
 }
