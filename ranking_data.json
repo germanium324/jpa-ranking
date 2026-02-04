@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年02月03日 20:37 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028020226.pdf",
-    "last_updated": "2026年02月03日 20:37 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028020226.pdf",
+    "last_checked": "2026年02月04日 12:33 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028020426.pdf",
+    "last_updated": "2026年02月04日 12:33 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028020426.pdf",
     "individuals": [
         {
             "team_name": "Kangaroo Kick",
@@ -539,7 +539,7 @@
             "player_name": "Okamura, Yudai",
             "player_number": "15775",
             "gender": "-",
-            "sl": 7,
+            "sl": 8,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -676,8 +676,8 @@
         },
         {
             "team_name": "Happy Lucky Ricky",
-            "player_name": "Sakazaki, Azumi 2,000yen",
-            "player_number": "17002",
+            "player_name": "Masuda, Kanato",
+            "player_number": "17200",
             "gender": "-",
             "sl": 2,
             "wins": "0/0",
@@ -689,7 +689,7 @@
             "player_name": "Nishizuka, Rikuto",
             "player_number": "17004",
             "gender": "-",
-            "sl": 2,
+            "sl": 3,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -706,10 +706,10 @@
         },
         {
             "team_name": "Happy Lucky Ricky",
-            "player_name": "Masuda, Kanato",
-            "player_number": "17200",
+            "player_name": "Kayanuma, Asa",
+            "player_number": "17312",
             "gender": "-",
-            "sl": 2,
+            "sl": 1,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -885,8 +885,24 @@
             "points_rate": "0%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028020226.pdf",
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028020426.pdf",
     "sl_changes": [
+        {
+            "player_name": "Nishizuka Rikuto",
+            "member_number": "17004",
+            "old_sl": "2",
+            "old_date": "2025/09/10",
+            "new_sl": "3",
+            "new_date": "2026/02/04"
+        },
+        {
+            "player_name": "Okamura Yudai",
+            "member_number": "15775",
+            "old_sl": "7",
+            "old_date": "2026/01/14",
+            "new_sl": "8",
+            "new_date": "2026/02/04"
+        },
         {
             "player_name": "Nishimura Ayumi",
             "member_number": "16228",
@@ -954,19 +970,44 @@
     ],
     "ranking": [
         {
-            "team_name": "Tamanchu",
-            "team_id": "11",
-            "points": 168
-        },
-        {
-            "team_name": "Wagamama foundry",
-            "team_id": "3",
-            "points": 164
+            "team_name": "Rui X sei",
+            "team_id": "9",
+            "points": 240
         },
         {
             "team_name": "Happy Lucky Ricky",
             "team_id": "8",
-            "points": 164
+            "points": 225
+        },
+        {
+            "team_name": "Kangaroo Kick",
+            "team_id": "1",
+            "points": 222
+        },
+        {
+            "team_name": "Wagamama foundry",
+            "team_id": "3",
+            "points": 219
+        },
+        {
+            "team_name": "Hinerisugita!",
+            "team_id": "4",
+            "points": 219
+        },
+        {
+            "team_name": "Tamanchu",
+            "team_id": "11",
+            "points": 195
+        },
+        {
+            "team_name": "yattenna",
+            "team_id": "10",
+            "points": 179
+        },
+        {
+            "team_name": "Tokyo Bayashis",
+            "team_id": "5",
+            "points": 171
         },
         {
             "team_name": "Lucky Flockers",
@@ -974,39 +1015,14 @@
             "points": 162
         },
         {
-            "team_name": "Kangaroo Kick",
-            "team_id": "1",
-            "points": 154
-        },
-        {
-            "team_name": "Rui X sei",
-            "team_id": "9",
-            "points": 154
-        },
-        {
-            "team_name": "yattenna",
-            "team_id": "10",
-            "points": 147
-        },
-        {
-            "team_name": "Hinerisugita!",
-            "team_id": "4",
-            "points": 146
-        },
-        {
-            "team_name": "Tokyo Bayashis",
-            "team_id": "5",
-            "points": 137
+            "team_name": "Oku niki",
+            "team_id": "2",
+            "points": 143
         },
         {
             "team_name": "Taigaku Straight Flush",
             "team_id": "7",
             "points": 135
-        },
-        {
-            "team_name": "Oku niki",
-            "team_id": "2",
-            "points": 134
         }
     ],
     "roster": [
@@ -1051,16 +1067,16 @@
                     "sl": 3
                 },
                 {
-                    "player_name": "Sakazaki, Azumi 2,000yen",
-                    "player_number": "17002",
-                    "gender": "-",
-                    "sl": 2
-                },
-                {
                     "player_name": "Masuda, Kanato",
                     "player_number": "17200",
                     "gender": "-",
                     "sl": 2
+                },
+                {
+                    "player_name": "Kayanuma, Asa",
+                    "player_number": "17312",
+                    "gender": "-",
+                    "sl": 1
                 }
             ]
         },
@@ -1294,7 +1310,7 @@
                     "player_name": "Okamura, Yudai",
                     "player_number": "15775",
                     "gender": "-",
-                    "sl": 7
+                    "sl": 8
                 },
                 {
                     "player_name": "Wang, Renchi",
@@ -1324,7 +1340,7 @@
                     "player_name": "Nishizuka, Rikuto",
                     "player_number": "17004",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 },
                 {
                     "player_name": "Akachi, Kiki",
@@ -1605,5 +1621,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028020226.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028020426.pdf"
 }
