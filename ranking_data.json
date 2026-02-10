@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年02月09日 20:49 JST",
+    "last_checked": "2026年02月10日 12:52 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028020626.pdf",
-    "last_updated": "2026年02月09日 20:49 JST",
+    "last_updated": "2026年02月10日 12:52 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028020626.pdf",
     "individuals": [
         {
@@ -852,22 +852,6 @@
             "old_date": "2026/01/14",
             "new_sl": "8",
             "new_date": "2026/02/04"
-        },
-        {
-            "player_name": "Nishimura Ayumi",
-            "member_number": "16228",
-            "old_sl": "1",
-            "old_date": "2025/09/24",
-            "new_sl": "2",
-            "new_date": "2026/02/02"
-        },
-        {
-            "player_name": "Hayashi Yasuyuki",
-            "member_number": "16771",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "6",
-            "new_date": "2026/02/02"
         }
     ],
     "ranking": [
