@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年02月11日 20:48 JST",
+    "last_checked": "2026年02月12日 12:45 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028021126.pdf",
-    "last_updated": "2026年02月11日 20:48 JST",
+    "last_updated": "2026年02月12日 12:45 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028021126.pdf",
     "individuals": [
         {
@@ -870,22 +870,6 @@
             "old_date": "2025/10/08",
             "new_sl": "7",
             "new_date": "2026/02/11"
-        },
-        {
-            "player_name": "Nishizuka Rikuto",
-            "member_number": "17004",
-            "old_sl": "2",
-            "old_date": "2025/09/10",
-            "new_sl": "3",
-            "new_date": "2026/02/04"
-        },
-        {
-            "player_name": "Okamura Yudai",
-            "member_number": "15775",
-            "old_sl": "7",
-            "old_date": "2026/01/14",
-            "new_sl": "8",
-            "new_date": "2026/02/04"
         }
     ],
     "ranking": [
