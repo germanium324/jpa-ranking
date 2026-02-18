@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年02月18日 17:07 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028021126.pdf",
-    "last_updated": "2026年02月18日 17:07 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028021126.pdf",
+    "last_checked": "2026年02月18日 19:45 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028021826.pdf",
+    "last_updated": "2026年02月18日 19:45 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028021826.pdf",
     "individuals": [
         {
             "team_name": "Happy Lucky Ricky",
@@ -848,6 +848,54 @@
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028021126.pdf",
     "sl_changes": [
         {
+            "player_name": "Furukawa Kodai",
+            "member_number": "16984",
+            "old_sl": "2",
+            "old_date": "2025/09/10",
+            "new_sl": "3",
+            "new_date": "2026/02/18"
+        },
+        {
+            "player_name": "Kobayashi Nao",
+            "member_number": "16992",
+            "old_sl": "2",
+            "old_date": "2025/11/26",
+            "new_sl": "1",
+            "new_date": "2026/02/18"
+        },
+        {
+            "player_name": "Kurokawa Koyu",
+            "member_number": "16236",
+            "old_sl": "4",
+            "old_date": "2025/09/22",
+            "new_sl": "5",
+            "new_date": "2026/02/18"
+        },
+        {
+            "player_name": "Nishiura Yuto",
+            "member_number": "16996",
+            "old_sl": "3",
+            "old_date": "2025/09/17",
+            "new_sl": "4",
+            "new_date": "2026/02/18"
+        },
+        {
+            "player_name": "Sakuta Yutaro",
+            "member_number": "15778",
+            "old_sl": "3",
+            "old_date": "2025/04/23",
+            "new_sl": "4",
+            "new_date": "2026/02/18"
+        },
+        {
+            "player_name": "Takekawa Sou",
+            "member_number": "15973",
+            "old_sl": "3",
+            "old_date": "2025/06/25",
+            "new_sl": "4",
+            "new_date": "2026/02/18"
+        },
+        {
             "player_name": "Ko Shuiri",
             "member_number": "16988",
             "old_sl": "3",
@@ -874,34 +922,49 @@
     ],
     "ranking": [
         {
+            "team_name": "Lucky Flockers",
+            "team_id": "6",
+            "points": 334
+        },
+        {
+            "team_name": "Tamanchu",
+            "team_id": "11",
+            "points": 323
+        },
+        {
+            "team_name": "Kangaroo Kick",
+            "team_id": "1",
+            "points": 318
+        },
+        {
+            "team_name": "Rui X sei",
+            "team_id": "9",
+            "points": 318
+        },
+        {
+            "team_name": "Hinerisugita!",
+            "team_id": "4",
+            "points": 313
+        },
+        {
             "team_name": "Happy Lucky Ricky",
             "team_id": "8",
             "points": 290
         },
         {
-            "team_name": "Lucky Flockers",
-            "team_id": "6",
-            "points": 281
+            "team_name": "Tokyo Bayashis",
+            "team_id": "5",
+            "points": 284
         },
         {
-            "team_name": "Tamanchu",
-            "team_id": "11",
-            "points": 276
+            "team_name": "Taigaku Straight Flush",
+            "team_id": "7",
+            "points": 273
         },
         {
-            "team_name": "Rui X sei",
-            "team_id": "9",
-            "points": 270
-        },
-        {
-            "team_name": "Kangaroo Kick",
-            "team_id": "1",
+            "team_name": "Oku niki",
+            "team_id": "2",
             "points": 263
-        },
-        {
-            "team_name": "Hinerisugita!",
-            "team_id": "4",
-            "points": 261
         },
         {
             "team_name": "Wagamama foundry",
@@ -909,24 +972,9 @@
             "points": 256
         },
         {
-            "team_name": "Taigaku Straight Flush",
-            "team_id": "7",
-            "points": 230
-        },
-        {
-            "team_name": "Tokyo Bayashis",
-            "team_id": "5",
-            "points": 224
-        },
-        {
-            "team_name": "Oku niki",
-            "team_id": "2",
-            "points": 206
-        },
-        {
             "team_name": "yattenna",
             "team_id": "10",
-            "points": 198
+            "points": 238
         }
     ],
     "roster": [
@@ -1124,7 +1172,7 @@
                     "player_name": "Takekawa, Sou",
                     "player_number": "15973",
                     "gender": "-",
-                    "sl": 3
+                    "sl": 4
                 },
                 {
                     "player_name": "Miyake, Ryoga",
@@ -1268,7 +1316,7 @@
                     "player_name": "Kobayashi, Nao",
                     "player_number": "16992",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 1
                 },
                 {
                     "player_name": "Oba, Hidehiro",
@@ -1286,7 +1334,7 @@
                     "player_name": "Kurokawa, Koyu",
                     "player_number": "16236",
                     "gender": "-",
-                    "sl": 4
+                    "sl": 5
                 },
                 {
                     "player_name": "Yasuda, Yuki",
@@ -1352,7 +1400,7 @@
                     "player_name": "Nishiura, Yuto",
                     "player_number": "16996",
                     "gender": "-",
-                    "sl": 3
+                    "sl": 4
                 },
                 {
                     "player_name": "Takenaka, Hayato",
@@ -1388,7 +1436,7 @@
                     "player_name": "Sakuta, Yutaro",
                     "player_number": "15778",
                     "gender": "-",
-                    "sl": 3
+                    "sl": 4
                 },
                 {
                     "player_name": "Toda, Maruko",
@@ -1496,7 +1544,7 @@
                     "player_name": "Furukawa, Kodai",
                     "player_number": "16984",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 },
                 {
                     "player_name": "Yagi, Kosei",
@@ -1525,5 +1573,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028021126.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028021826.pdf"
 }
