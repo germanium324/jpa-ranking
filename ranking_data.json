@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年02月18日 20:40 JST",
+    "last_checked": "2026年02月19日 12:39 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028021826.pdf",
-    "last_updated": "2026年02月18日 20:40 JST",
+    "last_updated": "2026年02月19日 12:39 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028021826.pdf",
     "individuals": [
         {
@@ -894,30 +894,6 @@
             "old_date": "2025/06/25",
             "new_sl": "4",
             "new_date": "2026/02/18"
-        },
-        {
-            "player_name": "Ko Shuiri",
-            "member_number": "16988",
-            "old_sl": "3",
-            "old_date": "2025/10/29",
-            "new_sl": "4",
-            "new_date": "2026/02/11"
-        },
-        {
-            "player_name": "Nomura Hikaru",
-            "member_number": "15983",
-            "old_sl": "3",
-            "old_date": "2025/01/09",
-            "new_sl": "4",
-            "new_date": "2026/02/11"
-        },
-        {
-            "player_name": "Watanabe Mizuki",
-            "member_number": "16231",
-            "old_sl": "6",
-            "old_date": "2025/10/08",
-            "new_sl": "7",
-            "new_date": "2026/02/11"
         }
     ],
     "ranking": [
