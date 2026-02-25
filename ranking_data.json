@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年02月25日 17:26 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028022326.pdf",
-    "last_updated": "2026年02月25日 17:26 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028022326.pdf",
+    "last_checked": "2026年02月25日 20:41 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028022526.pdf",
+    "last_updated": "2026年02月25日 20:41 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028022526.pdf",
     "individuals": [
         {
             "team_name": "Happy Lucky Ricky",
@@ -858,6 +858,14 @@
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028022326.pdf",
     "sl_changes": [
         {
+            "player_name": "Kuboya Shiori",
+            "member_number": "16987",
+            "old_sl": "3",
+            "old_date": "2025/12/03",
+            "new_sl": "2",
+            "new_date": "2026/02/25"
+        },
+        {
             "player_name": "Raven Garcia",
             "member_number": "16999",
             "old_sl": "6",
@@ -918,12 +926,42 @@
         {
             "team_name": "Happy Lucky Ricky",
             "team_id": "8",
-            "points": 360
+            "points": 397
         },
         {
             "team_name": "Lucky Flockers",
             "team_id": "6",
+            "points": 389
+        },
+        {
+            "team_name": "Kangaroo Kick",
+            "team_id": "1",
+            "points": 366
+        },
+        {
+            "team_name": "Rui X sei",
+            "team_id": "9",
+            "points": 365
+        },
+        {
+            "team_name": "Hinerisugita!",
+            "team_id": "4",
+            "points": 358
+        },
+        {
+            "team_name": "Wagamama foundry",
+            "team_id": "3",
             "points": 334
+        },
+        {
+            "team_name": "Oku niki",
+            "team_id": "2",
+            "points": 326
+        },
+        {
+            "team_name": "Taigaku Straight Flush",
+            "team_id": "7",
+            "points": 325
         },
         {
             "team_name": "Tamanchu",
@@ -931,44 +969,14 @@
             "points": 323
         },
         {
-            "team_name": "Kangaroo Kick",
-            "team_id": "1",
-            "points": 318
-        },
-        {
-            "team_name": "Rui X sei",
-            "team_id": "9",
-            "points": 318
-        },
-        {
-            "team_name": "Hinerisugita!",
-            "team_id": "4",
-            "points": 313
-        },
-        {
-            "team_name": "Wagamama foundry",
-            "team_id": "3",
-            "points": 286
+            "team_name": "yattenna",
+            "team_id": "10",
+            "points": 288
         },
         {
             "team_name": "Tokyo Bayashis",
             "team_id": "5",
             "points": 284
-        },
-        {
-            "team_name": "Taigaku Straight Flush",
-            "team_id": "7",
-            "points": 273
-        },
-        {
-            "team_name": "Oku niki",
-            "team_id": "2",
-            "points": 263
-        },
-        {
-            "team_name": "yattenna",
-            "team_id": "10",
-            "points": 238
         }
     ],
     "roster": [
@@ -1490,7 +1498,7 @@
                     "player_name": "Kuboya, Shiori",
                     "player_number": "16987",
                     "gender": "-",
-                    "sl": 3
+                    "sl": 2
                 },
                 {
                     "player_name": "Tsujimoto, Ameri",
@@ -1567,5 +1575,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028022326.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028022526.pdf"
 }
