@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年02月25日 20:41 JST",
+    "last_checked": "2026年02月26日 12:35 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028022526.pdf",
-    "last_updated": "2026年02月25日 20:41 JST",
+    "last_updated": "2026年02月26日 12:35 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028022526.pdf",
     "individuals": [
         {
@@ -872,54 +872,6 @@
             "old_date": "2025/11/12",
             "new_sl": "7",
             "new_date": "2026/02/23"
-        },
-        {
-            "player_name": "Furukawa Kodai",
-            "member_number": "16984",
-            "old_sl": "2",
-            "old_date": "2025/09/10",
-            "new_sl": "3",
-            "new_date": "2026/02/18"
-        },
-        {
-            "player_name": "Kobayashi Nao",
-            "member_number": "16992",
-            "old_sl": "2",
-            "old_date": "2025/11/26",
-            "new_sl": "1",
-            "new_date": "2026/02/18"
-        },
-        {
-            "player_name": "Kurokawa Koyu",
-            "member_number": "16236",
-            "old_sl": "4",
-            "old_date": "2025/09/22",
-            "new_sl": "5",
-            "new_date": "2026/02/18"
-        },
-        {
-            "player_name": "Nishiura Yuto",
-            "member_number": "16996",
-            "old_sl": "3",
-            "old_date": "2025/09/17",
-            "new_sl": "4",
-            "new_date": "2026/02/18"
-        },
-        {
-            "player_name": "Sakuta Yutaro",
-            "member_number": "15778",
-            "old_sl": "3",
-            "old_date": "2025/04/23",
-            "new_sl": "4",
-            "new_date": "2026/02/18"
-        },
-        {
-            "player_name": "Takekawa Sou",
-            "member_number": "15973",
-            "old_sl": "3",
-            "old_date": "2025/06/25",
-            "new_sl": "4",
-            "new_date": "2026/02/18"
         }
     ],
     "ranking": [
