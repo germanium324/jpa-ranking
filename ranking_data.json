@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年03月02日 20:33 JST",
+    "last_checked": "2026年03月03日 12:35 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028030226.pdf",
-    "last_updated": "2026年03月02日 20:33 JST",
+    "last_updated": "2026年03月03日 12:35 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028030226.pdf",
     "individuals": [
         {
@@ -864,14 +864,6 @@
             "old_date": "2025/12/03",
             "new_sl": "2",
             "new_date": "2026/02/25"
-        },
-        {
-            "player_name": "Raven Garcia",
-            "member_number": "16999",
-            "old_sl": "6",
-            "old_date": "2025/11/12",
-            "new_sl": "7",
-            "new_date": "2026/02/23"
         }
     ],
     "ranking": [
