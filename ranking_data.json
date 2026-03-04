@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年03月04日 16:29 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028030226.pdf",
-    "last_updated": "2026年03月04日 16:29 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028030226.pdf",
+    "last_checked": "2026年03月04日 16:53 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028030426.pdf",
+    "last_updated": "2026年03月04日 16:53 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028030426.pdf",
     "individuals": [
         {
             "team_name": "Lucky Flockers",
@@ -870,7 +870,17 @@
         {
             "team_name": "Happy Lucky Ricky",
             "team_id": "8",
-            "points": 397
+            "points": 452
+        },
+        {
+            "team_name": "Kangaroo Kick",
+            "team_id": "1",
+            "points": 422
+        },
+        {
+            "team_name": "Rui X sei",
+            "team_id": "9",
+            "points": 399
         },
         {
             "team_name": "Lucky Flockers",
@@ -881,16 +891,6 @@
             "team_name": "Tamanchu",
             "team_id": "11",
             "points": 380
-        },
-        {
-            "team_name": "Kangaroo Kick",
-            "team_id": "1",
-            "points": 366
-        },
-        {
-            "team_name": "Rui X sei",
-            "team_id": "9",
-            "points": 365
         },
         {
             "team_name": "Hinerisugita!",
@@ -1040,7 +1040,7 @@
                     "player_name": "Murayama, Shotaro",
                     "player_number": "15428",
                     "gender": "-",
-                    "sl": 6
+                    "sl": 5
                 },
                 {
                     "player_name": "Nomura, Hikaru",
@@ -1519,5 +1519,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028030226.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028030426.pdf"
 }
