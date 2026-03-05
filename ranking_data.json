@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年03月04日 20:33 JST",
+    "last_checked": "2026年03月05日 12:31 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028030426.pdf",
-    "last_updated": "2026年03月04日 20:33 JST",
+    "last_updated": "2026年03月05日 12:31 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028030426.pdf",
     "individuals": [
         {
@@ -864,14 +864,6 @@
             "old_date": "2026/01/14",
             "new_sl": "5",
             "new_date": "2026/03/04"
-        },
-        {
-            "player_name": "Kuboya Shiori",
-            "member_number": "16987",
-            "old_sl": "3",
-            "old_date": "2025/12/03",
-            "new_sl": "2",
-            "new_date": "2026/02/25"
         }
     ],
     "ranking": [
