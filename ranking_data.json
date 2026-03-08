@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年03月07日 20:07 JST",
+    "last_checked": "2026年03月08日 10:39 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028030426.pdf",
-    "last_updated": "2026年03月07日 20:07 JST",
+    "last_updated": "2026年03月08日 10:39 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028030426.pdf",
     "individuals": [
         {
@@ -856,16 +856,7 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028030226.pdf",
-    "sl_changes": [
-        {
-            "player_name": "Murayama Shotaro",
-            "member_number": "15428",
-            "old_sl": "6",
-            "old_date": "2026/01/14",
-            "new_sl": "5",
-            "new_date": "2026/03/04"
-        }
-    ],
+    "sl_changes": [],
     "ranking": [
         {
             "team_name": "Happy Lucky Ricky",
