@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年03月09日 10:40 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028030426.pdf",
-    "last_updated": "2026年03月09日 10:40 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028030426.pdf",
+    "last_checked": "2026年03月09日 20:18 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028030926.pdf",
+    "last_updated": "2026年03月09日 20:18 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028030926.pdf",
     "individuals": [
         {
             "team_name": "Lucky Flockers",
@@ -858,6 +858,38 @@
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028030226.pdf",
     "sl_changes": [
         {
+            "player_name": "Narisawa Ann",
+            "member_number": "15436",
+            "old_sl": "3",
+            "old_date": "2025/03/05",
+            "new_sl": "4",
+            "new_date": "2026/03/09"
+        },
+        {
+            "player_name": "Nishimura Ayumi",
+            "member_number": "16228",
+            "old_sl": "2",
+            "old_date": "2026/02/02",
+            "new_sl": "1",
+            "new_date": "2026/03/09"
+        },
+        {
+            "player_name": "Onaka Hinase",
+            "member_number": "17197",
+            "old_sl": "2",
+            "old_date": "2026/01/08",
+            "new_sl": "3",
+            "new_date": "2026/03/09"
+        },
+        {
+            "player_name": "Watanabe Shunya",
+            "member_number": "17201",
+            "old_sl": "2",
+            "old_date": "2026/01/08",
+            "new_sl": "3",
+            "new_date": "2026/03/09"
+        },
+        {
             "player_name": "Murayama Shotaro",
             "member_number": "15428",
             "old_sl": "6",
@@ -878,6 +910,11 @@
             "points": 422
         },
         {
+            "team_name": "Tamanchu",
+            "team_id": "11",
+            "points": 417
+        },
+        {
             "team_name": "Rui X sei",
             "team_id": "9",
             "points": 399
@@ -888,14 +925,24 @@
             "points": 389
         },
         {
-            "team_name": "Tamanchu",
-            "team_id": "11",
-            "points": 380
+            "team_name": "Taigaku Straight Flush",
+            "team_id": "7",
+            "points": 388
+        },
+        {
+            "team_name": "Oku niki",
+            "team_id": "2",
+            "points": 379
         },
         {
             "team_name": "Hinerisugita!",
             "team_id": "4",
             "points": 358
+        },
+        {
+            "team_name": "yattenna",
+            "team_id": "10",
+            "points": 335
         },
         {
             "team_name": "Wagamama foundry",
@@ -906,21 +953,6 @@
             "team_name": "Tokyo Bayashis",
             "team_id": "5",
             "points": 327
-        },
-        {
-            "team_name": "Oku niki",
-            "team_id": "2",
-            "points": 326
-        },
-        {
-            "team_name": "Taigaku Straight Flush",
-            "team_id": "7",
-            "points": 325
-        },
-        {
-            "team_name": "yattenna",
-            "team_id": "10",
-            "points": 288
         }
     ],
     "roster": [
@@ -1166,7 +1198,7 @@
                     "player_name": "Narisawa, Ann",
                     "player_number": "15436",
                     "gender": "-",
-                    "sl": 3
+                    "sl": 4
                 },
                 {
                     "player_name": "Yokose, Miku",
@@ -1190,7 +1222,7 @@
                     "player_name": "Onaka, Hinase",
                     "player_number": "17197",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 }
             ]
         },
@@ -1298,7 +1330,7 @@
                     "player_name": "Watanabe, Shunya",
                     "player_number": "17201",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 }
             ]
         },
@@ -1508,7 +1540,7 @@
                     "player_name": "Nishimura, Ayumi",
                     "player_number": "16228",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 1
                 },
                 {
                     "player_name": "Hirata, Nao",
@@ -1519,5 +1551,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028030426.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028030926.pdf"
 }
