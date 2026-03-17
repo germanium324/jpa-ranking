@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年03月16日 20:22 JST",
+    "last_checked": "2026年03月17日 10:39 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028031626.pdf",
-    "last_updated": "2026年03月16日 20:22 JST",
+    "last_updated": "2026年03月17日 10:39 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028031626.pdf",
     "individuals": [
         {
@@ -932,30 +932,6 @@
             "old_date": "2026/02/18",
             "new_sl": "3",
             "new_date": "2026/03/13"
-        },
-        {
-            "player_name": "Narisawa Ann",
-            "member_number": "15436",
-            "old_sl": "3",
-            "old_date": "2025/03/05",
-            "new_sl": "4",
-            "new_date": "2026/03/09"
-        },
-        {
-            "player_name": "Nishimura Ayumi",
-            "member_number": "16228",
-            "old_sl": "2",
-            "old_date": "2026/02/02",
-            "new_sl": "1",
-            "new_date": "2026/03/09"
-        },
-        {
-            "player_name": "Watanabe Shunya",
-            "member_number": "17201",
-            "old_sl": "2",
-            "old_date": "2026/01/08",
-            "new_sl": "3",
-            "new_date": "2026/03/09"
         }
     ],
     "ranking": [
