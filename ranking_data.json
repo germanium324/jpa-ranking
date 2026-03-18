@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年03月18日 16:19 JST",
+    "last_checked": "2026年03月18日 16:40 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028031826.pdf",
-    "last_updated": "2026年03月18日 16:19 JST",
+    "last_updated": "2026年03月18日 16:40 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028031826.pdf",
     "individuals": [
         {
@@ -877,6 +877,22 @@
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028031626.pdf",
     "sl_changes": [
+        {
+            "player_name": "Komoto Yuki",
+            "member_number": "15978",
+            "old_sl": "7",
+            "old_date": "2025/10/15",
+            "new_sl": "8",
+            "new_date": "2026/03/18"
+        },
+        {
+            "player_name": "Yumoto Seiya",
+            "member_number": "15959",
+            "old_sl": "4",
+            "old_date": "2026/01/21",
+            "new_sl": "5",
+            "new_date": "2026/03/18"
+        },
         {
             "player_name": "Onaka Hinase",
             "member_number": "17197",
