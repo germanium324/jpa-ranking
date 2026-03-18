@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年03月18日 15:42 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028031626.pdf",
-    "last_updated": "2026年03月18日 15:42 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028031626.pdf",
+    "last_checked": "2026年03月18日 16:02 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028031826.pdf",
+    "last_updated": "2026年03月18日 16:02 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028031826.pdf",
     "individuals": [
         {
             "team_name": "Lucky Flockers",
@@ -938,12 +938,22 @@
         {
             "team_name": "Happy Lucky Ricky",
             "team_id": "8",
-            "points": 509
+            "points": 557
         },
         {
             "team_name": "Hinerisugita!",
             "team_id": "4",
-            "points": 478
+            "points": 533
+        },
+        {
+            "team_name": "Lucky Flockers",
+            "team_id": "6",
+            "points": 509
+        },
+        {
+            "team_name": "Oku niki",
+            "team_id": "2",
+            "points": 482
         },
         {
             "team_name": "Kangaroo Kick",
@@ -956,14 +966,14 @@
             "points": 469
         },
         {
-            "team_name": "Lucky Flockers",
-            "team_id": "6",
-            "points": 465
-        },
-        {
             "team_name": "Rui X sei",
             "team_id": "9",
             "points": 447
+        },
+        {
+            "team_name": "yattenna",
+            "team_id": "10",
+            "points": 442
         },
         {
             "team_name": "Taigaku Straight Flush",
@@ -979,16 +989,6 @@
             "team_name": "Tokyo Bayashis",
             "team_id": "5",
             "points": 427
-        },
-        {
-            "team_name": "Oku niki",
-            "team_id": "2",
-            "points": 426
-        },
-        {
-            "team_name": "yattenna",
-            "team_id": "10",
-            "points": 390
         }
     ],
     "roster": [
@@ -1180,7 +1180,7 @@
                     "player_name": "Yumoto, Seiya",
                     "player_number": "15959",
                     "gender": "-",
-                    "sl": 4
+                    "sl": 5
                 },
                 {
                     "player_name": "Takekawa, Sou",
@@ -1222,7 +1222,7 @@
                     "player_name": "Komoto, Yuki",
                     "player_number": "15978",
                     "gender": "-",
-                    "sl": 7
+                    "sl": 8
                 },
                 {
                     "player_name": "Hori, Masaki",
@@ -1587,5 +1587,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028031626.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028031826.pdf"
 }
