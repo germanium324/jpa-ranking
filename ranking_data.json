@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年03月19日 20:17 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028031826.pdf",
-    "last_updated": "2026年03月19日 20:17 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028031826.pdf",
+    "last_checked": "2026年03月20日 10:40 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028032026.pdf",
+    "last_updated": "2026年03月20日 10:40 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028032026.pdf",
     "individuals": [
         {
             "team_name": "Lucky Flockers",
@@ -878,6 +878,14 @@
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028031626.pdf",
     "sl_changes": [
         {
+            "player_name": "Tanaka Nagoma",
+            "member_number": "16525",
+            "old_sl": "4",
+            "old_date": "2025/11/19",
+            "new_sl": "5",
+            "new_date": "2026/03/20"
+        },
+        {
             "player_name": "Komoto Yuki",
             "member_number": "15978",
             "old_sl": "7",
@@ -967,6 +975,16 @@
             "points": 509
         },
         {
+            "team_name": "Taigaku Straight Flush",
+            "team_id": "7",
+            "points": 505
+        },
+        {
+            "team_name": "Rui X sei",
+            "team_id": "9",
+            "points": 484
+        },
+        {
             "team_name": "Oku niki",
             "team_id": "2",
             "points": 482
@@ -982,18 +1000,8 @@
             "points": 469
         },
         {
-            "team_name": "Rui X sei",
-            "team_id": "9",
-            "points": 447
-        },
-        {
             "team_name": "yattenna",
             "team_id": "10",
-            "points": 442
-        },
-        {
-            "team_name": "Taigaku Straight Flush",
-            "team_id": "7",
             "points": 442
         },
         {
@@ -1340,7 +1348,7 @@
                     "player_name": "Tanaka, Nagoma",
                     "player_number": "16525",
                     "gender": "-",
-                    "sl": 4
+                    "sl": 5
                 },
                 {
                     "player_name": "Kobayashi, Nao",
@@ -1603,5 +1611,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028031826.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028032026.pdf"
 }
