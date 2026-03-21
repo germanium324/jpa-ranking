@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年03月20日 20:14 JST",
+    "last_checked": "2026年03月21日 10:38 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028032026.pdf",
-    "last_updated": "2026年03月20日 20:14 JST",
+    "last_updated": "2026年03月21日 10:38 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028032026.pdf",
     "individuals": [
         {
@@ -908,54 +908,6 @@
             "old_date": "2026/03/09",
             "new_sl": "2",
             "new_date": "2026/03/16"
-        },
-        {
-            "player_name": "Ito Tomoki",
-            "member_number": "16994",
-            "old_sl": "2",
-            "old_date": "2025/09/10",
-            "new_sl": "3",
-            "new_date": "2026/03/13"
-        },
-        {
-            "player_name": "Kuboya Shiori",
-            "member_number": "16987",
-            "old_sl": "2",
-            "old_date": "2026/02/25",
-            "new_sl": "3",
-            "new_date": "2026/03/13"
-        },
-        {
-            "player_name": "Morikawa Shion",
-            "member_number": "13373",
-            "old_sl": "4",
-            "old_date": "2025/10/29",
-            "new_sl": "5",
-            "new_date": "2026/03/13"
-        },
-        {
-            "player_name": "Saito Yuya",
-            "member_number": "17001",
-            "old_sl": "3",
-            "old_date": "2026/01/28",
-            "new_sl": "2",
-            "new_date": "2026/03/13"
-        },
-        {
-            "player_name": "Sakuta Yutaro",
-            "member_number": "15778",
-            "old_sl": "4",
-            "old_date": "2026/02/18",
-            "new_sl": "3",
-            "new_date": "2026/03/13"
-        },
-        {
-            "player_name": "Takekawa Sou",
-            "member_number": "15973",
-            "old_sl": "4",
-            "old_date": "2026/02/18",
-            "new_sl": "3",
-            "new_date": "2026/03/13"
         }
     ],
     "ranking": [
