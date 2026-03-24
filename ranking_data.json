@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年03月23日 20:20 JST",
+    "last_checked": "2026年03月24日 10:39 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028032326.pdf",
-    "last_updated": "2026年03月23日 20:20 JST",
+    "last_updated": "2026年03月24日 10:39 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028032326.pdf",
     "individuals": [
         {
@@ -924,14 +924,6 @@
             "old_date": "2026/01/21",
             "new_sl": "5",
             "new_date": "2026/03/18"
-        },
-        {
-            "player_name": "Onaka Hinase",
-            "member_number": "17197",
-            "old_sl": "3",
-            "old_date": "2026/03/09",
-            "new_sl": "2",
-            "new_date": "2026/03/16"
         }
     ],
     "ranking": [
