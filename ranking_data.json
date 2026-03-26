@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年03月25日 20:20 JST",
+    "last_checked": "2026年03月26日 10:41 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028032326.pdf",
-    "last_updated": "2026年03月25日 20:20 JST",
+    "last_updated": "2026年03月26日 10:41 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028032326.pdf",
     "individuals": [
         {
@@ -908,22 +908,6 @@
             "old_date": "2025/11/19",
             "new_sl": "5",
             "new_date": "2026/03/20"
-        },
-        {
-            "player_name": "Komoto Yuki",
-            "member_number": "15978",
-            "old_sl": "7",
-            "old_date": "2025/10/15",
-            "new_sl": "8",
-            "new_date": "2026/03/18"
-        },
-        {
-            "player_name": "Yumoto Seiya",
-            "member_number": "15959",
-            "old_sl": "4",
-            "old_date": "2026/01/21",
-            "new_sl": "5",
-            "new_date": "2026/03/18"
         }
     ],
     "ranking": [
