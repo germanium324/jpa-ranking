@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年03月26日 20:23 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028032326.pdf",
-    "last_updated": "2026年03月26日 20:23 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028032326.pdf",
+    "last_checked": "2026年03月27日 10:41 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028032726.pdf",
+    "last_updated": "2026年03月27日 10:41 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028032726.pdf",
     "individuals": [
         {
             "team_name": "Lucky Flockers",
@@ -878,6 +878,22 @@
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028032326.pdf",
     "sl_changes": [
         {
+            "player_name": "Kato Hajime",
+            "member_number": "13672",
+            "old_sl": "6",
+            "old_date": "2025/01/15",
+            "new_sl": "7",
+            "new_date": "2026/03/27"
+        },
+        {
+            "player_name": "Nishimura Ayumi",
+            "member_number": "16228",
+            "old_sl": "1",
+            "old_date": "2026/03/09",
+            "new_sl": "2",
+            "new_date": "2026/03/27"
+        },
+        {
             "player_name": "Hayashi Yasuyuki",
             "member_number": "16771",
             "old_sl": "6",
@@ -914,7 +930,17 @@
         {
             "team_name": "Happy Lucky Ricky",
             "team_id": "8",
-            "points": 557
+            "points": 611
+        },
+        {
+            "team_name": "Hinerisugita!",
+            "team_id": "4",
+            "points": 574
+        },
+        {
+            "team_name": "Lucky Flockers",
+            "team_id": "6",
+            "points": 559
         },
         {
             "team_name": "Tamanchu",
@@ -922,9 +948,9 @@
             "points": 543
         },
         {
-            "team_name": "Hinerisugita!",
-            "team_id": "4",
-            "points": 533
+            "team_name": "Oku niki",
+            "team_id": "2",
+            "points": 537
         },
         {
             "team_name": "Kangaroo Kick",
@@ -932,24 +958,19 @@
             "points": 518
         },
         {
-            "team_name": "Lucky Flockers",
-            "team_id": "6",
-            "points": 509
-        },
-        {
             "team_name": "Taigaku Straight Flush",
             "team_id": "7",
             "points": 505
         },
         {
+            "team_name": "yattenna",
+            "team_id": "10",
+            "points": 492
+        },
+        {
             "team_name": "Rui X sei",
             "team_id": "9",
             "points": 484
-        },
-        {
-            "team_name": "Oku niki",
-            "team_id": "2",
-            "points": 482
         },
         {
             "team_name": "Tokyo Bayashis",
@@ -960,11 +981,6 @@
             "team_name": "Wagamama foundry",
             "team_id": "3",
             "points": 453
-        },
-        {
-            "team_name": "yattenna",
-            "team_id": "10",
-            "points": 442
         }
     ],
     "roster": [
@@ -1150,7 +1166,7 @@
                     "player_name": "Kato, Hajime",
                     "player_number": "13672",
                     "gender": "-",
-                    "sl": 6
+                    "sl": 7
                 },
                 {
                     "player_name": "Yumoto, Seiya",
@@ -1552,7 +1568,7 @@
                     "player_name": "Nishimura, Ayumi",
                     "player_number": "16228",
                     "gender": "-",
-                    "sl": 1
+                    "sl": 2
                 },
                 {
                     "player_name": "Hirata, Nao",
@@ -1563,5 +1579,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028032326.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028032726.pdf"
 }
