@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年03月27日 20:20 JST",
+    "last_checked": "2026年03月28日 10:40 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028032726.pdf",
-    "last_updated": "2026年03月27日 20:20 JST",
+    "last_updated": "2026年03月28日 10:40 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028032726.pdf",
     "individuals": [
         {
@@ -916,14 +916,6 @@
             "old_date": "2026/03/04",
             "new_sl": "6",
             "new_date": "2026/03/23"
-        },
-        {
-            "player_name": "Tanaka Nagoma",
-            "member_number": "16525",
-            "old_sl": "4",
-            "old_date": "2025/11/19",
-            "new_sl": "5",
-            "new_date": "2026/03/20"
         }
     ],
     "ranking": [
