@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年03月30日 20:26 JST",
+    "last_checked": "2026年03月31日 10:40 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028033026.pdf",
-    "last_updated": "2026年03月30日 20:26 JST",
+    "last_updated": "2026年03月31日 10:40 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028033026.pdf",
     "individuals": [
         {
@@ -910,30 +910,6 @@
             "old_date": "2026/03/09",
             "new_sl": "2",
             "new_date": "2026/03/27"
-        },
-        {
-            "player_name": "Hayashi Yasuyuki",
-            "member_number": "16771",
-            "old_sl": "6",
-            "old_date": "2025/12/24",
-            "new_sl": "7",
-            "new_date": "2026/03/23"
-        },
-        {
-            "player_name": "Kuboya Shiori",
-            "member_number": "16987",
-            "old_sl": "3",
-            "old_date": "2026/03/13",
-            "new_sl": "2",
-            "new_date": "2026/03/23"
-        },
-        {
-            "player_name": "Murayama Shotaro",
-            "member_number": "15428",
-            "old_sl": "5",
-            "old_date": "2026/03/04",
-            "new_sl": "6",
-            "new_date": "2026/03/23"
         }
     ],
     "ranking": [
