@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年04月01日 17:06 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028033026.pdf",
-    "last_updated": "2026年04月01日 17:06 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028033026.pdf",
+    "last_checked": "2026年04月01日 20:24 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028040126.pdf",
+    "last_updated": "2026年04月01日 20:24 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028040126.pdf",
     "individuals": [
         {
             "team_name": "Lucky Flockers",
@@ -888,6 +888,38 @@
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028033026.pdf",
     "sl_changes": [
         {
+            "player_name": "Iwano Atsushi",
+            "member_number": "15343",
+            "old_sl": "5",
+            "old_date": "2025/04/16",
+            "new_sl": "6",
+            "new_date": "2026/04/01"
+        },
+        {
+            "player_name": "Kobayashi Nao",
+            "member_number": "16992",
+            "old_sl": "1",
+            "old_date": "2026/02/18",
+            "new_sl": "2",
+            "new_date": "2026/04/01"
+        },
+        {
+            "player_name": "Miyake Ryoga",
+            "member_number": "16989",
+            "old_sl": "3",
+            "old_date": "2025/10/31",
+            "new_sl": "4",
+            "new_date": "2026/04/01"
+        },
+        {
+            "player_name": "Takahashi Masatoshi",
+            "member_number": "16772",
+            "old_sl": "2",
+            "old_date": "2025/06/05",
+            "new_sl": "3",
+            "new_date": "2026/04/01"
+        },
+        {
             "player_name": "Ogasawara Rin",
             "member_number": "17199",
             "old_sl": "2",
@@ -914,44 +946,44 @@
     ],
     "ranking": [
         {
-            "team_name": "Happy Lucky Ricky",
-            "team_id": "8",
-            "points": 611
-        },
-        {
             "team_name": "Tamanchu",
             "team_id": "11",
-            "points": 597
+            "points": 652
         },
         {
             "team_name": "Hinerisugita!",
             "team_id": "4",
-            "points": 574
+            "points": 646
         },
         {
             "team_name": "Taigaku Straight Flush",
             "team_id": "7",
-            "points": 573
+            "points": 643
+        },
+        {
+            "team_name": "Happy Lucky Ricky",
+            "team_id": "8",
+            "points": 641
         },
         {
             "team_name": "Kangaroo Kick",
             "team_id": "1",
-            "points": 564
-        },
-        {
-            "team_name": "Lucky Flockers",
-            "team_id": "6",
-            "points": 559
+            "points": 619
         },
         {
             "team_name": "Tokyo Bayashis",
             "team_id": "5",
-            "points": 543
+            "points": 603
+        },
+        {
+            "team_name": "Lucky Flockers",
+            "team_id": "6",
+            "points": 599
         },
         {
             "team_name": "Oku niki",
             "team_id": "2",
-            "points": 537
+            "points": 582
         },
         {
             "team_name": "Rui X sei",
@@ -959,14 +991,14 @@
             "points": 520
         },
         {
+            "team_name": "Wagamama foundry",
+            "team_id": "3",
+            "points": 513
+        },
+        {
             "team_name": "yattenna",
             "team_id": "10",
             "points": 492
-        },
-        {
-            "team_name": "Wagamama foundry",
-            "team_id": "3",
-            "points": 485
         }
     ],
     "roster": [
@@ -1170,7 +1202,7 @@
                     "player_name": "Miyake, Ryoga",
                     "player_number": "16989",
                     "gender": "-",
-                    "sl": 3
+                    "sl": 4
                 },
                 {
                     "player_name": "Kurokawa, Yuki",
@@ -1446,7 +1478,7 @@
                     "player_name": "Takahashi, Masatoshi",
                     "player_number": "16772",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 },
                 {
                     "player_name": "Ogasawara, Rin",
@@ -1565,5 +1597,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028033026.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028040126.pdf"
 }
