@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年04月03日 20:19 JST",
+    "last_checked": "2026年04月04日 10:39 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028040126.pdf",
-    "last_updated": "2026年04月03日 20:19 JST",
+    "last_updated": "2026年04月04日 10:39 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028040126.pdf",
     "individuals": [
         {
@@ -926,22 +926,6 @@
             "old_date": "2026/01/08",
             "new_sl": "3",
             "new_date": "2026/03/30"
-        },
-        {
-            "player_name": "Kato Hajime",
-            "member_number": "13672",
-            "old_sl": "6",
-            "old_date": "2025/01/15",
-            "new_sl": "7",
-            "new_date": "2026/03/27"
-        },
-        {
-            "player_name": "Nishimura Ayumi",
-            "member_number": "16228",
-            "old_sl": "1",
-            "old_date": "2026/03/09",
-            "new_sl": "2",
-            "new_date": "2026/03/27"
         }
     ],
     "ranking": [
