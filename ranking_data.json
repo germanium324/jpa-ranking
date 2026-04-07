@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年04月06日 20:22 JST",
+    "last_checked": "2026年04月07日 10:41 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028040626.pdf",
-    "last_updated": "2026年04月06日 20:22 JST",
+    "last_updated": "2026年04月07日 10:41 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028040626.pdf",
     "individuals": [
         {
@@ -934,14 +934,6 @@
             "old_date": "2025/06/05",
             "new_sl": "3",
             "new_date": "2026/04/01"
-        },
-        {
-            "player_name": "Ogasawara Rin",
-            "member_number": "17199",
-            "old_sl": "2",
-            "old_date": "2026/01/08",
-            "new_sl": "3",
-            "new_date": "2026/03/30"
         }
     ],
     "ranking": [
