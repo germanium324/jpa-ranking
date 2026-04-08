@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年04月08日 15:51 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028040626.pdf",
-    "last_updated": "2026年04月08日 15:51 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028040626.pdf",
+    "last_checked": "2026年04月08日 16:05 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028040826.pdf",
+    "last_updated": "2026年04月08日 16:05 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028040826.pdf",
     "individuals": [
         {
             "team_name": "Lucky Flockers",
@@ -938,34 +938,39 @@
     ],
     "ranking": [
         {
-            "team_name": "Tamanchu",
-            "team_id": "11",
-            "points": 652
-        },
-        {
             "team_name": "Hinerisugita!",
             "team_id": "4",
-            "points": 646
-        },
-        {
-            "team_name": "Taigaku Straight Flush",
-            "team_id": "7",
-            "points": 643
+            "points": 707
         },
         {
             "team_name": "Happy Lucky Ricky",
             "team_id": "8",
-            "points": 641
+            "points": 700
+        },
+        {
+            "team_name": "Tamanchu",
+            "team_id": "11",
+            "points": 698
+        },
+        {
+            "team_name": "Taigaku Straight Flush",
+            "team_id": "7",
+            "points": 677
         },
         {
             "team_name": "Kangaroo Kick",
             "team_id": "1",
-            "points": 619
+            "points": 660
         },
         {
             "team_name": "Tokyo Bayashis",
             "team_id": "5",
-            "points": 603
+            "points": 658
+        },
+        {
+            "team_name": "Oku niki",
+            "team_id": "2",
+            "points": 636
         },
         {
             "team_name": "Lucky Flockers",
@@ -978,19 +983,14 @@
             "points": 583
         },
         {
-            "team_name": "Oku niki",
-            "team_id": "2",
-            "points": 582
-        },
-        {
             "team_name": "yattenna",
             "team_id": "10",
-            "points": 529
+            "points": 578
         },
         {
             "team_name": "Wagamama foundry",
             "team_id": "3",
-            "points": 513
+            "points": 564
         }
     ],
     "roster": [
@@ -1410,7 +1410,7 @@
                     "player_name": "Asakura, Riki",
                     "player_number": "16232",
                     "gender": "-",
-                    "sl": 3
+                    "sl": 4
                 },
                 {
                     "player_name": "Nishiura, Yuto",
@@ -1589,5 +1589,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028040626.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028040826.pdf"
 }
