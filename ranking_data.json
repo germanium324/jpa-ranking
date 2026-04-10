@@ -1,28 +1,28 @@
 {
-    "last_checked": "2026年04月10日 10:42 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028040826.pdf",
-    "last_updated": "2026年04月10日 10:42 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028040826.pdf",
+    "last_checked": "2026年04月10日 20:22 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028041026.pdf",
+    "last_updated": "2026年04月10日 20:22 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028041026.pdf",
     "individuals": [
-        {
-            "team_name": "Lucky Flockers",
-            "player_name": "Tatsuki Emoto",
-            "player_number": "13670",
-            "gender": "男",
-            "sl": 8,
-            "wins": "6/6",
-            "avg_points": 15.17,
-            "points_rate": "75.8%"
-        },
         {
             "team_name": "Oku niki",
             "player_name": "Rimo Tomiki",
             "player_number": "16769",
             "gender": "女",
             "sl": 1,
-            "wins": "3/4",
-            "avg_points": 14.75,
-            "points_rate": "73.8%"
+            "wins": "4/5",
+            "avg_points": 15.6,
+            "points_rate": "78.0%"
+        },
+        {
+            "team_name": "Lucky Flockers",
+            "player_name": "Tatsuki Emoto",
+            "player_number": "13670",
+            "gender": "男",
+            "sl": 8,
+            "wins": "7/7",
+            "avg_points": 15.0,
+            "points_rate": "75.0%"
         },
         {
             "team_name": "Tokyo Bayashis",
@@ -40,9 +40,9 @@
             "player_number": "15436",
             "gender": "女",
             "sl": 4,
-            "wins": "7/7",
-            "avg_points": 14.14,
-            "points_rate": "70.7%"
+            "wins": "8/8",
+            "avg_points": 14.0,
+            "points_rate": "70.0%"
         },
         {
             "team_name": "yattenna",
@@ -60,19 +60,9 @@
             "player_number": "15775",
             "gender": "男",
             "sl": 8,
-            "wins": "7/9",
-            "avg_points": 13.44,
-            "points_rate": "67.2%"
-        },
-        {
-            "team_name": "Kangaroo Kick",
-            "player_name": "Takato Nakamura",
-            "player_number": "16758",
-            "gender": "男",
-            "sl": 4,
-            "wins": "5/7",
-            "avg_points": 13.29,
-            "points_rate": "66.4%"
+            "wins": "8/10",
+            "avg_points": 13.5,
+            "points_rate": "67.5%"
         },
         {
             "team_name": "Taigaku Straight Flush",
@@ -85,34 +75,24 @@
             "points_rate": "65.0%"
         },
         {
+            "team_name": "Happy Lucky Ricky",
+            "player_name": "Riku Aizawa",
+            "player_number": "13679",
+            "gender": "男",
+            "sl": 8,
+            "wins": "7/11",
+            "avg_points": 13.0,
+            "points_rate": "65.0%"
+        },
+        {
             "team_name": "Tamanchu",
             "player_name": "Keisho Yamaguchi",
             "player_number": "16754",
             "gender": "男",
             "sl": 6,
-            "wins": "4/5",
+            "wins": "5/6",
             "avg_points": 13.0,
             "points_rate": "65.0%"
-        },
-        {
-            "team_name": "Hinerisugita!",
-            "player_name": "Kai Sugimoto",
-            "player_number": "13683",
-            "gender": "男",
-            "sl": 8,
-            "wins": "7/8",
-            "avg_points": 12.88,
-            "points_rate": "64.4%"
-        },
-        {
-            "team_name": "Oku niki",
-            "player_name": "Yuki Komoto",
-            "player_number": "15978",
-            "gender": "男",
-            "sl": 8,
-            "wins": "8/10",
-            "avg_points": 12.8,
-            "points_rate": "64.0%"
         },
         {
             "team_name": "Kangaroo Kick",
@@ -123,16 +103,6 @@
             "wins": "7/8",
             "avg_points": 12.75,
             "points_rate": "63.8%"
-        },
-        {
-            "team_name": "Happy Lucky Ricky",
-            "player_name": "Riku Aizawa",
-            "player_number": "13679",
-            "gender": "男",
-            "sl": 8,
-            "wins": "6/10",
-            "avg_points": 12.7,
-            "points_rate": "63.5%"
         },
         {
             "team_name": "Rui X sei",
@@ -155,14 +125,34 @@
             "points_rate": "62.5%"
         },
         {
-            "team_name": "Tamanchu",
-            "player_name": "Hayato Takenaka",
-            "player_number": "16997",
+            "team_name": "Kangaroo Kick",
+            "player_name": "Takato Nakamura",
+            "player_number": "16758",
             "gender": "男",
             "sl": 4,
-            "wins": "6/9",
-            "avg_points": 12.44,
-            "points_rate": "62.2%"
+            "wins": "5/8",
+            "avg_points": 12.5,
+            "points_rate": "62.5%"
+        },
+        {
+            "team_name": "Hinerisugita!",
+            "player_name": "Kai Sugimoto",
+            "player_number": "13683",
+            "gender": "男",
+            "sl": 8,
+            "wins": "7/9",
+            "avg_points": 12.33,
+            "points_rate": "61.7%"
+        },
+        {
+            "team_name": "Oku niki",
+            "player_name": "Yuki Komoto",
+            "player_number": "15978",
+            "gender": "男",
+            "sl": 8,
+            "wins": "8/11",
+            "avg_points": 12.27,
+            "points_rate": "61.4%"
         },
         {
             "team_name": "Tamanchu",
@@ -170,19 +160,9 @@
             "player_number": "15972",
             "gender": "男",
             "sl": 6,
-            "wins": "5/6",
-            "avg_points": 12.0,
-            "points_rate": "60.0%"
-        },
-        {
-            "team_name": "Taigaku Straight Flush",
-            "player_name": "Koyu Kurokawa",
-            "player_number": "16236",
-            "gender": "男",
-            "sl": 5,
-            "wins": "6/8",
-            "avg_points": 12.0,
-            "points_rate": "60.0%"
+            "wins": "6/7",
+            "avg_points": 12.14,
+            "points_rate": "60.7%"
         },
         {
             "team_name": "Tamanchu",
@@ -190,6 +170,16 @@
             "player_number": "16755",
             "gender": "男",
             "sl": 5,
+            "wins": "4/5",
+            "avg_points": 12.0,
+            "points_rate": "60.0%"
+        },
+        {
+            "team_name": "Wagamama foundry",
+            "player_name": "Ameri Tsujimoto",
+            "player_number": "16986",
+            "gender": "女",
+            "sl": 2,
             "wins": "4/5",
             "avg_points": 12.0,
             "points_rate": "60.0%"
@@ -205,34 +195,14 @@
             "points_rate": "60.0%"
         },
         {
-            "team_name": "Happy Lucky Ricky",
-            "player_name": "Garcia Raven",
-            "player_number": "16999",
-            "gender": "男",
-            "sl": 7,
-            "wins": "3/5",
-            "avg_points": 11.8,
-            "points_rate": "59.0%"
-        },
-        {
-            "team_name": "Rui X sei",
-            "player_name": "Hanana Sato",
-            "player_number": "16763",
+            "team_name": "Kangaroo Kick",
+            "player_name": "Koharu Iyono",
+            "player_number": "15429",
             "gender": "女",
-            "sl": 3,
-            "wins": "4/6",
-            "avg_points": 11.67,
-            "points_rate": "58.3%"
-        },
-        {
-            "team_name": "Wagamama foundry",
-            "player_name": "Yuna Ohe",
-            "player_number": "15430",
-            "gender": "女",
-            "sl": 6,
-            "wins": "5/8",
-            "avg_points": 11.63,
-            "points_rate": "58.1%"
+            "sl": 5,
+            "wins": "4/8",
+            "avg_points": 11.88,
+            "points_rate": "59.4%"
         },
         {
             "team_name": "Happy Lucky Ricky",
@@ -240,7 +210,37 @@
             "player_number": "13373",
             "gender": "男",
             "sl": 5,
-            "wins": "3/5",
+            "wins": "4/6",
+            "avg_points": 11.83,
+            "points_rate": "59.2%"
+        },
+        {
+            "team_name": "Wagamama foundry",
+            "player_name": "Yuna Ohe",
+            "player_number": "15430",
+            "gender": "女",
+            "sl": 6,
+            "wins": "6/9",
+            "avg_points": 11.67,
+            "points_rate": "58.3%"
+        },
+        {
+            "team_name": "Hinerisugita!",
+            "player_name": "Ryusei Karashima",
+            "player_number": "15980",
+            "gender": "男",
+            "sl": 6,
+            "wins": "7/11",
+            "avg_points": 11.64,
+            "points_rate": "58.2%"
+        },
+        {
+            "team_name": "Lucky Flockers",
+            "player_name": "Seiya Yumoto",
+            "player_number": "15959",
+            "gender": "男",
+            "sl": 5,
+            "wins": "7/10",
             "avg_points": 11.6,
             "points_rate": "58.0%"
         },
@@ -265,16 +265,6 @@
             "points_rate": "57.5%"
         },
         {
-            "team_name": "Wagamama foundry",
-            "player_name": "Ameri Tsujimoto",
-            "player_number": "16986",
-            "gender": "女",
-            "sl": 2,
-            "wins": "3/4",
-            "avg_points": 11.5,
-            "points_rate": "57.5%"
-        },
-        {
             "team_name": "Taigaku Straight Flush",
             "player_name": "Nagoma Tanaka",
             "player_number": "16525",
@@ -285,24 +275,34 @@
             "points_rate": "57.1%"
         },
         {
-            "team_name": "Hinerisugita!",
-            "player_name": "Ryusei Karashima",
-            "player_number": "15980",
+            "team_name": "Tamanchu",
+            "player_name": "Hayato Takenaka",
+            "player_number": "16997",
             "gender": "男",
-            "sl": 6,
+            "sl": 4,
             "wins": "6/10",
             "avg_points": 11.3,
             "points_rate": "56.5%"
         },
         {
-            "team_name": "Lucky Flockers",
-            "player_name": "Rintaro Sasada",
-            "player_number": "12569",
+            "team_name": "Taigaku Straight Flush",
+            "player_name": "Koyu Kurokawa",
+            "player_number": "16236",
             "gender": "男",
-            "sl": 6,
+            "sl": 5,
+            "wins": "6/9",
+            "avg_points": 11.22,
+            "points_rate": "56.1%"
+        },
+        {
+            "team_name": "Hinerisugita!",
+            "player_name": "Masaki Ishida",
+            "player_number": "16766",
+            "gender": "男",
+            "sl": 2,
             "wins": "5/7",
-            "avg_points": 11.29,
-            "points_rate": "56.4%"
+            "avg_points": 11.14,
+            "points_rate": "55.7%"
         },
         {
             "team_name": "Taigaku Straight Flush",
@@ -313,16 +313,6 @@
             "wins": "6/8",
             "avg_points": 11.13,
             "points_rate": "55.6%"
-        },
-        {
-            "team_name": "Lucky Flockers",
-            "player_name": "Seiya Yumoto",
-            "player_number": "15959",
-            "gender": "男",
-            "sl": 5,
-            "wins": "6/9",
-            "avg_points": 11.0,
-            "points_rate": "55.0%"
         },
         {
             "team_name": "Tokyo Bayashis",
@@ -345,12 +335,12 @@
             "points_rate": "54.3%"
         },
         {
-            "team_name": "Kangaroo Kick",
-            "player_name": "Koharu Iyono",
-            "player_number": "15429",
+            "team_name": "Rui X sei",
+            "player_name": "Hanana Sato",
+            "player_number": "16763",
             "gender": "女",
-            "sl": 5,
-            "wins": "3/7",
+            "sl": 3,
+            "wins": "4/7",
             "avg_points": 10.86,
             "points_rate": "54.3%"
         },
@@ -365,24 +355,14 @@
             "points_rate": "54.2%"
         },
         {
-            "team_name": "Taigaku Straight Flush",
-            "player_name": "Nao Kobayashi",
-            "player_number": "16992",
-            "gender": "女",
-            "sl": 2,
-            "wins": "4/6",
-            "avg_points": 10.83,
-            "points_rate": "54.2%"
-        },
-        {
-            "team_name": "Hinerisugita!",
-            "player_name": "Satsuki Watanabe",
-            "player_number": "16762",
-            "gender": "女",
-            "sl": 2,
-            "wins": "3/6",
-            "avg_points": 10.67,
-            "points_rate": "53.3%"
+            "team_name": "Lucky Flockers",
+            "player_name": "Rintaro Sasada",
+            "player_number": "12569",
+            "gender": "男",
+            "sl": 6,
+            "wins": "5/8",
+            "avg_points": 10.63,
+            "points_rate": "53.1%"
         },
         {
             "team_name": "Happy Lucky Ricky",
@@ -395,44 +375,14 @@
             "points_rate": "52.1%"
         },
         {
-            "team_name": "Kangaroo Kick",
-            "player_name": "Kazuaki Morikawa",
-            "player_number": "17196",
+            "team_name": "Taigaku Straight Flush",
+            "player_name": "Ryuta Okonogi",
+            "player_number": "12874",
             "gender": "男",
-            "sl": 3,
-            "wins": "3/5",
-            "avg_points": 10.4,
-            "points_rate": "52.0%"
-        },
-        {
-            "team_name": "yattenna",
-            "player_name": "Ayumi Nishimura",
-            "player_number": "16228",
-            "gender": "女",
-            "sl": 1,
-            "wins": "3/6",
-            "avg_points": 10.33,
-            "points_rate": "51.7%"
-        },
-        {
-            "team_name": "Hinerisugita!",
-            "player_name": "Masaki Ishida",
-            "player_number": "16766",
-            "gender": "男",
-            "sl": 2,
-            "wins": "4/6",
-            "avg_points": 10.33,
-            "points_rate": "51.7%"
-        },
-        {
-            "team_name": "Tamanchu",
-            "player_name": "Yuto Nishiura",
-            "player_number": "16996",
-            "gender": "男",
-            "sl": 4,
-            "wins": "6/10",
-            "avg_points": 10.3,
-            "points_rate": "51.5%"
+            "sl": 7,
+            "wins": "4/7",
+            "avg_points": 10.29,
+            "points_rate": "51.4%"
         },
         {
             "team_name": "Happy Lucky Ricky",
@@ -455,6 +405,46 @@
             "points_rate": "51.0%"
         },
         {
+            "team_name": "Hinerisugita!",
+            "player_name": "Satsuki Watanabe",
+            "player_number": "16762",
+            "gender": "女",
+            "sl": 2,
+            "wins": "3/7",
+            "avg_points": 10.14,
+            "points_rate": "50.7%"
+        },
+        {
+            "team_name": "Wagamama foundry",
+            "player_name": "Yoshine Saka",
+            "player_number": "16230",
+            "gender": "女",
+            "sl": 4,
+            "wins": "4/8",
+            "avg_points": 10.0,
+            "points_rate": "50.0%"
+        },
+        {
+            "team_name": "Tamanchu",
+            "player_name": "Yuto Nishiura",
+            "player_number": "16996",
+            "gender": "男",
+            "sl": 4,
+            "wins": "6/11",
+            "avg_points": 10.0,
+            "points_rate": "50.0%"
+        },
+        {
+            "team_name": "Happy Lucky Ricky",
+            "player_name": "Garcia Raven",
+            "player_number": "16999",
+            "gender": "男",
+            "sl": 7,
+            "wins": "3/6",
+            "avg_points": 10.0,
+            "points_rate": "50.0%"
+        },
+        {
             "team_name": "Lucky Flockers",
             "player_name": "Yuki Kurokawa",
             "player_number": "17202",
@@ -465,24 +455,14 @@
             "points_rate": "50.0%"
         },
         {
-            "team_name": "Rui X sei",
-            "player_name": "Rikuto Nishizuka",
-            "player_number": "17004",
-            "gender": "男",
-            "sl": 3,
-            "wins": "4/10",
-            "avg_points": 9.9,
-            "points_rate": "49.5%"
-        },
-        {
             "team_name": "Taigaku Straight Flush",
-            "player_name": "Ryuta Okonogi",
-            "player_number": "12874",
-            "gender": "男",
-            "sl": 7,
-            "wins": "3/6",
-            "avg_points": 9.83,
-            "points_rate": "49.2%"
+            "player_name": "Nao Kobayashi",
+            "player_number": "16992",
+            "gender": "女",
+            "sl": 2,
+            "wins": "4/7",
+            "avg_points": 9.86,
+            "points_rate": "49.3%"
         },
         {
             "team_name": "Hinerisugita!",
@@ -505,6 +485,36 @@
             "points_rate": "49.0%"
         },
         {
+            "team_name": "Tamanchu",
+            "player_name": "Riki Asakura",
+            "player_number": "16232",
+            "gender": "男",
+            "sl": 4,
+            "wins": "3/8",
+            "avg_points": 9.75,
+            "points_rate": "48.8%"
+        },
+        {
+            "team_name": "yattenna",
+            "player_name": "Ayumi Nishimura",
+            "player_number": "16228",
+            "gender": "女",
+            "sl": 1,
+            "wins": "3/7",
+            "avg_points": 9.71,
+            "points_rate": "48.6%"
+        },
+        {
+            "team_name": "Kangaroo Kick",
+            "player_name": "Kazuaki Morikawa",
+            "player_number": "17196",
+            "gender": "男",
+            "sl": 3,
+            "wins": "3/6",
+            "avg_points": 9.67,
+            "points_rate": "48.3%"
+        },
+        {
             "team_name": "Rui X sei",
             "player_name": "Yusuke Hayashi",
             "player_number": "15960",
@@ -515,24 +525,14 @@
             "points_rate": "47.1%"
         },
         {
-            "team_name": "Wagamama foundry",
-            "player_name": "Yoshine Saka",
-            "player_number": "16230",
-            "gender": "女",
-            "sl": 4,
-            "wins": "3/7",
-            "avg_points": 9.43,
-            "points_rate": "47.1%"
-        },
-        {
-            "team_name": "Tamanchu",
-            "player_name": "Riki Asakura",
-            "player_number": "16232",
+            "team_name": "Happy Lucky Ricky",
+            "player_name": "Kanato Masuda",
+            "player_number": "17200",
             "gender": "男",
-            "sl": 3,
-            "wins": "2/7",
-            "avg_points": 9.43,
-            "points_rate": "47.1%"
+            "sl": 2,
+            "wins": "4/9",
+            "avg_points": 9.33,
+            "points_rate": "46.7%"
         },
         {
             "team_name": "Lucky Flockers",
@@ -566,13 +566,23 @@
         },
         {
             "team_name": "yattenna",
-            "player_name": "Haruki Yamauchi",
-            "player_number": "16756",
+            "player_name": "Naoya Abe",
+            "player_number": "16237",
+            "gender": "男",
+            "sl": 6,
+            "wins": "3/8",
+            "avg_points": 9.13,
+            "points_rate": "45.6%"
+        },
+        {
+            "team_name": "Rui X sei",
+            "player_name": "Rikuto Nishizuka",
+            "player_number": "17004",
             "gender": "男",
             "sl": 3,
-            "wins": "3/9",
-            "avg_points": 9.0,
-            "points_rate": "45.0%"
+            "wins": "4/11",
+            "avg_points": 9.09,
+            "points_rate": "45.5%"
         },
         {
             "team_name": "Rui X sei",
@@ -595,14 +605,24 @@
             "points_rate": "44.3%"
         },
         {
-            "team_name": "Oku niki",
-            "player_name": "Yuki Oku",
-            "player_number": "16770",
+            "team_name": "yattenna",
+            "player_name": "Haruki Yamauchi",
+            "player_number": "16756",
             "gender": "男",
-            "sl": 2,
-            "wins": "2/7",
-            "avg_points": 8.71,
-            "points_rate": "43.6%"
+            "sl": 3,
+            "wins": "3/10",
+            "avg_points": 8.7,
+            "points_rate": "43.5%"
+        },
+        {
+            "team_name": "Taigaku Straight Flush",
+            "player_name": "Yuki Yasuda",
+            "player_number": "13691",
+            "gender": "男",
+            "sl": 6,
+            "wins": "4/9",
+            "avg_points": 8.67,
+            "points_rate": "43.3%"
         },
         {
             "team_name": "Happy Lucky Ricky",
@@ -615,24 +635,24 @@
             "points_rate": "43.3%"
         },
         {
-            "team_name": "Kangaroo Kick",
-            "player_name": "Chiharu Ou",
-            "player_number": "17003",
-            "gender": "女",
-            "sl": 2,
-            "wins": "3/6",
-            "avg_points": 8.67,
-            "points_rate": "43.3%"
-        },
-        {
-            "team_name": "Happy Lucky Ricky",
-            "player_name": "Kanato Masuda",
-            "player_number": "17200",
+            "team_name": "yattenna",
+            "player_name": "Kosei Yagi",
+            "player_number": "16982",
             "gender": "男",
             "sl": 2,
-            "wins": "3/8",
-            "avg_points": 8.63,
-            "points_rate": "43.1%"
+            "wins": "2/5",
+            "avg_points": 8.6,
+            "points_rate": "43.0%"
+        },
+        {
+            "team_name": "Oku niki",
+            "player_name": "Yuki Oku",
+            "player_number": "16770",
+            "gender": "男",
+            "sl": 2,
+            "wins": "2/8",
+            "avg_points": 8.5,
+            "points_rate": "42.5%"
         },
         {
             "team_name": "Tamanchu",
@@ -645,16 +665,6 @@
             "points_rate": "42.5%"
         },
         {
-            "team_name": "Rui X sei",
-            "player_name": "Rui Nishihara",
-            "player_number": "15985",
-            "gender": "男",
-            "sl": 7,
-            "wins": "2/8",
-            "avg_points": 8.38,
-            "points_rate": "41.9%"
-        },
-        {
             "team_name": "Hinerisugita!",
             "player_name": "Masanori Kamiya",
             "player_number": "15435",
@@ -665,14 +675,34 @@
             "points_rate": "41.7%"
         },
         {
-            "team_name": "Taigaku Straight Flush",
-            "player_name": "Yuki Yasuda",
-            "player_number": "13691",
+            "team_name": "Happy Lucky Ricky",
+            "player_name": "Asa Kayanuma",
+            "player_number": "17312",
+            "gender": "女",
+            "sl": 1,
+            "wins": "1/3",
+            "avg_points": 8.33,
+            "points_rate": "41.7%"
+        },
+        {
+            "team_name": "Lucky Flockers",
+            "player_name": "Sou Takekawa",
+            "player_number": "15973",
             "gender": "男",
-            "sl": 6,
-            "wins": "3/8",
-            "avg_points": 8.25,
-            "points_rate": "41.3%"
+            "sl": 3,
+            "wins": "3/9",
+            "avg_points": 8.22,
+            "points_rate": "41.1%"
+        },
+        {
+            "team_name": "Rui X sei",
+            "player_name": "Rui Nishihara",
+            "player_number": "15985",
+            "gender": "男",
+            "sl": 7,
+            "wins": "2/9",
+            "avg_points": 8.22,
+            "points_rate": "41.1%"
         },
         {
             "team_name": "Tokyo Bayashis",
@@ -685,14 +715,14 @@
             "points_rate": "40.9%"
         },
         {
-            "team_name": "yattenna",
-            "player_name": "Naoya Abe",
-            "player_number": "16237",
-            "gender": "男",
-            "sl": 6,
-            "wins": "2/7",
-            "avg_points": 8.0,
-            "points_rate": "40.0%"
+            "team_name": "Kangaroo Kick",
+            "player_name": "Chiharu Ou",
+            "player_number": "17003",
+            "gender": "女",
+            "sl": 2,
+            "wins": "3/7",
+            "avg_points": 8.14,
+            "points_rate": "40.7%"
         },
         {
             "team_name": "Wagamama foundry",
@@ -700,9 +730,9 @@
             "player_number": "15343",
             "gender": "男",
             "sl": 6,
-            "wins": "3/10",
-            "avg_points": 7.8,
-            "points_rate": "39.0%"
+            "wins": "3/11",
+            "avg_points": 7.82,
+            "points_rate": "39.1%"
         },
         {
             "team_name": "Wagamama foundry",
@@ -713,16 +743,6 @@
             "wins": "1/5",
             "avg_points": 7.8,
             "points_rate": "39.0%"
-        },
-        {
-            "team_name": "yattenna",
-            "player_name": "Kosei Yagi",
-            "player_number": "16982",
-            "gender": "男",
-            "sl": 2,
-            "wins": "1/4",
-            "avg_points": 7.75,
-            "points_rate": "38.8%"
         },
         {
             "team_name": "Oku niki",
@@ -736,13 +756,13 @@
         },
         {
             "team_name": "Lucky Flockers",
-            "player_name": "Sou Takekawa",
-            "player_number": "15973",
-            "gender": "男",
-            "sl": 3,
-            "wins": "2/8",
-            "avg_points": 7.63,
-            "points_rate": "38.1%"
+            "player_name": "Nanako Abe",
+            "player_number": "17203",
+            "gender": "女",
+            "sl": 1,
+            "wins": "1/6",
+            "avg_points": 7.67,
+            "points_rate": "38.3%"
         },
         {
             "team_name": "yattenna",
@@ -750,9 +770,9 @@
             "player_number": "15779",
             "gender": "男",
             "sl": 3,
-            "wins": "3/10",
-            "avg_points": 7.6,
-            "points_rate": "38.0%"
+            "wins": "3/11",
+            "avg_points": 7.64,
+            "points_rate": "38.2%"
         },
         {
             "team_name": "Tamanchu",
@@ -770,9 +790,9 @@
             "player_number": "16759",
             "gender": "男",
             "sl": 4,
-            "wins": "4/9",
-            "avg_points": 7.44,
-            "points_rate": "37.2%"
+            "wins": "4/10",
+            "avg_points": 7.0,
+            "points_rate": "35.0%"
         },
         {
             "team_name": "Kangaroo Kick",
@@ -785,6 +805,16 @@
             "points_rate": "33.6%"
         },
         {
+            "team_name": "Oku niki",
+            "player_name": "Miku Yokose",
+            "player_number": "15427",
+            "gender": "女",
+            "sl": 3,
+            "wins": "1/7",
+            "avg_points": 6.14,
+            "points_rate": "30.7%"
+        },
+        {
             "team_name": "yattenna",
             "player_name": "Koki Toribuchi",
             "player_number": "16526",
@@ -793,46 +823,6 @@
             "wins": "1/6",
             "avg_points": 6.0,
             "points_rate": "30.0%"
-        },
-        {
-            "team_name": "Oku niki",
-            "player_name": "Miku Yokose",
-            "player_number": "15427",
-            "gender": "女",
-            "sl": 3,
-            "wins": "1/6",
-            "avg_points": 5.83,
-            "points_rate": "29.2%"
-        },
-        {
-            "team_name": "Rui X sei",
-            "player_name": "Kiki Akachi",
-            "player_number": "17205",
-            "gender": "女",
-            "sl": 1,
-            "wins": "0/4",
-            "avg_points": 5.5,
-            "points_rate": "27.5%"
-        },
-        {
-            "team_name": "Happy Lucky Ricky",
-            "player_name": "Asa Kayanuma",
-            "player_number": "17312",
-            "gender": "女",
-            "sl": 1,
-            "wins": "0/2",
-            "avg_points": 5.5,
-            "points_rate": "27.5%"
-        },
-        {
-            "team_name": "Lucky Flockers",
-            "player_name": "Nanako Abe",
-            "player_number": "17203",
-            "gender": "女",
-            "sl": 1,
-            "wins": "0/5",
-            "avg_points": 5.4,
-            "points_rate": "27.0%"
         },
         {
             "team_name": "Oku niki",
@@ -855,14 +845,24 @@
             "points_rate": "26.3%"
         },
         {
+            "team_name": "Rui X sei",
+            "player_name": "Kiki Akachi",
+            "player_number": "17205",
+            "gender": "女",
+            "sl": 1,
+            "wins": "0/5",
+            "avg_points": 5.0,
+            "points_rate": "25.0%"
+        },
+        {
             "team_name": "Kangaroo Kick",
             "player_name": "Kono Ichihara",
             "player_number": "15774",
             "gender": "女",
             "sl": 4,
-            "wins": "0/4",
-            "avg_points": 5.0,
-            "points_rate": "25.0%"
+            "wins": "0/5",
+            "avg_points": 4.8,
+            "points_rate": "24.0%"
         },
         {
             "team_name": "yattenna",
@@ -885,7 +885,7 @@
             "points_rate": "20.0%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028040626.pdf",
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028041026.pdf",
     "sl_changes": [
         {
             "player_name": "Asakura Riki",
@@ -934,6 +934,11 @@
             "points": 677
         },
         {
+            "team_name": "Lucky Flockers",
+            "team_id": "6",
+            "points": 668
+        },
+        {
             "team_name": "Kangaroo Kick",
             "team_id": "1",
             "points": 660
@@ -949,14 +954,9 @@
             "points": 636
         },
         {
-            "team_name": "Lucky Flockers",
-            "team_id": "6",
-            "points": 599
-        },
-        {
             "team_name": "Rui X sei",
             "team_id": "9",
-            "points": 583
+            "points": 614
         },
         {
             "team_name": "yattenna",
@@ -1565,5 +1565,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028040826.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028041026.pdf"
 }
