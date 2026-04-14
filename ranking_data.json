@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年04月13日 20:32 JST",
+    "last_checked": "2026年04月14日 10:40 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028041026.pdf",
-    "last_updated": "2026年04月13日 20:32 JST",
+    "last_updated": "2026年04月14日 10:40 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028041026.pdf",
     "individuals": [
         {
@@ -894,22 +894,6 @@
             "old_date": "2024/10/30",
             "new_sl": "4",
             "new_date": "2026/04/08"
-        },
-        {
-            "player_name": "Nishihara Rui",
-            "member_number": "15985",
-            "old_sl": "6",
-            "old_date": "2025/10/15",
-            "new_sl": "7",
-            "new_date": "2026/04/06"
-        },
-        {
-            "player_name": "Nishimura Ayumi",
-            "member_number": "16228",
-            "old_sl": "2",
-            "old_date": "2026/03/27",
-            "new_sl": "1",
-            "new_date": "2026/04/06"
         }
     ],
     "ranking": [
