@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年04月19日 20:17 JST",
+    "last_checked": "2026年04月20日 10:41 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028041526.pdf",
-    "last_updated": "2026年04月19日 20:17 JST",
+    "last_updated": "2026年04月20日 10:41 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028041526.pdf",
     "individuals": [
         {
@@ -886,7 +886,32 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028041526.pdf",
-    "sl_changes": [],
+    "sl_changes": [
+        {
+            "player_name": "Baba Marina",
+            "member_number": "16235",
+            "old_sl": "3",
+            "old_date": "2025/09/11",
+            "new_sl": "4",
+            "new_date": "2026/04/15"
+        },
+        {
+            "player_name": "Kurokawa Yuki",
+            "member_number": "17202",
+            "old_sl": "1",
+            "old_date": "2026/01/08",
+            "new_sl": "2",
+            "new_date": "2026/04/15"
+        },
+        {
+            "player_name": "Tomiki Rimo",
+            "member_number": "16769",
+            "old_sl": "1",
+            "old_date": "2025/06/05",
+            "new_sl": "2",
+            "new_date": "2026/04/15"
+        }
+    ],
     "ranking": [
         {
             "team_name": "Hinerisugita!",
