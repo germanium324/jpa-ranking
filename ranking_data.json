@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年04月29日 17:30 JST",
+    "last_checked": "2026年04月29日 20:35 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028042926.pdf",
-    "last_updated": "2026年04月29日 17:30 JST",
+    "last_updated": "2026年04月29日 20:35 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028042926.pdf",
     "individuals": [
         {
@@ -927,13 +927,13 @@
             "points": 865
         },
         {
-            "team_name": "Hinerisugita!",
-            "team_id": "4",
-            "points": 837
+            "team_name": "Happy Lucky Ricky",
+            "team_id": "8",
+            "points": 856
         },
         {
-            "team_name": "Lucky Flockers",
-            "team_id": "6",
+            "team_name": "Hinerisugita!",
+            "team_id": "4",
             "points": 837
         },
         {
@@ -942,9 +942,9 @@
             "points": 837
         },
         {
-            "team_name": "Happy Lucky Ricky",
-            "team_id": "8",
-            "points": 810
+            "team_name": "Lucky Flockers",
+            "team_id": "6",
+            "points": 837
         },
         {
             "team_name": "Oku niki",
@@ -957,14 +957,14 @@
             "points": 790
         },
         {
+            "team_name": "Rui X sei",
+            "team_id": "9",
+            "points": 777
+        },
+        {
             "team_name": "Tokyo Bayashis",
             "team_id": "5",
             "points": 732
-        },
-        {
-            "team_name": "Rui X sei",
-            "team_id": "9",
-            "points": 723
         },
         {
             "team_name": "Wagamama foundry",
