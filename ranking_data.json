@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年04月30日 10:42 JST",
+    "last_checked": "2026年04月30日 20:34 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028042926.pdf",
-    "last_updated": "2026年04月30日 10:42 JST",
+    "last_updated": "2026年04月30日 20:34 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028042926.pdf",
     "individuals": [
         {
@@ -886,24 +886,7 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028042226.pdf",
-    "sl_changes": [
-        {
-            "player_name": "Iwano Atsushi",
-            "member_number": "15343",
-            "old_sl": "6",
-            "old_date": "2026/04/01",
-            "new_sl": "5",
-            "new_date": "2026/04/29"
-        },
-        {
-            "player_name": "Murayama Shotaro",
-            "member_number": "15428",
-            "old_sl": "6",
-            "old_date": "2026/03/23",
-            "new_sl": "5",
-            "new_date": "2026/04/29"
-        }
-    ],
+    "sl_changes": [],
     "ranking": [
         {
             "team_name": "Tamanchu",
