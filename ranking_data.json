@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年04月29日 20:35 JST",
+    "last_checked": "2026年04月30日 10:42 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028042926.pdf",
-    "last_updated": "2026年04月29日 20:35 JST",
+    "last_updated": "2026年04月30日 10:42 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028042926.pdf",
     "individuals": [
         {
@@ -902,22 +902,6 @@
             "old_date": "2026/03/23",
             "new_sl": "5",
             "new_date": "2026/04/29"
-        },
-        {
-            "player_name": "Sato Hanana",
-            "member_number": "16763",
-            "old_sl": "3",
-            "old_date": "2025/12/03",
-            "new_sl": "4",
-            "new_date": "2026/04/22"
-        },
-        {
-            "player_name": "Takekawa Sou",
-            "member_number": "15973",
-            "old_sl": "3",
-            "old_date": "2026/03/13",
-            "new_sl": "4",
-            "new_date": "2026/04/22"
         }
     ],
     "ranking": [
