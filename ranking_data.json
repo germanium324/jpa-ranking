@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年05月11日 10:43 JST",
+    "last_checked": "2026年05月11日 21:04 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028050626.pdf",
-    "last_updated": "2026年05月11日 10:43 JST",
+    "last_updated": "2026年05月11日 21:04 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028050626.pdf",
     "individuals": [
         {
@@ -886,16 +886,7 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028050626.pdf",
-    "sl_changes": [
-        {
-            "player_name": "Kurokawa Yuki",
-            "member_number": "17202",
-            "old_sl": "2",
-            "old_date": "2026/04/15",
-            "new_sl": "1",
-            "new_date": "2026/05/06"
-        }
-    ],
+    "sl_changes": [],
     "ranking": [
         {
             "team_name": "Hinerisugita!",
