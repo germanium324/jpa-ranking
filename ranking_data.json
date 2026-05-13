@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年05月13日 15:28 JST",
+    "last_checked": "2026年05月13日 15:39 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028051326.pdf",
-    "last_updated": "2026年05月13日 15:28 JST",
+    "last_updated": "2026年05月13日 15:39 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028051326.pdf",
     "individuals": [
         {
@@ -887,6 +887,30 @@
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028050626.pdf",
     "sl_changes": [
+        {
+            "player_name": "Karashima Ryusei",
+            "member_number": "15980",
+            "old_sl": "6",
+            "old_date": "2026/01/28",
+            "new_sl": "7",
+            "new_date": "2026/05/13"
+        },
+        {
+            "player_name": "Kayanuma Asa",
+            "member_number": "17312",
+            "old_sl": "1",
+            "old_date": "2026/02/04",
+            "new_sl": "2",
+            "new_date": "2026/05/13"
+        },
+        {
+            "player_name": "Takenaka Hayato",
+            "member_number": "16997",
+            "old_sl": "4",
+            "old_date": "2026/01/28",
+            "new_sl": "5",
+            "new_date": "2026/05/13"
+        },
         {
             "player_name": "Kurokawa Yuki",
             "member_number": "17202",
