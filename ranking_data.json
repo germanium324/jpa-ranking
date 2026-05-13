@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年05月13日 14:36 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028050626.pdf",
-    "last_updated": "2026年05月13日 14:36 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028050626.pdf",
+    "last_checked": "2026年05月13日 14:56 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028051326.pdf",
+    "last_updated": "2026年05月13日 14:56 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028051326.pdf",
     "individuals": [
         {
             "team_name": "Oku niki",
@@ -1004,7 +1004,7 @@
                     "player_name": "Kayanuma, Asa",
                     "player_number": "17312",
                     "gender": "-",
-                    "sl": 1
+                    "sl": 2
                 }
             ]
         },
@@ -1034,7 +1034,7 @@
                     "player_name": "Karashima, Ryusei",
                     "player_number": "15980",
                     "gender": "-",
-                    "sl": 6
+                    "sl": 7
                 },
                 {
                     "player_name": "Inoue, Aoi",
@@ -1269,12 +1269,6 @@
                     "player_number": "17004",
                     "gender": "-",
                     "sl": 3
-                },
-                {
-                    "player_name": "Akachi, Kiki",
-                    "player_number": "17205",
-                    "gender": "-",
-                    "sl": 1
                 }
             ]
         },
@@ -1382,7 +1376,7 @@
                     "player_name": "Takenaka, Hayato",
                     "player_number": "16997",
                     "gender": "-",
-                    "sl": 4
+                    "sl": 5
                 }
             ]
         },
@@ -1549,5 +1543,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028050626.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028051326.pdf"
 }
