@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年05月13日 20:46 JST",
+    "last_checked": "2026年05月14日 10:45 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028051326.pdf",
-    "last_updated": "2026年05月13日 20:46 JST",
+    "last_updated": "2026年05月14日 10:45 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028051326.pdf",
     "individuals": [
         {
@@ -910,14 +910,6 @@
             "old_date": "2026/01/28",
             "new_sl": "5",
             "new_date": "2026/05/13"
-        },
-        {
-            "player_name": "Kurokawa Yuki",
-            "member_number": "17202",
-            "old_sl": "2",
-            "old_date": "2026/04/15",
-            "new_sl": "1",
-            "new_date": "2026/05/06"
         }
     ],
     "ranking": [
