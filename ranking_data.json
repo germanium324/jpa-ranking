@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年05月20日 10:47 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028051326.pdf",
-    "last_updated": "2026年05月20日 10:47 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028051326.pdf",
+    "last_checked": "2026年05月20日 14:29 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/R028052026.pdf",
+    "last_updated": "2026年05月20日 14:29 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/R028052026.pdf",
     "individuals": [
         {
             "team_name": "Oku niki",
@@ -914,59 +914,59 @@
     ],
     "ranking": [
         {
-            "team_name": "Hinerisugita!",
-            "team_id": "4",
-            "points": 961
-        },
-        {
-            "team_name": "Tamanchu",
-            "team_id": "11",
-            "points": 932
-        },
-        {
             "team_name": "Happy Lucky Ricky",
             "team_id": "8",
-            "points": 917
+            "points": 0
         },
         {
-            "team_name": "Taigaku Straight Flush",
-            "team_id": "7",
-            "points": 891
-        },
-        {
-            "team_name": "Lucky Flockers",
-            "team_id": "6",
-            "points": 862
-        },
-        {
-            "team_name": "Oku niki",
-            "team_id": "2",
-            "points": 853
+            "team_name": "Hinerisugita!",
+            "team_id": "4",
+            "points": 0
         },
         {
             "team_name": "Kangaroo Kick",
             "team_id": "1",
-            "points": 845
+            "points": 0
+        },
+        {
+            "team_name": "Lucky Flockers",
+            "team_id": "6",
+            "points": 0
+        },
+        {
+            "team_name": "Oku niki",
+            "team_id": "2",
+            "points": 0
         },
         {
             "team_name": "Rui X sei",
             "team_id": "9",
-            "points": 822
+            "points": 0
+        },
+        {
+            "team_name": "Taigaku Straight Flush",
+            "team_id": "7",
+            "points": 0
+        },
+        {
+            "team_name": "Tamanchu",
+            "team_id": "11",
+            "points": 0
         },
         {
             "team_name": "Tokyo Bayashis",
             "team_id": "5",
-            "points": 815
+            "points": 0
         },
         {
             "team_name": "Wagamama foundry",
             "team_id": "3",
-            "points": 731
+            "points": 0
         },
         {
             "team_name": "yattenna",
             "team_id": "10",
-            "points": 721
+            "points": 0
         }
     ],
     "roster": [
@@ -1559,5 +1559,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028051326.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028052026.pdf"
 }
