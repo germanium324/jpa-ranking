@@ -13,6 +13,7 @@ import re
 BASE_URL = "http://www.poolplayers.jp"
 STANDINGS_URL = f"{BASE_URL}/standings/"
 TARGET_DIVISION_NAME = "028 COLLEGE (TUE)"
+DIVISION_CODE = TARGET_DIVISION_NAME.split()[0]  # '028'
 JSON_FILENAME = 'ranking_data.json'
 
 # チーム名マッピング辞書（PDFからはチームIDしか取れないため、手動で用意）
@@ -26,8 +27,6 @@ TEAM_NAME_MAP = {
 def _find_target_row(soup):
     """028ディビジョンの行を特定する。まずディビジョン名の完全一致で探し、
     見つからない場合はディビジョンコードを含むPDFリンクを持つ行をスキャンする。"""
-    division_code = TARGET_DIVISION_NAME.split()[0]  # '028'
-
     # 1) 完全一致で検索
     target_cell = soup.find(string=TARGET_DIVISION_NAME)
     if target_cell:
@@ -37,22 +36,22 @@ def _find_target_row(soup):
 
     # 2) 部分一致（ディビジョンコードを含むセルテキスト）で検索
     for cell in soup.find_all(['td', 'th']):
-        if division_code in (cell.get_text() or ''):
+        if DIVISION_CODE in (cell.get_text() or ''):
             row = cell.find_parent('tr')
             if row:
                 # この行に028のPDFリンクがあるか確認
                 for a in row.find_all('a'):
                     href = a.get('href', '')
-                    if re.search(rf'{division_code}\d+\.pdf', href, re.IGNORECASE):
-                        print(f"部分一致でディビジョン行を検出しました（フォールバック）")
+                    if re.search(rf'{DIVISION_CODE}\d+\.pdf', href, re.IGNORECASE):
+                        print("部分一致でディビジョン行を検出しました（フォールバック）")
                         return row
 
     # 3) 全<tr>をスキャンして028のPDFリンクを持つ行を探す
     for tr in soup.find_all('tr'):
         for a in tr.find_all('a'):
             href = a.get('href', '')
-            if re.search(rf'[SRP]{division_code}\d+\.pdf', href, re.IGNORECASE):
-                print(f"PDFリンクスキャンでディビジョン行を検出しました（フォールバック）")
+            if re.search(rf'[SRP]{DIVISION_CODE}\d+\.pdf', href, re.IGNORECASE):
+                print("PDFリンクスキャンでディビジョン行を検出しました（フォールバック）")
                 return tr
 
     return None
@@ -66,7 +65,7 @@ def find_latest_pdf_url(standings_url):
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        division_code = TARGET_DIVISION_NAME.split()[0]
+        division_code = DIVISION_CODE
 
         target_row = _find_target_row(soup)
         if not target_row:
@@ -122,7 +121,7 @@ def find_pdf_url_by_type(standings_url, type_char='P'):
             return None
 
         all_links = target_row.find_all('a')
-        division_code = TARGET_DIVISION_NAME.split()[0]
+        division_code = DIVISION_CODE
         # 指定タイプのPDFの候補を抽出
         candidates = []
         for a in all_links:
