@@ -13,6 +13,7 @@ import re
 BASE_URL = "http://www.poolplayers.jp"
 STANDINGS_URL = f"{BASE_URL}/standings/"
 TARGET_DIVISION_NAME = "028 COLLEGE (TUE)"
+DIVISION_CODE = TARGET_DIVISION_NAME.split()[0]  # '028'
 JSON_FILENAME = 'ranking_data.json'
 
 # チーム名マッピング辞書（PDFからはチームIDしか取れないため、手動で用意）
@@ -23,6 +24,39 @@ TEAM_NAME_MAP = {
 }
 
 # --- 1. 最新のPDF URLを特定 ---
+def _find_target_row(soup):
+    """028ディビジョンの行を特定する。まずディビジョン名の完全一致で探し、
+    見つからない場合はディビジョンコードを含むPDFリンクを持つ行をスキャンする。"""
+    # 1) 完全一致で検索
+    target_cell = soup.find(string=TARGET_DIVISION_NAME)
+    if target_cell:
+        row = target_cell.find_parent('tr')
+        if row:
+            return row
+
+    # 2) 部分一致（ディビジョンコードを含むセルテキスト）で検索
+    for cell in soup.find_all(['td', 'th']):
+        if DIVISION_CODE in (cell.get_text() or ''):
+            row = cell.find_parent('tr')
+            if row:
+                # この行に028のPDFリンクがあるか確認
+                for a in row.find_all('a'):
+                    href = a.get('href', '')
+                    if re.search(rf'{DIVISION_CODE}\d+\.pdf', href, re.IGNORECASE):
+                        print("部分一致でディビジョン行を検出しました（フォールバック）")
+                        return row
+
+    # 3) 全<tr>をスキャンして028のPDFリンクを持つ行を探す
+    for tr in soup.find_all('tr'):
+        for a in tr.find_all('a'):
+            href = a.get('href', '')
+            if re.search(rf'[SRP]{DIVISION_CODE}\d+\.pdf', href, re.IGNORECASE):
+                print("PDFリンクスキャンでディビジョン行を検出しました（フォールバック）")
+                return tr
+
+    return None
+
+
 def find_latest_pdf_url(standings_url):
     """スタンディングページを解析し、最新の028ディビジョンのスコアシートPDFのURLを特定する"""
     print(f"スタンディングページを解析中: {standings_url}")
@@ -31,28 +65,22 @@ def find_latest_pdf_url(standings_url):
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        target_cell = soup.find(text=TARGET_DIVISION_NAME)
-        if not target_cell:
-            print(f"エラー: ディビジョン名 '{TARGET_DIVISION_NAME}' がページに見つかりません。")
-            return None
+        division_code = DIVISION_CODE
 
-        target_row = target_cell.find_parent('tr')
+        target_row = _find_target_row(soup)
         if not target_row:
+            print(f"エラー: ディビジョン名 '{TARGET_DIVISION_NAME}' がページに見つかりません。")
             return None
 
         all_links_in_row = target_row.find_all('a')
 
-        # Division コードを取り出す（例: '028'）
-        division_code = TARGET_DIVISION_NAME.split()[0]
-
         # S型PDFの候補を抽出し、ファイル名の数字部分で最新（最大）を選ぶ
-        import re
         candidates = []
         for a in all_links_in_row:
             href = a.get('href')
             if not href:
                 continue
-            m = re.search(rf'S{division_code}(\d+)\.pdf', href)
+            m = re.search(rf'S{division_code}(\d+)\.pdf', href, re.IGNORECASE)
             if m:
                 num = int(m.group(1))
                 url = href if href.startswith('http') else BASE_URL + href
@@ -64,7 +92,7 @@ def find_latest_pdf_url(standings_url):
             print(f"最新の（Standings）PDF URLを特定しました: {latest}")
             return latest
 
-        # フォールバック: 以前のように行内の最初のPDFリンクを返す
+        # フォールバック: 行内の最初のPDFリンクを返す
         for a in all_links_in_row:
             href = a.get('href')
             if not href:
@@ -88,23 +116,20 @@ def find_pdf_url_by_type(standings_url, type_char='P'):
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        target_cell = soup.find(text=TARGET_DIVISION_NAME)
-        if not target_cell:
-            return None
-        target_row = target_cell.find_parent('tr')
+        target_row = _find_target_row(soup)
         if not target_row:
             return None
 
         all_links = target_row.find_all('a')
-        division_code = TARGET_DIVISION_NAME.split()[0]
-        # P型PDFの候補を抽出
+        division_code = DIVISION_CODE
+        # 指定タイプのPDFの候補を抽出
         candidates = []
         for a in all_links:
             href = a.get('href')
             if not href:
                 continue
             # 例: /standings/028/P028111925.pdf
-            m = re.search(rf'{type_char}{division_code}(\d+).pdf', href)
+            m = re.search(rf'{type_char}{division_code}(\d+)\.pdf', href, re.IGNORECASE)
             if m:
                 num = int(m.group(1))
                 url = href if href.startswith('http') else BASE_URL + href
