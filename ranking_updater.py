@@ -16,11 +16,11 @@ TARGET_DIVISION_NAME = "028 COLLEGE (TUE)"
 DIVISION_CODE = TARGET_DIVISION_NAME.split()[0]  # '028'
 JSON_FILENAME = 'ranking_data.json'
 
-# チーム名マッピング辞書（PDFからはチームIDしか取れないため、手動で用意）
+# チーム名マッピング辞書（名簿PDFが取得できない場合のフォールバック用）
 TEAM_NAME_MAP = {
-    '1': 'Kangaroo Kick', '2': 'Oku niki', '3': 'Wagamama foundry', '4': 'Hinerisugita!',
-    '5': 'Tokyo Bayashis', '6': 'Lucky Flockers', '7': 'Taigaku Straight Flush', '8': 'Happy Lucky Ricky',
-    '9': 'Rui X sei', '10': 'yattenna', '11': 'Tamanchu'
+    '1': 'Anamae Family', '2': 'Watawata Nabenabe', '3': 'Wagamama Fantasy', '4': 'Kairiki',
+    '5': 'Tamanchu Musou', '6': 'Tamanchu Kokushi', '7': 'Shou Time', '8': 'Go Go Chance!',
+    '9': 'Aizawanwan', '10': 'Ridge Flow', '11': 'Tamatorino Okina'
 }
 
 # --- 1. 最新のPDF URLを特定 ---
@@ -224,12 +224,15 @@ def extract_and_process_ranking(pdf_file):
     return df
 
 
-def extract_individual_stats(pdf_file):
+def extract_individual_stats(pdf_file, team_name_map=None):
     """個人成績PDFから個人ごとの成績を抽出する。返り値は辞書のリスト。
     各辞書: {team_name, player_name, sl, wins, avg_points, points_rate}
+    team_name_map が指定された場合はそちらを優先し、なければ TEAM_NAME_MAP を使用する。
     """
     if pdf_file is None:
         return []
+
+    effective_map = team_name_map if team_name_map else TEAM_NAME_MAP
 
     individuals = []
 
@@ -245,7 +248,7 @@ def extract_individual_stats(pdf_file):
                     team_code = m.group('team')
                     # team_code は '02810' のようになっている -> team_id は '10'
                     team_id = team_code.replace('028','').lstrip('0') or team_code[-2:]
-                    team_name = TEAM_NAME_MAP.get(team_id, f'チームNo.{team_id}')
+                    team_name = effective_map.get(team_id) or TEAM_NAME_MAP.get(team_id, f'チームNo.{team_id}')
                     player_name = m.group('name')
                     gender = m.group('gender')
                     # 性別を日本語に変換
@@ -489,7 +492,7 @@ def main():
         p_pdf_url = find_pdf_url_by_type(STANDINGS_URL, type_char='P')
         p_pdf_content = download_pdf(p_pdf_url) if p_pdf_url else None
         individuals_from_roster = False
-        individuals = extract_individual_stats(p_pdf_content) if p_pdf_content else []
+        individuals = extract_individual_stats(p_pdf_content, team_name_map=roster_name_map) if p_pdf_content else []
 
         # 個人成績が取れない（新シーズン開始前）場合は名簿で補完する
         if not individuals and roster_entries:
