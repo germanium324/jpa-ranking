@@ -281,8 +281,14 @@
                         const teamLink = li.querySelector('.ranking-team-link');
                         teamLink.addEventListener('click', (e) => {
                             e.preventDefault();
-                            // チーム名でフィルタを設定
-                            document.getElementById('filter-team').value = team.team_name;
+                            const teamSelect = document.getElementById('filter-team');
+                            const slSelect = document.getElementById('filter-sl');
+                            const searchInput = document.getElementById('search-name');
+                            const normalizedTeam = String(team.team_name || '').trim().toLowerCase();
+                            const matchedOption = Array.from(teamSelect.options).find(opt => String(opt.value || '').trim().toLowerCase() === normalizedTeam);
+                            teamSelect.value = matchedOption ? matchedOption.value : '';
+                            searchInput.value = '';
+                            slSelect.value = '';
                             // 個人成績セクションにスクロール（2番目のh2要素）
                             const individualsSections = document.querySelectorAll('h2');
                             if (individualsSections.length > 1) {
@@ -345,8 +351,13 @@
                     // ビルド: チームとSLのオプション
                     const teamSelect = document.getElementById('filter-team');
                     const slSelect = document.getElementById('filter-sl');
+                    teamSelect.innerHTML = '<option value="">全チーム</option>';
+                    slSelect.innerHTML = '<option value="">全SL</option>';
                     const teams = new Set();
                     const sls = new Set();
+                    rankingData.forEach(team => {
+                        if (team.team_name) teams.add(team.team_name);
+                    });
                     originalIndividuals.forEach(p => { teams.add(p.team_name); sls.add(p.sl); });
                     const sortedTeams = Array.from(teams).sort((a,b)=>a.localeCompare(b,'ja'));
                     sortedTeams.forEach(t => {
