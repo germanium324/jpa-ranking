@@ -57,6 +57,19 @@ def _find_target_row(soup):
     return None
 
 
+def _parse_pdf_date_token(token):
+    """PDFファイル名の6桁日付(MMDDYY)をdateに変換する。失敗時はNone。"""
+    if not token or len(token) != 6 or not token.isdigit():
+        return None
+    try:
+        month = int(token[0:2])
+        day = int(token[2:4])
+        year = 2000 + int(token[4:6])
+        return datetime.date(year, month, day)
+    except ValueError:
+        return None
+
+
 def find_latest_pdf_url(standings_url):
     """スタンディングページを解析し、最新の028ディビジョンのスコアシートPDFのURLを特定する"""
     print(f"スタンディングページを解析中: {standings_url}")
@@ -82,13 +95,14 @@ def find_latest_pdf_url(standings_url):
                 continue
             m = re.search(rf'S{division_code}(\d+)\.pdf', href, re.IGNORECASE)
             if m:
-                num = int(m.group(1))
+                token = m.group(1)
+                parsed_date = _parse_pdf_date_token(token)
                 url = href if href.startswith('http') else BASE_URL + href
-                candidates.append((num, url))
+                candidates.append((parsed_date, token, url))
 
         if candidates:
-            candidates.sort(reverse=True)
-            latest = candidates[0][1]
+            candidates.sort(key=lambda x: (x[0] is not None, x[0] or datetime.date.min, x[1]), reverse=True)
+            latest = candidates[0][2]
             print(f"最新の（Standings）PDF URLを特定しました: {latest}")
             return latest
 
@@ -131,14 +145,15 @@ def find_pdf_url_by_type(standings_url, type_char='P'):
             # 例: /standings/028/P028111925.pdf
             m = re.search(rf'{type_char}{division_code}(\d+)\.pdf', href, re.IGNORECASE)
             if m:
-                num = int(m.group(1))
+                token = m.group(1)
+                parsed_date = _parse_pdf_date_token(token)
                 url = href if href.startswith('http') else BASE_URL + href
-                candidates.append((num, url))
+                candidates.append((parsed_date, token, url))
         if not candidates:
             return None
-        # 数字が最大のもの（最新）を選ぶ
-        candidates.sort(reverse=True)
-        return candidates[0][1]
+        # MMDDYYの日付で最新を選択（解析不可時はトークン文字列でフォールバック）
+        candidates.sort(key=lambda x: (x[0] is not None, x[0] or datetime.date.min, x[1]), reverse=True)
+        return candidates[0][2]
     except requests.exceptions.RequestException:
         return None
 
