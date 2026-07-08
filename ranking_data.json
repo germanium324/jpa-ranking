@@ -1,35 +1,15 @@
 {
-    "last_checked": "2026年07月08日 17:04 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028070326.pdf",
-    "last_updated": "2026年07月08日 17:04 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028070326.pdf",
+    "last_checked": "2026年07月08日 17:31 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028070826.pdf",
+    "last_updated": "2026年07月08日 17:31 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028070826.pdf",
     "individuals": [
-        {
-            "team_name": "Wagamama Fantasy",
-            "player_name": "Shotaro Fukuda",
-            "player_number": "17398",
-            "gender": "男",
-            "sl": 4,
-            "wins": "1/1",
-            "avg_points": 19.0,
-            "points_rate": "95.0%"
-        },
         {
             "team_name": "Wagamama Fantasy",
             "player_name": "Yuna Ohe",
             "player_number": "15430",
             "gender": "女",
             "sl": 6,
-            "wins": "1/1",
-            "avg_points": 18.0,
-            "points_rate": "90.0%"
-        },
-        {
-            "team_name": "Tamatorino Okina",
-            "player_name": "Naoko Okada",
-            "player_number": "17410",
-            "gender": "女",
-            "sl": 2,
             "wins": "1/1",
             "avg_points": 18.0,
             "points_rate": "90.0%"
@@ -45,14 +25,34 @@
             "points_rate": "85.0%"
         },
         {
-            "team_name": "Tamanchu Musou",
-            "player_name": "Satsuki Watanabe",
-            "player_number": "16762",
-            "gender": "女",
-            "sl": 3,
+            "team_name": "Go Go Chance!",
+            "player_name": "Hidehiro Oba",
+            "player_number": "12811",
+            "gender": "男",
+            "sl": 6,
+            "wins": "4/4",
+            "avg_points": 15.5,
+            "points_rate": "77.5%"
+        },
+        {
+            "team_name": "Wagamama Fantasy",
+            "player_name": "Shotaro Fukuda",
+            "player_number": "17398",
+            "gender": "男",
+            "sl": 4,
             "wins": "2/2",
-            "avg_points": 16.0,
-            "points_rate": "80.0%"
+            "avg_points": 15.5,
+            "points_rate": "77.5%"
+        },
+        {
+            "team_name": "Tamatorino Okina",
+            "player_name": "Naoko Okada",
+            "player_number": "17410",
+            "gender": "女",
+            "sl": 2,
+            "wins": "2/2",
+            "avg_points": 15.5,
+            "points_rate": "77.5%"
         },
         {
             "team_name": "Kairiki",
@@ -60,29 +60,9 @@
             "player_number": "15978",
             "gender": "男",
             "sl": 8,
-            "wins": "3/3",
-            "avg_points": 15.67,
-            "points_rate": "78.3%"
-        },
-        {
-            "team_name": "Go Go Chance!",
-            "player_name": "Hidehiro Oba",
-            "player_number": "12811",
-            "gender": "男",
-            "sl": 6,
-            "wins": "3/3",
-            "avg_points": 15.0,
-            "points_rate": "75.0%"
-        },
-        {
-            "team_name": "Aizawanwan",
-            "player_name": "Yuki Yasuda",
-            "player_number": "13691",
-            "gender": "男",
-            "sl": 6,
-            "wins": "2/2",
-            "avg_points": 15.0,
-            "points_rate": "75.0%"
+            "wins": "4/4",
+            "avg_points": 15.25,
+            "points_rate": "76.3%"
         },
         {
             "team_name": "Tamanchu Musou",
@@ -90,7 +70,7 @@
             "player_number": "17403",
             "gender": "男",
             "sl": 4,
-            "wins": "1/1",
+            "wins": "2/2",
             "avg_points": 15.0,
             "points_rate": "75.0%"
         },
@@ -105,10 +85,10 @@
             "points_rate": "75.0%"
         },
         {
-            "team_name": "Kairiki",
-            "player_name": "Hinase Onaka",
-            "player_number": "17197",
-            "gender": "男",
+            "team_name": "Tamanchu Musou",
+            "player_name": "Satsuki Watanabe",
+            "player_number": "16762",
+            "gender": "女",
             "sl": 3,
             "wins": "3/3",
             "avg_points": 14.67,
@@ -125,22 +105,12 @@
             "points_rate": "72.5%"
         },
         {
-            "team_name": "Tamanchu Musou",
-            "player_name": "Yuto Nishiura",
-            "player_number": "16996",
-            "gender": "男",
-            "sl": 4,
-            "wins": "2/2",
-            "avg_points": 14.5,
-            "points_rate": "72.5%"
-        },
-        {
-            "team_name": "Anamae Family",
-            "player_name": "Hanana Sato",
-            "player_number": "16763",
+            "team_name": "Tamatorino Okina",
+            "player_name": "Nanako Abe",
+            "player_number": "17203",
             "gender": "女",
-            "sl": 4,
-            "wins": "2/3",
+            "sl": 2,
+            "wins": "3/3",
             "avg_points": 14.33,
             "points_rate": "71.7%"
         },
@@ -155,32 +125,22 @@
             "points_rate": "70.0%"
         },
         {
+            "team_name": "Kairiki",
+            "player_name": "Hinase Onaka",
+            "player_number": "17197",
+            "gender": "男",
+            "sl": 3,
+            "wins": "4/4",
+            "avg_points": 14.0,
+            "points_rate": "70.0%"
+        },
+        {
             "team_name": "Aizawanwan",
             "player_name": "Moeka Kishi",
             "player_number": "15431",
             "gender": "女",
             "sl": 6,
             "wins": "1/2",
-            "avg_points": 13.5,
-            "points_rate": "67.5%"
-        },
-        {
-            "team_name": "Tamanchu Musou",
-            "player_name": "Shoto Takeishi",
-            "player_number": "15972",
-            "gender": "男",
-            "sl": 7,
-            "wins": "2/2",
-            "avg_points": 13.5,
-            "points_rate": "67.5%"
-        },
-        {
-            "team_name": "Tamanchu Musou",
-            "player_name": "Yusei Orita",
-            "player_number": "16755",
-            "gender": "男",
-            "sl": 5,
-            "wins": "2/2",
             "avg_points": 13.5,
             "points_rate": "67.5%"
         },
@@ -215,16 +175,6 @@
             "points_rate": "65.0%"
         },
         {
-            "team_name": "Aizawanwan",
-            "player_name": "Shuiri Ko",
-            "player_number": "16988",
-            "gender": "男",
-            "sl": 4,
-            "wins": "1/2",
-            "avg_points": 13.0,
-            "points_rate": "65.0%"
-        },
-        {
             "team_name": "Ridge Flow",
             "player_name": "Garcia Raven",
             "player_number": "16999",
@@ -255,14 +205,54 @@
             "points_rate": "65.0%"
         },
         {
-            "team_name": "Tamanchu Kokushi",
-            "player_name": "Yuto Hirano",
-            "player_number": "17405",
+            "team_name": "Anamae Family",
+            "player_name": "Renchi Wang",
+            "player_number": "12794",
             "gender": "男",
-            "sl": 2,
-            "wins": "3/3",
+            "sl": 7,
+            "wins": "4/5",
+            "avg_points": 12.8,
+            "points_rate": "64.0%"
+        },
+        {
+            "team_name": "Anamae Family",
+            "player_name": "Hanana Sato",
+            "player_number": "16763",
+            "gender": "女",
+            "sl": 4,
+            "wins": "2/4",
+            "avg_points": 12.75,
+            "points_rate": "63.8%"
+        },
+        {
+            "team_name": "Wagamama Fantasy",
+            "player_name": "Aoi Inoue",
+            "player_number": "16190",
+            "gender": "女",
+            "sl": 6,
+            "wins": "2/3",
             "avg_points": 12.67,
             "points_rate": "63.3%"
+        },
+        {
+            "team_name": "Aizawanwan",
+            "player_name": "Shuiri Ko",
+            "player_number": "16988",
+            "gender": "男",
+            "sl": 4,
+            "wins": "2/3",
+            "avg_points": 12.67,
+            "points_rate": "63.3%"
+        },
+        {
+            "team_name": "Kairiki",
+            "player_name": "Rimo Tomiki",
+            "player_number": "16769",
+            "gender": "女",
+            "sl": 2,
+            "wins": "3/4",
+            "avg_points": 12.5,
+            "points_rate": "62.5%"
         },
         {
             "team_name": "Aizawanwan",
@@ -275,21 +265,31 @@
             "points_rate": "62.5%"
         },
         {
-            "team_name": "Kairiki",
-            "player_name": "Rimo Tomiki",
-            "player_number": "16769",
-            "gender": "女",
+            "team_name": "Tamanchu Kokushi",
+            "player_name": "Yuto Hirano",
+            "player_number": "17405",
+            "gender": "男",
             "sl": 2,
+            "wins": "4/4",
+            "avg_points": 12.5,
+            "points_rate": "62.5%"
+        },
+        {
+            "team_name": "Tamanchu Kokushi",
+            "player_name": "Haruki Yamauchi",
+            "player_number": "16756",
+            "gender": "男",
+            "sl": 3,
             "wins": "2/3",
             "avg_points": 12.33,
             "points_rate": "61.7%"
         },
         {
             "team_name": "Anamae Family",
-            "player_name": "Renchi Wang",
-            "player_number": "12794",
+            "player_name": "Rikuto Nishizuka",
+            "player_number": "17004",
             "gender": "男",
-            "sl": 7,
+            "sl": 3,
             "wins": "3/4",
             "avg_points": 12.25,
             "points_rate": "61.3%"
@@ -300,16 +300,6 @@
             "player_number": "12569",
             "gender": "男",
             "sl": 6,
-            "wins": "1/2",
-            "avg_points": 12.0,
-            "points_rate": "60.0%"
-        },
-        {
-            "team_name": "Ridge Flow",
-            "player_name": "Ryuta Okonogi",
-            "player_number": "12874",
-            "gender": "男",
-            "sl": 7,
             "wins": "2/3",
             "avg_points": 12.0,
             "points_rate": "60.0%"
@@ -325,22 +315,12 @@
             "points_rate": "60.0%"
         },
         {
-            "team_name": "Anamae Family",
-            "player_name": "Rikuto Nishizuka",
-            "player_number": "17004",
+            "team_name": "Tamanchu Musou",
+            "player_name": "Yuto Nishiura",
+            "player_number": "16996",
             "gender": "男",
-            "sl": 3,
+            "sl": 4,
             "wins": "2/3",
-            "avg_points": 12.0,
-            "points_rate": "60.0%"
-        },
-        {
-            "team_name": "Tamatorino Okina",
-            "player_name": "Nanako Abe",
-            "player_number": "17203",
-            "gender": "女",
-            "sl": 2,
-            "wins": "2/2",
             "avg_points": 12.0,
             "points_rate": "60.0%"
         },
@@ -355,14 +335,64 @@
             "points_rate": "58.8%"
         },
         {
-            "team_name": "Watawata Nabenabe",
-            "player_name": "Koharu Iyono",
-            "player_number": "15429",
-            "gender": "女",
-            "sl": 5,
+            "team_name": "Tamanchu Musou",
+            "player_name": "Shoto Takeishi",
+            "player_number": "15972",
+            "gender": "男",
+            "sl": 7,
+            "wins": "2/3",
+            "avg_points": 11.67,
+            "points_rate": "58.3%"
+        },
+        {
+            "team_name": "Wagamama Fantasy",
+            "player_name": "Haruki Kinoshita",
+            "player_number": "17399",
+            "gender": "男",
+            "sl": 2,
             "wins": "2/3",
             "avg_points": 11.33,
             "points_rate": "56.7%"
+        },
+        {
+            "team_name": "Wagamama Fantasy",
+            "player_name": "Yudai Okamura",
+            "player_number": "15775",
+            "gender": "男",
+            "sl": 9,
+            "wins": "2/4",
+            "avg_points": 11.25,
+            "points_rate": "56.3%"
+        },
+        {
+            "team_name": "Ridge Flow",
+            "player_name": "Ryuta Okonogi",
+            "player_number": "12874",
+            "gender": "男",
+            "sl": 7,
+            "wins": "2/4",
+            "avg_points": 11.0,
+            "points_rate": "55.0%"
+        },
+        {
+            "team_name": "Aizawanwan",
+            "player_name": "Yuki Yasuda",
+            "player_number": "13691",
+            "gender": "男",
+            "sl": 6,
+            "wins": "2/3",
+            "avg_points": 11.0,
+            "points_rate": "55.0%"
+        },
+        {
+            "team_name": "Tamanchu Musou",
+            "player_name": "Yusei Orita",
+            "player_number": "16755",
+            "gender": "男",
+            "sl": 5,
+            "wins": "2/3",
+            "avg_points": 11.0,
+            "points_rate": "55.0%"
         },
         {
             "team_name": "Kairiki",
@@ -375,14 +405,34 @@
             "points_rate": "55.0%"
         },
         {
-            "team_name": "Wagamama Fantasy",
-            "player_name": "Aoi Inoue",
-            "player_number": "16190",
-            "gender": "女",
+            "team_name": "Tamatorino Okina",
+            "player_name": "Atsushi Iwano",
+            "player_number": "15343",
+            "gender": "男",
             "sl": 5,
-            "wins": "1/2",
-            "avg_points": 10.5,
-            "points_rate": "52.5%"
+            "wins": "2/3",
+            "avg_points": 10.67,
+            "points_rate": "53.3%"
+        },
+        {
+            "team_name": "Tamanchu Kokushi",
+            "player_name": "Sou Takekawa",
+            "player_number": "15973",
+            "gender": "男",
+            "sl": 4,
+            "wins": "2/3",
+            "avg_points": 10.67,
+            "points_rate": "53.3%"
+        },
+        {
+            "team_name": "Tamatorino Okina",
+            "player_name": "Ryusei Karashima",
+            "player_number": "15980",
+            "gender": "男",
+            "sl": 7,
+            "wins": "1/3",
+            "avg_points": 10.67,
+            "points_rate": "53.3%"
         },
         {
             "team_name": "Anamae Family",
@@ -405,26 +455,6 @@
             "points_rate": "52.5%"
         },
         {
-            "team_name": "Wagamama Fantasy",
-            "player_name": "Haruki Kinoshita",
-            "player_number": "17399",
-            "gender": "男",
-            "sl": 2,
-            "wins": "1/2",
-            "avg_points": 10.5,
-            "points_rate": "52.5%"
-        },
-        {
-            "team_name": "Aizawanwan",
-            "player_name": "Yuri Nabeshima",
-            "player_number": "17530",
-            "gender": "女",
-            "sl": 1,
-            "wins": "1/2",
-            "avg_points": 10.5,
-            "points_rate": "52.5%"
-        },
-        {
             "team_name": "Watawata Nabenabe",
             "player_name": "Mizuki Watanabe",
             "player_number": "16231",
@@ -435,42 +465,12 @@
             "points_rate": "51.3%"
         },
         {
-            "team_name": "Tamatorino Okina",
-            "player_name": "Atsushi Iwano",
-            "player_number": "15343",
-            "gender": "男",
-            "sl": 5,
-            "wins": "1/2",
-            "avg_points": 10.0,
-            "points_rate": "50.0%"
-        },
-        {
             "team_name": "Wagamama Fantasy",
-            "player_name": "Yudai Okamura",
-            "player_number": "15775",
-            "gender": "男",
-            "sl": 9,
-            "wins": "1/3",
-            "avg_points": 10.0,
-            "points_rate": "50.0%"
-        },
-        {
-            "team_name": "Tamanchu Kokushi",
-            "player_name": "Sou Takekawa",
-            "player_number": "15973",
-            "gender": "男",
-            "sl": 4,
-            "wins": "1/2",
-            "avg_points": 10.0,
-            "points_rate": "50.0%"
-        },
-        {
-            "team_name": "Ridge Flow",
-            "player_name": "So Fukushima",
-            "player_number": "16983",
-            "gender": "男",
+            "player_name": "Shiori Kuboya",
+            "player_number": "16987",
+            "gender": "女",
             "sl": 2,
-            "wins": "1/3",
+            "wins": "1/2",
             "avg_points": 10.0,
             "points_rate": "50.0%"
         },
@@ -483,6 +483,16 @@
             "wins": "1/3",
             "avg_points": 10.0,
             "points_rate": "50.0%"
+        },
+        {
+            "team_name": "Go Go Chance!",
+            "player_name": "Shunya Watanabe",
+            "player_number": "17201",
+            "gender": "男",
+            "sl": 3,
+            "wins": "2/4",
+            "avg_points": 9.75,
+            "points_rate": "48.8%"
         },
         {
             "team_name": "Shou Time",
@@ -505,22 +515,22 @@
             "points_rate": "48.3%"
         },
         {
-            "team_name": "Tamanchu Kokushi",
-            "player_name": "Tatsuki Emoto",
-            "player_number": "13670",
-            "gender": "男",
-            "sl": 8,
-            "wins": "2/4",
-            "avg_points": 9.5,
-            "points_rate": "47.5%"
-        },
-        {
             "team_name": "Tamanchu Musou",
             "player_name": "Riki Asakura",
             "player_number": "16232",
             "gender": "男",
             "sl": 4,
             "wins": "1/2",
+            "avg_points": 9.5,
+            "points_rate": "47.5%"
+        },
+        {
+            "team_name": "Ridge Flow",
+            "player_name": "So Fukushima",
+            "player_number": "16983",
+            "gender": "男",
+            "sl": 2,
+            "wins": "1/4",
             "avg_points": 9.5,
             "points_rate": "47.5%"
         },
@@ -536,21 +546,21 @@
         },
         {
             "team_name": "Watawata Nabenabe",
-            "player_name": "Kono Ichihara",
-            "player_number": "15774",
+            "player_name": "Koharu Iyono",
+            "player_number": "15429",
             "gender": "女",
-            "sl": 4,
-            "wins": "1/3",
-            "avg_points": 9.0,
-            "points_rate": "45.0%"
+            "sl": 5,
+            "wins": "2/4",
+            "avg_points": 9.25,
+            "points_rate": "46.3%"
         },
         {
             "team_name": "Tamanchu Kokushi",
-            "player_name": "Haruki Yamauchi",
-            "player_number": "16756",
+            "player_name": "Tatsuki Emoto",
+            "player_number": "13670",
             "gender": "男",
-            "sl": 3,
-            "wins": "1/2",
+            "sl": 8,
+            "wins": "2/5",
             "avg_points": 9.0,
             "points_rate": "45.0%"
         },
@@ -575,14 +585,14 @@
             "points_rate": "45.0%"
         },
         {
-            "team_name": "Go Go Chance!",
-            "player_name": "Shunya Watanabe",
-            "player_number": "17201",
-            "gender": "男",
-            "sl": 3,
-            "wins": "1/3",
-            "avg_points": 8.67,
-            "points_rate": "43.3%"
+            "team_name": "Watawata Nabenabe",
+            "player_name": "Kono Ichihara",
+            "player_number": "15774",
+            "gender": "女",
+            "sl": 4,
+            "wins": "1/4",
+            "avg_points": 8.75,
+            "points_rate": "43.8%"
         },
         {
             "team_name": "Kairiki",
@@ -590,9 +600,9 @@
             "player_number": "15427",
             "gender": "女",
             "sl": 3,
-            "wins": "1/2",
-            "avg_points": 8.5,
-            "points_rate": "42.5%"
+            "wins": "1/3",
+            "avg_points": 8.33,
+            "points_rate": "41.7%"
         },
         {
             "team_name": "Go Go Chance!",
@@ -600,7 +610,7 @@
             "player_number": "13671",
             "gender": "男",
             "sl": 7,
-            "wins": "0/2",
+            "wins": "0/3",
             "avg_points": 8.0,
             "points_rate": "40.0%"
         },
@@ -615,14 +625,24 @@
             "points_rate": "40.0%"
         },
         {
-            "team_name": "Anamae Family",
-            "player_name": "Nene Shibanuma",
-            "player_number": "17608",
-            "gender": "女",
-            "sl": 1,
-            "wins": "0/1",
+            "team_name": "Go Go Chance!",
+            "player_name": "Kosuke Hashimoto",
+            "player_number": "17472",
+            "gender": "男",
+            "sl": 2,
+            "wins": "1/3",
             "avg_points": 8.0,
             "points_rate": "40.0%"
+        },
+        {
+            "team_name": "Go Go Chance!",
+            "player_name": "Masatoshi Takahashi",
+            "player_number": "16772",
+            "gender": "男",
+            "sl": 3,
+            "wins": "0/3",
+            "avg_points": 7.67,
+            "points_rate": "38.3%"
         },
         {
             "team_name": "Anamae Family",
@@ -635,24 +655,24 @@
             "points_rate": "38.3%"
         },
         {
-            "team_name": "Go Go Chance!",
-            "player_name": "Masatoshi Takahashi",
-            "player_number": "16772",
+            "team_name": "Aizawanwan",
+            "player_name": "Riku Aizawa",
+            "player_number": "13679",
             "gender": "男",
-            "sl": 3,
-            "wins": "0/2",
-            "avg_points": 7.5,
-            "points_rate": "37.5%"
+            "sl": 8,
+            "wins": "1/3",
+            "avg_points": 7.33,
+            "points_rate": "36.7%"
         },
         {
-            "team_name": "Tamatorino Okina",
-            "player_name": "Ryusei Karashima",
-            "player_number": "15980",
-            "gender": "男",
-            "sl": 7,
-            "wins": "0/2",
-            "avg_points": 6.5,
-            "points_rate": "32.5%"
+            "team_name": "Aizawanwan",
+            "player_name": "Yuri Nabeshima",
+            "player_number": "17530",
+            "gender": "女",
+            "sl": 1,
+            "wins": "1/3",
+            "avg_points": 7.0,
+            "points_rate": "35.0%"
         },
         {
             "team_name": "Tamanchu Kokushi",
@@ -663,6 +683,16 @@
             "wins": "0/2",
             "avg_points": 6.5,
             "points_rate": "32.5%"
+        },
+        {
+            "team_name": "Anamae Family",
+            "player_name": "Rui Nishihara",
+            "player_number": "15985",
+            "gender": "男",
+            "sl": 7,
+            "wins": "1/5",
+            "avg_points": 6.2,
+            "points_rate": "31.0%"
         },
         {
             "team_name": "Tamanchu Musou",
@@ -676,33 +706,13 @@
         },
         {
             "team_name": "Ridge Flow",
-            "player_name": "Tatsuki Yokochi",
-            "player_number": "17408",
-            "gender": "男",
-            "sl": 2,
-            "wins": "0/2",
-            "avg_points": 6.0,
-            "points_rate": "30.0%"
-        },
-        {
-            "team_name": "Anamae Family",
-            "player_name": "Rui Nishihara",
-            "player_number": "15985",
-            "gender": "男",
-            "sl": 7,
-            "wins": "1/4",
-            "avg_points": 5.75,
-            "points_rate": "28.8%"
-        },
-        {
-            "team_name": "Ridge Flow",
             "player_name": "Kosei Yagi",
             "player_number": "16982",
             "gender": "男",
             "sl": 2,
-            "wins": "0/2",
-            "avg_points": 5.5,
-            "points_rate": "27.5%"
+            "wins": "0/3",
+            "avg_points": 6.0,
+            "points_rate": "30.0%"
         },
         {
             "team_name": "Go Go Chance!",
@@ -715,12 +725,12 @@
             "points_rate": "27.5%"
         },
         {
-            "team_name": "Aizawanwan",
-            "player_name": "Riku Aizawa",
-            "player_number": "13679",
+            "team_name": "Tamanchu Kokushi",
+            "player_name": "Shotaro Murayama",
+            "player_number": "15428",
             "gender": "男",
-            "sl": 8,
-            "wins": "0/2",
+            "sl": 5,
+            "wins": "0/1",
             "avg_points": 5.0,
             "points_rate": "25.0%"
         },
@@ -750,9 +760,9 @@
             "player_number": "10947",
             "gender": "男",
             "sl": 3,
-            "wins": "0/2",
-            "avg_points": 4.5,
-            "points_rate": "22.5%"
+            "wins": "0/3",
+            "avg_points": 4.67,
+            "points_rate": "23.3%"
         },
         {
             "team_name": "Ridge Flow",
@@ -765,6 +775,36 @@
             "points_rate": "22.5%"
         },
         {
+            "team_name": "Anamae Family",
+            "player_name": "Nene Shibanuma",
+            "player_number": "17608",
+            "gender": "女",
+            "sl": 1,
+            "wins": "0/2",
+            "avg_points": 4.5,
+            "points_rate": "22.5%"
+        },
+        {
+            "team_name": "Aizawanwan",
+            "player_name": "Asa Kayanuma",
+            "player_number": "17312",
+            "gender": "女",
+            "sl": 1,
+            "wins": "0/3",
+            "avg_points": 4.33,
+            "points_rate": "21.7%"
+        },
+        {
+            "team_name": "Ridge Flow",
+            "player_name": "Tatsuki Yokochi",
+            "player_number": "17408",
+            "gender": "男",
+            "sl": 2,
+            "wins": "0/3",
+            "avg_points": 4.33,
+            "points_rate": "21.7%"
+        },
+        {
             "team_name": "Tamatorino Okina",
             "player_name": "Yuki Hibi",
             "player_number": "16759",
@@ -775,24 +815,14 @@
             "points_rate": "20.0%"
         },
         {
-            "team_name": "Wagamama Fantasy",
-            "player_name": "Shiori Kuboya",
-            "player_number": "16987",
-            "gender": "女",
+            "team_name": "Watawata Nabenabe",
+            "player_name": "Koki Cho",
+            "player_number": "17476",
+            "gender": "男",
             "sl": 2,
             "wins": "0/1",
             "avg_points": 4.0,
             "points_rate": "20.0%"
-        },
-        {
-            "team_name": "Aizawanwan",
-            "player_name": "Asa Kayanuma",
-            "player_number": "17312",
-            "gender": "女",
-            "sl": 1,
-            "wins": "0/2",
-            "avg_points": 3.0,
-            "points_rate": "15.0%"
         },
         {
             "team_name": "Kairiki",
@@ -800,9 +830,19 @@
             "player_number": "15436",
             "gender": "女",
             "sl": 4,
-            "wins": "0/2",
-            "avg_points": 2.0,
-            "points_rate": "10.0%"
+            "wins": "0/3",
+            "avg_points": 3.0,
+            "points_rate": "15.0%"
+        },
+        {
+            "team_name": "Watawata Nabenabe",
+            "player_name": "Shonosuke Yamada",
+            "player_number": "17478",
+            "gender": "男",
+            "sl": 2,
+            "wins": "0/4",
+            "avg_points": 3.0,
+            "points_rate": "15.0%"
         },
         {
             "team_name": "Kairiki",
@@ -820,26 +860,6 @@
             "player_number": "17407",
             "gender": "男",
             "sl": 2,
-            "wins": "0/2",
-            "avg_points": 2.0,
-            "points_rate": "10.0%"
-        },
-        {
-            "team_name": "Go Go Chance!",
-            "player_name": "Kosuke Hashimoto",
-            "player_number": "17472",
-            "gender": "男",
-            "sl": 2,
-            "wins": "0/2",
-            "avg_points": 2.0,
-            "points_rate": "10.0%"
-        },
-        {
-            "team_name": "Watawata Nabenabe",
-            "player_name": "Shonosuke Yamada",
-            "player_number": "17478",
-            "gender": "男",
-            "sl": 2,
             "wins": "0/3",
             "avg_points": 1.67,
             "points_rate": "8.3%"
@@ -855,104 +875,63 @@
             "points_rate": "0.0%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028070326.pdf",
-    "sl_changes": [
-        {
-            "player_name": "Ito Tomoki",
-            "member_number": "16994",
-            "old_sl": "3",
-            "old_date": "2026/03/13",
-            "new_sl": "4",
-            "new_date": "2026/07/03"
-        },
-        {
-            "player_name": "Masuda Kanato",
-            "member_number": "17200",
-            "old_sl": "2",
-            "old_date": "2026/06/17",
-            "new_sl": "3",
-            "new_date": "2026/07/02"
-        },
-        {
-            "player_name": "Nomura Hikaru",
-            "member_number": "15983",
-            "old_sl": "4",
-            "old_date": "2026/02/11",
-            "new_sl": "5",
-            "new_date": "2026/07/02"
-        },
-        {
-            "player_name": "Shibanuma Nene",
-            "member_number": "17608",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "1",
-            "new_date": "2026/07/02"
-        },
-        {
-            "player_name": "Shimazaki Kotomi",
-            "member_number": "17406",
-            "old_sl": "2",
-            "old_date": "2026/06/10",
-            "new_sl": "3",
-            "new_date": "2026/07/02"
-        }
-    ],
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028070826.pdf",
+    "sl_changes": [],
     "ranking": [
         {
             "team_name": "Shou Time",
             "team_id": "7",
-            "points": 256
+            "points": 311
         },
         {
             "team_name": "Tamanchu Musou",
             "team_id": "5",
-            "points": 249
+            "points": 297
         },
         {
             "team_name": "Wagamama Fantasy",
             "team_id": "3",
-            "points": 223
+            "points": 296
         },
         {
             "team_name": "Tamatorino Okina",
             "team_id": "11",
-            "points": 214
-        },
-        {
-            "team_name": "Aizawanwan",
-            "team_id": "9",
-            "points": 214
-        },
-        {
-            "team_name": "Anamae Family",
-            "team_id": "1",
-            "points": 203
-        },
-        {
-            "team_name": "Kairiki",
-            "team_id": "4",
-            "points": 198
+            "points": 289
         },
         {
             "team_name": "Tamanchu Kokushi",
             "team_id": "6",
-            "points": 197
+            "points": 252
+        },
+        {
+            "team_name": "Kairiki",
+            "team_id": "4",
+            "points": 250
+        },
+        {
+            "team_name": "Aizawanwan",
+            "team_id": "9",
+            "points": 248
+        },
+        {
+            "team_name": "Anamae Family",
+            "team_id": "1",
+            "points": 248
         },
         {
             "team_name": "Go Go Chance!",
             "team_id": "8",
-            "points": 160
-        },
-        {
-            "team_name": "Ridge Flow",
-            "team_id": "10",
-            "points": 154
+            "points": 226
         },
         {
             "team_name": "Watawata Nabenabe",
             "team_id": "2",
-            "points": 152
+            "points": 179
+        },
+        {
+            "team_name": "Ridge Flow",
+            "team_id": "10",
+            "points": 179
         }
     ],
     "roster": [
@@ -1462,7 +1441,7 @@
                     "player_name": "Inoue, Aoi",
                     "player_number": "16190",
                     "gender": "-",
-                    "sl": 5
+                    "sl": 6
                 },
                 {
                     "player_name": "Takenaka, Hayato",
@@ -1551,5 +1530,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028070326.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028070826.pdf"
 }
