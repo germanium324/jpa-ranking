@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年07月10日 21:01 JST",
+    "last_checked": "2026年07月11日 10:39 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028070826.pdf",
-    "last_updated": "2026年07月10日 21:01 JST",
+    "last_updated": "2026年07月11日 10:39 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028070826.pdf",
     "individuals": [
         {
@@ -884,14 +884,6 @@
             "old_date": "2026/06/04",
             "new_sl": "6",
             "new_date": "2026/07/08"
-        },
-        {
-            "player_name": "Ito Tomoki",
-            "member_number": "16994",
-            "old_sl": "3",
-            "old_date": "2026/03/13",
-            "new_sl": "4",
-            "new_date": "2026/07/03"
         }
     ],
     "ranking": [
