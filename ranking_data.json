@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年07月14日 10:38 JST",
+    "last_checked": "2026年07月14日 20:32 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028071326.pdf",
-    "last_updated": "2026年07月14日 10:38 JST",
+    "last_updated": "2026年07月14日 20:32 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028071326.pdf",
     "individuals": [
         {
@@ -876,16 +876,7 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028070826.pdf",
-    "sl_changes": [
-        {
-            "player_name": "Inoue Aoi",
-            "member_number": "16190",
-            "old_sl": "5",
-            "old_date": "2026/06/04",
-            "new_sl": "6",
-            "new_date": "2026/07/08"
-        }
-    ],
+    "sl_changes": [],
     "ranking": [
         {
             "team_name": "Shou Time",
