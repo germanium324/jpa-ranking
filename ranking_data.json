@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年07月15日 14:05 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028071326.pdf",
-    "last_updated": "2026年07月15日 14:05 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028071326.pdf",
+    "last_checked": "2026年07月15日 14:15 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028071526.pdf",
+    "last_updated": "2026年07月15日 14:15 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028071526.pdf",
     "individuals": [
         {
             "team_name": "Wagamama Fantasy",
@@ -888,14 +888,39 @@
     ],
     "ranking": [
         {
-            "team_name": "Shou Time",
-            "team_id": "7",
-            "points": 311
-        },
-        {
             "team_name": "Tamanchu Musou",
             "team_id": "5",
-            "points": 297
+            "points": 367
+        },
+        {
+            "team_name": "Shou Time",
+            "team_id": "7",
+            "points": 363
+        },
+        {
+            "team_name": "Tamatorino Okina",
+            "team_id": "11",
+            "points": 337
+        },
+        {
+            "team_name": "Tamanchu Kokushi",
+            "team_id": "6",
+            "points": 304
+        },
+        {
+            "team_name": "Anamae Family",
+            "team_id": "1",
+            "points": 303
+        },
+        {
+            "team_name": "Aizawanwan",
+            "team_id": "9",
+            "points": 300
+        },
+        {
+            "team_name": "Kairiki",
+            "team_id": "4",
+            "points": 298
         },
         {
             "team_name": "Wagamama Fantasy",
@@ -903,29 +928,9 @@
             "points": 296
         },
         {
-            "team_name": "Tamatorino Okina",
-            "team_id": "11",
-            "points": 289
-        },
-        {
-            "team_name": "Tamanchu Kokushi",
-            "team_id": "6",
-            "points": 252
-        },
-        {
-            "team_name": "Kairiki",
-            "team_id": "4",
-            "points": 250
-        },
-        {
-            "team_name": "Aizawanwan",
-            "team_id": "9",
-            "points": 248
-        },
-        {
-            "team_name": "Anamae Family",
-            "team_id": "1",
-            "points": 248
+            "team_name": "Watawata Nabenabe",
+            "team_id": "2",
+            "points": 227
         },
         {
             "team_name": "Go Go Chance!",
@@ -933,14 +938,9 @@
             "points": 226
         },
         {
-            "team_name": "Watawata Nabenabe",
-            "team_id": "2",
-            "points": 179
-        },
-        {
             "team_name": "Ridge Flow",
             "team_id": "10",
-            "points": 179
+            "points": 209
         }
     ],
     "roster": [
@@ -1228,7 +1228,7 @@
                     "player_name": "Amano, Yuki",
                     "player_number": "13673",
                     "gender": "-",
-                    "sl": 8
+                    "sl": 9
                 },
                 {
                     "player_name": "Kako, Ryui",
@@ -1539,5 +1539,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028071326.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028071526.pdf"
 }
