@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年07月15日 20:33 JST",
+    "last_checked": "2026年07月16日 10:38 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028071526.pdf",
-    "last_updated": "2026年07月15日 20:33 JST",
+    "last_updated": "2026年07月16日 10:38 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028071526.pdf",
     "individuals": [
         {
@@ -884,14 +884,6 @@
             "old_date": "2024/11/27",
             "new_sl": "9",
             "new_date": "2026/07/15"
-        },
-        {
-            "player_name": "Inoue Aoi",
-            "member_number": "16190",
-            "old_sl": "5",
-            "old_date": "2026/06/04",
-            "new_sl": "6",
-            "new_date": "2026/07/08"
         }
     ],
     "ranking": [
