@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年07月19日 20:26 JST",
+    "last_checked": "2026年07月20日 10:45 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028071526.pdf",
-    "last_updated": "2026年07月19日 20:26 JST",
+    "last_updated": "2026年07月20日 10:45 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028071526.pdf",
     "individuals": [
         {
@@ -876,7 +876,16 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028070826.pdf",
-    "sl_changes": [],
+    "sl_changes": [
+        {
+            "player_name": "Amano Yuki",
+            "member_number": "13673",
+            "old_sl": "8",
+            "old_date": "2024/11/27",
+            "new_sl": "9",
+            "new_date": "2026/07/15"
+        }
+    ],
     "ranking": [
         {
             "team_name": "Tamanchu Musou",
