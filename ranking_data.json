@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年07月22日 18:24 JST",
+    "last_checked": "2026年07月22日 20:37 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028072226.pdf",
-    "last_updated": "2026年07月22日 18:24 JST",
+    "last_updated": "2026年07月22日 20:37 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028072226.pdf",
     "individuals": [
         {
@@ -877,6 +877,14 @@
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028072026.pdf",
     "sl_changes": [
+        {
+            "player_name": "Watanabe Satsuki",
+            "member_number": "16762",
+            "old_sl": "3",
+            "old_date": "2026/06/04",
+            "new_sl": "4",
+            "new_date": "2026/07/22"
+        },
         {
             "player_name": "Hada Amane",
             "member_number": "17400",
