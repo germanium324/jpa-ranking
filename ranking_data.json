@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年07月22日 20:37 JST",
+    "last_checked": "2026年07月23日 10:39 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028072226.pdf",
-    "last_updated": "2026年07月22日 20:37 JST",
+    "last_updated": "2026年07月23日 10:39 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028072226.pdf",
     "individuals": [
         {
@@ -900,14 +900,6 @@
             "old_date": "2025/04/30",
             "new_sl": "7",
             "new_date": "2026/07/20"
-        },
-        {
-            "player_name": "Amano Yuki",
-            "member_number": "13673",
-            "old_sl": "8",
-            "old_date": "2024/11/27",
-            "new_sl": "9",
-            "new_date": "2026/07/15"
         }
     ],
     "ranking": [
