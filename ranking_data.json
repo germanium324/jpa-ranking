@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年07月27日 21:05 JST",
+    "last_checked": "2026年07月28日 10:37 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028072726.pdf",
-    "last_updated": "2026年07月27日 21:05 JST",
+    "last_updated": "2026年07月28日 10:37 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028072726.pdf",
     "individuals": [
         {
@@ -884,22 +884,6 @@
             "old_date": "2026/06/04",
             "new_sl": "4",
             "new_date": "2026/07/22"
-        },
-        {
-            "player_name": "Hada Amane",
-            "member_number": "17400",
-            "old_sl": "1",
-            "old_date": "2026/06/04",
-            "new_sl": "2",
-            "new_date": "2026/07/20"
-        },
-        {
-            "player_name": "Oba Hidehiro",
-            "member_number": "12811",
-            "old_sl": "6",
-            "old_date": "2025/04/30",
-            "new_sl": "7",
-            "new_date": "2026/07/20"
         }
     ],
     "ranking": [
