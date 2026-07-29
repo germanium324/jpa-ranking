@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年07月29日 14:29 JST",
+    "last_checked": "2026年07月29日 14:38 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028072926.pdf",
-    "last_updated": "2026年07月29日 14:29 JST",
+    "last_updated": "2026年07月29日 14:38 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028072926.pdf",
     "individuals": [
         {
@@ -876,7 +876,16 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028072726.pdf",
-    "sl_changes": [],
+    "sl_changes": [
+        {
+            "player_name": "Watanabe Satsuki",
+            "member_number": "16762",
+            "old_sl": "3",
+            "old_date": "2026/06/04",
+            "new_sl": "4",
+            "new_date": "2026/07/22"
+        }
+    ],
     "ranking": [
         {
             "team_name": "Shou Time",
