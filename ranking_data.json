@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年07月28日 20:42 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028072726.pdf",
-    "last_updated": "2026年07月28日 20:42 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028072726.pdf",
+    "last_checked": "2026年07月29日 10:38 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028072926.pdf",
+    "last_updated": "2026年07月29日 10:38 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028072926.pdf",
     "individuals": [
         {
             "team_name": "Tamatorino Okina",
@@ -888,49 +888,49 @@
     ],
     "ranking": [
         {
-            "team_name": "Tamanchu Musou",
-            "team_id": "5",
-            "points": 430
-        },
-        {
             "team_name": "Shou Time",
             "team_id": "7",
-            "points": 418
+            "points": 480
+        },
+        {
+            "team_name": "Tamanchu Musou",
+            "team_id": "5",
+            "points": 475
         },
         {
             "team_name": "Wagamama Fantasy",
             "team_id": "3",
-            "points": 395
-        },
-        {
-            "team_name": "Tamatorino Okina",
-            "team_id": "11",
-            "points": 374
-        },
-        {
-            "team_name": "Kairiki",
-            "team_id": "4",
-            "points": 365
+            "points": 450
         },
         {
             "team_name": "Tamanchu Kokushi",
             "team_id": "6",
-            "points": 359
+            "points": 420
+        },
+        {
+            "team_name": "Tamatorino Okina",
+            "team_id": "11",
+            "points": 412
         },
         {
             "team_name": "Aizawanwan",
             "team_id": "9",
-            "points": 351
+            "points": 405
+        },
+        {
+            "team_name": "Kairiki",
+            "team_id": "4",
+            "points": 404
         },
         {
             "team_name": "Anamae Family",
             "team_id": "1",
-            "points": 348
+            "points": 394
         },
         {
             "team_name": "Go Go Chance!",
             "team_id": "8",
-            "points": 332
+            "points": 387
         },
         {
             "team_name": "Watawata Nabenabe",
@@ -1539,5 +1539,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028072726.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028072926.pdf"
 }
