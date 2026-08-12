@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年08月12日 17:05 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028080726.pdf",
-    "last_updated": "2026年08月12日 17:05 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028080726.pdf",
+    "last_checked": "2026年08月12日 20:18 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028081226.pdf",
+    "last_updated": "2026年08月12日 20:18 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028081226.pdf",
     "individuals": [
         {
             "team_name": "Go Go Chance!",
@@ -930,39 +930,39 @@
     ],
     "ranking": [
         {
+            "team_name": "Shou Time",
+            "team_id": "7",
+            "points": 551
+        },
+        {
+            "team_name": "Wagamama Fantasy",
+            "team_id": "3",
+            "points": 543
+        },
+        {
             "team_name": "Tamanchu Musou",
             "team_id": "5",
             "points": 536
         },
         {
-            "team_name": "Shou Time",
-            "team_id": "7",
-            "points": 519
+            "team_name": "Aizawanwan",
+            "team_id": "9",
+            "points": 522
         },
         {
-            "team_name": "Wagamama Fantasy",
-            "team_id": "3",
-            "points": 506
+            "team_name": "Tamatorino Okina",
+            "team_id": "11",
+            "points": 521
+        },
+        {
+            "team_name": "Kairiki",
+            "team_id": "4",
+            "points": 512
         },
         {
             "team_name": "Tamanchu Kokushi",
             "team_id": "6",
             "points": 468
-        },
-        {
-            "team_name": "Tamatorino Okina",
-            "team_id": "11",
-            "points": 463
-        },
-        {
-            "team_name": "Kairiki",
-            "team_id": "4",
-            "points": 457
-        },
-        {
-            "team_name": "Aizawanwan",
-            "team_id": "9",
-            "points": 454
         },
         {
             "team_name": "Go Go Chance!",
@@ -1000,7 +1000,7 @@
                     "player_name": "Yasuda, Yuki",
                     "player_number": "13691",
                     "gender": "-",
-                    "sl": 6
+                    "sl": 7
                 },
                 {
                     "player_name": "Kishi, Moeka",
@@ -1030,7 +1030,7 @@
                     "player_name": "Kayanuma, Asa",
                     "player_number": "17312",
                     "gender": "-",
-                    "sl": 1
+                    "sl": 2
                 },
                 {
                     "player_name": "Nabeshima, Yuri",
@@ -1444,7 +1444,7 @@
                     "player_name": "Iwano, Atsushi",
                     "player_number": "15343",
                     "gender": "-",
-                    "sl": 5
+                    "sl": 6
                 },
                 {
                     "player_name": "Nomura, Hikaru",
@@ -1581,5 +1581,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028080726.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028081226.pdf"
 }
