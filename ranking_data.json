@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年08月14日 10:36 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028081226.pdf",
-    "last_updated": "2026年08月14日 10:36 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028081226.pdf",
+    "last_checked": "2026年08月14日 20:17 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028081426.pdf",
+    "last_updated": "2026年08月14日 20:17 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028081426.pdf",
     "individuals": [
         {
             "team_name": "Go Go Chance!",
@@ -888,6 +888,14 @@
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028080726.pdf",
     "sl_changes": [
         {
+            "player_name": "Yamauchi Haruki",
+            "member_number": "16756",
+            "old_sl": "4",
+            "old_date": "2026/08/07",
+            "new_sl": "3",
+            "new_date": "2026/08/14"
+        },
+        {
             "player_name": "Iwano Atsushi",
             "member_number": "15343",
             "old_sl": "5",
@@ -942,14 +950,6 @@
             "old_date": "2026/02/18",
             "new_sl": "5",
             "new_date": "2026/08/07"
-        },
-        {
-            "player_name": "Yamauchi Haruki",
-            "member_number": "16756",
-            "old_sl": "3",
-            "old_date": "2025/10/29",
-            "new_sl": "4",
-            "new_date": "2026/08/07"
         }
     ],
     "ranking": [
@@ -979,19 +979,24 @@
             "points": 521
         },
         {
+            "team_name": "Tamanchu Kokushi",
+            "team_id": "6",
+            "points": 518
+        },
+        {
             "team_name": "Kairiki",
             "team_id": "4",
             "points": 512
         },
         {
-            "team_name": "Tamanchu Kokushi",
-            "team_id": "6",
-            "points": 468
-        },
-        {
             "team_name": "Go Go Chance!",
             "team_id": "8",
-            "points": 439
+            "points": 498
+        },
+        {
+            "team_name": "Watawata Nabenabe",
+            "team_id": "2",
+            "points": 442
         },
         {
             "team_name": "Anamae Family",
@@ -999,14 +1004,9 @@
             "points": 428
         },
         {
-            "team_name": "Watawata Nabenabe",
-            "team_id": "2",
-            "points": 392
-        },
-        {
             "team_name": "Ridge Flow",
             "team_id": "10",
-            "points": 323
+            "points": 354
         }
     ],
     "roster": [
@@ -1354,7 +1354,7 @@
                     "player_name": "Yamauchi, Haruki",
                     "player_number": "16756",
                     "gender": "-",
-                    "sl": 4
+                    "sl": 3
                 },
                 {
                     "player_name": "Furukawa, Kodai",
@@ -1605,5 +1605,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028081226.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028081426.pdf"
 }
