@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年08月18日 20:08 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028081726.pdf",
-    "last_updated": "2026年08月18日 20:08 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028081726.pdf",
+    "last_checked": "2026年08月19日 10:32 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028081926.pdf",
+    "last_updated": "2026年08月19日 10:32 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028081926.pdf",
     "individuals": [
         {
             "team_name": "Go Go Chance!",
@@ -888,6 +888,22 @@
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028081726.pdf",
     "sl_changes": [
         {
+            "player_name": "Fukushima So",
+            "member_number": "16983",
+            "old_sl": "2",
+            "old_date": "2025/09/10",
+            "new_sl": "3",
+            "new_date": "2026/08/19"
+        },
+        {
+            "player_name": "Nishizuka Rikuto",
+            "member_number": "17004",
+            "old_sl": "3",
+            "old_date": "2026/02/04",
+            "new_sl": "4",
+            "new_date": "2026/08/19"
+        },
+        {
             "player_name": "Machiyama Ken",
             "member_number": "17403",
             "old_sl": "4",
@@ -948,57 +964,57 @@
         {
             "team_name": "Tamanchu Musou",
             "team_id": "5",
-            "points": 607
-        },
-        {
-            "team_name": "Shou Time",
-            "team_id": "7",
-            "points": 551
+            "points": 647
         },
         {
             "team_name": "Wagamama Fantasy",
             "team_id": "3",
-            "points": 543
+            "points": 598
         },
         {
-            "team_name": "Aizawanwan",
-            "team_id": "9",
-            "points": 522
+            "team_name": "Shou Time",
+            "team_id": "7",
+            "points": 596
         },
         {
             "team_name": "Tamatorino Okina",
             "team_id": "11",
-            "points": 521
+            "points": 589
         },
         {
-            "team_name": "Tamanchu Kokushi",
-            "team_id": "6",
-            "points": 518
+            "team_name": "Aizawanwan",
+            "team_id": "9",
+            "points": 577
         },
         {
             "team_name": "Kairiki",
             "team_id": "4",
-            "points": 512
+            "points": 574
+        },
+        {
+            "team_name": "Tamanchu Kokushi",
+            "team_id": "6",
+            "points": 564
         },
         {
             "team_name": "Go Go Chance!",
             "team_id": "8",
-            "points": 498
-        },
-        {
-            "team_name": "Anamae Family",
-            "team_id": "1",
-            "points": 447
+            "points": 531
         },
         {
             "team_name": "Watawata Nabenabe",
             "team_id": "2",
-            "points": 442
+            "points": 497
+        },
+        {
+            "team_name": "Anamae Family",
+            "team_id": "1",
+            "points": 469
         },
         {
             "team_name": "Ridge Flow",
             "team_id": "10",
-            "points": 354
+            "points": 403
         }
     ],
     "roster": [
@@ -1094,7 +1110,7 @@
                     "player_name": "Nishizuka, Rikuto",
                     "player_number": "17004",
                     "gender": "-",
-                    "sl": 3
+                    "sl": 4
                 },
                 {
                     "player_name": "Shinzato, Emiri",
@@ -1244,7 +1260,7 @@
                     "player_name": "Fukushima, So",
                     "player_number": "16983",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 },
                 {
                     "player_name": "Yagi, Kosei",
@@ -1527,18 +1543,6 @@
                     "player_number": "17398",
                     "gender": "-",
                     "sl": 4
-                },
-                {
-                    "player_name": "Kinoshita, Haruki",
-                    "player_number": "17399",
-                    "gender": "-",
-                    "sl": 2
-                },
-                {
-                    "player_name": "Hada, Amane",
-                    "player_number": "17400",
-                    "gender": "-",
-                    "sl": 1
                 }
             ]
         },
@@ -1565,18 +1569,6 @@
                     "sl": 4
                 },
                 {
-                    "player_name": "Komiya, Kotoha",
-                    "player_number": "17475",
-                    "gender": "-",
-                    "sl": 1
-                },
-                {
-                    "player_name": "Cho, Koki",
-                    "player_number": "17476",
-                    "gender": "-",
-                    "sl": 2
-                },
-                {
                     "player_name": "Hakamata, Shumpei",
                     "player_number": "17477",
                     "gender": "-",
@@ -1593,9 +1585,21 @@
                     "player_number": "17478",
                     "gender": "-",
                     "sl": 2
+                },
+                {
+                    "player_name": "Kinoshita, Haruki",
+                    "player_number": "17399",
+                    "gender": "-",
+                    "sl": 2
+                },
+                {
+                    "player_name": "Hada, Amane",
+                    "player_number": "17400",
+                    "gender": "-",
+                    "sl": 1
                 }
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028081726.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028081926.pdf"
 }
