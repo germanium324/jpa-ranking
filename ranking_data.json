@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年08月19日 13:16 JST",
+    "last_checked": "2026年08月19日 13:34 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028081926.pdf",
-    "last_updated": "2026年08月19日 13:16 JST",
+    "last_updated": "2026年08月19日 13:34 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028081926.pdf",
     "individuals": [
         {
@@ -886,80 +886,7 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028081726.pdf",
-    "sl_changes": [
-        {
-            "player_name": "Fukushima So",
-            "member_number": "16983",
-            "old_sl": "2",
-            "old_date": "2025/09/10",
-            "new_sl": "3",
-            "new_date": "2026/08/19"
-        },
-        {
-            "player_name": "Nishizuka Rikuto",
-            "member_number": "17004",
-            "old_sl": "3",
-            "old_date": "2026/02/04",
-            "new_sl": "4",
-            "new_date": "2026/08/19"
-        },
-        {
-            "player_name": "Machiyama Ken",
-            "member_number": "17403",
-            "old_sl": "4",
-            "old_date": "2026/06/24",
-            "new_sl": "5",
-            "new_date": "2026/08/17"
-        },
-        {
-            "player_name": "Nishiura Yuto",
-            "member_number": "16996",
-            "old_sl": "5",
-            "old_date": "2026/08/07",
-            "new_sl": "4",
-            "new_date": "2026/08/17"
-        },
-        {
-            "player_name": "Shinzato Emiri",
-            "member_number": "17396",
-            "old_sl": "1",
-            "old_date": "2026/06/04",
-            "new_sl": "2",
-            "new_date": "2026/08/17"
-        },
-        {
-            "player_name": "Yamauchi Haruki",
-            "member_number": "16756",
-            "old_sl": "4",
-            "old_date": "2026/08/07",
-            "new_sl": "3",
-            "new_date": "2026/08/14"
-        },
-        {
-            "player_name": "Iwano Atsushi",
-            "member_number": "15343",
-            "old_sl": "5",
-            "old_date": "2026/04/29",
-            "new_sl": "6",
-            "new_date": "2026/08/12"
-        },
-        {
-            "player_name": "Kayanuma Asa",
-            "member_number": "17312",
-            "old_sl": "1",
-            "old_date": "2026/06/17",
-            "new_sl": "2",
-            "new_date": "2026/08/12"
-        },
-        {
-            "player_name": "Yasuda Yuki",
-            "member_number": "13691",
-            "old_sl": "6",
-            "old_date": "2025/07/16",
-            "new_sl": "7",
-            "new_date": "2026/08/12"
-        }
-    ],
+    "sl_changes": [],
     "ranking": [
         {
             "team_name": "Tamanchu Musou",
