@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年08月23日 10:33 JST",
+    "last_checked": "2026年08月23日 20:06 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028081926.pdf",
-    "last_updated": "2026年08月23日 10:33 JST",
+    "last_updated": "2026年08月23日 20:06 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028081926.pdf",
     "individuals": [
         {
@@ -866,48 +866,7 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028081926.pdf",
-    "sl_changes": [
-        {
-            "player_name": "Fukushima So",
-            "member_number": "16983",
-            "old_sl": "2",
-            "old_date": "2025/09/10",
-            "new_sl": "3",
-            "new_date": "2026/08/19"
-        },
-        {
-            "player_name": "Nishizuka Rikuto",
-            "member_number": "17004",
-            "old_sl": "3",
-            "old_date": "2026/02/04",
-            "new_sl": "4",
-            "new_date": "2026/08/19"
-        },
-        {
-            "player_name": "Machiyama Ken",
-            "member_number": "17403",
-            "old_sl": "4",
-            "old_date": "2026/06/24",
-            "new_sl": "5",
-            "new_date": "2026/08/17"
-        },
-        {
-            "player_name": "Nishiura Yuto",
-            "member_number": "16996",
-            "old_sl": "5",
-            "old_date": "2026/08/07",
-            "new_sl": "4",
-            "new_date": "2026/08/17"
-        },
-        {
-            "player_name": "Shinzato Emiri",
-            "member_number": "17396",
-            "old_sl": "1",
-            "old_date": "2026/06/04",
-            "new_sl": "2",
-            "new_date": "2026/08/17"
-        }
-    ],
+    "sl_changes": [],
     "ranking": [
         {
             "team_name": "Tamanchu Musou",
