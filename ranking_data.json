@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年08月26日 10:33 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028081926.pdf",
-    "last_updated": "2026年08月26日 10:33 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028081926.pdf",
+    "last_checked": "2026年08月26日 13:17 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028082626.pdf",
+    "last_updated": "2026年08月26日 13:17 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028082626.pdf",
     "individuals": [
         {
             "team_name": "Go Go Chance!",
@@ -1220,7 +1220,7 @@
                     "player_name": "Yumoto, Seiya",
                     "player_number": "15959",
                     "gender": "-",
-                    "sl": 5
+                    "sl": 6
                 },
                 {
                     "player_name": "Amano, Yuki",
@@ -1514,7 +1514,7 @@
                     "player_name": "Kinoshita, Haruki",
                     "player_number": "17399",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 },
                 {
                     "player_name": "Hada, Amane",
@@ -1525,5 +1525,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028081926.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028082626.pdf"
 }
