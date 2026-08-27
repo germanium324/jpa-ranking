@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年08月26日 20:10 JST",
+    "last_checked": "2026年08月27日 11:41 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028082626.pdf",
-    "last_updated": "2026年08月26日 20:10 JST",
+    "last_updated": "2026年08月27日 11:41 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028082626.pdf",
     "individuals": [
         {
@@ -882,22 +882,6 @@
             "old_date": "2026/03/18",
             "new_sl": "6",
             "new_date": "2026/08/26"
-        },
-        {
-            "player_name": "Fukushima So",
-            "member_number": "16983",
-            "old_sl": "2",
-            "old_date": "2025/09/10",
-            "new_sl": "3",
-            "new_date": "2026/08/19"
-        },
-        {
-            "player_name": "Nishizuka Rikuto",
-            "member_number": "17004",
-            "old_sl": "3",
-            "old_date": "2026/02/04",
-            "new_sl": "4",
-            "new_date": "2026/08/19"
         }
     ],
     "ranking": [
