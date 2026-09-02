@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年09月02日 16:45 JST",
+    "last_checked": "2026年09月03日 00:00 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/R028090226.pdf",
-    "last_updated": "2026年09月02日 16:45 JST",
+    "last_updated": "2026年09月03日 00:00 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/R028090226.pdf",
     "individuals": [
         {
@@ -890,22 +890,6 @@
             "old_date": "2026/08/17",
             "new_sl": "5",
             "new_date": "2026/09/02"
-        },
-        {
-            "player_name": "Kinoshita Haruki",
-            "member_number": "17399",
-            "old_sl": "2",
-            "old_date": "2026/06/04",
-            "new_sl": "3",
-            "new_date": "2026/08/26"
-        },
-        {
-            "player_name": "Yumoto Seiya",
-            "member_number": "15959",
-            "old_sl": "5",
-            "old_date": "2026/03/18",
-            "new_sl": "6",
-            "new_date": "2026/08/26"
         }
     ],
     "ranking": [
