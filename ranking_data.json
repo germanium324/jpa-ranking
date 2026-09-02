@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年09月01日 20:13 JST",
+    "last_checked": "2026年09月02日 13:22 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028082626.pdf",
-    "last_updated": "2026年09月01日 20:13 JST",
+    "last_updated": "2026年09月02日 13:22 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028082626.pdf",
     "individuals": [
         {
@@ -866,7 +866,24 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028081926.pdf",
-    "sl_changes": [],
+    "sl_changes": [
+        {
+            "player_name": "Kinoshita Haruki",
+            "member_number": "17399",
+            "old_sl": "2",
+            "old_date": "2026/06/04",
+            "new_sl": "3",
+            "new_date": "2026/08/26"
+        },
+        {
+            "player_name": "Yumoto Seiya",
+            "member_number": "15959",
+            "old_sl": "5",
+            "old_date": "2026/03/18",
+            "new_sl": "6",
+            "new_date": "2026/08/26"
+        }
+    ],
     "ranking": [
         {
             "team_name": "Tamanchu Musou",
