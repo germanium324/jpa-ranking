@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年09月02日 14:44 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028082626.pdf",
-    "last_updated": "2026年09月02日 14:44 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028082626.pdf",
+    "last_checked": "2026年09月02日 15:01 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/R028090226.pdf",
+    "last_updated": "2026年09月02日 15:01 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/R028090226.pdf",
     "individuals": [
         {
             "team_name": "Go Go Chance!",
@@ -886,59 +886,59 @@
     ],
     "ranking": [
         {
-            "team_name": "Tamanchu Musou",
-            "team_id": "5",
-            "points": 647
-        },
-        {
-            "team_name": "Wagamama Fantasy",
-            "team_id": "3",
-            "points": 598
-        },
-        {
-            "team_name": "Shou Time",
-            "team_id": "7",
-            "points": 596
-        },
-        {
-            "team_name": "Tamatorino Okina",
-            "team_id": "11",
-            "points": 589
-        },
-        {
             "team_name": "Aizawanwan",
             "team_id": "9",
-            "points": 577
-        },
-        {
-            "team_name": "Kairiki",
-            "team_id": "4",
-            "points": 574
-        },
-        {
-            "team_name": "Tamanchu Kokushi",
-            "team_id": "6",
-            "points": 564
-        },
-        {
-            "team_name": "Go Go Chance!",
-            "team_id": "8",
-            "points": 531
-        },
-        {
-            "team_name": "Watawata Nabenabe",
-            "team_id": "2",
-            "points": 497
+            "points": 0
         },
         {
             "team_name": "Anamae Family",
             "team_id": "1",
-            "points": 469
+            "points": 0
+        },
+        {
+            "team_name": "Go Go Chance!",
+            "team_id": "8",
+            "points": 0
+        },
+        {
+            "team_name": "Kairiki",
+            "team_id": "4",
+            "points": 0
         },
         {
             "team_name": "Ridge Flow",
             "team_id": "10",
-            "points": 403
+            "points": 0
+        },
+        {
+            "team_name": "Shou Time",
+            "team_id": "7",
+            "points": 0
+        },
+        {
+            "team_name": "Tamanchu Kokushi",
+            "team_id": "6",
+            "points": 0
+        },
+        {
+            "team_name": "Tamanchu Musou",
+            "team_id": "5",
+            "points": 0
+        },
+        {
+            "team_name": "Tamatorino Okina",
+            "team_id": "11",
+            "points": 0
+        },
+        {
+            "team_name": "Wagamama Fantasy",
+            "team_id": "3",
+            "points": 0
+        },
+        {
+            "team_name": "Watawata Nabenabe",
+            "team_id": "2",
+            "points": 0
         }
     ],
     "roster": [
@@ -1334,7 +1334,7 @@
                     "player_name": "Nishiura, Yuto",
                     "player_number": "16996",
                     "gender": "-",
-                    "sl": 4
+                    "sl": 5
                 },
                 {
                     "player_name": "Yamaguchi, Keisho",
@@ -1346,7 +1346,7 @@
                     "player_name": "Asakura, Riki",
                     "player_number": "16232",
                     "gender": "-",
-                    "sl": 4
+                    "sl": 5
                 },
                 {
                     "player_name": "Orita, Yusei",
@@ -1520,10 +1520,10 @@
                     "player_name": "Hada, Amane",
                     "player_number": "17400",
                     "gender": "-",
-                    "sl": 1
+                    "sl": 2
                 }
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028082626.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028090226.pdf"
 }
