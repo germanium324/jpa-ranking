@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年09月12日 10:22 JST",
+    "last_checked": "2026年09月12日 20:11 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028091026.pdf",
-    "last_updated": "2026年09月12日 10:22 JST",
+    "last_updated": "2026年09月12日 20:11 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028091026.pdf",
     "individuals": [
         {
@@ -886,128 +886,7 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028091026.pdf",
-    "sl_changes": [
-        {
-            "player_name": "Fujiyoshi Ryoki",
-            "member_number": "17673",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "2",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Kajiyama Akiyoshi",
-            "member_number": "17668",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "2",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Kawakami Manamu",
-            "member_number": "17678",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "2",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Kikuchi Yugo",
-            "member_number": "17669",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "2",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Machiyama Ken",
-            "member_number": "17403",
-            "old_sl": "5",
-            "old_date": "2026/08/17",
-            "new_sl": "6",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Moriki Masanobu",
-            "member_number": "17680",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "2",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Morita Tomohiro",
-            "member_number": "17679",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "2",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Nishimura Ayumi",
-            "member_number": "16228",
-            "old_sl": "2",
-            "old_date": "2026/08/07",
-            "new_sl": "1",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Osumi Anna",
-            "member_number": "17677",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "1",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Saga Mizuki",
-            "member_number": "17675",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "1",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Sawada Keisuke",
-            "member_number": "17672",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "2",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Tagami Kaori",
-            "member_number": "17674",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "1",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Takahashi Akiko",
-            "member_number": "17670",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "1",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Takenaka Hayato",
-            "member_number": "16997",
-            "old_sl": "5",
-            "old_date": "2026/05/13",
-            "new_sl": "6",
-            "new_date": "2026/09/10"
-        },
-        {
-            "player_name": "Yoshida Haruna",
-            "member_number": "17671",
-            "old_sl": "",
-            "old_date": "",
-            "new_sl": "1",
-            "new_date": "2026/09/10"
-        }
-    ],
+    "sl_changes": [],
     "ranking": [
         {
             "team_name": "Hineri Yoseisan",
