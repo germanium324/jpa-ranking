@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年09月21日 20:14 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028091826.pdf",
-    "last_updated": "2026年09月21日 20:14 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028091826.pdf",
+    "last_checked": "2026年09月22日 10:27 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028092126.pdf",
+    "last_updated": "2026年09月22日 10:27 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028092126.pdf",
     "individuals": [
         {
             "team_name": "Hineri Yoseisan",
@@ -829,7 +829,7 @@
             "player_name": "Kajiyama, Akiyoshi",
             "player_number": "17668",
             "gender": "-",
-            "sl": 2,
+            "sl": 3,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -885,13 +885,75 @@
             "points_rate": "0%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028091826.pdf",
-    "sl_changes": [],
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028092126.pdf",
+    "sl_changes": [
+        {
+            "player_name": "Kajiyama Akiyoshi",
+            "member_number": "17668",
+            "old_sl": "2",
+            "old_date": "2026/09/10",
+            "new_sl": "3",
+            "new_date": "2026/09/21"
+        },
+        {
+            "player_name": "Ohe Yuna",
+            "member_number": "15430",
+            "old_sl": "6",
+            "old_date": "2026/01/28",
+            "new_sl": "7",
+            "new_date": "2026/09/18"
+        },
+        {
+            "player_name": "Okada Naoko",
+            "member_number": "17410",
+            "old_sl": "2",
+            "old_date": "2026/06/17",
+            "new_sl": "3",
+            "new_date": "2026/09/18"
+        },
+        {
+            "player_name": "Takahashi Akiko",
+            "member_number": "17670",
+            "old_sl": "1",
+            "old_date": "2026/09/10",
+            "new_sl": "2",
+            "new_date": "2026/09/18"
+        },
+        {
+            "player_name": "Furukawa Kodai",
+            "member_number": "16984",
+            "old_sl": "3",
+            "old_date": "2026/02/18",
+            "new_sl": "4",
+            "new_date": "2026/09/16"
+        },
+        {
+            "player_name": "Osumi Anna",
+            "member_number": "17677",
+            "old_sl": "1",
+            "old_date": "2026/09/10",
+            "new_sl": "2",
+            "new_date": "2026/09/16"
+        },
+        {
+            "player_name": "Yoshida Haruna",
+            "member_number": "17671",
+            "old_sl": "1",
+            "old_date": "2026/09/10",
+            "new_sl": "2",
+            "new_date": "2026/09/16"
+        }
+    ],
     "ranking": [
         {
             "team_name": "Tamanchu RYU",
             "team_id": "5",
             "points": 69
+        },
+        {
+            "team_name": "Dekatsuyo",
+            "team_id": "10",
+            "points": 64
         },
         {
             "team_name": "Hineri Yoseisan",
@@ -924,6 +986,11 @@
             "points": 37
         },
         {
+            "team_name": "Sasanoha Campus",
+            "team_id": "9",
+            "points": 36
+        },
+        {
             "team_name": "Yabanchu",
             "team_id": "6",
             "points": 26
@@ -932,16 +999,6 @@
             "team_name": "Tamanchu CUE",
             "team_id": "11",
             "points": 25
-        },
-        {
-            "team_name": "Dekatsuyo",
-            "team_id": "10",
-            "points": 0
-        },
-        {
-            "team_name": "Sasanoha Campus",
-            "team_id": "9",
-            "points": 0
         }
     ],
     "roster": [
@@ -1043,7 +1100,7 @@
                     "player_name": "Kajiyama, Akiyoshi",
                     "player_number": "17668",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 },
                 {
                     "player_name": "Kikuchi, Yugo",
@@ -1540,5 +1597,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028091826.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028092126.pdf"
 }
