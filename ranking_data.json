@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年09月23日 20:13 JST",
+    "last_checked": "2026年09月24日 10:27 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028092326.pdf",
-    "last_updated": "2026年09月23日 20:13 JST",
+    "last_updated": "2026年09月24日 10:27 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028092326.pdf",
     "individuals": [
         {
@@ -950,30 +950,6 @@
             "old_date": "2026/09/10",
             "new_sl": "2",
             "new_date": "2026/09/18"
-        },
-        {
-            "player_name": "Furukawa Kodai",
-            "member_number": "16984",
-            "old_sl": "3",
-            "old_date": "2026/02/18",
-            "new_sl": "4",
-            "new_date": "2026/09/16"
-        },
-        {
-            "player_name": "Osumi Anna",
-            "member_number": "17677",
-            "old_sl": "1",
-            "old_date": "2026/09/10",
-            "new_sl": "2",
-            "new_date": "2026/09/16"
-        },
-        {
-            "player_name": "Yoshida Haruna",
-            "member_number": "17671",
-            "old_sl": "1",
-            "old_date": "2026/09/10",
-            "new_sl": "2",
-            "new_date": "2026/09/16"
         }
     ],
     "ranking": [
