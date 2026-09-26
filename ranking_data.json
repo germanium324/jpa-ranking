@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年09月26日 10:25 JST",
+    "last_checked": "2026年09月26日 20:11 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028092326.pdf",
-    "last_updated": "2026年09月26日 10:25 JST",
+    "last_updated": "2026年09月26日 20:11 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028092326.pdf",
     "individuals": [
         {
@@ -886,48 +886,7 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028092326.pdf",
-    "sl_changes": [
-        {
-            "player_name": "Iyono Koharu",
-            "member_number": "15429",
-            "old_sl": "5",
-            "old_date": "2026/01/21",
-            "new_sl": "6",
-            "new_date": "2026/09/23"
-        },
-        {
-            "player_name": "Nishimura Ayumi",
-            "member_number": "16228",
-            "old_sl": "1",
-            "old_date": "2026/09/10",
-            "new_sl": "2",
-            "new_date": "2026/09/23"
-        },
-        {
-            "player_name": "Tomiki Rimo",
-            "member_number": "16769",
-            "old_sl": "2",
-            "old_date": "2026/04/15",
-            "new_sl": "3",
-            "new_date": "2026/09/23"
-        },
-        {
-            "player_name": "Yasuda Yuki",
-            "member_number": "13691",
-            "old_sl": "7",
-            "old_date": "2026/08/12",
-            "new_sl": "6",
-            "new_date": "2026/09/23"
-        },
-        {
-            "player_name": "Kajiyama Akiyoshi",
-            "member_number": "17668",
-            "old_sl": "2",
-            "old_date": "2026/09/10",
-            "new_sl": "3",
-            "new_date": "2026/09/21"
-        }
-    ],
+    "sl_changes": [],
     "ranking": [
         {
             "team_name": "Wagamama Finally",
