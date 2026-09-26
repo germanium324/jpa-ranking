@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年09月25日 20:18 JST",
+    "last_checked": "2026年09月26日 10:25 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028092326.pdf",
-    "last_updated": "2026年09月25日 10:27 JST",
+    "last_updated": "2026年09月26日 10:25 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028092326.pdf",
     "individuals": [
         {
@@ -926,30 +926,6 @@
             "old_date": "2026/09/10",
             "new_sl": "3",
             "new_date": "2026/09/21"
-        },
-        {
-            "player_name": "Ohe Yuna",
-            "member_number": "15430",
-            "old_sl": "6",
-            "old_date": "2026/01/28",
-            "new_sl": "7",
-            "new_date": "2026/09/18"
-        },
-        {
-            "player_name": "Okada Naoko",
-            "member_number": "17410",
-            "old_sl": "2",
-            "old_date": "2026/06/17",
-            "new_sl": "3",
-            "new_date": "2026/09/18"
-        },
-        {
-            "player_name": "Takahashi Akiko",
-            "member_number": "17670",
-            "old_sl": "1",
-            "old_date": "2026/09/10",
-            "new_sl": "2",
-            "new_date": "2026/09/18"
         }
     ],
     "ranking": [
