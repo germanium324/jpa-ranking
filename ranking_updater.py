@@ -335,6 +335,7 @@ def merge_individual_stats_with_roster(parsed_individuals, roster_entries):
         }
 
         if stats:
+            stats_player_number = str(stats.get('player_number') or '').strip()
             merged_person.update({
                 'team_name': stats.get('team_name') or merged_person['team_name'],
                 'player_name': stats.get('player_name') or merged_person['player_name'],
@@ -347,6 +348,8 @@ def merge_individual_stats_with_roster(parsed_individuals, roster_entries):
             })
             if player_number:
                 matched_numbers.add(player_number)
+            if stats_player_number:
+                matched_numbers.add(stats_player_number)
             matched_names.add(roster_name_key)
 
         merged.append(merged_person)
