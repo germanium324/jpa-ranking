@@ -470,6 +470,9 @@ def reconcile_ranking_team_ids(ranking_df, roster_grouped):
         return ranking_df
 
     roster_team_id_set = {str(team['team_id']) for team in roster_grouped}
+    if '12' not in roster_team_id_set:
+        ranking_df = ranking_df[ranking_df['team_id'].astype(str) != '12'].copy()
+
     ranking_team_id_set = set(ranking_df['team_id'].astype(str))
     extra_ids = ranking_team_id_set - roster_team_id_set
     missing_ids = roster_team_id_set - ranking_team_id_set
