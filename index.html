@@ -160,7 +160,7 @@
             <div style="text-align: center; padding: 15px; color: #999;">変動情報がありません</div>
         </div>
         
-        <h2>
+        <h2 id="individuals-heading">
             <span>個人成績</span>
             <span class="pdf-link" id="individuals-pdf-link"></span>
         </h2>
@@ -202,7 +202,22 @@
                 })
                 .then(data => {
                     rankingBody.innerHTML = ''; // ローディング表示をクリア
-                    
+
+                    const toNumber = (value) => {
+                        const numeric = Number.parseFloat(value);
+                        return Number.isFinite(numeric) ? numeric : 0;
+                    };
+                    const compareTeams = (a, b) => {
+                        const pointDiff = toNumber(b.points) - toNumber(a.points);
+                        if (pointDiff !== 0) return pointDiff;
+                        return String(a.team_name || '').localeCompare(String(b.team_name || ''), 'ja');
+                    };
+                    const compareIndividuals = (a, b) => {
+                        const avgDiff = toNumber(b.avg_points) - toNumber(a.avg_points);
+                        if (avgDiff !== 0) return avgDiff;
+                        return String(a.player_name || '').localeCompare(String(b.player_name || ''), 'ja');
+                    };
+                     
                     // 1. チェック日時を表示
                     const checked = data.last_checked || null;
                     if (checked) {
@@ -257,8 +272,8 @@
                             team_id: team.team_id || '',
                             points: 0
                         }));
-                        rankingData.sort((a, b) => String(a.team_name || '').localeCompare(String(b.team_name || ''), 'ja'));
                     }
+                    rankingData.sort(compareTeams);
 
                     rankingBody.innerHTML = '';
                     if (!rankingData || rankingData.length === 0) {
@@ -289,10 +304,9 @@
                             teamSelect.value = matchedOption ? matchedOption.value : '';
                             searchInput.value = '';
                             slSelect.value = '';
-                            // 個人成績セクションにスクロール（2番目のh2要素）
-                            const individualsSections = document.querySelectorAll('h2');
-                            if (individualsSections.length > 1) {
-                                individualsSections[1].scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            const individualsHeading = document.getElementById('individuals-heading');
+                            if (individualsHeading) {
+                                individualsHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
                             }
                             // フィルタを適用
                             applyFilters();
@@ -323,14 +337,14 @@
                         : rosterIndividuals;
 
                     // 全体順位マップを作成（avg_points 降順）。フィルタ後もこの順位を表示する。
-                    const sortedForRank = originalIndividuals.slice().sort((a, b) => parseFloat(b.avg_points) - parseFloat(a.avg_points));
+                    const sortedForRank = originalIndividuals.slice().sort(compareIndividuals);
                     const ranksMap = {};
                     // 同点は同順位にする（標準競技順位: 1,2,2,4 のようにスキップあり）
                     let lastAvg = null;
                     let lastRank = 0;
                     sortedForRank.forEach((p, i) => {
                         const key = `${p.team_name}||${p.player_name}`;
-                        const avg = parseFloat(p.avg_points) || 0;
+                        const avg = toNumber(p.avg_points);
                         let rank;
                         if (i === 0) {
                             rank = 1;
@@ -374,7 +388,7 @@
                             return;
                         }
                         list.forEach((person) => {
-                            const avg = (typeof person.avg_points === 'number') ? person.avg_points.toFixed(2) : parseFloat(person.avg_points || 0).toFixed(2);
+                            const avg = toNumber(person.avg_points).toFixed(2);
                             const key = `${person.team_name}||${person.player_name}`;
                             const rank = ranksMap[key] || '';
                             const card = document.createElement('a');
@@ -427,7 +441,7 @@
                         if (teamVal) filtered = filtered.filter(p => p.team_name === teamVal);
                         if (slVal) filtered = filtered.filter(p => String(p.sl) === String(slVal));
                         // sort by average points (降順)
-                        filtered.sort((a, b) => parseFloat(b.avg_points) - parseFloat(a.avg_points));
+                        filtered.sort(compareIndividuals);
                         renderIndividuals(filtered);
                     }
 
@@ -437,7 +451,7 @@
                     clearBtn.addEventListener('click', ()=>{ searchInput.value=''; teamSelect.value=''; slSelect.value=''; applyFilters(); });
 
                     // initial render: 平均獲得ポイント順（降順）で表示
-                    renderIndividuals(originalIndividuals.sort((a, b) => b.avg_points - a.avg_points));
+                    renderIndividuals(originalIndividuals.slice().sort(compareIndividuals));
                 })
                 .catch(error => {
                     console.error('データの取得エラー:', error);
