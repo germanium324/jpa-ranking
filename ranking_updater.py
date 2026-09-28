@@ -306,7 +306,7 @@ def merge_individual_stats_with_roster(parsed_individuals, roster_entries):
             normalize_name(person.get('team_name')),
             normalize_name(person.get('player_name'))
         )
-        stats_by_name[name_key] = person
+        stats_by_name.setdefault(name_key, []).append(person)
 
     merged = []
     matched_numbers = set()
@@ -318,7 +318,10 @@ def merge_individual_stats_with_roster(parsed_individuals, roster_entries):
             normalize_name(entry.get('team_name')),
             normalize_name(entry.get('player_name'))
         )
-        stats = stats_by_number.get(player_number) or stats_by_name.get(roster_name_key)
+        stats = stats_by_number.get(player_number)
+        if not stats:
+            name_matches = stats_by_name.get(roster_name_key, [])
+            stats = name_matches.pop(0) if name_matches else None
 
         merged_person = {
             'team_name': entry['team_name'],
