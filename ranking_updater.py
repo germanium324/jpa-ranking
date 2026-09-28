@@ -474,7 +474,7 @@ def reconcile_ranking_team_ids(ranking_df, roster_grouped):
     extra_ids = ranking_team_id_set - roster_team_id_set
     missing_ids = roster_team_id_set - ranking_team_id_set
 
-    if not extra_ids or not missing_ids or len(extra_ids) != len(missing_ids):
+    if len(extra_ids) != 1 or len(missing_ids) != 1:
         return ranking_df.sort_values(by=['points', 'team_id'], ascending=[False, True]).reset_index(drop=True)
 
     print(f"名簿にないランキングIDを除外し、名簿にだけあるIDを補完します: extra={sorted(extra_ids)}, missing={sorted(missing_ids)}")
