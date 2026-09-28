@@ -319,7 +319,7 @@ def merge_individual_stats_with_roster(parsed_individuals, roster_entries):
             normalize_name(entry.get('player_name'))
         )
         stats = stats_by_number.get(player_number)
-        if not stats:
+        if not stats and not player_number:
             name_matches = stats_by_name.get(roster_name_key, [])
             stats = name_matches.pop(0) if name_matches else None
 
