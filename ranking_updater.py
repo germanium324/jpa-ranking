@@ -311,6 +311,7 @@ def merge_individual_stats_with_roster(parsed_individuals, roster_entries):
     merged = []
     matched_numbers = set()
     matched_names = set()
+    consumed_person_ids = set()
 
     for entry in roster_entries:
         player_number = str(entry.get('player_number') or '').strip()
@@ -319,10 +320,12 @@ def merge_individual_stats_with_roster(parsed_individuals, roster_entries):
             normalize_name(entry.get('player_name'))
         )
         stats = stats_by_number.get(player_number)
+        if stats and id(stats) in consumed_person_ids:
+            stats = None
         if not stats:
-            name_matches = stats_by_name.get(roster_name_key, [])
+            name_matches = [person for person in stats_by_name.get(roster_name_key, []) if id(person) not in consumed_person_ids]
             if len(name_matches) == 1:
-                stats = name_matches.pop(0)
+                stats = name_matches[0]
 
         merged_person = {
             'team_name': entry['team_name'],
@@ -352,6 +355,7 @@ def merge_individual_stats_with_roster(parsed_individuals, roster_entries):
             if stats_player_number:
                 matched_numbers.add(stats_player_number)
             matched_names.add(roster_name_key)
+            consumed_person_ids.add(id(stats))
 
         merged.append(merged_person)
 
@@ -362,6 +366,8 @@ def merge_individual_stats_with_roster(parsed_individuals, roster_entries):
             normalize_name(person.get('player_name'))
         )
         if (player_number and player_number in matched_numbers) or name_key in matched_names:
+            continue
+        if id(person) in consumed_person_ids:
             continue
         merged.append(person)
 
