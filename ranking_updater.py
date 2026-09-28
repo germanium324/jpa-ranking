@@ -293,7 +293,7 @@ def merge_individual_stats_with_roster(parsed_individuals, roster_entries):
         return parsed_individuals
 
     def normalize_name(name):
-        return re.sub(r'\s+', ' ', str(name or '')).strip().lower()
+        return re.sub(r'\s+', ' ', str(name or '')).strip().casefold()
 
     stats_by_number = {}
     stats_by_name = {}
