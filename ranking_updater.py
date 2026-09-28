@@ -465,27 +465,9 @@ def group_roster_by_team(roster_entries):
 
 
 def reconcile_ranking_team_ids(ranking_df, roster_grouped):
-    """ランキングのチームIDを現行名簿に寄せて補正し、名簿にないチームを除外する。"""
+    """ランキングを現行名簿に合わせて整える。"""
     if ranking_df is None or ranking_df.empty or not roster_grouped:
         return ranking_df
-
-    roster_team_ids = sorted(
-        {str(team['team_id']) for team in roster_grouped if str(team.get('team_id') or '').isdigit()},
-        key=int
-    )
-    ranking_team_ids = sorted(
-        {str(team_id) for team_id in ranking_df['team_id'].astype(str) if str(team_id).isdigit()},
-        key=int
-    )
-
-    if roster_team_ids and ranking_team_ids and roster_team_ids != ranking_team_ids and len(roster_team_ids) == len(ranking_team_ids):
-        extra_ids = sorted(set(ranking_team_ids) - set(roster_team_ids), key=int)
-        missing_ids = sorted(set(roster_team_ids) - set(ranking_team_ids), key=int)
-        if extra_ids and missing_ids and len(extra_ids) == len(missing_ids):
-            replacement_map = {src: dst for src, dst in zip(extra_ids, missing_ids)}
-            print(f"名簿に合わせてランキングのチームIDを補正します: {replacement_map}")
-            ranking_df = ranking_df.copy()
-            ranking_df['team_id'] = ranking_df['team_id'].astype(str).map(lambda tid: replacement_map.get(tid, tid))
 
     roster_team_id_set = {str(team['team_id']) for team in roster_grouped}
     ranking_df = ranking_df[ranking_df['team_id'].astype(str).isin(roster_team_id_set)].copy()
