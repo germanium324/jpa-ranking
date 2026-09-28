@@ -479,10 +479,10 @@ def reconcile_ranking_team_ids(ranking_df, roster_grouped):
     )
 
     if roster_team_ids and ranking_team_ids and roster_team_ids != ranking_team_ids and len(roster_team_ids) == len(ranking_team_ids):
-        replacement_map = dict(zip(ranking_team_ids, roster_team_ids))
         extra_ids = sorted(set(ranking_team_ids) - set(roster_team_ids), key=int)
         missing_ids = sorted(set(roster_team_ids) - set(ranking_team_ids), key=int)
         if extra_ids and missing_ids and len(extra_ids) == len(missing_ids):
+            replacement_map = {src: dst for src, dst in zip(extra_ids, missing_ids)}
             print(f"名簿に合わせてランキングのチームIDを補正します: {replacement_map}")
             ranking_df = ranking_df.copy()
             ranking_df['team_id'] = ranking_df['team_id'].astype(str).map(lambda tid: replacement_map.get(tid, tid))
@@ -652,7 +652,7 @@ def main():
             } for e in roster_entries]
 
         data_to_save['individuals'] = individuals
-        data_to_save['individuals_pdf'] = individuals_source_url
+        data_to_save['individuals_pdf'] = individuals_source_url or data_to_save.get('individuals_pdf')
         
         # SL変動情報を取得
         sl_changes = extract_sl_changes()
