@@ -8,10 +8,18 @@ import datetime
 import json
 import os
 import re
+from urllib.parse import urljoin
 
 # --- 設定値 ---
 BASE_URL = "http://www.poolplayers.jp"
 STANDINGS_URL = f"{BASE_URL}/standings/"
+STANDINGS_PAGE_CANDIDATES = [
+    STANDINGS_URL,
+    STANDINGS_URL.replace("http://", "https://"),
+    STANDINGS_URL.replace("://www.", "://"),
+    STANDINGS_URL.replace("http://www.", "https://"),
+    STANDINGS_URL.replace("http://www.", "http://"),
+]
 TARGET_DIVISION_NAME = "028 COLLEGE (TUE)"
 DIVISION_CODE = TARGET_DIVISION_NAME.split()[0]  # '028'
 JSON_FILENAME = 'ranking_data.json'
@@ -70,92 +78,76 @@ def _parse_pdf_date_token(token):
         return None
 
 
-def find_latest_pdf_url(standings_url):
-    """スタンディングページを解析し、最新の028ディビジョンのスコアシートPDFのURLを特定する"""
-    print(f"スタンディングページを解析中: {standings_url}")
-    try:
-        response = requests.get(standings_url)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, 'html.parser')
+def fetch_standings_page():
+    """スタンディングページを取得し、解析済みHTMLと実際の取得URLを返す。"""
+    last_error = None
+    seen = set()
+    for standings_url in STANDINGS_PAGE_CANDIDATES:
+        if standings_url in seen:
+            continue
+        seen.add(standings_url)
+        print(f"スタンディングページを解析中: {standings_url}")
+        try:
+            response = requests.get(standings_url, timeout=15)
+            response.raise_for_status()
+            return BeautifulSoup(response.text, 'html.parser'), response.url
+        except requests.exceptions.RequestException as e:
+            last_error = e
 
-        division_code = DIVISION_CODE
+    if last_error:
+        print(f"スタンディングページの取得に失敗しました: {last_error}")
+    return None, None
 
-        target_row = _find_target_row(soup)
-        if not target_row:
-            print(f"エラー: ディビジョン名 '{TARGET_DIVISION_NAME}' がページに見つかりません。")
-            return None
 
-        all_links_in_row = target_row.find_all('a')
+def find_pdf_urls(soup, standings_page_url):
+    """スタンディングページからS/R/P型PDFの最新URLを抽出する。"""
+    if soup is None or not standings_page_url:
+        return {}
 
-        # S型PDFの候補を抽出し、ファイル名の数字部分で最新（最大）を選ぶ
-        candidates = []
-        for a in all_links_in_row:
+    target_row = _find_target_row(soup)
+    link_groups = []
+    if target_row:
+        link_groups.append((1, target_row.find_all('a')))
+    link_groups.append((0, soup.find_all('a')))
+
+    candidates_by_type = {'S': [], 'R': [], 'P': []}
+    seen_urls = {key: set() for key in candidates_by_type}
+
+    for scope_priority, links in link_groups:
+        for a in links:
             href = a.get('href')
             if not href:
                 continue
-            m = re.search(rf'S{division_code}(\d+)\.pdf', href, re.IGNORECASE)
-            if m:
-                token = m.group(1)
-                parsed_date = _parse_pdf_date_token(token)
-                url = href if href.startswith('http') else BASE_URL + href
-                candidates.append((parsed_date, token, url))
 
-        if candidates:
-            candidates.sort(key=lambda x: (x[0] is not None, x[0] or datetime.date.min, x[1]), reverse=True)
-            latest = candidates[0][2]
-            print(f"最新の（Standings）PDF URLを特定しました: {latest}")
-            return latest
-
-        # フォールバック: 行内の最初のPDFリンクを返す
-        for a in all_links_in_row:
-            href = a.get('href')
-            if not href:
+            full_url = urljoin(standings_page_url, href)
+            match = re.search(rf'([SRP]){DIVISION_CODE}(\d+)\.pdf', full_url, re.IGNORECASE)
+            if not match:
                 continue
-            full_url = href if href.startswith('http') else BASE_URL + href
-            if full_url.lower().endswith('.pdf'):
-                print(f"フォールバックでPDF URLを特定しました: {full_url}")
-                return full_url
 
-        return None
-
-    except requests.exceptions.RequestException as e:
-        print(f"スタンディングページの取得に失敗しました: {e}")
-        return None
-
-
-def find_pdf_url_by_type(standings_url, type_char='P'):
-    """指定タイプ（'P','S'など）のPDF URLを同じ行から探し、最新（ファイル名の数字が最大）を返す。"""
-    try:
-        response = requests.get(standings_url)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, 'html.parser')
-
-        target_row = _find_target_row(soup)
-        if not target_row:
-            return None
-
-        all_links = target_row.find_all('a')
-        division_code = DIVISION_CODE
-        # 指定タイプのPDFの候補を抽出
-        candidates = []
-        for a in all_links:
-            href = a.get('href')
-            if not href:
+            pdf_type = match.group(1).upper()
+            token = match.group(2)
+            if full_url in seen_urls[pdf_type]:
                 continue
-            # 例: /standings/028/P028111925.pdf
-            m = re.search(rf'{type_char}{division_code}(\d+)\.pdf', href, re.IGNORECASE)
-            if m:
-                token = m.group(1)
-                parsed_date = _parse_pdf_date_token(token)
-                url = href if href.startswith('http') else BASE_URL + href
-                candidates.append((parsed_date, token, url))
+
+            seen_urls[pdf_type].add(full_url)
+            candidates_by_type[pdf_type].append((
+                _parse_pdf_date_token(token),
+                token,
+                scope_priority,
+                full_url
+            ))
+
+    pdf_urls = {}
+    for pdf_type, candidates in candidates_by_type.items():
         if not candidates:
-            return None
-        # MMDDYYの日付で最新を選択（解析不可時はトークン文字列でフォールバック）
-        candidates.sort(key=lambda x: (x[0] is not None, x[0] or datetime.date.min, x[1]), reverse=True)
-        return candidates[0][2]
-    except requests.exceptions.RequestException:
-        return None
+            continue
+        candidates.sort(
+            key=lambda x: (x[0] is not None, x[0] or datetime.date.min, x[1], x[2]),
+            reverse=True
+        )
+        pdf_urls[pdf_type] = candidates[0][3]
+
+    return pdf_urls
 
 # --- 2. PDFファイルのダウンロード ---
 def download_pdf(url):
@@ -471,6 +463,44 @@ def group_roster_by_team(roster_entries):
     # チーム名でソート
     return sorted(grouped.values(), key=lambda t: t['team_name'])
 
+
+def reconcile_ranking_team_ids(ranking_df, roster_grouped):
+    """ランキングのチームIDを現行名簿に寄せて補正し、名簿にないチームを除外する。"""
+    if ranking_df is None or ranking_df.empty or not roster_grouped:
+        return ranking_df
+
+    roster_team_ids = sorted(
+        {str(team['team_id']) for team in roster_grouped if str(team.get('team_id') or '').isdigit()},
+        key=int
+    )
+    ranking_team_ids = sorted(
+        {str(team_id) for team_id in ranking_df['team_id'].astype(str) if str(team_id).isdigit()},
+        key=int
+    )
+
+    if roster_team_ids and ranking_team_ids and roster_team_ids != ranking_team_ids and len(roster_team_ids) == len(ranking_team_ids):
+        replacement_map = dict(zip(ranking_team_ids, roster_team_ids))
+        extra_ids = sorted(set(ranking_team_ids) - set(roster_team_ids), key=int)
+        missing_ids = sorted(set(roster_team_ids) - set(ranking_team_ids), key=int)
+        if extra_ids and missing_ids and len(extra_ids) == len(missing_ids):
+            print(f"名簿に合わせてランキングのチームIDを補正します: {replacement_map}")
+            ranking_df = ranking_df.copy()
+            ranking_df['team_id'] = ranking_df['team_id'].astype(str).map(lambda tid: replacement_map.get(tid, tid))
+
+    roster_team_id_set = {str(team['team_id']) for team in roster_grouped}
+    ranking_df = ranking_df[ranking_df['team_id'].astype(str).isin(roster_team_id_set)].copy()
+
+    existing_ids = set(ranking_df['team_id'].astype(str))
+    missing_rows = [
+        {'team_id': str(team['team_id']), 'points': 0}
+        for team in roster_grouped
+        if str(team['team_id']) not in existing_ids
+    ]
+    if missing_rows:
+        ranking_df = pd.concat([ranking_df, pd.DataFrame(missing_rows)], ignore_index=True)
+
+    return ranking_df.sort_values(by=['points', 'team_id'], ascending=[False, True]).reset_index(drop=True)
+
 # --- 5. SL変動情報の抽出 ---
 def extract_sl_changes():
     """SLレポートページから028ディビジョンのSL変動情報を抽出"""
@@ -555,8 +585,10 @@ def main():
         except Exception:
             existing = {}
 
-    latest_pdf_url = find_latest_pdf_url(STANDINGS_URL)
-    roster_pdf_url = find_pdf_url_by_type(STANDINGS_URL, type_char='R')
+    standings_soup, standings_page_url = fetch_standings_page()
+    pdf_urls = find_pdf_urls(standings_soup, standings_page_url)
+    latest_pdf_url = pdf_urls.get('S')
+    roster_pdf_url = pdf_urls.get('R')
 
     # 現在のチェック時刻（JST）
     now_jst = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime('%Y年%m月%d日 %H:%M JST')
@@ -589,14 +621,19 @@ def main():
         pdf_content = download_pdf(latest_pdf_url)
         ranking_df = extract_and_process_ranking(pdf_content)
 
-        # 個人成績PDF (P型) を同じ行から探して解析
-        p_pdf_url = find_pdf_url_by_type(STANDINGS_URL, type_char='P')
+        # 個人成績PDF (P型) を解析
+        p_pdf_url = pdf_urls.get('P')
         p_pdf_content = download_pdf(p_pdf_url) if p_pdf_url else None
+        individuals_source_url = None
         individuals = extract_individual_stats(p_pdf_content, team_name_map=roster_name_map) if p_pdf_content else []
+        if individuals:
+            individuals_source_url = p_pdf_url
 
         if not individuals and pdf_content:
             pdf_content.seek(0)
             individuals = extract_individual_stats(pdf_content, team_name_map=roster_name_map)
+            if individuals:
+                individuals_source_url = latest_pdf_url
 
         if individuals and roster_entries:
             individuals = merge_individual_stats_with_roster(individuals, roster_entries)
@@ -615,7 +652,7 @@ def main():
             } for e in roster_entries]
 
         data_to_save['individuals'] = individuals
-        data_to_save['individuals_pdf'] = p_pdf_url or roster_pdf_url or data_to_save.get('individuals_pdf')
+        data_to_save['individuals_pdf'] = individuals_source_url
         
         # SL変動情報を取得
         sl_changes = extract_sl_changes()
@@ -624,11 +661,10 @@ def main():
         ranking_built = False
 
         if ranking_df is not None and not ranking_df.empty:
-            # Byeチーム（ID=12）を除外
-            ranking_df = ranking_df[ranking_df['team_id'] != '12']
+            ranking_df['team_id'] = ranking_df['team_id'].astype(str)
+            ranking_df = reconcile_ranking_team_ids(ranking_df, roster_grouped)
             
             # チーム名を補完。名簿のチーム名を優先し、なければ既存マップ。
-            ranking_df['team_id'] = ranking_df['team_id'].astype(str)
             ranking_df['team_name'] = ranking_df['team_id'].map(lambda tid: roster_name_map.get(str(tid)) or TEAM_NAME_MAP.get(str(tid)) or f"チームNo.{tid}")
 
             final_ranking = ranking_df[['team_name', 'team_id', 'points']].reset_index(drop=True)
