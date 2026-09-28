@@ -142,8 +142,12 @@ def find_pdf_urls(soup, standings_page_url):
         if not candidates:
             continue
         candidates.sort(
-            key=lambda x: (x[0] is not None, x[0] or datetime.date.min, x[1], -x[2]),
-            reverse=True
+            key=lambda x: (
+                x[0] is None,
+                -(x[0].toordinal() if x[0] else datetime.date.min.toordinal()),
+                -int(x[1]) if x[1].isdigit() else 0,
+                x[2]
+            )
         )
         pdf_urls[pdf_type] = candidates[0][3]
 
