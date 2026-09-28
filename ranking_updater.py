@@ -243,7 +243,21 @@ def extract_individual_stats(pdf_file, team_name_map=None):
             for ln in lines:
                 # 一行形式: Name Member# SL Gender Team TMP TMW Points MatchPoints Points% Place
                 # 例: Hayato Takenaka 16997 2 M 02810 6 5 84 14.00 70.0 % 1
-                m = re.match(r"^(?P<name>.+?)\s+(?P<member>\d+)\s+(?P<sl>\d+)\s+(?P<gender>\w+)\s+(?P<team>028\d+)\s+(?P<tmp>\d+)\s+(?P<tmore>\d+)\s+(?P<points>\d+)\s+(?P<avg>[0-9.]+)\s+(?P<rate>[0-9.]+)\s*%?", ln)
+                normalized = re.sub(r'\s+', ' ', ln).strip()
+                m = re.match(
+                    r"^(?P<name>.+?)\s+"
+                    r"(?P<member>\d+)\s+"
+                    r"(?P<sl>\d+)\s+"
+                    r"(?P<gender>[A-Za-z]+)\s+"
+                    r"(?P<team>028\d{2})\s+"
+                    r"(?P<tmp>\d+)\s+"
+                    r"(?P<tmore>\d+)\s+"
+                    r"(?P<points>\d+)\s+"
+                    r"(?P<avg>\d+(?:\.\d+)?)\s+"
+                    r"(?P<rate>\d+(?:\.\d+)?)\s*%?"
+                    r"(?:\s+\d+)?$",
+                    normalized
+                )
                 if m:
                     team_code = m.group('team')
                     # team_code は '02810' のようになっている -> team_id は '10'
@@ -271,6 +285,80 @@ def extract_individual_stats(pdf_file, team_name_map=None):
                     })
 
     return individuals
+
+
+def merge_individual_stats_with_roster(parsed_individuals, roster_entries):
+    """名簿を基準に個人成績をマージし、未出場メンバーも0成績で含める。"""
+    if not roster_entries:
+        return parsed_individuals
+
+    def normalize_name(name):
+        return re.sub(r'\s+', ' ', str(name or '')).strip().lower()
+
+    stats_by_number = {}
+    stats_by_name = {}
+    for person in parsed_individuals:
+        player_number = str(person.get('player_number') or '').strip()
+        if player_number:
+            stats_by_number[player_number] = person
+
+        name_key = (
+            normalize_name(person.get('team_name')),
+            normalize_name(person.get('player_name'))
+        )
+        stats_by_name[name_key] = person
+
+    merged = []
+    matched_numbers = set()
+    matched_names = set()
+
+    for entry in roster_entries:
+        player_number = str(entry.get('player_number') or '').strip()
+        roster_name_key = (
+            normalize_name(entry.get('team_name')),
+            normalize_name(entry.get('player_name'))
+        )
+        stats = stats_by_number.get(player_number) or stats_by_name.get(roster_name_key)
+
+        merged_person = {
+            'team_name': entry['team_name'],
+            'player_name': entry['player_name'],
+            'player_number': player_number,
+            'gender': entry['gender'],
+            'sl': entry['sl'],
+            'wins': '0/0',
+            'avg_points': 0.0,
+            'points_rate': '0%'
+        }
+
+        if stats:
+            merged_person.update({
+                'team_name': stats.get('team_name') or merged_person['team_name'],
+                'player_name': stats.get('player_name') or merged_person['player_name'],
+                'player_number': str(stats.get('player_number') or merged_person['player_number']),
+                'gender': stats.get('gender') or merged_person['gender'],
+                'sl': stats.get('sl', merged_person['sl']),
+                'wins': stats.get('wins') or merged_person['wins'],
+                'avg_points': stats.get('avg_points', merged_person['avg_points']),
+                'points_rate': stats.get('points_rate') or merged_person['points_rate'],
+            })
+            if player_number:
+                matched_numbers.add(player_number)
+            matched_names.add(roster_name_key)
+
+        merged.append(merged_person)
+
+    for person in parsed_individuals:
+        player_number = str(person.get('player_number') or '').strip()
+        name_key = (
+            normalize_name(person.get('team_name')),
+            normalize_name(person.get('player_name'))
+        )
+        if (player_number and player_number in matched_numbers) or name_key in matched_names:
+            continue
+        merged.append(person)
+
+    return merged
 
 
 def extract_team_roster(pdf_file):
@@ -491,8 +579,14 @@ def main():
         # 個人成績PDF (P型) を同じ行から探して解析
         p_pdf_url = find_pdf_url_by_type(STANDINGS_URL, type_char='P')
         p_pdf_content = download_pdf(p_pdf_url) if p_pdf_url else None
-        individuals_from_roster = False
         individuals = extract_individual_stats(p_pdf_content, team_name_map=roster_name_map) if p_pdf_content else []
+
+        if not individuals and pdf_content:
+            pdf_content.seek(0)
+            individuals = extract_individual_stats(pdf_content, team_name_map=roster_name_map)
+
+        if individuals and roster_entries:
+            individuals = merge_individual_stats_with_roster(individuals, roster_entries)
 
         # 個人成績が取れない（新シーズン開始前）場合は名簿で補完する
         if not individuals and roster_entries:
@@ -506,7 +600,6 @@ def main():
                 'avg_points': 0.0,
                 'points_rate': '0%'
             } for e in roster_entries]
-            individuals_from_roster = True
 
         data_to_save['individuals'] = individuals
         data_to_save['individuals_pdf'] = p_pdf_url or roster_pdf_url or data_to_save.get('individuals_pdf')
