@@ -107,8 +107,8 @@ def find_pdf_urls(soup, standings_page_url):
     target_row = _find_target_row(soup)
     link_groups = []
     if target_row:
-        link_groups.append((1, target_row.find_all('a')))
-    link_groups.append((0, soup.find_all('a')))
+        link_groups.append((0, target_row.find_all('a')))
+    link_groups.append((1, soup.find_all('a')))
 
     candidates_by_type = {'S': [], 'R': [], 'P': []}
     seen_urls = {key: set() for key in candidates_by_type}
@@ -142,7 +142,7 @@ def find_pdf_urls(soup, standings_page_url):
         if not candidates:
             continue
         candidates.sort(
-            key=lambda x: (x[0] is not None, x[0] or datetime.date.min, x[1], x[2]),
+            key=lambda x: (x[0] is not None, x[0] or datetime.date.min, x[1], -x[2]),
             reverse=True
         )
         pdf_urls[pdf_type] = candidates[0][3]
