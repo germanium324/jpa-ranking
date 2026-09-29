@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年09月28日 20:14 JST",
+    "last_checked": "2026年09月29日 10:32 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028092326.pdf",
-    "last_updated": "2026年09月28日 20:14 JST",
+    "last_updated": "2026年09月29日 10:32 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028092326.pdf",
     "individuals": [
         {
@@ -918,14 +918,6 @@
             "old_date": "2026/08/12",
             "new_sl": "6",
             "new_date": "2026/09/23"
-        },
-        {
-            "player_name": "Kajiyama Akiyoshi",
-            "member_number": "17668",
-            "old_sl": "2",
-            "old_date": "2026/09/10",
-            "new_sl": "3",
-            "new_date": "2026/09/21"
         }
     ],
     "ranking": [
