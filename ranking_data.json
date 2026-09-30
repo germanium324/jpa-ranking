@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年09月30日 16:53 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028092326.pdf",
-    "last_updated": "2026年09月30日 16:53 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028092326.pdf",
+    "last_checked": "2026年09月30日 20:13 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028093026.pdf",
+    "last_updated": "2026年09月30日 20:13 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028093026.pdf",
     "individuals": [
         {
             "team_name": "Hineri Yoseisan",
@@ -239,7 +239,7 @@
             "player_name": "Oku, Yuki",
             "player_number": "16770",
             "gender": "-",
-            "sl": 2,
+            "sl": 3,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -299,7 +299,7 @@
             "player_name": "Furukawa, Kodai",
             "player_number": "16984",
             "gender": "-",
-            "sl": 4,
+            "sl": 3,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -799,7 +799,7 @@
             "player_name": "Hakamata, Shumpei",
             "player_number": "17477",
             "gender": "-",
-            "sl": 2,
+            "sl": 3,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -885,8 +885,32 @@
             "points_rate": "0%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028092326.pdf",
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028093026.pdf",
     "sl_changes": [
+        {
+            "player_name": "Furukawa Kodai",
+            "member_number": "16984",
+            "old_sl": "4",
+            "old_date": "2026/09/16",
+            "new_sl": "3",
+            "new_date": "2026/09/30"
+        },
+        {
+            "player_name": "Hakamata Shumpei",
+            "member_number": "17477",
+            "old_sl": "2",
+            "old_date": "2026/06/04",
+            "new_sl": "3",
+            "new_date": "2026/09/30"
+        },
+        {
+            "player_name": "Oku Yuki",
+            "member_number": "16770",
+            "old_sl": "2",
+            "old_date": "2025/06/05",
+            "new_sl": "3",
+            "new_date": "2026/09/30"
+        },
         {
             "player_name": "Iyono Koharu",
             "member_number": "15429",
@@ -922,29 +946,49 @@
     ],
     "ranking": [
         {
-            "team_name": "Wagamama Finally",
-            "team_id": "4",
-            "points": 121
-        },
-        {
             "team_name": "Tamanchu RYU",
             "team_id": "5",
-            "points": 120
-        },
-        {
-            "team_name": "Dekatsuyo",
-            "team_id": "10",
-            "points": 119
+            "points": 189
         },
         {
             "team_name": "Hineri Yoseisan",
             "team_id": "1",
-            "points": 117
+            "points": 173
+        },
+        {
+            "team_name": "Dekatsuyo",
+            "team_id": "10",
+            "points": 171
+        },
+        {
+            "team_name": "Wagamama Finally",
+            "team_id": "4",
+            "points": 165
+        },
+        {
+            "team_name": "Asian Pool Generation",
+            "team_id": "3",
+            "points": 154
         },
         {
             "team_name": "Go Go Chance!",
             "team_id": "7",
-            "points": 93
+            "points": 141
+        },
+        {
+            "team_name": "Yabanchu",
+            "team_id": "6",
+            "points": 122
+        },
+        {
+            "team_name": "ZenAtsu Shooters",
+            "team_id": "2",
+            "points": 110
+        },
+        {
+            "team_name": "Sasanoha Campus",
+            "team_id": "9",
+            "points": 105
         },
         {
             "team_name": "Go Go Chance!",
@@ -952,29 +996,9 @@
             "points": 90
         },
         {
-            "team_name": "Yabanchu",
-            "team_id": "6",
-            "points": 89
-        },
-        {
-            "team_name": "Asian Pool Generation",
-            "team_id": "3",
-            "points": 87
-        },
-        {
-            "team_name": "ZenAtsu Shooters",
-            "team_id": "2",
-            "points": 84
-        },
-        {
             "team_name": "Tamanchu CUE",
             "team_id": "11",
             "points": 78
-        },
-        {
-            "team_name": "Sasanoha Campus",
-            "team_id": "9",
-            "points": 68
         }
     ],
     "roster": [
@@ -1028,7 +1052,7 @@
                     "player_name": "Oku, Yuki",
                     "player_number": "16770",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 }
             ]
         },
@@ -1070,7 +1094,7 @@
                     "player_name": "Hakamata, Shumpei",
                     "player_number": "17477",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 },
                 {
                     "player_name": "Kajiyama, Akiyoshi",
@@ -1478,7 +1502,7 @@
                     "player_name": "Furukawa, Kodai",
                     "player_number": "16984",
                     "gender": "-",
-                    "sl": 4
+                    "sl": 3
                 },
                 {
                     "player_name": "Toribuchi, Koki",
@@ -1573,5 +1597,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028092326.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028093026.pdf"
 }
