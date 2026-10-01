@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年10月01日 10:42 JST",
+    "last_checked": "2026年10月01日 11:12 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028093026.pdf",
-    "last_updated": "2026年10月01日 10:42 JST",
+    "last_updated": "2026年10月01日 11:12 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028093026.pdf",
     "individuals": [
         {
@@ -495,9 +495,19 @@
             "points_rate": "0%"
         },
         {
-            "team_name": "Sasanoha Campus",
+            "team_name": "Shou Time Gen2",
             "player_name": "Yumoto, Seiya",
             "player_number": "15959",
+            "gender": "-",
+            "sl": 6,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Sasanoha Campus",
+            "player_name": "Sasada, Rintaro",
+            "player_number": "12569",
             "gender": "-",
             "sl": 6,
             "wins": "0/0",
@@ -515,11 +525,21 @@
             "points_rate": "0%"
         },
         {
-            "team_name": "Sasanoha Campus",
+            "team_name": "Shou Time Gen2",
             "player_name": "Amano, Yuki",
             "player_number": "13673",
             "gender": "-",
             "sl": 9,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Sasanoha Campus",
+            "player_name": "Araki, Kengo",
+            "player_number": "12573",
+            "gender": "-",
+            "sl": 4,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -535,9 +555,19 @@
             "points_rate": "0%"
         },
         {
-            "team_name": "Sasanoha Campus",
+            "team_name": "Shou Time Gen2",
             "player_name": "Miyake, Ryoga",
             "player_number": "16989",
+            "gender": "-",
+            "sl": 4,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Sasanoha Campus",
+            "player_name": "Kobayashi, Yumi",
+            "player_number": "12574",
             "gender": "-",
             "sl": 4,
             "wins": "0/0",
@@ -555,11 +585,21 @@
             "points_rate": "0%"
         },
         {
-            "team_name": "Sasanoha Campus",
+            "team_name": "Shou Time Gen2",
             "player_name": "Suzuki, Iori",
             "player_number": "15779",
             "gender": "-",
             "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Sasanoha Campus",
+            "player_name": "Okonogi, Ryuta",
+            "player_number": "12874",
+            "gender": "-",
+            "sl": 7,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -575,11 +615,21 @@
             "points_rate": "0%"
         },
         {
-            "team_name": "Sasanoha Campus",
+            "team_name": "Shou Time Gen2",
             "player_name": "Morikawa, Kazuaki",
             "player_number": "17196",
             "gender": "-",
             "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Sasanoha Campus",
+            "player_name": "Sekiguchi, Takumi",
+            "player_number": "17664",
+            "gender": "-",
+            "sl": 2,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -595,9 +645,19 @@
             "points_rate": "0%"
         },
         {
-            "team_name": "Sasanoha Campus",
+            "team_name": "Shou Time Gen2",
             "player_name": "Kurokawa, Yuki",
             "player_number": "17202",
+            "gender": "-",
+            "sl": 2,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Sasanoha Campus",
+            "player_name": "Chikakui, So",
+            "player_number": "17665",
             "gender": "-",
             "sl": 2,
             "wins": "0/0",
@@ -615,11 +675,21 @@
             "points_rate": "0%"
         },
         {
-            "team_name": "Sasanoha Campus",
+            "team_name": "Shou Time Gen2",
             "player_name": "Shimazaki, Kotomi",
             "player_number": "17406",
             "gender": "-",
             "sl": 3,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Sasanoha Campus",
+            "player_name": "Kubota, Keiya",
+            "player_number": "17666",
+            "gender": "-",
+            "sl": 2,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -635,9 +705,19 @@
             "points_rate": "0%"
         },
         {
-            "team_name": "Sasanoha Campus",
+            "team_name": "Shou Time Gen2",
             "player_name": "Fujiyoshi, Ryoki",
             "player_number": "17673",
+            "gender": "-",
+            "sl": 2,
+            "wins": "0/0",
+            "avg_points": 0.0,
+            "points_rate": "0%"
+        },
+        {
+            "team_name": "Sasanoha Campus",
+            "player_name": "Tanaka, Yukito",
+            "player_number": "17667",
             "gender": "-",
             "sl": 2,
             "wins": "0/0",
@@ -964,7 +1044,7 @@
             "points": 105
         },
         {
-            "team_name": "Go Go Chance!",
+            "team_name": "Shou Time Gen2",
             "team_id": "8",
             "points": 90
         },
@@ -1248,6 +1328,60 @@
         {
             "team_id": "9",
             "team_name": "Sasanoha Campus",
+            "players": [
+                {
+                    "player_name": "Sasada, Rintaro",
+                    "player_number": "12569",
+                    "gender": "-",
+                    "sl": 6
+                },
+                {
+                    "player_name": "Araki, Kengo",
+                    "player_number": "12573",
+                    "gender": "-",
+                    "sl": 4
+                },
+                {
+                    "player_name": "Kobayashi, Yumi",
+                    "player_number": "12574",
+                    "gender": "-",
+                    "sl": 4
+                },
+                {
+                    "player_name": "Okonogi, Ryuta",
+                    "player_number": "12874",
+                    "gender": "-",
+                    "sl": 7
+                },
+                {
+                    "player_name": "Sekiguchi, Takumi",
+                    "player_number": "17664",
+                    "gender": "-",
+                    "sl": 2
+                },
+                {
+                    "player_name": "Chikakui, So",
+                    "player_number": "17665",
+                    "gender": "-",
+                    "sl": 2
+                },
+                {
+                    "player_name": "Kubota, Keiya",
+                    "player_number": "17666",
+                    "gender": "-",
+                    "sl": 2
+                },
+                {
+                    "player_name": "Tanaka, Yukito",
+                    "player_number": "17667",
+                    "gender": "-",
+                    "sl": 2
+                }
+            ]
+        },
+        {
+            "team_id": "8",
+            "team_name": "Shou Time Gen2",
             "players": [
                 {
                     "player_name": "Yumoto, Seiya",
