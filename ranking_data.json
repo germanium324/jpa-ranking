@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年10月01日 19:46 JST",
+    "last_checked": "2026年10月01日 20:13 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028093026.pdf",
-    "last_updated": "2026年10月01日 19:46 JST",
+    "last_updated": "2026年10月01日 20:13 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028093026.pdf",
     "individuals": [
         {
@@ -967,6 +967,14 @@
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028093026.pdf",
     "sl_changes": [
+        {
+            "player_name": "Araki Kengo",
+            "member_number": "12573",
+            "old_sl": "3",
+            "old_date": "2023/09/20",
+            "new_sl": "4",
+            "new_date": "2026/09/30"
+        },
         {
             "player_name": "Furukawa Kodai",
             "member_number": "16984",
