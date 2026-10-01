@@ -393,7 +393,7 @@ def extract_team_roster(pdf_file):
                 
                 # 3カラムレイアウトのチーム見出し行を検出
                 # 例: "02801 Kangaroo Kick 02802 Oku niki 02803 Wagamama foundry"
-                team_headers = list(re.finditer(r'(028\d{2})\s+([A-Za-z][^0-9]+?)(?=\s*028\d{2}|$)', ln))
+                team_headers = list(re.finditer(r'(028\d{2})\s+(.+?)(?=\s+028\d{2}\s|$)', ln))
                 if len(team_headers) >= 2:  # 複数チームが並んでいる
                     current_teams = {}
                     for idx, match in enumerate(team_headers):
@@ -474,24 +474,13 @@ def reconcile_ranking_team_ids(ranking_df, roster_grouped):
         return ranking_df
 
     roster_team_id_set = {str(team['team_id']) for team in roster_grouped}
-    if '12' not in roster_team_id_set:
-        ranking_df = ranking_df[ranking_df['team_id'].astype(str) != '12'].copy()
-
+    ranking_df = ranking_df.copy()
+    ranking_df['team_id'] = ranking_df['team_id'].astype(str)
     ranking_team_id_set = set(ranking_df['team_id'].astype(str))
-    extra_ids = ranking_team_id_set - roster_team_id_set
-    missing_ids = roster_team_id_set - ranking_team_id_set
-
-    if len(extra_ids) != 1 or len(missing_ids) != 1:
-        return ranking_df.sort_values(by=['points', 'team_id'], ascending=[False, True]).reset_index(drop=True)
-
-    print(f"名簿にないランキングIDを除外し、名簿にだけあるIDを補完します: extra={sorted(extra_ids)}, missing={sorted(missing_ids)}")
-    ranking_df = ranking_df[ranking_df['team_id'].astype(str).isin(roster_team_id_set)].copy()
-
-    existing_ids = set(ranking_df['team_id'].astype(str))
     missing_rows = [
         {'team_id': str(team['team_id']), 'points': 0}
         for team in roster_grouped
-        if str(team['team_id']) not in existing_ids
+        if str(team['team_id']) not in ranking_team_id_set
     ]
     if missing_rows:
         ranking_df = pd.concat([ranking_df, pd.DataFrame(missing_rows)], ignore_index=True)
