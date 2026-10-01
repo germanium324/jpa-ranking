@@ -393,7 +393,7 @@ def extract_team_roster(pdf_file):
                 
                 # 3カラムレイアウトのチーム見出し行を検出
                 # 例: "02801 Kangaroo Kick 02802 Oku niki 02803 Wagamama foundry"
-                team_headers = list(re.finditer(r'(028\d{2})\s+([A-Za-z][^0-9]+?)(?=\s*028\d{2}|$)', ln))
+                team_headers = list(re.finditer(r'(028\d{2})\s+(.+?)(?=\s*028\d{2}|$)', ln))
                 if len(team_headers) >= 2:  # 複数チームが並んでいる
                     current_teams = {}
                     for idx, match in enumerate(team_headers):
