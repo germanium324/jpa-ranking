@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年10月05日 18:04 JST",
+    "last_checked": "2026年10月05日 20:14 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028100526.pdf",
-    "last_updated": "2026年10月05日 18:04 JST",
+    "last_updated": "2026年10月05日 20:14 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028100526.pdf",
     "individuals": [
         {
@@ -967,6 +967,14 @@
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/R028093026.pdf",
     "sl_changes": [
+        {
+            "player_name": "Moriki Masanobu",
+            "member_number": "17680",
+            "old_sl": "2",
+            "old_date": "2026/09/10",
+            "new_sl": "3",
+            "new_date": "2026/10/05"
+        },
         {
             "player_name": "Araki Kengo",
             "member_number": "12573",
