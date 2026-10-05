@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年10月05日 10:40 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028093026.pdf",
-    "last_updated": "2026年10月05日 10:40 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028093026.pdf",
+    "last_checked": "2026年10月05日 18:04 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028100526.pdf",
+    "last_updated": "2026年10月05日 18:04 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028100526.pdf",
     "individuals": [
         {
             "team_name": "Hineri Yoseisan",
@@ -919,7 +919,7 @@
             "player_name": "Moriki, Masanobu",
             "player_number": "17680",
             "gender": "-",
-            "sl": 2,
+            "sl": 3,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -1037,6 +1037,16 @@
             "points": 141
         },
         {
+            "team_name": "Tamanchu CUE",
+            "team_id": "11",
+            "points": 135
+        },
+        {
+            "team_name": "Shou Time Gen2",
+            "team_id": "8",
+            "points": 133
+        },
+        {
             "team_name": "Yabanchu",
             "team_id": "6",
             "points": 122
@@ -1050,16 +1060,6 @@
             "team_name": "Sasanoha Campus",
             "team_id": "9",
             "points": 105
-        },
-        {
-            "team_name": "Shou Time Gen2",
-            "team_id": "8",
-            "points": 90
-        },
-        {
-            "team_name": "Tamanchu CUE",
-            "team_id": "11",
-            "points": 78
         }
     ],
     "roster": [
@@ -1485,7 +1485,7 @@
                     "player_name": "Moriki, Masanobu",
                     "player_number": "17680",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 },
                 {
                     "player_name": "Nabeshima, Yuri",
@@ -1712,5 +1712,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028093026.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028100526.pdf"
 }
