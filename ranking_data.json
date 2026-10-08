@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年10月07日 20:13 JST",
+    "last_checked": "2026年10月08日 10:37 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028100726.pdf",
-    "last_updated": "2026年10月07日 20:13 JST",
+    "last_updated": "2026年10月08日 10:37 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028100726.pdf",
     "individuals": [
         {
@@ -1022,38 +1022,6 @@
             "old_date": "2026/09/10",
             "new_sl": "3",
             "new_date": "2026/10/06"
-        },
-        {
-            "player_name": "Araki Kengo",
-            "member_number": "12573",
-            "old_sl": "3",
-            "old_date": "2023/09/20",
-            "new_sl": "4",
-            "new_date": "2026/09/30"
-        },
-        {
-            "player_name": "Furukawa Kodai",
-            "member_number": "16984",
-            "old_sl": "4",
-            "old_date": "2026/09/16",
-            "new_sl": "3",
-            "new_date": "2026/09/30"
-        },
-        {
-            "player_name": "Hakamata Shumpei",
-            "member_number": "17477",
-            "old_sl": "2",
-            "old_date": "2026/06/04",
-            "new_sl": "3",
-            "new_date": "2026/09/30"
-        },
-        {
-            "player_name": "Oku Yuki",
-            "member_number": "16770",
-            "old_sl": "2",
-            "old_date": "2025/06/05",
-            "new_sl": "3",
-            "new_date": "2026/09/30"
         }
     ],
     "ranking": [
