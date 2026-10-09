@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年10月09日 10:39 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028100726.pdf",
-    "last_updated": "2026年10月09日 10:39 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028100726.pdf",
+    "last_checked": "2026年10月09日 20:14 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028100926.pdf",
+    "last_updated": "2026年10月09日 20:14 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028100926.pdf",
     "individuals": [
         {
             "team_name": "Hineri Yoseisan",
@@ -29,7 +29,7 @@
             "player_name": "Ito, Tomoki",
             "player_number": "16994",
             "gender": "-",
-            "sl": 4,
+            "sl": 5,
             "wins": "0/0",
             "avg_points": 0.0,
             "points_rate": "0%"
@@ -966,7 +966,72 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028100726.pdf",
-    "sl_changes": [],
+    "sl_changes": [
+        {
+            "player_name": "Ito Tomoki",
+            "member_number": "16994",
+            "old_sl": "4",
+            "old_date": "2026/07/03",
+            "new_sl": "5",
+            "new_date": "2026/10/09"
+        },
+        {
+            "player_name": "Hirano Yuto",
+            "member_number": "17405",
+            "old_sl": "2",
+            "old_date": "2026/06/04",
+            "new_sl": "3",
+            "new_date": "2026/10/07"
+        },
+        {
+            "player_name": "Kako Ryui",
+            "member_number": "15426",
+            "old_sl": "6",
+            "old_date": "2025/07/07",
+            "new_sl": "7",
+            "new_date": "2026/10/07"
+        },
+        {
+            "player_name": "Yasuda Yuki",
+            "member_number": "13691",
+            "old_sl": "6",
+            "old_date": "2026/09/23",
+            "new_sl": "7",
+            "new_date": "2026/10/07"
+        },
+        {
+            "player_name": "Yoshida Haruna",
+            "member_number": "17671",
+            "old_sl": "2",
+            "old_date": "2026/09/16",
+            "new_sl": "1",
+            "new_date": "2026/10/07"
+        },
+        {
+            "player_name": "Yumoto Seiya",
+            "member_number": "15959",
+            "old_sl": "6",
+            "old_date": "2026/08/26",
+            "new_sl": "5",
+            "new_date": "2026/10/07"
+        },
+        {
+            "player_name": "Moriki Masanobu",
+            "member_number": "17680",
+            "old_sl": "3",
+            "old_date": "2026/10/05",
+            "new_sl": "2",
+            "new_date": "2026/10/06"
+        },
+        {
+            "player_name": "Morita Tomohiro",
+            "member_number": "17679",
+            "old_sl": "2",
+            "old_date": "2026/09/10",
+            "new_sl": "3",
+            "new_date": "2026/10/06"
+        }
+    ],
     "ranking": [
         {
             "team_name": "Tamanchu RYU",
@@ -1038,7 +1103,7 @@
                     "player_name": "Ito, Tomoki",
                     "player_number": "16994",
                     "gender": "-",
-                    "sl": 4
+                    "sl": 5
                 },
                 {
                     "player_name": "Komoto, Yuki",
@@ -1679,5 +1744,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028100726.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028100926.pdf"
 }
