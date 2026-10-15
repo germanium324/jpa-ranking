@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年10月14日 20:13 JST",
+    "last_checked": "2026年10月15日 10:24 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028101426.pdf",
-    "last_updated": "2026年10月14日 20:13 JST",
+    "last_updated": "2026年10月15日 10:24 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028101426.pdf",
     "individuals": [
         {
@@ -10,9 +10,9 @@
             "player_number": "15980",
             "gender": "男",
             "sl": 7,
-            "wins": "3/4",
-            "avg_points": 10.75,
-            "points_rate": "53.8%"
+            "wins": "3/5",
+            "avg_points": 9.6,
+            "points_rate": "48.0%"
         },
         {
             "team_name": "ZenAtsu Shooters",
@@ -20,19 +20,19 @@
             "player_number": "16983",
             "gender": "男",
             "sl": 3,
-            "wins": "2/4",
-            "avg_points": 9.5,
-            "points_rate": "47.5%"
+            "wins": "3/5",
+            "avg_points": 10.4,
+            "points_rate": "52.0%"
         },
         {
             "team_name": "Asian Pool Generation",
-            "player_name": "Ito, Tomoki",
+            "player_name": "Tomoki Ito",
             "player_number": "16994",
-            "gender": "-",
+            "gender": "男",
             "sl": 5,
-            "wins": "0/0",
-            "avg_points": 0.0,
-            "points_rate": "0%"
+            "wins": "0/1",
+            "avg_points": 4.0,
+            "points_rate": "20.0%"
         },
         {
             "team_name": "Hineri Yoseisan",
@@ -40,9 +40,9 @@
             "player_number": "15426",
             "gender": "男",
             "sl": 7,
-            "wins": "1/3",
-            "avg_points": 9.33,
-            "points_rate": "46.7%"
+            "wins": "2/4",
+            "avg_points": 10.0,
+            "points_rate": "50.0%"
         },
         {
             "team_name": "ZenAtsu Shooters",
@@ -80,19 +80,19 @@
             "player_number": "16231",
             "gender": "男",
             "sl": 7,
-            "wins": "1/4",
-            "avg_points": 8.25,
-            "points_rate": "41.3%"
+            "wins": "2/5",
+            "avg_points": 9.8,
+            "points_rate": "49.0%"
         },
         {
             "team_name": "Asian Pool Generation",
             "player_name": "Miku Yokose",
             "player_number": "15427",
             "gender": "女",
-            "sl": 3,
-            "wins": "2/3",
-            "avg_points": 9.67,
-            "points_rate": "48.3%"
+            "sl": 4,
+            "wins": "3/4",
+            "avg_points": 12.0,
+            "points_rate": "60.0%"
         },
         {
             "team_name": "Hineri Yoseisan",
@@ -120,19 +120,19 @@
             "player_number": "15436",
             "gender": "女",
             "sl": 4,
-            "wins": "0/1",
-            "avg_points": 5.0,
-            "points_rate": "25.0%"
+            "wins": "0/2",
+            "avg_points": 5.5,
+            "points_rate": "27.5%"
         },
         {
             "team_name": "Hineri Yoseisan",
             "player_name": "Rio Sakamoto",
             "player_number": "16760",
             "gender": "女",
-            "sl": 3,
-            "wins": "1/3",
-            "avg_points": 10.33,
-            "points_rate": "51.7%"
+            "sl": 4,
+            "wins": "2/4",
+            "avg_points": 11.75,
+            "points_rate": "58.8%"
         },
         {
             "team_name": "ZenAtsu Shooters",
@@ -140,9 +140,9 @@
             "player_number": "17407",
             "gender": "男",
             "sl": 2,
-            "wins": "0/1",
-            "avg_points": 0.0,
-            "points_rate": "0.0%"
+            "wins": "0/2",
+            "avg_points": 0.5,
+            "points_rate": "2.5%"
         },
         {
             "team_name": "Asian Pool Generation",
@@ -150,9 +150,9 @@
             "player_number": "17401",
             "gender": "男",
             "sl": 4,
-            "wins": "2/3",
-            "avg_points": 12.0,
-            "points_rate": "60.0%"
+            "wins": "3/4",
+            "avg_points": 13.5,
+            "points_rate": "67.5%"
         },
         {
             "team_name": "Hineri Yoseisan",
@@ -170,9 +170,9 @@
             "player_number": "17409",
             "gender": "男",
             "sl": 2,
-            "wins": "0/2",
-            "avg_points": 5.5,
-            "points_rate": "27.5%"
+            "wins": "0/3",
+            "avg_points": 4.33,
+            "points_rate": "21.7%"
         },
         {
             "team_name": "Asian Pool Generation",
@@ -189,8 +189,8 @@
             "player_name": "Masaki Ishida",
             "player_number": "16766",
             "gender": "男",
-            "sl": 2,
-            "wins": "1/1",
+            "sl": 3,
+            "wins": "2/2",
             "avg_points": 14.0,
             "points_rate": "70.0%"
         },
@@ -200,9 +200,9 @@
             "player_number": "17678",
             "gender": "男",
             "sl": 2,
-            "wins": "3/4",
-            "avg_points": 11.5,
-            "points_rate": "57.5%"
+            "wins": "4/5",
+            "avg_points": 12.2,
+            "points_rate": "61.0%"
         },
         {
             "team_name": "Asian Pool Generation",
@@ -220,9 +220,9 @@
             "player_number": "17410",
             "gender": "女",
             "sl": 3,
-            "wins": "2/2",
-            "avg_points": 13.5,
-            "points_rate": "67.5%"
+            "wins": "2/3",
+            "avg_points": 9.33,
+            "points_rate": "46.7%"
         },
         {
             "team_name": "ZenAtsu Shooters",
@@ -240,9 +240,9 @@
             "player_number": "16770",
             "gender": "男",
             "sl": 3,
-            "wins": "3/3",
-            "avg_points": 17.33,
-            "points_rate": "86.7%"
+            "wins": "3/4",
+            "avg_points": 14.25,
+            "points_rate": "71.3%"
         },
         {
             "team_name": "Wagamama Finally",
@@ -280,9 +280,9 @@
             "player_number": "13670",
             "gender": "男",
             "sl": 8,
-            "wins": "1/2",
-            "avg_points": 11.5,
-            "points_rate": "57.5%"
+            "wins": "1/3",
+            "avg_points": 9.67,
+            "points_rate": "48.3%"
         },
         {
             "team_name": "Tamanchu RYU",
@@ -290,9 +290,9 @@
             "player_number": "16996",
             "gender": "男",
             "sl": 5,
-            "wins": "1/1",
-            "avg_points": 16.0,
-            "points_rate": "80.0%"
+            "wins": "1/2",
+            "avg_points": 11.5,
+            "points_rate": "57.5%"
         },
         {
             "team_name": "Yabanchu",
@@ -300,9 +300,9 @@
             "player_number": "16984",
             "gender": "男",
             "sl": 3,
-            "wins": "1/4",
-            "avg_points": 7.5,
-            "points_rate": "37.5%"
+            "wins": "2/5",
+            "avg_points": 9.0,
+            "points_rate": "45.0%"
         },
         {
             "team_name": "Wagamama Finally",
@@ -310,9 +310,9 @@
             "player_number": "16997",
             "gender": "男",
             "sl": 6,
-            "wins": "1/3",
-            "avg_points": 8.0,
-            "points_rate": "40.0%"
+            "wins": "2/4",
+            "avg_points": 9.25,
+            "points_rate": "46.3%"
         },
         {
             "team_name": "Tamanchu RYU",
@@ -320,9 +320,9 @@
             "player_number": "16755",
             "gender": "男",
             "sl": 5,
-            "wins": "2/2",
-            "avg_points": 17.0,
-            "points_rate": "85.0%"
+            "wins": "2/3",
+            "avg_points": 13.67,
+            "points_rate": "68.3%"
         },
         {
             "team_name": "Yabanchu",
@@ -340,19 +340,19 @@
             "player_number": "17399",
             "gender": "男",
             "sl": 3,
-            "wins": "1/4",
-            "avg_points": 8.5,
-            "points_rate": "42.5%"
+            "wins": "2/5",
+            "avg_points": 9.2,
+            "points_rate": "46.0%"
         },
         {
             "team_name": "Tamanchu RYU",
             "player_name": "Ayumi Nishimura",
             "player_number": "16228",
             "gender": "女",
-            "sl": 2,
-            "wins": "1/1",
-            "avg_points": 15.0,
-            "points_rate": "75.0%"
+            "sl": 1,
+            "wins": "1/2",
+            "avg_points": 11.5,
+            "points_rate": "57.5%"
         },
         {
             "team_name": "Yabanchu",
@@ -370,9 +370,9 @@
             "player_number": "17478",
             "gender": "男",
             "sl": 2,
-            "wins": "1/2",
-            "avg_points": 12.5,
-            "points_rate": "62.5%"
+            "wins": "1/3",
+            "avg_points": 10.0,
+            "points_rate": "50.0%"
         },
         {
             "team_name": "Tamanchu RYU",
@@ -390,9 +390,9 @@
             "player_number": "16237",
             "gender": "男",
             "sl": 6,
-            "wins": "1/2",
-            "avg_points": 9.5,
-            "points_rate": "47.5%"
+            "wins": "1/3",
+            "avg_points": 9.0,
+            "points_rate": "45.0%"
         },
         {
             "team_name": "Wagamama Finally",
@@ -420,9 +420,9 @@
             "player_number": "17004",
             "gender": "男",
             "sl": 4,
-            "wins": "2/2",
-            "avg_points": 15.0,
-            "points_rate": "75.0%"
+            "wins": "2/3",
+            "avg_points": 12.0,
+            "points_rate": "60.0%"
         },
         {
             "team_name": "Wagamama Finally",
@@ -440,9 +440,9 @@
             "player_number": "15973",
             "gender": "男",
             "sl": 4,
-            "wins": "2/2",
-            "avg_points": 16.0,
-            "points_rate": "80.0%"
+            "wins": "3/3",
+            "avg_points": 15.33,
+            "points_rate": "76.7%"
         },
         {
             "team_name": "Yabanchu",
@@ -450,9 +450,9 @@
             "player_number": "17396",
             "gender": "女",
             "sl": 2,
-            "wins": "1/2",
-            "avg_points": 10.5,
-            "points_rate": "52.5%"
+            "wins": "1/3",
+            "avg_points": 8.33,
+            "points_rate": "41.7%"
         },
         {
             "team_name": "Wagamama Finally",
@@ -460,9 +460,9 @@
             "player_number": "17670",
             "gender": "女",
             "sl": 2,
-            "wins": "3/3",
-            "avg_points": 15.0,
-            "points_rate": "75.0%"
+            "wins": "4/4",
+            "avg_points": 14.5,
+            "points_rate": "72.5%"
         },
         {
             "team_name": "Tamanchu RYU",
@@ -470,9 +470,9 @@
             "player_number": "17405",
             "gender": "男",
             "sl": 3,
-            "wins": "1/3",
-            "avg_points": 11.0,
-            "points_rate": "55.0%"
+            "wins": "2/4",
+            "avg_points": 12.0,
+            "points_rate": "60.0%"
         },
         {
             "team_name": "Yabanchu",
@@ -480,9 +480,9 @@
             "player_number": "17608",
             "gender": "女",
             "sl": 1,
-            "wins": "0/1",
-            "avg_points": 4.0,
-            "points_rate": "20.0%"
+            "wins": "1/2",
+            "avg_points": 11.5,
+            "points_rate": "57.5%"
         },
         {
             "team_name": "Go Go Chance!",
@@ -490,9 +490,9 @@
             "player_number": "13671",
             "gender": "男",
             "sl": 7,
-            "wins": "2/3",
-            "avg_points": 12.0,
-            "points_rate": "60.0%"
+            "wins": "2/4",
+            "avg_points": 10.75,
+            "points_rate": "53.8%"
         },
         {
             "team_name": "Shou Time Gen2",
@@ -520,9 +520,9 @@
             "player_number": "16772",
             "gender": "男",
             "sl": 3,
-            "wins": "2/3",
-            "avg_points": 12.0,
-            "points_rate": "60.0%"
+            "wins": "2/4",
+            "avg_points": 9.5,
+            "points_rate": "47.5%"
         },
         {
             "team_name": "Shou Time Gen2",
@@ -530,9 +530,9 @@
             "player_number": "13673",
             "gender": "男",
             "sl": 9,
-            "wins": "0/1",
-            "avg_points": 5.0,
-            "points_rate": "25.0%"
+            "wins": "1/2",
+            "avg_points": 10.0,
+            "points_rate": "50.0%"
         },
         {
             "team_name": "Sasanoha Campus",
@@ -560,9 +560,9 @@
             "player_number": "16989",
             "gender": "男",
             "sl": 4,
-            "wins": "0/3",
-            "avg_points": 7.33,
-            "points_rate": "36.7%"
+            "wins": "1/4",
+            "avg_points": 9.5,
+            "points_rate": "47.5%"
         },
         {
             "team_name": "Sasanoha Campus",
@@ -570,9 +570,9 @@
             "player_number": "12574",
             "gender": "女",
             "sl": 4,
-            "wins": "0/1",
-            "avg_points": 6.0,
-            "points_rate": "30.0%"
+            "wins": "0/2",
+            "avg_points": 5.0,
+            "points_rate": "25.0%"
         },
         {
             "team_name": "Go Go Chance!",
@@ -580,9 +580,9 @@
             "player_number": "17471",
             "gender": "男",
             "sl": 2,
-            "wins": "0/1",
-            "avg_points": 8.0,
-            "points_rate": "40.0%"
+            "wins": "0/2",
+            "avg_points": 5.0,
+            "points_rate": "25.0%"
         },
         {
             "team_name": "Shou Time Gen2",
@@ -600,9 +600,9 @@
             "player_number": "12874",
             "gender": "男",
             "sl": 7,
-            "wins": "1/3",
-            "avg_points": 9.0,
-            "points_rate": "45.0%"
+            "wins": "1/4",
+            "avg_points": 8.0,
+            "points_rate": "40.0%"
         },
         {
             "team_name": "Go Go Chance!",
@@ -610,9 +610,9 @@
             "player_number": "17472",
             "gender": "男",
             "sl": 2,
-            "wins": "0/2",
-            "avg_points": 2.0,
-            "points_rate": "10.0%"
+            "wins": "1/3",
+            "avg_points": 6.33,
+            "points_rate": "31.7%"
         },
         {
             "team_name": "Shou Time Gen2",
@@ -620,9 +620,9 @@
             "player_number": "17196",
             "gender": "男",
             "sl": 3,
-            "wins": "1/2",
-            "avg_points": 10.0,
-            "points_rate": "50.0%"
+            "wins": "2/3",
+            "avg_points": 13.33,
+            "points_rate": "66.7%"
         },
         {
             "team_name": "Sasanoha Campus",
@@ -660,9 +660,9 @@
             "player_number": "17665",
             "gender": "男",
             "sl": 2,
-            "wins": "1/1",
-            "avg_points": 13.0,
-            "points_rate": "65.0%"
+            "wins": "1/2",
+            "avg_points": 6.5,
+            "points_rate": "32.5%"
         },
         {
             "team_name": "Go Go Chance!",
@@ -670,19 +670,19 @@
             "player_number": "17674",
             "gender": "女",
             "sl": 1,
-            "wins": "1/3",
-            "avg_points": 6.67,
-            "points_rate": "33.3%"
+            "wins": "2/4",
+            "avg_points": 8.75,
+            "points_rate": "43.8%"
         },
         {
             "team_name": "Shou Time Gen2",
             "player_name": "Kotomi Shimazaki",
             "player_number": "17406",
             "gender": "女",
-            "sl": 3,
-            "wins": "2/3",
-            "avg_points": 10.33,
-            "points_rate": "51.7%"
+            "sl": 4,
+            "wins": "3/4",
+            "avg_points": 11.25,
+            "points_rate": "56.3%"
         },
         {
             "team_name": "Sasanoha Campus",
@@ -690,9 +690,9 @@
             "player_number": "17666",
             "gender": "男",
             "sl": 2,
-            "wins": "1/2",
-            "avg_points": 10.5,
-            "points_rate": "52.5%"
+            "wins": "1/3",
+            "avg_points": 9.0,
+            "points_rate": "45.0%"
         },
         {
             "team_name": "Go Go Chance!",
@@ -710,9 +710,9 @@
             "player_number": "17673",
             "gender": "男",
             "sl": 2,
-            "wins": "1/3",
-            "avg_points": 8.67,
-            "points_rate": "43.3%"
+            "wins": "1/4",
+            "avg_points": 7.25,
+            "points_rate": "36.3%"
         },
         {
             "team_name": "Sasanoha Campus",
@@ -720,9 +720,9 @@
             "player_number": "17667",
             "gender": "男",
             "sl": 2,
-            "wins": "0/2",
-            "avg_points": 3.5,
-            "points_rate": "17.5%"
+            "wins": "1/3",
+            "avg_points": 8.0,
+            "points_rate": "40.0%"
         },
         {
             "team_name": "Dekatsuyo",
@@ -750,9 +750,9 @@
             "player_number": "13679",
             "gender": "男",
             "sl": 8,
-            "wins": "1/2",
-            "avg_points": 9.0,
-            "points_rate": "45.0%"
+            "wins": "2/3",
+            "avg_points": 10.33,
+            "points_rate": "51.7%"
         },
         {
             "team_name": "Dekatsuyo",
@@ -770,9 +770,9 @@
             "player_number": "16771",
             "gender": "男",
             "sl": 7,
-            "wins": "2/2",
-            "avg_points": 14.0,
-            "points_rate": "70.0%"
+            "wins": "3/3",
+            "avg_points": 15.67,
+            "points_rate": "78.3%"
         },
         {
             "team_name": "Jounetsutai! Riku",
@@ -789,10 +789,10 @@
             "player_name": "Koharu Iyono",
             "player_number": "15429",
             "gender": "女",
-            "sl": 6,
-            "wins": "2/2",
-            "avg_points": 15.5,
-            "points_rate": "77.5%"
+            "sl": 5,
+            "wins": "2/3",
+            "avg_points": 13.0,
+            "points_rate": "65.0%"
         },
         {
             "team_name": "Tamanchu CUE",
@@ -800,9 +800,9 @@
             "player_number": "17403",
             "gender": "男",
             "sl": 6,
-            "wins": "1/2",
-            "avg_points": 10.0,
-            "points_rate": "50.0%"
+            "wins": "2/3",
+            "avg_points": 11.0,
+            "points_rate": "55.0%"
         },
         {
             "team_name": "Jounetsutai! Riku",
@@ -820,9 +820,9 @@
             "player_number": "16236",
             "gender": "男",
             "sl": 5,
-            "wins": "3/3",
-            "avg_points": 16.67,
-            "points_rate": "83.3%"
+            "wins": "3/4",
+            "avg_points": 14.25,
+            "points_rate": "71.3%"
         },
         {
             "team_name": "Tamanchu CUE",
@@ -830,9 +830,9 @@
             "player_number": "16232",
             "gender": "男",
             "sl": 5,
-            "wins": "1/3",
-            "avg_points": 8.67,
-            "points_rate": "43.3%"
+            "wins": "1/4",
+            "avg_points": 8.25,
+            "points_rate": "41.3%"
         },
         {
             "team_name": "Jounetsutai! Riku",
@@ -840,9 +840,9 @@
             "player_number": "15983",
             "gender": "女",
             "sl": 5,
-            "wins": "0/1",
-            "avg_points": 5.0,
-            "points_rate": "25.0%"
+            "wins": "1/2",
+            "avg_points": 11.5,
+            "points_rate": "57.5%"
         },
         {
             "team_name": "Dekatsuyo",
@@ -850,9 +850,9 @@
             "player_number": "15774",
             "gender": "女",
             "sl": 4,
-            "wins": "2/2",
-            "avg_points": 13.0,
-            "points_rate": "65.0%"
+            "wins": "2/3",
+            "avg_points": 9.0,
+            "points_rate": "45.0%"
         },
         {
             "team_name": "Tamanchu CUE",
@@ -870,9 +870,9 @@
             "player_number": "16988",
             "gender": "男",
             "sl": 4,
-            "wins": "2/3",
-            "avg_points": 10.33,
-            "points_rate": "51.7%"
+            "wins": "3/4",
+            "avg_points": 12.25,
+            "points_rate": "61.3%"
         },
         {
             "team_name": "Dekatsuyo",
@@ -890,9 +890,9 @@
             "player_number": "17679",
             "gender": "男",
             "sl": 3,
-            "wins": "2/2",
-            "avg_points": 15.5,
-            "points_rate": "77.5%"
+            "wins": "3/3",
+            "avg_points": 15.67,
+            "points_rate": "78.3%"
         },
         {
             "team_name": "Jounetsutai! Riku",
@@ -910,9 +910,9 @@
             "player_number": "17668",
             "gender": "男",
             "sl": 3,
-            "wins": "2/3",
-            "avg_points": 11.67,
-            "points_rate": "58.3%"
+            "wins": "3/4",
+            "avg_points": 12.0,
+            "points_rate": "60.0%"
         },
         {
             "team_name": "Tamanchu CUE",
@@ -920,9 +920,9 @@
             "player_number": "17680",
             "gender": "男",
             "sl": 2,
-            "wins": "1/3",
-            "avg_points": 8.33,
-            "points_rate": "41.7%"
+            "wins": "2/4",
+            "avg_points": 9.25,
+            "points_rate": "46.3%"
         },
         {
             "team_name": "Jounetsutai! Riku",
@@ -930,9 +930,9 @@
             "player_number": "17312",
             "gender": "女",
             "sl": 2,
-            "wins": "1/3",
-            "avg_points": 7.67,
-            "points_rate": "38.3%"
+            "wins": "1/4",
+            "avg_points": 7.0,
+            "points_rate": "35.0%"
         },
         {
             "team_name": "Dekatsuyo",
@@ -940,9 +940,9 @@
             "player_number": "17669",
             "gender": "男",
             "sl": 2,
-            "wins": "0/2",
-            "avg_points": 6.0,
-            "points_rate": "30.0%"
+            "wins": "0/3",
+            "avg_points": 5.33,
+            "points_rate": "26.7%"
         },
         {
             "team_name": "Tamanchu CUE",
@@ -960,12 +960,12 @@
             "player_number": "17677",
             "gender": "女",
             "sl": 2,
-            "wins": "2/2",
-            "avg_points": 17.5,
-            "points_rate": "87.5%"
+            "wins": "2/3",
+            "avg_points": 13.33,
+            "points_rate": "66.7%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028100726.pdf",
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028101426.pdf",
     "sl_changes": [
         {
             "player_name": "Ishida Masaki",
@@ -1022,46 +1022,6 @@
             "old_date": "2026/07/03",
             "new_sl": "5",
             "new_date": "2026/10/09"
-        },
-        {
-            "player_name": "Hirano Yuto",
-            "member_number": "17405",
-            "old_sl": "2",
-            "old_date": "2026/06/04",
-            "new_sl": "3",
-            "new_date": "2026/10/07"
-        },
-        {
-            "player_name": "Kako Ryui",
-            "member_number": "15426",
-            "old_sl": "6",
-            "old_date": "2025/07/07",
-            "new_sl": "7",
-            "new_date": "2026/10/07"
-        },
-        {
-            "player_name": "Yasuda Yuki",
-            "member_number": "13691",
-            "old_sl": "6",
-            "old_date": "2026/09/23",
-            "new_sl": "7",
-            "new_date": "2026/10/07"
-        },
-        {
-            "player_name": "Yoshida Haruna",
-            "member_number": "17671",
-            "old_sl": "2",
-            "old_date": "2026/09/16",
-            "new_sl": "1",
-            "new_date": "2026/10/07"
-        },
-        {
-            "player_name": "Yumoto Seiya",
-            "member_number": "15959",
-            "old_sl": "6",
-            "old_date": "2026/08/26",
-            "new_sl": "5",
-            "new_date": "2026/10/07"
         }
     ],
     "ranking": [
