@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年10月16日 20:13 JST",
+    "last_checked": "2026年10月17日 10:22 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028101426.pdf",
-    "last_updated": "2026年10月16日 20:13 JST",
+    "last_updated": "2026年10月17日 10:22 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028101426.pdf",
     "individuals": [
         {
@@ -966,64 +966,7 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028101426.pdf",
-    "sl_changes": [
-        {
-            "player_name": "Ishida Masaki",
-            "member_number": "16766",
-            "old_sl": "2",
-            "old_date": "2025/06/05",
-            "new_sl": "3",
-            "new_date": "2026/10/14"
-        },
-        {
-            "player_name": "Iyono Koharu",
-            "member_number": "15429",
-            "old_sl": "6",
-            "old_date": "2026/09/23",
-            "new_sl": "5",
-            "new_date": "2026/10/14"
-        },
-        {
-            "player_name": "Nishimura Ayumi",
-            "member_number": "16228",
-            "old_sl": "2",
-            "old_date": "2026/09/23",
-            "new_sl": "1",
-            "new_date": "2026/10/14"
-        },
-        {
-            "player_name": "Sakamoto Rio",
-            "member_number": "16760",
-            "old_sl": "3",
-            "old_date": "2026/01/19",
-            "new_sl": "4",
-            "new_date": "2026/10/14"
-        },
-        {
-            "player_name": "Shimazaki Kotomi",
-            "member_number": "17406",
-            "old_sl": "3",
-            "old_date": "2026/07/02",
-            "new_sl": "4",
-            "new_date": "2026/10/14"
-        },
-        {
-            "player_name": "Yokose Miku",
-            "member_number": "15427",
-            "old_sl": "3",
-            "old_date": "2025/03/12",
-            "new_sl": "4",
-            "new_date": "2026/10/14"
-        },
-        {
-            "player_name": "Ito Tomoki",
-            "member_number": "16994",
-            "old_sl": "4",
-            "old_date": "2026/07/03",
-            "new_sl": "5",
-            "new_date": "2026/10/09"
-        }
-    ],
+    "sl_changes": [],
     "ranking": [
         {
             "team_name": "Tamanchu RYU",
