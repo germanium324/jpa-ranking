@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年10月21日 13:19 JST",
+    "last_checked": "2026年10月21日 13:35 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028102126.pdf",
-    "last_updated": "2026年10月21日 13:19 JST",
+    "last_updated": "2026年10月21日 13:35 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028102126.pdf",
     "individuals": [
         {
@@ -968,19 +968,51 @@
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028101426.pdf",
     "sl_changes": [
         {
+            "player_name": "Araki Kengo",
+            "member_number": "12573",
+            "old_sl": "4",
+            "old_date": "2026/09/30",
+            "new_sl": "3",
+            "new_date": "2026/10/21"
+        },
+        {
+            "player_name": "Iyono Koharu",
+            "member_number": "15429",
+            "old_sl": "5",
+            "old_date": "2026/10/14",
+            "new_sl": "6",
+            "new_date": "2026/10/21"
+        },
+        {
+            "player_name": "Kawakami Manamu",
+            "member_number": "17678",
+            "old_sl": "2",
+            "old_date": "2026/09/10",
+            "new_sl": "3",
+            "new_date": "2026/10/21"
+        },
+        {
+            "player_name": "Takahashi Akiko",
+            "member_number": "17670",
+            "old_sl": "2",
+            "old_date": "2026/09/18",
+            "new_sl": "3",
+            "new_date": "2026/10/21"
+        },
+        {
+            "player_name": "Yoshida Haruna",
+            "member_number": "17671",
+            "old_sl": "1",
+            "old_date": "2026/10/07",
+            "new_sl": "2",
+            "new_date": "2026/10/21"
+        },
+        {
             "player_name": "Ishida Masaki",
             "member_number": "16766",
             "old_sl": "2",
             "old_date": "2025/06/05",
             "new_sl": "3",
-            "new_date": "2026/10/14"
-        },
-        {
-            "player_name": "Iyono Koharu",
-            "member_number": "15429",
-            "old_sl": "6",
-            "old_date": "2026/09/23",
-            "new_sl": "5",
             "new_date": "2026/10/14"
         },
         {
