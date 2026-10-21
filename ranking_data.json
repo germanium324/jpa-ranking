@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年10月21日 10:27 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028101426.pdf",
-    "last_updated": "2026年10月21日 10:27 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028101426.pdf",
+    "last_checked": "2026年10月21日 13:19 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028102126.pdf",
+    "last_updated": "2026年10月21日 13:19 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028102126.pdf",
     "individuals": [
         {
             "team_name": "Hineri Yoseisan",
@@ -1018,64 +1018,64 @@
     ],
     "ranking": [
         {
-            "team_name": "Tamanchu RYU",
-            "team_id": "5",
-            "points": 306
-        },
-        {
-            "team_name": "Hineri Yoseisan",
-            "team_id": "1",
-            "points": 277
-        },
-        {
             "team_name": "Asian Pool Generation",
             "team_id": "3",
-            "points": 274
+            "points": 346
+        },
+        {
+            "team_name": "Tamanchu RYU",
+            "team_id": "5",
+            "points": 341
         },
         {
             "team_name": "Tamanchu CUE",
             "team_id": "11",
-            "points": 267
+            "points": 331
+        },
+        {
+            "team_name": "Hineri Yoseisan",
+            "team_id": "1",
+            "points": 323
         },
         {
             "team_name": "Jounetsutai! Riku",
             "team_id": "12",
-            "points": 263
-        },
-        {
-            "team_name": "Wagamama Finally",
-            "team_id": "4",
-            "points": 249
+            "points": 317
         },
         {
             "team_name": "Dekatsuyo",
             "team_id": "10",
-            "points": 248
+            "points": 313
         },
         {
-            "team_name": "Shou Time Gen2",
-            "team_id": "8",
-            "points": 235
-        },
-        {
-            "team_name": "Yabanchu",
-            "team_id": "6",
-            "points": 230
+            "team_name": "Wagamama Finally",
+            "team_id": "4",
+            "points": 305
         },
         {
             "team_name": "Go Go Chance!",
             "team_id": "7",
-            "points": 226
+            "points": 267
         },
         {
             "team_name": "ZenAtsu Shooters",
             "team_id": "2",
-            "points": 207
+            "points": 266
+        },
+        {
+            "team_name": "Yabanchu",
+            "team_id": "6",
+            "points": 266
+        },
+        {
+            "team_name": "Shou Time Gen2",
+            "team_id": "8",
+            "points": 263
         },
         {
             "team_name": "Sasanoha Campus",
             "team_id": "9",
-            "points": 188
+            "points": 232
         }
     ],
     "roster": [
@@ -1153,7 +1153,7 @@
                     "player_name": "Iyono, Koharu",
                     "player_number": "15429",
                     "gender": "-",
-                    "sl": 5
+                    "sl": 6
                 },
                 {
                     "player_name": "Kurokawa, Koyu",
@@ -1363,7 +1363,7 @@
                     "player_name": "Araki, Kengo",
                     "player_number": "12573",
                     "gender": "-",
-                    "sl": 4
+                    "sl": 3
                 },
                 {
                     "player_name": "Kobayashi, Yumi",
@@ -1543,7 +1543,7 @@
                     "player_name": "Yoshida, Haruna",
                     "player_number": "17671",
                     "gender": "-",
-                    "sl": 1
+                    "sl": 2
                 },
                 {
                     "player_name": "Yasuda, Yuki",
@@ -1615,7 +1615,7 @@
                     "player_name": "Takahashi, Akiko",
                     "player_number": "17670",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 }
             ]
         },
@@ -1717,7 +1717,7 @@
                     "player_name": "Kawakami, Manamu",
                     "player_number": "17678",
                     "gender": "-",
-                    "sl": 2
+                    "sl": 3
                 },
                 {
                     "player_name": "Ito, Azusa",
@@ -1728,5 +1728,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028101426.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028102126.pdf"
 }
