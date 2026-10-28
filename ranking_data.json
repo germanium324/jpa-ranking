@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年10月28日 18:51 JST",
+    "last_checked": "2026年10月28日 20:10 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028102826.pdf",
-    "last_updated": "2026年10月28日 18:51 JST",
+    "last_updated": "2026年10月28日 20:10 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028102826.pdf",
     "individuals": [
         {
@@ -967,6 +967,30 @@
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028102826.pdf",
     "sl_changes": [
+        {
+            "player_name": "Okada Naoko",
+            "member_number": "17410",
+            "old_sl": "3",
+            "old_date": "2026/09/18",
+            "new_sl": "2",
+            "new_date": "2026/10/28"
+        },
+        {
+            "player_name": "Saga Mizuki",
+            "member_number": "17675",
+            "old_sl": "1",
+            "old_date": "2026/09/10",
+            "new_sl": "2",
+            "new_date": "2026/10/28"
+        },
+        {
+            "player_name": "Takeishi Shoto",
+            "member_number": "15972",
+            "old_sl": "7",
+            "old_date": "2026/06/24",
+            "new_sl": "6",
+            "new_date": "2026/10/28"
+        },
         {
             "player_name": "Araki Kengo",
             "member_number": "12573",
