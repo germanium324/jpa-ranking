@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年10月28日 20:10 JST",
+    "last_checked": "2026年10月29日 10:12 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028102826.pdf",
-    "last_updated": "2026年10月28日 20:10 JST",
+    "last_updated": "2026年10月29日 10:12 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028102826.pdf",
     "individuals": [
         {
@@ -990,46 +990,6 @@
             "old_date": "2026/06/24",
             "new_sl": "6",
             "new_date": "2026/10/28"
-        },
-        {
-            "player_name": "Araki Kengo",
-            "member_number": "12573",
-            "old_sl": "4",
-            "old_date": "2026/09/30",
-            "new_sl": "3",
-            "new_date": "2026/10/21"
-        },
-        {
-            "player_name": "Iyono Koharu",
-            "member_number": "15429",
-            "old_sl": "5",
-            "old_date": "2026/10/14",
-            "new_sl": "6",
-            "new_date": "2026/10/21"
-        },
-        {
-            "player_name": "Kawakami Manamu",
-            "member_number": "17678",
-            "old_sl": "2",
-            "old_date": "2026/09/10",
-            "new_sl": "3",
-            "new_date": "2026/10/21"
-        },
-        {
-            "player_name": "Takahashi Akiko",
-            "member_number": "17670",
-            "old_sl": "2",
-            "old_date": "2026/09/18",
-            "new_sl": "3",
-            "new_date": "2026/10/21"
-        },
-        {
-            "player_name": "Yoshida Haruna",
-            "member_number": "17671",
-            "old_sl": "1",
-            "old_date": "2026/10/07",
-            "new_sl": "2",
-            "new_date": "2026/10/21"
         }
     ],
     "ranking": [
