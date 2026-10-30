@@ -275,6 +275,35 @@ def _is_red_schedule_cell(page, cell):
     return False
 
 
+def _extract_grid_schedule(page, default_year):
+    """「週 日付 H-A H-A ...」形式の日程表を読む。先に書かれたチームがホーム。"""
+    words = page.extract_words(keep_blank_chars=False, use_text_flow=False)
+    rows = []
+    for word in sorted(words, key=lambda w: (round(w['top']), w['x0'])):
+        if rows and abs(rows[-1][0] - word['top']) < 4:
+            rows[-1][1].append(word)
+        else:
+            rows.append([word['top'], [word]])
+    entries = []
+    for _, row_words in rows:
+        row_words.sort(key=lambda w: w['x0'])
+        date_index = next(
+            (i for i, w in enumerate(row_words[:3]) if re.fullmatch(r'\d{1,2}/\d{1,2}/\d{4}', w['text'])),
+            None
+        )
+        if date_index is None:
+            continue
+        date_value = _schedule_date(row_words[date_index]['text'], default_year)
+        for word in row_words[date_index + 1:]:
+            match = re.fullmatch(r'(\d{1,2})-(\d{1,2})', word['text'])
+            if not match or not date_value:
+                continue
+            bbox = (word['x0'] - 3, word['top'] - 2, word['x1'] + 3, word['bottom'] + 2)
+            venue = '自空' if _is_red_schedule_cell(page, bbox) else '山水'
+            entries.append((date_value, str(int(match.group(1))), str(int(match.group(2))), venue))
+    return entries
+
+
 def extract_schedule(pdf_file, pdf_url=None):
     """日程PDFから対戦・Byeを抽出し、チームごとの試合データを返す。"""
     if pdf_file is None:
@@ -301,7 +330,10 @@ def extract_schedule(pdf_file, pdf_url=None):
 
     with pdfplumber.open(pdf_file) as pdf:
         for page in pdf.pages:
-            tables = page.find_tables()
+            grid_entries = _extract_grid_schedule(page, default_year)
+            for date_value, team_a, team_b, venue in grid_entries:
+                add_event(date_value, team_a, team_b, venue)
+            tables = [] if grid_entries else page.find_tables()
             for table in tables:
                 rows = table.rows
                 cells = table.extract()
@@ -361,6 +393,8 @@ def extract_schedule(pdf_file, pdf_url=None):
                 str.maketrans('０１２３４５６７８９', '0123456789')
             )
             for line in text.splitlines():
+                if grid_entries:
+                    break
                 team_name_match = re.match(
                     r'^\s*0280?(\d{1,2})\s+(?:No\.?\s*0*\d+\s*)?(.+?)\s*$',
                     line,
@@ -374,7 +408,7 @@ def extract_schedule(pdf_file, pdf_url=None):
                         team_names[str(int(team_name_match.group(1)))] = team_name_match.group(2).strip()
 
                 date_value = _schedule_date(line, default_year)
-                if not date_value:
+                if not date_value or grid_entries:
                     continue
                 without_date = re.sub(r'\d{1,2}[./月-]\d{1,2}(?:日)?(?:[./-]\d{2,4})?', ' ', line)
                 team_ids = []
