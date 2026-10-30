@@ -29,6 +29,7 @@
         .schedule-opponent { padding: 0; border: 0; background: transparent; color: #004d99; font: inherit; font-weight: bold; cursor: pointer; }
         .schedule-opponent:hover { text-decoration: underline; }
         .schedule-venue { margin-left: 8px; color: #222; }
+        .schedule-opponent { margin-top: 4px; }
         .schedule-venue.is-free-space { color: #c00; font-weight: bold; }
         
         @media (min-width: 1024px) {
@@ -356,10 +357,15 @@
                                     const date = document.createElement('span');
                                     date.textContent = formatScheduleDate(event.date);
                                     game.appendChild(date);
-                                    game.appendChild(document.createTextNode(' '));
                                     if (event.opponent_team_id == null) {
-                                        game.appendChild(document.createTextNode('Bye'));
+                                        game.appendChild(document.createTextNode(' Bye'));
                                     } else {
+                                        const venue = document.createElement('span');
+                                        venue.className = 'schedule-venue';
+                                        venue.textContent = event.venue || '山水';
+                                        if (/自空/.test(venue.textContent)) venue.classList.add('is-free-space');
+                                        game.appendChild(venue);
+                                        game.appendChild(document.createElement('br'));
                                         const opponentId = String(event.opponent_team_id);
                                         const opponentName = teamNamesById.get(opponentId) || `チームNo.${opponentId}`;
                                         const opponent = document.createElement('button');
@@ -368,12 +374,6 @@
                                         opponent.textContent = `NO.${opponentId} ${opponentName}`;
                                         opponent.addEventListener('click', () => showTeamIndividuals(opponentName));
                                         game.appendChild(opponent);
-                                        game.appendChild(document.createTextNode(' '));
-                                        const venue = document.createElement('span');
-                                        venue.className = 'schedule-venue';
-                                        venue.textContent = event.venue || '山水';
-                                        if (/自空/.test(venue.textContent)) venue.classList.add('is-free-space');
-                                        game.appendChild(venue);
                                     }
                                     games.appendChild(game);
                                 });
