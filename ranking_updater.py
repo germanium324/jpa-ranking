@@ -154,6 +154,24 @@ def find_pdf_urls(soup, standings_page_url):
     return pdf_urls
 
 
+def _schedule_column_links(soup, target_row):
+    """ヘッダーが Schedule/スケジュール の列にあるリンクを返す。"""
+    if not target_row:
+        return []
+    table = target_row.find_parent('table')
+    if not table:
+        return []
+    cells = target_row.find_all(['td', 'th'])
+    for tr in table.find_all('tr'):
+        headers = tr.find_all('th') or []
+        for index, header in enumerate(headers):
+            text = header.get_text(' ', strip=True).lower()
+            if 'schedule' in text or 'スケジュール' in text or '日程' in text:
+                if index < len(cells):
+                    return cells[index].find_all('a')
+    return []
+
+
 def find_schedule_pdf_url(soup, standings_page_url):
     """スタンディングページから028 + MMDDYY形式のスケジュールPDFを探す。"""
     if soup is None or not standings_page_url:
@@ -162,11 +180,12 @@ def find_schedule_pdf_url(soup, standings_page_url):
     candidates = []
     seen_urls = set()
     target_row = _find_target_row(soup)
-    link_groups = [target_row.find_all('a')] if target_row else []
+    link_groups = [_schedule_column_links(soup, target_row)]
+    link_groups.append(target_row.find_all('a') if target_row else [])
     link_groups.append(soup.find_all('a'))
     for links in link_groups:
         for link in links:
-            href = link.get('href')
+            href = (link.get('href') or '').strip()
             if not href:
                 continue
             full_url = urljoin(standings_page_url, href)
@@ -177,12 +196,14 @@ def find_schedule_pdf_url(soup, standings_page_url):
             candidates.append((_parse_pdf_date_token(match.group(1)), full_url))
 
     if not candidates:
+        print("日程PDFのリンクが見つかりませんでした")
         return None
     candidates.sort(key=lambda candidate: (
         candidate[0] is None,
         -(candidate[0].toordinal() if candidate[0] else datetime.date.min.toordinal()),
         candidate[1]
     ))
+    print(f"日程PDF: {candidates[0][1]}")
     return candidates[0][1]
 
 
@@ -858,6 +879,8 @@ def main():
     if schedule_pdf_url:
         schedule_pdf_content = download_pdf(schedule_pdf_url)
         schedule = extract_schedule(schedule_pdf_content, schedule_pdf_url)
+        if not schedule:
+            print("日程PDFから試合を抽出できませんでした")
         if schedule:
             data_to_save['schedule'] = schedule
             data_to_save['schedule_pdf'] = schedule_pdf_url
