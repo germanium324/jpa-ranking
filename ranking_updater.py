@@ -233,7 +233,7 @@ def _is_red_schedule_cell(page, cell):
     if not cell or len(cell) != 4:
         return False
     x0, top, x1, bottom = cell
-    for shape in page.rects + page.curves:
+    for shape in page.rects + page.curves + page.lines:
         color = shape.get('stroking_color') or shape.get('non_stroking_color')
         if not isinstance(color, (tuple, list)) or len(color) < 3:
             continue
@@ -244,6 +244,10 @@ def _is_red_schedule_cell(page, cell):
         if sx0 <= (x0 + x1) / 2 <= sx1 and stop <= (top + bottom) / 2 <= sbottom:
             return True
         if sx0 <= x0 and sx1 >= x1 and stop <= top and sbottom >= bottom:
+            return True
+        if sx0 <= (x0 + x1) / 2 <= sx1 and top - 2 <= stop <= bottom + 2:
+            return True
+        if stop <= (top + bottom) / 2 <= sbottom and x0 - 2 <= sx0 <= x1 + 2:
             return True
     return False
 
@@ -325,7 +329,8 @@ def extract_schedule(pdf_file, pdf_url=None):
                         row_cells = rows[row_index].cells if row_index < len(rows) else []
                         venue = '自空' if any(_is_red_schedule_cell(page, cell) for cell in row_cells) else '山水'
                         for _, date_value in date_values:
-                            add_event(date_value, team_ids[0], team_ids[1], venue)
+                            for team_index in range(0, len(team_ids) - 1, 2):
+                                add_event(date_value, team_ids[team_index], team_ids[team_index + 1], venue)
 
             # 表の抽出に失敗した場合、1行単位で「日付 + チーム番号」の形式を読む。
             text = (page.extract_text() or '').translate(
