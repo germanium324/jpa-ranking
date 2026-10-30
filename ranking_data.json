@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年10月30日 10:14 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028102826.pdf",
-    "last_updated": "2026年10月30日 10:14 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028102826.pdf",
+    "last_checked": "2026年10月30日 20:09 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028103026.pdf",
+    "last_updated": "2026年10月30日 20:09 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028103026.pdf",
     "individuals": [
         {
             "team_name": "Hineri Yoseisan",
@@ -769,7 +769,7 @@
             "player_name": "Yasuyuki Hayashi",
             "player_number": "16771",
             "gender": "男",
-            "sl": 7,
+            "sl": 8,
             "wins": "4/4",
             "avg_points": 15.5,
             "points_rate": "77.5%"
@@ -965,8 +965,16 @@
             "points_rate": "66.7%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028102826.pdf",
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028103026.pdf",
     "sl_changes": [
+        {
+            "player_name": "Hayashi Yasuyuki",
+            "member_number": "16771",
+            "old_sl": "7",
+            "old_date": "2026/03/23",
+            "new_sl": "8",
+            "new_date": "2026/10/30"
+        },
         {
             "player_name": "Okada Naoko",
             "member_number": "17410",
@@ -1447,7 +1455,7 @@
                     "player_name": "Hayashi, Yasuyuki",
                     "player_number": "16771",
                     "gender": "-",
-                    "sl": 7
+                    "sl": 8
                 },
                 {
                     "player_name": "Machiyama, Ken",
@@ -1704,5 +1712,5 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028102826.pdf"
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028103026.pdf"
 }
