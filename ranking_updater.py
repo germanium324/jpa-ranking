@@ -189,6 +189,14 @@ def find_schedule_pdf_url(soup, standings_page_url):
 def _schedule_date(value, default_year):
     """PDF内の日付をISO形式にする。年がなければPDF名の年を使う。"""
     normalized = re.sub(r'\s+', '', str(value or ''))
+    iso_match = re.search(r'\b(20\d{2})[./-](\d{1,2})[./-](\d{1,2})\b', normalized)
+    if iso_match:
+        try:
+            return datetime.date(
+                int(iso_match.group(1)), int(iso_match.group(2)), int(iso_match.group(3))
+            ).isoformat()
+        except ValueError:
+            return None
     match = re.search(r'(?<!\d)(\d{1,2})[./月-](\d{1,2})(?:日)?(?:[./-](\d{2,4}))?', normalized)
     if not match:
         return None
@@ -298,6 +306,8 @@ def extract_schedule(pdf_file, pdf_url=None):
                                 if opponent_id:
                                     venue = '自空' if column < len(row_cells) and _is_red_schedule_cell(page, row_cells[column]) else '山水'
                                     add_event(date_value, team_id, opponent_id, venue)
+                                elif not str(value or '').strip():
+                                    add_event(date_value, team_id)
 
                 # 日付と対戦チームが同じ行にある形式にも対応する。
                 for row_index, row in enumerate(cells):
@@ -790,6 +800,7 @@ def main():
     pdf_urls = find_pdf_urls(standings_soup, standings_page_url)
     latest_pdf_url = pdf_urls.get('S')
     roster_pdf_url = pdf_urls.get('R')
+    schedule_pdf_url = find_schedule_pdf_url(standings_soup, standings_page_url)
 
     # 現在のチェック時刻（JST）
     now_jst = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))).strftime('%Y年%m月%d日 %H:%M JST')
@@ -806,6 +817,8 @@ def main():
         'ranking': existing.get('ranking', []),
         'roster': existing.get('roster', []),
         'roster_pdf': existing.get('roster_pdf'),
+        'schedule': existing.get('schedule', []),
+        'schedule_pdf': existing.get('schedule_pdf'),
     }
 
     # 名簿PDFからチーム/メンバーを抽出
@@ -817,6 +830,13 @@ def main():
         data_to_save['roster'] = roster_grouped
     if roster_pdf_url:
         data_to_save['roster_pdf'] = roster_pdf_url
+
+    if schedule_pdf_url:
+        schedule_pdf_content = download_pdf(schedule_pdf_url)
+        schedule = extract_schedule(schedule_pdf_content, schedule_pdf_url)
+        if schedule:
+            data_to_save['schedule'] = schedule
+            data_to_save['schedule_pdf'] = schedule_pdf_url
 
     if latest_pdf_url:
         pdf_content = download_pdf(latest_pdf_url)
