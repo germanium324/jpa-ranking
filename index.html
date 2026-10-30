@@ -356,7 +356,15 @@
                                     const date = document.createElement('span');
                                     date.textContent = formatScheduleDate(event.date);
                                     game.appendChild(date);
-                                    game.appendChild(document.createTextNode(' '));
+                                    if (event.opponent_team_id != null) {
+                                        game.appendChild(document.createTextNode(' '));
+                                        const venue = document.createElement('span');
+                                        venue.className = 'schedule-venue';
+                                        venue.textContent = event.venue || '山水';
+                                        if (/自空/.test(venue.textContent)) venue.classList.add('is-free-space');
+                                        game.appendChild(venue);
+                                    }
+                                    game.appendChild(document.createElement('br'));
                                     if (event.opponent_team_id == null) {
                                         game.appendChild(document.createTextNode('Bye'));
                                     } else {
@@ -368,12 +376,6 @@
                                         opponent.textContent = `NO.${opponentId} ${opponentName}`;
                                         opponent.addEventListener('click', () => showTeamIndividuals(opponentName));
                                         game.appendChild(opponent);
-                                        game.appendChild(document.createTextNode(' '));
-                                        const venue = document.createElement('span');
-                                        venue.className = 'schedule-venue';
-                                        venue.textContent = event.venue || '山水';
-                                        if (/自空/.test(venue.textContent)) venue.classList.add('is-free-space');
-                                        game.appendChild(venue);
                                     }
                                     games.appendChild(game);
                                 });
