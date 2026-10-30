@@ -153,6 +153,210 @@ def find_pdf_urls(soup, standings_page_url):
 
     return pdf_urls
 
+
+def find_schedule_pdf_url(soup, standings_page_url):
+    """スタンディングページから028 + MMDDYY形式のスケジュールPDFを探す。"""
+    if soup is None or not standings_page_url:
+        return None
+
+    candidates = []
+    seen_urls = set()
+    target_row = _find_target_row(soup)
+    link_groups = [target_row.find_all('a')] if target_row else []
+    link_groups.append(soup.find_all('a'))
+    for links in link_groups:
+        for link in links:
+            href = link.get('href')
+            if not href:
+                continue
+            full_url = urljoin(standings_page_url, href)
+            match = re.search(rf'(?:^|/){DIVISION_CODE}(\d{{6}})\.pdf(?:$|[?#])', full_url, re.IGNORECASE)
+            if not match or full_url in seen_urls:
+                continue
+            seen_urls.add(full_url)
+            candidates.append((_parse_pdf_date_token(match.group(1)), full_url))
+
+    if not candidates:
+        return None
+    candidates.sort(key=lambda candidate: (
+        candidate[0] is None,
+        -(candidate[0].toordinal() if candidate[0] else datetime.date.min.toordinal()),
+        candidate[1]
+    ))
+    return candidates[0][1]
+
+
+def _schedule_date(value, default_year):
+    """PDF内の日付をISO形式にする。年がなければPDF名の年を使う。"""
+    normalized = re.sub(r'\s+', '', str(value or ''))
+    match = re.search(r'(?<!\d)(\d{1,2})[./月-](\d{1,2})(?:日)?(?:[./-](\d{2,4}))?', normalized)
+    if not match:
+        return None
+    month, day = int(match.group(1)), int(match.group(2))
+    year_text = match.group(3)
+    year = int(year_text) if year_text else default_year
+    if year < 100:
+        year += 2000
+    try:
+        return datetime.date(year, month, day).isoformat()
+    except ValueError:
+        return None
+
+
+def _schedule_team_id(value):
+    """チームコード(02801)、No.表記、またはチーム番号をIDへ変換する。"""
+    normalized = re.sub(r'\s+', '', str(value or '')).translate(
+        str.maketrans('０１２３４５６７８９', '0123456789')
+    )
+    match = re.fullmatch(r'0280?(\d{1,2})', normalized)
+    if not match:
+        match = re.fullmatch(r'(?:No\.?|チームNo\.?|チーム)?0*(\d{1,2})', normalized, re.IGNORECASE)
+    if not match:
+        return None
+    return str(int(match.group(1)))
+
+
+def _is_schedule_bye(value):
+    return bool(re.search(r'\bbye\b|休み|休戦', str(value or ''), re.IGNORECASE))
+
+
+def _is_red_schedule_cell(page, cell):
+    """赤枠と重なるセルを自空として判定する。"""
+    if not cell or len(cell) != 4:
+        return False
+    x0, top, x1, bottom = cell
+    for shape in page.rects + page.curves:
+        color = shape.get('stroking_color') or shape.get('non_stroking_color')
+        if not isinstance(color, (tuple, list)) or len(color) < 3:
+            continue
+        red, green, blue = color[:3]
+        if red < 0.65 or green > 0.4 or blue > 0.4:
+            continue
+        sx0, stop, sx1, sbottom = shape.get('x0', 0), shape.get('top', 0), shape.get('x1', 0), shape.get('bottom', 0)
+        if sx0 <= (x0 + x1) / 2 <= sx1 and stop <= (top + bottom) / 2 <= sbottom:
+            return True
+        if sx0 <= x0 and sx1 >= x1 and stop <= top and sbottom >= bottom:
+            return True
+    return False
+
+
+def extract_schedule(pdf_file, pdf_url=None):
+    """日程PDFから対戦・Byeを抽出し、チームごとの試合データを返す。"""
+    if pdf_file is None:
+        return []
+
+    filename_date = re.search(rf'{DIVISION_CODE}(\d{{6}})\.pdf', str(pdf_url or ''), re.IGNORECASE)
+    file_date = _parse_pdf_date_token(filename_date.group(1)) if filename_date else None
+    default_year = file_date.year if file_date else datetime.date.today().year
+    matchups = {}
+
+    def add_event(date_value, team_a, team_b=None, venue='山水'):
+        if not date_value or not team_a:
+            return
+        if team_b and team_a == team_b:
+            return
+        opponent_ids = sorted([team_a, team_b]) if team_b else [team_a, 'bye']
+        key = (date_value, *opponent_ids)
+        matchups.setdefault(key, {
+            'date': date_value,
+            'team_ids': [team_a, team_b] if team_b else [team_a],
+            'venue': venue if team_b else ''
+        })
+
+    with pdfplumber.open(pdf_file) as pdf:
+        for page in pdf.pages:
+            tables = page.find_tables()
+            for table in tables:
+                rows = table.rows
+                cells = table.extract()
+                if not rows or not cells:
+                    continue
+
+                # 日付が列見出しに並ぶ表では、各チーム行のセルが対戦相手を示す。
+                header_index = max(
+                    range(len(cells)),
+                    key=lambda index: sum(_schedule_date(cell, default_year) is not None for cell in (cells[index] or []))
+                )
+                header_dates = {
+                    column: _schedule_date(value, default_year)
+                    for column, value in enumerate(cells[header_index] or [])
+                    if _schedule_date(value, default_year)
+                }
+                if len(header_dates) >= 2:
+                    for row_index in range(header_index + 1, len(cells)):
+                        row = cells[row_index] or []
+                        team_id = next((_schedule_team_id(value) for value in row if _schedule_team_id(value)), None)
+                        if not team_id:
+                            continue
+                        row_cells = rows[row_index].cells if row_index < len(rows) else []
+                        for column, date_value in header_dates.items():
+                            value = row[column] if column < len(row) else ''
+                            if _is_schedule_bye(value):
+                                add_event(date_value, team_id)
+                            else:
+                                opponent_id = _schedule_team_id(value)
+                                if opponent_id:
+                                    venue = '自空' if column < len(row_cells) and _is_red_schedule_cell(page, row_cells[column]) else '山水'
+                                    add_event(date_value, team_id, opponent_id, venue)
+
+                # 日付と対戦チームが同じ行にある形式にも対応する。
+                for row_index, row in enumerate(cells):
+                    row = row or []
+                    date_values = [(column, _schedule_date(value, default_year)) for column, value in enumerate(row)]
+                    date_values = [(column, date_value) for column, date_value in date_values if date_value]
+                    if not date_values:
+                        continue
+                    team_ids = []
+                    for value in row:
+                        team_id = _schedule_team_id(value)
+                        if team_id and team_id not in team_ids:
+                            team_ids.append(team_id)
+                    if len(team_ids) >= 2:
+                        row_cells = rows[row_index].cells if row_index < len(rows) else []
+                        venue = '自空' if any(_is_red_schedule_cell(page, cell) for cell in row_cells) else '山水'
+                        for _, date_value in date_values:
+                            add_event(date_value, team_ids[0], team_ids[1], venue)
+
+            # 表の抽出に失敗した場合、1行単位で「日付 + チーム番号」の形式を読む。
+            text = (page.extract_text() or '').translate(
+                str.maketrans('０１２３４５６７８９', '0123456789')
+            )
+            for line in text.splitlines():
+                date_value = _schedule_date(line, default_year)
+                if not date_value:
+                    continue
+                without_date = re.sub(r'\d{1,2}[./月-]\d{1,2}(?:日)?(?:[./-]\d{2,4})?', ' ', line)
+                team_ids = []
+                for token in re.findall(r'028\d{2}|\b\d{1,2}\b', without_date):
+                    team_id = _schedule_team_id(token)
+                    if team_id and team_id not in team_ids:
+                        team_ids.append(team_id)
+                if _is_schedule_bye(line) and team_ids:
+                    add_event(date_value, team_ids[0])
+                else:
+                    for index in range(0, len(team_ids) - 1, 2):
+                        add_event(date_value, team_ids[index], team_ids[index + 1])
+
+    events = []
+    for matchup in matchups.values():
+        if len(matchup['team_ids']) == 2:
+            for team_id, opponent_id in (matchup['team_ids'], matchup['team_ids'][::-1]):
+                events.append({
+                    'team_id': team_id,
+                    'date': matchup['date'],
+                    'opponent_team_id': opponent_id,
+                    'venue': matchup['venue']
+                })
+        else:
+            events.append({
+                'team_id': matchup['team_ids'][0],
+                'date': matchup['date'],
+                'opponent_team_id': None,
+                'venue': ''
+            })
+    return sorted(events, key=lambda event: (event['date'], int(event['team_id'])))
+
+
 # --- 2. PDFファイルのダウンロード ---
 def download_pdf(url):
     """指定されたURLからPDFファイルをダウンロードする"""
