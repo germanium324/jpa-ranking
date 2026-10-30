@@ -216,9 +216,11 @@ def _schedule_team_id(value):
     normalized = re.sub(r'\s+', '', str(value or '')).translate(
         str.maketrans('０１２３４５６７８９', '0123456789')
     )
-    match = re.fullmatch(r'0280?(\d{1,2})', normalized)
+    match = re.search(r'0280?(\d{1,2})', normalized)
     if not match:
-        match = re.fullmatch(r'(?:No\.?|チームNo\.?|チーム)?0*(\d{1,2})', normalized, re.IGNORECASE)
+        match = re.search(r'(?:No\.?|チームNo\.?|チーム)\s*0*(\d{1,2})', normalized, re.IGNORECASE)
+    if not match:
+        match = re.fullmatch(r'0*(\d{1,2})', normalized)
     if not match:
         return None
     return str(int(match.group(1)))
@@ -261,6 +263,7 @@ def extract_schedule(pdf_file, pdf_url=None):
     file_date = _parse_pdf_date_token(filename_date.group(1)) if filename_date else None
     default_year = file_date.year if file_date else datetime.date.today().year
     matchups = {}
+    team_names = {}
 
     def add_event(date_value, team_a, team_b=None, venue='山水'):
         if not date_value or not team_a:
@@ -337,6 +340,18 @@ def extract_schedule(pdf_file, pdf_url=None):
                 str.maketrans('０１２３４５６７８９', '0123456789')
             )
             for line in text.splitlines():
+                team_name_match = re.match(
+                    r'^\s*0280?(\d{1,2})\s+(?:No\.?\s*0*\d+\s*)?(.+?)\s*$',
+                    line,
+                    re.IGNORECASE
+                )
+                if team_name_match and not team_name_match.group(2).isdigit():
+                    team_names[str(int(team_name_match.group(1)))] = team_name_match.group(2).strip()
+                else:
+                    team_name_match = re.match(r'^\s*No\.?\s*0*(\d{1,2})\s+(.+?)\s*$', line, re.IGNORECASE)
+                    if team_name_match:
+                        team_names[str(int(team_name_match.group(1)))] = team_name_match.group(2).strip()
+
                 date_value = _schedule_date(line, default_year)
                 if not date_value:
                     continue
@@ -358,15 +373,19 @@ def extract_schedule(pdf_file, pdf_url=None):
             for team_id, opponent_id in (matchup['team_ids'], matchup['team_ids'][::-1]):
                 events.append({
                     'team_id': team_id,
+                    'team_name': team_names.get(team_id),
                     'date': matchup['date'],
                     'opponent_team_id': opponent_id,
+                    'opponent_team_name': team_names.get(opponent_id),
                     'venue': matchup['venue']
                 })
         else:
             events.append({
                 'team_id': matchup['team_ids'][0],
+                'team_name': team_names.get(matchup['team_ids'][0]),
                 'date': matchup['date'],
                 'opponent_team_id': None,
+                'opponent_team_name': None,
                 'venue': ''
             })
     return sorted(events, key=lambda event: (event['date'], int(event['team_id'])))

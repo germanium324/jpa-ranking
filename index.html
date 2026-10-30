@@ -292,8 +292,18 @@
                     });
                     const scheduleTeamIds = new Set(teamNamesById.keys());
                     scheduleEvents.forEach(event => {
-                        if (event.team_id != null) scheduleTeamIds.add(String(event.team_id));
-                        if (event.opponent_team_id != null) scheduleTeamIds.add(String(event.opponent_team_id));
+                        if (event.team_id != null) {
+                            const teamId = String(event.team_id);
+                            scheduleTeamIds.add(teamId);
+                            if (event.team_name && !teamNamesById.has(teamId)) teamNamesById.set(teamId, event.team_name);
+                        }
+                        if (event.opponent_team_id != null) {
+                            const opponentId = String(event.opponent_team_id);
+                            scheduleTeamIds.add(opponentId);
+                            if (event.opponent_team_name && !teamNamesById.has(opponentId)) {
+                                teamNamesById.set(opponentId, event.opponent_team_name);
+                            }
+                        }
                     });
                     const sortedScheduleTeamIds = Array.from(scheduleTeamIds).sort((a, b) => Number(a) - Number(b));
                     const formatScheduleDate = (value) => {
