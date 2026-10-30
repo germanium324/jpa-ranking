@@ -17,6 +17,19 @@
         .official-site-link { text-align: right; font-size: 0.8em; margin: 0 0 5px; }
         .official-site-link a { color: #004d99; text-decoration: none; }
         .official-site-link a:hover { text-decoration: underline; }
+        .schedule-section { margin: 10px 0; border: 1px solid #c8d8e8; border-radius: 6px; background: #f8fbff; }
+        .schedule-section > summary { cursor: pointer; padding: 10px; color: #004d99; font-weight: bold; }
+        .schedule-teams { padding: 0 10px 10px; }
+        .schedule-team { border-top: 1px solid #ddd; }
+        .schedule-team-toggle { width: 100%; padding: 10px 4px; border: 0; border-radius: 0; background: transparent; color: #004d99; text-align: left; font-weight: bold; cursor: pointer; }
+        .schedule-team-toggle:hover { background: #edf5ff; }
+        .schedule-games { padding: 0 4px 8px; }
+        .schedule-game { padding: 9px 8px; border-bottom: 1px solid #e5e5e5; text-align: center; }
+        .schedule-game.is-next { min-height: 64px; display: flex; flex-direction: column; justify-content: center; background: #fff8df; border: 2px solid #e6b800; border-radius: 6px; }
+        .schedule-opponent { padding: 0; border: 0; background: transparent; color: #004d99; font: inherit; font-weight: bold; cursor: pointer; }
+        .schedule-opponent:hover { text-decoration: underline; }
+        .schedule-venue { margin-left: 8px; color: #222; }
+        .schedule-venue.is-free-space { color: #c00; font-weight: bold; }
         
         @media (min-width: 1024px) {
             .container { max-width: 50vw; }
@@ -149,6 +162,13 @@
             <a href="http://www.poolplayers.jp/standings/" target="_blank" rel="noopener noreferrer">公式サイトはこちら</a>
         </div>
 
+        <details id="schedule-section" class="schedule-section">
+            <summary>スケジュール</summary>
+            <div id="schedule-teams" class="schedule-teams">
+                <div style="text-align: center; padding: 10px; color: #999;">スケジュールデータを取得中...</div>
+            </div>
+        </details>
+
         <h2>
             <span>チームランキング</span>
             <span class="pdf-link" id="team-pdf-link"></span>
@@ -224,6 +244,23 @@
                         if (avgDiff !== 0) return avgDiff;
                         return String(a.player_name || '').localeCompare(String(b.player_name || ''), 'ja');
                     };
+                    const showTeamIndividuals = (teamName) => {
+                        const teamSelect = document.getElementById('filter-team');
+                        const slSelect = document.getElementById('filter-sl');
+                        const searchInput = document.getElementById('search-name');
+                        const normalizedTeam = String(teamName || '').trim().toLowerCase();
+                        const matchedOption = Array.from(teamSelect.options).find(
+                            option => String(option.value || '').trim().toLowerCase() === normalizedTeam
+                        );
+                        teamSelect.value = matchedOption ? matchedOption.value : '';
+                        searchInput.value = '';
+                        slSelect.value = '';
+                        const individualsHeading = document.getElementById('individuals-heading');
+                        if (individualsHeading) {
+                            individualsHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                        if (typeof window.applyFilters === 'function') window.applyFilters();
+                    };
                      
                     // 1. チェック日時を表示
                     const checked = data.last_checked || null;
@@ -240,6 +277,122 @@
 
                     document.getElementById('team-pdf-link').innerHTML = teamPdf ? `<a href="${teamPdf}" target="_blank">詳細</a>` : '';
                     document.getElementById('individuals-pdf-link').innerHTML = individualsPdf ? `<a href="${individualsPdf}" target="_blank">詳細</a>` : '';
+
+                    // 2.4 シーズン日程
+                    const scheduleContainer = document.getElementById('schedule-teams');
+                    const scheduleEvents = Array.isArray(data.schedule) ? data.schedule : [];
+                    const teamNamesById = new Map();
+                    (Array.isArray(data.roster) ? data.roster : []).forEach(team => {
+                        if (team.team_id != null && team.team_name) teamNamesById.set(String(team.team_id), team.team_name);
+                    });
+                    (Array.isArray(data.ranking) ? data.ranking : []).forEach(team => {
+                        if (team.team_id != null && team.team_name && !teamNamesById.has(String(team.team_id))) {
+                            teamNamesById.set(String(team.team_id), team.team_name);
+                        }
+                    });
+                    const scheduleTeamIds = new Set(teamNamesById.keys());
+                    scheduleEvents.forEach(event => {
+                        if (event.team_id != null) {
+                            const teamId = String(event.team_id);
+                            scheduleTeamIds.add(teamId);
+                            if (event.team_name && !teamNamesById.has(teamId)) teamNamesById.set(teamId, event.team_name);
+                        }
+                        if (event.opponent_team_id != null) {
+                            const opponentId = String(event.opponent_team_id);
+                            scheduleTeamIds.add(opponentId);
+                            if (event.opponent_team_name && !teamNamesById.has(opponentId)) {
+                                teamNamesById.set(opponentId, event.opponent_team_name);
+                            }
+                        }
+                    });
+                    const sortedScheduleTeamIds = Array.from(scheduleTeamIds).sort((a, b) => Number(a) - Number(b));
+                    const formatScheduleDate = (value) => {
+                        const match = String(value || '').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+                        return match ? `${Number(match[1])}年${Number(match[2])}月${Number(match[3])}日` : String(value || '');
+                    };
+                    const nextMatchTimestamp = (event) => {
+                        const matchTime = Date.parse(`${event.date}T21:00:00+09:00`);
+                        return Number.isFinite(matchTime) ? matchTime : null;
+                    };
+                    scheduleContainer.innerHTML = '';
+                    if (sortedScheduleTeamIds.length === 0) {
+                        scheduleContainer.textContent = 'スケジュールデータがありません。';
+                    } else {
+                        sortedScheduleTeamIds.forEach(teamId => {
+                            const teamName = teamNamesById.get(teamId) || `チームNo.${teamId}`;
+                            const teamEvents = scheduleEvents
+                                .filter(event => String(event.team_id) === teamId)
+                                .slice()
+                                .sort((a, b) => String(a.date || '').localeCompare(String(b.date || '')));
+                            const teamSection = document.createElement('section');
+                            teamSection.className = 'schedule-team';
+                            const toggle = document.createElement('button');
+                            toggle.type = 'button';
+                            toggle.className = 'schedule-team-toggle';
+                            toggle.textContent = `NO.${teamId} ${teamName}`;
+                            toggle.setAttribute('aria-expanded', 'false');
+                            const games = document.createElement('div');
+                            games.className = 'schedule-games';
+                            games.hidden = true;
+
+                            if (teamEvents.length === 0) {
+                                const empty = document.createElement('div');
+                                empty.className = 'schedule-game';
+                                empty.textContent = '日程データがありません。';
+                                games.appendChild(empty);
+                            } else {
+                                const now = Date.now();
+                                const upcoming = teamEvents.find(event => {
+                                    const timestamp = nextMatchTimestamp(event);
+                                    return timestamp !== null && timestamp >= now && event.opponent_team_id != null;
+                                }) || teamEvents.find(event => {
+                                    const timestamp = nextMatchTimestamp(event);
+                                    return timestamp !== null && timestamp >= now;
+                                });
+                                teamEvents.forEach(event => {
+                                    const game = document.createElement('div');
+                                    game.className = 'schedule-game';
+                                    if (event === upcoming) game.classList.add('is-next');
+                                    const date = document.createElement('span');
+                                    date.textContent = formatScheduleDate(event.date);
+                                    game.appendChild(date);
+                                    game.appendChild(document.createTextNode(' '));
+                                    if (event.opponent_team_id == null) {
+                                        game.appendChild(document.createTextNode('Bye'));
+                                    } else {
+                                        const opponentId = String(event.opponent_team_id);
+                                        const opponentName = teamNamesById.get(opponentId) || `チームNo.${opponentId}`;
+                                        const opponent = document.createElement('button');
+                                        opponent.type = 'button';
+                                        opponent.className = 'schedule-opponent';
+                                        opponent.textContent = `NO.${opponentId} ${opponentName}`;
+                                        opponent.addEventListener('click', () => showTeamIndividuals(opponentName));
+                                        game.appendChild(opponent);
+                                        game.appendChild(document.createTextNode(' '));
+                                        const venue = document.createElement('span');
+                                        venue.className = 'schedule-venue';
+                                        venue.textContent = event.venue || '山水';
+                                        if (/自空/.test(venue.textContent)) venue.classList.add('is-free-space');
+                                        game.appendChild(venue);
+                                    }
+                                    games.appendChild(game);
+                                });
+                            }
+
+                            toggle.addEventListener('click', () => {
+                                games.hidden = !games.hidden;
+                                toggle.setAttribute('aria-expanded', String(!games.hidden));
+                                if (!games.hidden) {
+                                    const nextGame = games.querySelector('.schedule-game.is-next');
+                                    if (nextGame) {
+                                        window.setTimeout(() => nextGame.scrollIntoView({ behavior: 'smooth', block: 'center' }), 0);
+                                    }
+                                }
+                            });
+                            teamSection.append(toggle, games);
+                            scheduleContainer.appendChild(teamSection);
+                        });
+                    }
 
                     // 2.5 SL変動情報を表示
                     const slChangesContainer = document.getElementById('sl-changes-container');
@@ -303,20 +456,7 @@
                         const teamLink = li.querySelector('.ranking-team-link');
                         teamLink.addEventListener('click', (e) => {
                             e.preventDefault();
-                            const teamSelect = document.getElementById('filter-team');
-                            const slSelect = document.getElementById('filter-sl');
-                            const searchInput = document.getElementById('search-name');
-                            const normalizedTeam = String(team.team_name || '').trim().toLowerCase();
-                            const matchedOption = Array.from(teamSelect.options).find(opt => String(opt.value || '').trim().toLowerCase() === normalizedTeam);
-                            teamSelect.value = matchedOption ? matchedOption.value : '';
-                            searchInput.value = '';
-                            slSelect.value = '';
-                            const individualsHeading = document.getElementById('individuals-heading');
-                            if (individualsHeading) {
-                                individualsHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                            }
-                            // フィルタを適用
-                            applyFilters();
+                            showTeamIndividuals(team.team_name);
                         });
                         rankingBody.appendChild(li);
                     });
