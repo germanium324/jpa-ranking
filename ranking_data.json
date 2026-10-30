@@ -1680,6 +1680,1255 @@
         }
     ],
     "roster_pdf": "http://www.poolplayers.jp/standings/028/R028103026.pdf",
-    "schedule": [],
+    "schedule": [
+        {
+            "team_id": "1",
+            "team_name": null,
+            "date": "2026-09-15",
+            "opponent_team_id": "2",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "2",
+            "team_name": null,
+            "date": "2026-09-15",
+            "opponent_team_id": "1",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "3",
+            "team_name": null,
+            "date": "2026-09-15",
+            "opponent_team_id": "4",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "4",
+            "team_name": null,
+            "date": "2026-09-15",
+            "opponent_team_id": "3",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "5",
+            "team_name": null,
+            "date": "2026-09-15",
+            "opponent_team_id": "6",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "6",
+            "team_name": null,
+            "date": "2026-09-15",
+            "opponent_team_id": "5",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "7",
+            "team_name": null,
+            "date": "2026-09-15",
+            "opponent_team_id": "8",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "8",
+            "team_name": null,
+            "date": "2026-09-15",
+            "opponent_team_id": "7",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "9",
+            "team_name": null,
+            "date": "2026-09-15",
+            "opponent_team_id": "10",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "10",
+            "team_name": null,
+            "date": "2026-09-15",
+            "opponent_team_id": "9",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "11",
+            "team_name": null,
+            "date": "2026-09-15",
+            "opponent_team_id": "12",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "12",
+            "team_name": null,
+            "date": "2026-09-15",
+            "opponent_team_id": "11",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "1",
+            "team_name": null,
+            "date": "2026-09-22",
+            "opponent_team_id": "8",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "2",
+            "team_name": null,
+            "date": "2026-09-22",
+            "opponent_team_id": "11",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "3",
+            "team_name": null,
+            "date": "2026-09-22",
+            "opponent_team_id": "10",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "4",
+            "team_name": null,
+            "date": "2026-09-22",
+            "opponent_team_id": "7",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "5",
+            "team_name": null,
+            "date": "2026-09-22",
+            "opponent_team_id": "12",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "6",
+            "team_name": null,
+            "date": "2026-09-22",
+            "opponent_team_id": "9",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "7",
+            "team_name": null,
+            "date": "2026-09-22",
+            "opponent_team_id": "4",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "8",
+            "team_name": null,
+            "date": "2026-09-22",
+            "opponent_team_id": "1",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "9",
+            "team_name": null,
+            "date": "2026-09-22",
+            "opponent_team_id": "6",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "10",
+            "team_name": null,
+            "date": "2026-09-22",
+            "opponent_team_id": "3",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "11",
+            "team_name": null,
+            "date": "2026-09-22",
+            "opponent_team_id": "2",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "12",
+            "team_name": null,
+            "date": "2026-09-22",
+            "opponent_team_id": "5",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "1",
+            "team_name": null,
+            "date": "2026-09-29",
+            "opponent_team_id": "4",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "2",
+            "team_name": null,
+            "date": "2026-09-29",
+            "opponent_team_id": "5",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "3",
+            "team_name": null,
+            "date": "2026-09-29",
+            "opponent_team_id": "6",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "4",
+            "team_name": null,
+            "date": "2026-09-29",
+            "opponent_team_id": "1",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "5",
+            "team_name": null,
+            "date": "2026-09-29",
+            "opponent_team_id": "2",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "6",
+            "team_name": null,
+            "date": "2026-09-29",
+            "opponent_team_id": "3",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "7",
+            "team_name": null,
+            "date": "2026-09-29",
+            "opponent_team_id": "10",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "8",
+            "team_name": null,
+            "date": "2026-09-29",
+            "opponent_team_id": "11",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "9",
+            "team_name": null,
+            "date": "2026-09-29",
+            "opponent_team_id": "12",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "10",
+            "team_name": null,
+            "date": "2026-09-29",
+            "opponent_team_id": "7",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "11",
+            "team_name": null,
+            "date": "2026-09-29",
+            "opponent_team_id": "8",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "12",
+            "team_name": null,
+            "date": "2026-09-29",
+            "opponent_team_id": "9",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "1",
+            "team_name": null,
+            "date": "2026-10-06",
+            "opponent_team_id": "10",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "2",
+            "team_name": null,
+            "date": "2026-10-06",
+            "opponent_team_id": "9",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "3",
+            "team_name": null,
+            "date": "2026-10-06",
+            "opponent_team_id": "12",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "4",
+            "team_name": null,
+            "date": "2026-10-06",
+            "opponent_team_id": "11",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "5",
+            "team_name": null,
+            "date": "2026-10-06",
+            "opponent_team_id": "8",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "6",
+            "team_name": null,
+            "date": "2026-10-06",
+            "opponent_team_id": "7",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "7",
+            "team_name": null,
+            "date": "2026-10-06",
+            "opponent_team_id": "6",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "8",
+            "team_name": null,
+            "date": "2026-10-06",
+            "opponent_team_id": "5",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "9",
+            "team_name": null,
+            "date": "2026-10-06",
+            "opponent_team_id": "2",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "10",
+            "team_name": null,
+            "date": "2026-10-06",
+            "opponent_team_id": "1",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "11",
+            "team_name": null,
+            "date": "2026-10-06",
+            "opponent_team_id": "4",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "12",
+            "team_name": null,
+            "date": "2026-10-06",
+            "opponent_team_id": "3",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "1",
+            "team_name": null,
+            "date": "2026-10-13",
+            "opponent_team_id": "6",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "2",
+            "team_name": null,
+            "date": "2026-10-13",
+            "opponent_team_id": "3",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "3",
+            "team_name": null,
+            "date": "2026-10-13",
+            "opponent_team_id": "2",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "4",
+            "team_name": null,
+            "date": "2026-10-13",
+            "opponent_team_id": "5",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "5",
+            "team_name": null,
+            "date": "2026-10-13",
+            "opponent_team_id": "4",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "6",
+            "team_name": null,
+            "date": "2026-10-13",
+            "opponent_team_id": "1",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "7",
+            "team_name": null,
+            "date": "2026-10-13",
+            "opponent_team_id": "12",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "8",
+            "team_name": null,
+            "date": "2026-10-13",
+            "opponent_team_id": "9",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "9",
+            "team_name": null,
+            "date": "2026-10-13",
+            "opponent_team_id": "8",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "10",
+            "team_name": null,
+            "date": "2026-10-13",
+            "opponent_team_id": "11",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "11",
+            "team_name": null,
+            "date": "2026-10-13",
+            "opponent_team_id": "10",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "12",
+            "team_name": null,
+            "date": "2026-10-13",
+            "opponent_team_id": "7",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "1",
+            "team_name": null,
+            "date": "2026-10-20",
+            "opponent_team_id": "12",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "2",
+            "team_name": null,
+            "date": "2026-10-20",
+            "opponent_team_id": "7",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "3",
+            "team_name": null,
+            "date": "2026-10-20",
+            "opponent_team_id": "8",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "4",
+            "team_name": null,
+            "date": "2026-10-20",
+            "opponent_team_id": "9",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "5",
+            "team_name": null,
+            "date": "2026-10-20",
+            "opponent_team_id": "10",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "6",
+            "team_name": null,
+            "date": "2026-10-20",
+            "opponent_team_id": "11",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "7",
+            "team_name": null,
+            "date": "2026-10-20",
+            "opponent_team_id": "2",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "8",
+            "team_name": null,
+            "date": "2026-10-20",
+            "opponent_team_id": "3",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "9",
+            "team_name": null,
+            "date": "2026-10-20",
+            "opponent_team_id": "4",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "10",
+            "team_name": null,
+            "date": "2026-10-20",
+            "opponent_team_id": "5",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "11",
+            "team_name": null,
+            "date": "2026-10-20",
+            "opponent_team_id": "6",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "12",
+            "team_name": null,
+            "date": "2026-10-20",
+            "opponent_team_id": "1",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "1",
+            "team_name": null,
+            "date": "2026-10-27",
+            "opponent_team_id": "7",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "2",
+            "team_name": null,
+            "date": "2026-10-27",
+            "opponent_team_id": "8",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "3",
+            "team_name": null,
+            "date": "2026-10-27",
+            "opponent_team_id": "9",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "4",
+            "team_name": null,
+            "date": "2026-10-27",
+            "opponent_team_id": "10",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "5",
+            "team_name": null,
+            "date": "2026-10-27",
+            "opponent_team_id": "11",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "6",
+            "team_name": null,
+            "date": "2026-10-27",
+            "opponent_team_id": "12",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "7",
+            "team_name": null,
+            "date": "2026-10-27",
+            "opponent_team_id": "1",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "8",
+            "team_name": null,
+            "date": "2026-10-27",
+            "opponent_team_id": "2",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "9",
+            "team_name": null,
+            "date": "2026-10-27",
+            "opponent_team_id": "3",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "10",
+            "team_name": null,
+            "date": "2026-10-27",
+            "opponent_team_id": "4",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "11",
+            "team_name": null,
+            "date": "2026-10-27",
+            "opponent_team_id": "5",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "12",
+            "team_name": null,
+            "date": "2026-10-27",
+            "opponent_team_id": "6",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "1",
+            "team_name": null,
+            "date": "2026-11-03",
+            "opponent_team_id": "9",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "2",
+            "team_name": null,
+            "date": "2026-11-03",
+            "opponent_team_id": "10",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "3",
+            "team_name": null,
+            "date": "2026-11-03",
+            "opponent_team_id": "5",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "4",
+            "team_name": null,
+            "date": "2026-11-03",
+            "opponent_team_id": "6",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "5",
+            "team_name": null,
+            "date": "2026-11-03",
+            "opponent_team_id": "3",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "6",
+            "team_name": null,
+            "date": "2026-11-03",
+            "opponent_team_id": "4",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "7",
+            "team_name": null,
+            "date": "2026-11-03",
+            "opponent_team_id": "11",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "8",
+            "team_name": null,
+            "date": "2026-11-03",
+            "opponent_team_id": "12",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "9",
+            "team_name": null,
+            "date": "2026-11-03",
+            "opponent_team_id": "1",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "10",
+            "team_name": null,
+            "date": "2026-11-03",
+            "opponent_team_id": "2",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "11",
+            "team_name": null,
+            "date": "2026-11-03",
+            "opponent_team_id": "7",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "12",
+            "team_name": null,
+            "date": "2026-11-03",
+            "opponent_team_id": "8",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "1",
+            "team_name": null,
+            "date": "2026-11-10",
+            "opponent_team_id": "3",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "2",
+            "team_name": null,
+            "date": "2026-11-10",
+            "opponent_team_id": "4",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "3",
+            "team_name": null,
+            "date": "2026-11-10",
+            "opponent_team_id": "1",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "4",
+            "team_name": null,
+            "date": "2026-11-10",
+            "opponent_team_id": "2",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "5",
+            "team_name": null,
+            "date": "2026-11-10",
+            "opponent_team_id": "7",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "6",
+            "team_name": null,
+            "date": "2026-11-10",
+            "opponent_team_id": "8",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "7",
+            "team_name": null,
+            "date": "2026-11-10",
+            "opponent_team_id": "5",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "8",
+            "team_name": null,
+            "date": "2026-11-10",
+            "opponent_team_id": "6",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "9",
+            "team_name": null,
+            "date": "2026-11-10",
+            "opponent_team_id": "11",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "10",
+            "team_name": null,
+            "date": "2026-11-10",
+            "opponent_team_id": "12",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "11",
+            "team_name": null,
+            "date": "2026-11-10",
+            "opponent_team_id": "9",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "12",
+            "team_name": null,
+            "date": "2026-11-10",
+            "opponent_team_id": "10",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "1",
+            "team_name": null,
+            "date": "2026-11-17",
+            "opponent_team_id": "5",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "2",
+            "team_name": null,
+            "date": "2026-11-17",
+            "opponent_team_id": "6",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "3",
+            "team_name": null,
+            "date": "2026-11-17",
+            "opponent_team_id": "11",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "4",
+            "team_name": null,
+            "date": "2026-11-17",
+            "opponent_team_id": "12",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "5",
+            "team_name": null,
+            "date": "2026-11-17",
+            "opponent_team_id": "1",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "6",
+            "team_name": null,
+            "date": "2026-11-17",
+            "opponent_team_id": "2",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "7",
+            "team_name": null,
+            "date": "2026-11-17",
+            "opponent_team_id": "9",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "8",
+            "team_name": null,
+            "date": "2026-11-17",
+            "opponent_team_id": "10",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "9",
+            "team_name": null,
+            "date": "2026-11-17",
+            "opponent_team_id": "7",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "10",
+            "team_name": null,
+            "date": "2026-11-17",
+            "opponent_team_id": "8",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "11",
+            "team_name": null,
+            "date": "2026-11-17",
+            "opponent_team_id": "3",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "12",
+            "team_name": null,
+            "date": "2026-11-17",
+            "opponent_team_id": "4",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "1",
+            "team_name": null,
+            "date": "2026-11-24",
+            "opponent_team_id": "11",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "2",
+            "team_name": null,
+            "date": "2026-11-24",
+            "opponent_team_id": "12",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "3",
+            "team_name": null,
+            "date": "2026-11-24",
+            "opponent_team_id": "7",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "4",
+            "team_name": null,
+            "date": "2026-11-24",
+            "opponent_team_id": "8",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "5",
+            "team_name": null,
+            "date": "2026-11-24",
+            "opponent_team_id": "9",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "6",
+            "team_name": null,
+            "date": "2026-11-24",
+            "opponent_team_id": "10",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "7",
+            "team_name": null,
+            "date": "2026-11-24",
+            "opponent_team_id": "3",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "8",
+            "team_name": null,
+            "date": "2026-11-24",
+            "opponent_team_id": "4",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "9",
+            "team_name": null,
+            "date": "2026-11-24",
+            "opponent_team_id": "5",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "10",
+            "team_name": null,
+            "date": "2026-11-24",
+            "opponent_team_id": "6",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "11",
+            "team_name": null,
+            "date": "2026-11-24",
+            "opponent_team_id": "1",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "12",
+            "team_name": null,
+            "date": "2026-11-24",
+            "opponent_team_id": "2",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "1",
+            "team_name": null,
+            "date": "2026-12-01",
+            "opponent_team_id": "2",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "2",
+            "team_name": null,
+            "date": "2026-12-01",
+            "opponent_team_id": "1",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "3",
+            "team_name": null,
+            "date": "2026-12-01",
+            "opponent_team_id": "4",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "4",
+            "team_name": null,
+            "date": "2026-12-01",
+            "opponent_team_id": "3",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "5",
+            "team_name": null,
+            "date": "2026-12-01",
+            "opponent_team_id": "6",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "6",
+            "team_name": null,
+            "date": "2026-12-01",
+            "opponent_team_id": "5",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "7",
+            "team_name": null,
+            "date": "2026-12-01",
+            "opponent_team_id": "8",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "8",
+            "team_name": null,
+            "date": "2026-12-01",
+            "opponent_team_id": "7",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "9",
+            "team_name": null,
+            "date": "2026-12-01",
+            "opponent_team_id": "10",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "10",
+            "team_name": null,
+            "date": "2026-12-01",
+            "opponent_team_id": "9",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "11",
+            "team_name": null,
+            "date": "2026-12-01",
+            "opponent_team_id": "12",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "12",
+            "team_name": null,
+            "date": "2026-12-01",
+            "opponent_team_id": "11",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "1",
+            "team_name": null,
+            "date": "2026-12-08",
+            "opponent_team_id": "8",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "2",
+            "team_name": null,
+            "date": "2026-12-08",
+            "opponent_team_id": "11",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "3",
+            "team_name": null,
+            "date": "2026-12-08",
+            "opponent_team_id": "10",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "4",
+            "team_name": null,
+            "date": "2026-12-08",
+            "opponent_team_id": "7",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "5",
+            "team_name": null,
+            "date": "2026-12-08",
+            "opponent_team_id": "12",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "6",
+            "team_name": null,
+            "date": "2026-12-08",
+            "opponent_team_id": "9",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "7",
+            "team_name": null,
+            "date": "2026-12-08",
+            "opponent_team_id": "4",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "8",
+            "team_name": null,
+            "date": "2026-12-08",
+            "opponent_team_id": "1",
+            "opponent_team_name": null,
+            "venue": "自空"
+        },
+        {
+            "team_id": "9",
+            "team_name": null,
+            "date": "2026-12-08",
+            "opponent_team_id": "6",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "10",
+            "team_name": null,
+            "date": "2026-12-08",
+            "opponent_team_id": "3",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "11",
+            "team_name": null,
+            "date": "2026-12-08",
+            "opponent_team_id": "2",
+            "opponent_team_name": null,
+            "venue": "山水"
+        },
+        {
+            "team_id": "12",
+            "team_name": null,
+            "date": "2026-12-08",
+            "opponent_team_id": "5",
+            "opponent_team_name": null,
+            "venue": "山水"
+        }
+    ],
     "schedule_pdf": null
 }
