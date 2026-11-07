@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年11月06日 20:08 JST",
+    "last_checked": "2026年11月07日 10:11 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028110426.pdf",
-    "last_updated": "2026年11月06日 20:08 JST",
+    "last_updated": "2026年11月07日 10:11 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028110426.pdf",
     "individuals": [
         {
@@ -1030,14 +1030,6 @@
             "old_date": "2026/10/28",
             "new_sl": "1",
             "new_date": "2026/11/04"
-        },
-        {
-            "player_name": "Hayashi Yasuyuki",
-            "member_number": "16771",
-            "old_sl": "7",
-            "old_date": "2026/03/23",
-            "new_sl": "8",
-            "new_date": "2026/10/30"
         }
     ],
     "ranking": [
