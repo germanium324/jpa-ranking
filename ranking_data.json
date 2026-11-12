@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年11月11日 20:08 JST",
+    "last_checked": "2026年11月12日 10:11 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028111126.pdf",
-    "last_updated": "2026年11月11日 20:08 JST",
+    "last_updated": "2026年11月12日 10:11 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028111126.pdf",
     "individuals": [
         {
@@ -1022,54 +1022,6 @@
             "old_date": "2026/10/09",
             "new_sl": "6",
             "new_date": "2026/11/11"
-        },
-        {
-            "player_name": "Iyono Koharu",
-            "member_number": "15429",
-            "old_sl": "6",
-            "old_date": "2026/10/21",
-            "new_sl": "5",
-            "new_date": "2026/11/04"
-        },
-        {
-            "player_name": "Kubota Keiya",
-            "member_number": "17666",
-            "old_sl": "2",
-            "old_date": "2026/09/10",
-            "new_sl": "3",
-            "new_date": "2026/11/04"
-        },
-        {
-            "player_name": "Machiyama Ken",
-            "member_number": "17403",
-            "old_sl": "6",
-            "old_date": "2026/09/10",
-            "new_sl": "7",
-            "new_date": "2026/11/04"
-        },
-        {
-            "player_name": "Nakajima Yusuke",
-            "member_number": "16765",
-            "old_sl": "3",
-            "old_date": "2025/08/06",
-            "new_sl": "4",
-            "new_date": "2026/11/04"
-        },
-        {
-            "player_name": "Ohe Yuna",
-            "member_number": "15430",
-            "old_sl": "7",
-            "old_date": "2026/09/18",
-            "new_sl": "6",
-            "new_date": "2026/11/04"
-        },
-        {
-            "player_name": "Saga Mizuki",
-            "member_number": "17675",
-            "old_sl": "2",
-            "old_date": "2026/10/28",
-            "new_sl": "1",
-            "new_date": "2026/11/04"
         }
     ],
     "ranking": [
