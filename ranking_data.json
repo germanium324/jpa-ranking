@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年11月18日 20:09 JST",
+    "last_checked": "2026年11月19日 10:10 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028111826.pdf",
-    "last_updated": "2026年11月18日 20:09 JST",
+    "last_updated": "2026年11月19日 10:10 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028111826.pdf",
     "individuals": [
         {
@@ -982,46 +982,6 @@
             "old_date": "2026/11/11",
             "new_sl": "2",
             "new_date": "2026/11/18"
-        },
-        {
-            "player_name": "Asakura Riki",
-            "member_number": "16232",
-            "old_sl": "5",
-            "old_date": "2026/09/02",
-            "new_sl": "6",
-            "new_date": "2026/11/11"
-        },
-        {
-            "player_name": "Kinoshita Haruki",
-            "member_number": "17399",
-            "old_sl": "4",
-            "old_date": "2026/11/04",
-            "new_sl": "3",
-            "new_date": "2026/11/11"
-        },
-        {
-            "player_name": "Nishimura Ayumi",
-            "member_number": "16228",
-            "old_sl": "1",
-            "old_date": "2026/10/14",
-            "new_sl": "2",
-            "new_date": "2026/11/11"
-        },
-        {
-            "player_name": "Sato Yuto",
-            "member_number": "13671",
-            "old_sl": "7",
-            "old_date": "2025/10/01",
-            "new_sl": "6",
-            "new_date": "2026/11/11"
-        },
-        {
-            "player_name": "Ito Tomoki",
-            "member_number": "16994",
-            "old_sl": "5",
-            "old_date": "2026/10/09",
-            "new_sl": "6",
-            "new_date": "2026/11/11"
         }
     ],
     "ranking": [
