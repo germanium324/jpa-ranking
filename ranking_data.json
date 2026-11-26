@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年11月25日 20:09 JST",
+    "last_checked": "2026年11月26日 10:11 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028112526.pdf",
-    "last_updated": "2026年11月25日 20:09 JST",
+    "last_updated": "2026年11月26日 10:11 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028112526.pdf",
     "individuals": [
         {
@@ -966,40 +966,7 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028112526.pdf",
-    "sl_changes": [
-        {
-            "player_name": "Iyono Koharu",
-            "member_number": "15429",
-            "old_sl": "5",
-            "old_date": "2026/11/04",
-            "new_sl": "6",
-            "new_date": "2026/11/25"
-        },
-        {
-            "player_name": "Morita Tomohiro",
-            "member_number": "17679",
-            "old_sl": "3",
-            "old_date": "2026/10/06",
-            "new_sl": "4",
-            "new_date": "2026/11/25"
-        },
-        {
-            "player_name": "Nabeshima Yuri",
-            "member_number": "17530",
-            "old_sl": "1",
-            "old_date": "2026/11/11",
-            "new_sl": "2",
-            "new_date": "2026/11/18"
-        },
-        {
-            "player_name": "Yoshida Haruna",
-            "member_number": "17671",
-            "old_sl": "1",
-            "old_date": "2026/11/11",
-            "new_sl": "2",
-            "new_date": "2026/11/18"
-        }
-    ],
+    "sl_changes": [],
     "ranking": [
         {
             "team_name": "Tamanchu CUE",
