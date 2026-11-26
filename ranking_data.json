@@ -1,7 +1,7 @@
 {
-    "last_checked": "2026年11月26日 10:11 JST",
+    "last_checked": "2026年11月26日 20:08 JST",
     "last_checked_source": "http://www.poolplayers.jp/standings/028/S028112526.pdf",
-    "last_updated": "2026年11月26日 10:11 JST",
+    "last_updated": "2026年11月26日 20:08 JST",
     "source_pdf": "http://www.poolplayers.jp/standings/028/S028112526.pdf",
     "individuals": [
         {
@@ -966,7 +966,24 @@
         }
     ],
     "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028112526.pdf",
-    "sl_changes": [],
+    "sl_changes": [
+        {
+            "player_name": "Iyono Koharu",
+            "member_number": "15429",
+            "old_sl": "5",
+            "old_date": "2026/11/04",
+            "new_sl": "6",
+            "new_date": "2026/11/25"
+        },
+        {
+            "player_name": "Morita Tomohiro",
+            "member_number": "17679",
+            "old_sl": "3",
+            "old_date": "2026/10/06",
+            "new_sl": "4",
+            "new_date": "2026/11/25"
+        }
+    ],
     "ranking": [
         {
             "team_name": "Tamanchu CUE",
