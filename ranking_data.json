@@ -1,8 +1,8 @@
 {
-    "last_checked": "2026年11月27日 10:11 JST",
-    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028112526.pdf",
-    "last_updated": "2026年11月27日 10:11 JST",
-    "source_pdf": "http://www.poolplayers.jp/standings/028/S028112526.pdf",
+    "last_checked": "2026年11月27日 20:08 JST",
+    "last_checked_source": "http://www.poolplayers.jp/standings/028/S028112726.pdf",
+    "last_updated": "2026年11月27日 20:08 JST",
+    "source_pdf": "http://www.poolplayers.jp/standings/028/S028112726.pdf",
     "individuals": [
         {
             "team_name": "Hineri Yoseisan",
@@ -310,9 +310,9 @@
             "player_number": "16997",
             "gender": "男",
             "sl": 6,
-            "wins": "4/8",
-            "avg_points": 9.63,
-            "points_rate": "48.1%"
+            "wins": "5/9",
+            "avg_points": 10.22,
+            "points_rate": "51.1%"
         },
         {
             "team_name": "Tamanchu RYU",
@@ -340,9 +340,9 @@
             "player_number": "17399",
             "gender": "男",
             "sl": 3,
-            "wins": "5/10",
-            "avg_points": 9.9,
-            "points_rate": "49.5%"
+            "wins": "6/11",
+            "avg_points": 10.55,
+            "points_rate": "52.7%"
         },
         {
             "team_name": "Tamanchu RYU",
@@ -370,9 +370,9 @@
             "player_number": "17478",
             "gender": "男",
             "sl": 2,
-            "wins": "2/4",
-            "avg_points": 10.5,
-            "points_rate": "52.5%"
+            "wins": "3/5",
+            "avg_points": 11.0,
+            "points_rate": "55.0%"
         },
         {
             "team_name": "Tamanchu RYU",
@@ -460,9 +460,9 @@
             "player_number": "17670",
             "gender": "女",
             "sl": 3,
-            "wins": "7/7",
-            "avg_points": 14.57,
-            "points_rate": "72.9%"
+            "wins": "8/8",
+            "avg_points": 15.0,
+            "points_rate": "75.0%"
         },
         {
             "team_name": "Tamanchu RYU",
@@ -500,9 +500,9 @@
             "player_number": "15959",
             "gender": "男",
             "sl": 5,
-            "wins": "0/7",
-            "avg_points": 5.57,
-            "points_rate": "27.9%"
+            "wins": "0/8",
+            "avg_points": 5.5,
+            "points_rate": "27.5%"
         },
         {
             "team_name": "Sasanoha Campus",
@@ -560,9 +560,9 @@
             "player_number": "16989",
             "gender": "男",
             "sl": 4,
-            "wins": "2/8",
-            "avg_points": 8.38,
-            "points_rate": "41.9%"
+            "wins": "2/9",
+            "avg_points": 7.78,
+            "points_rate": "38.9%"
         },
         {
             "team_name": "Sasanoha Campus",
@@ -590,9 +590,9 @@
             "player_number": "15779",
             "gender": "男",
             "sl": 3,
-            "wins": "2/6",
-            "avg_points": 8.67,
-            "points_rate": "43.3%"
+            "wins": "2/7",
+            "avg_points": 8.14,
+            "points_rate": "40.7%"
         },
         {
             "team_name": "Sasanoha Campus",
@@ -620,9 +620,9 @@
             "player_number": "17196",
             "gender": "男",
             "sl": 3,
-            "wins": "3/4",
-            "avg_points": 13.25,
-            "points_rate": "66.3%"
+            "wins": "3/6",
+            "avg_points": 11.17,
+            "points_rate": "55.8%"
         },
         {
             "team_name": "Sasanoha Campus",
@@ -679,10 +679,10 @@
             "player_name": "Kotomi Shimazaki",
             "player_number": "17406",
             "gender": "女",
-            "sl": 4,
-            "wins": "3/5",
-            "avg_points": 10.0,
-            "points_rate": "50.0%"
+            "sl": 3,
+            "wins": "3/7",
+            "avg_points": 8.14,
+            "points_rate": "40.7%"
         },
         {
             "team_name": "Sasanoha Campus",
@@ -710,9 +710,9 @@
             "player_number": "17673",
             "gender": "男",
             "sl": 2,
-            "wins": "1/7",
-            "avg_points": 5.86,
-            "points_rate": "29.3%"
+            "wins": "1/8",
+            "avg_points": 5.38,
+            "points_rate": "26.9%"
         },
         {
             "team_name": "Sasanoha Campus",
@@ -730,9 +730,9 @@
             "player_number": "16230",
             "gender": "女",
             "sl": 4,
-            "wins": "3/5",
-            "avg_points": 11.0,
-            "points_rate": "55.0%"
+            "wins": "4/6",
+            "avg_points": 11.83,
+            "points_rate": "59.2%"
         },
         {
             "team_name": "Tamanchu CUE",
@@ -769,7 +769,7 @@
             "player_name": "Yasuyuki Hayashi",
             "player_number": "16771",
             "gender": "男",
-            "sl": 8,
+            "sl": 7,
             "wins": "4/7",
             "avg_points": 10.71,
             "points_rate": "53.6%"
@@ -789,10 +789,10 @@
             "player_name": "Koharu Iyono",
             "player_number": "15429",
             "gender": "女",
-            "sl": 6,
-            "wins": "4/6",
-            "avg_points": 11.5,
-            "points_rate": "57.5%"
+            "sl": 5,
+            "wins": "5/7",
+            "avg_points": 12.0,
+            "points_rate": "60.0%"
         },
         {
             "team_name": "Tamanchu CUE",
@@ -910,9 +910,9 @@
             "player_number": "17668",
             "gender": "男",
             "sl": 3,
-            "wins": "4/9",
-            "avg_points": 9.11,
-            "points_rate": "45.6%"
+            "wins": "5/10",
+            "avg_points": 9.5,
+            "points_rate": "47.5%"
         },
         {
             "team_name": "Tamanchu CUE",
@@ -940,9 +940,9 @@
             "player_number": "17669",
             "gender": "男",
             "sl": 2,
-            "wins": "1/4",
-            "avg_points": 7.25,
-            "points_rate": "36.3%"
+            "wins": "2/5",
+            "avg_points": 9.2,
+            "points_rate": "46.0%"
         },
         {
             "team_name": "Tamanchu CUE",
@@ -965,15 +965,31 @@
             "points_rate": "64.2%"
         }
     ],
-    "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028112526.pdf",
+    "individuals_pdf": "http://www.poolplayers.jp/standings/028/P028112726.pdf",
     "sl_changes": [
+        {
+            "player_name": "Hayashi Yasuyuki",
+            "member_number": "16771",
+            "old_sl": "8",
+            "old_date": "2026/10/30",
+            "new_sl": "7",
+            "new_date": "2026/11/27"
+        },
         {
             "player_name": "Iyono Koharu",
             "member_number": "15429",
-            "old_sl": "5",
-            "old_date": "2026/11/04",
-            "new_sl": "6",
-            "new_date": "2026/11/25"
+            "old_sl": "6",
+            "old_date": "2026/11/25",
+            "new_sl": "5",
+            "new_date": "2026/11/27"
+        },
+        {
+            "player_name": "Shimazaki Kotomi",
+            "member_number": "17406",
+            "old_sl": "4",
+            "old_date": "2026/10/14",
+            "new_sl": "3",
+            "new_date": "2026/11/27"
         },
         {
             "player_name": "Morita Tomohiro",
@@ -1001,6 +1017,16 @@
             "points": 595
         },
         {
+            "team_name": "Wagamama Finally",
+            "team_id": "4",
+            "points": 587
+        },
+        {
+            "team_name": "Dekatsuyo",
+            "team_id": "10",
+            "points": 580
+        },
+        {
             "team_name": "Hineri Yoseisan",
             "team_id": "1",
             "points": 571
@@ -1016,19 +1042,9 @@
             "points": 525
         },
         {
-            "team_name": "Wagamama Finally",
-            "team_id": "4",
-            "points": 509
-        },
-        {
             "team_name": "Go Go Chance!",
             "team_id": "7",
             "points": 505
-        },
-        {
-            "team_name": "Dekatsuyo",
-            "team_id": "10",
-            "points": 504
         },
         {
             "team_name": "Yabanchu",
@@ -1036,14 +1052,14 @@
             "points": 502
         },
         {
-            "team_name": "Sasanoha Campus",
-            "team_id": "9",
+            "team_name": "Shou Time Gen2",
+            "team_id": "8",
             "points": 396
         },
         {
-            "team_name": "Shou Time Gen2",
-            "team_id": "8",
-            "points": 360
+            "team_name": "Sasanoha Campus",
+            "team_id": "9",
+            "points": 396
         }
     ],
     "roster": [
@@ -1121,7 +1137,7 @@
                     "player_name": "Iyono, Koharu",
                     "player_number": "15429",
                     "gender": "-",
-                    "sl": 6
+                    "sl": 5
                 },
                 {
                     "player_name": "Kurokawa, Koyu",
@@ -1415,7 +1431,7 @@
                     "player_name": "Shimazaki, Kotomi",
                     "player_number": "17406",
                     "gender": "-",
-                    "sl": 4
+                    "sl": 3
                 },
                 {
                     "player_name": "Fujiyoshi, Ryoki",
@@ -1439,7 +1455,7 @@
                     "player_name": "Hayashi, Yasuyuki",
                     "player_number": "16771",
                     "gender": "-",
-                    "sl": 8
+                    "sl": 7
                 },
                 {
                     "player_name": "Machiyama, Ken",
@@ -1696,7 +1712,7 @@
             ]
         }
     ],
-    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028112526.pdf",
+    "roster_pdf": "http://www.poolplayers.jp/standings/028/R028112726.pdf",
     "schedule": [
         {
             "team_id": "1",
